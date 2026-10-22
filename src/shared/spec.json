@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "1.0.0",
+  "decisionsLocked": true,
+  "implementationStarted": false,
+  "workingDirectory": "AR_DEMO",
+  "coordinatorEntry": "src/main.js",
+  "starterEntry": "src/app.js",
+  "toolchainLock": "toolchain_lock.json",
+  "language": "JavaScript ES modules",
+  "framework": "Pinned official A-Frame image-target starter",
+  "trackingMode": "image_only_disable_world_tracking",
+  "host": {
+    "provider": "Cloudflare Pages",
+    "method": "Direct Upload",
+    "accessMissingAction": "ready_to_deploy_no_host_switch"
+  },
+  "workers": {
+    "A": {
+      "entry": "src/tracking/index.js",
+      "writePaths": [
+        "src/tracking/",
+        "image-targets/",
+        "assets/targets/",
+        "config/target-manifest.json"
+      ],
+      "handoff": "src/tracking/HANDOFF.json"
+    },
+    "B": {
+      "entry": "src/effects/index.js",
+      "writePaths": [
+        "src/effects/"
+      ],
+      "handoff": "src/effects/HANDOFF.json"
+    },
+    "C": {
+      "entry": "src/ui/index.js",
+      "writePaths": [
+        "src/ui/"
+      ],
+      "handoff": "src/ui/HANDOFF.json"
+    }
+  },
+  "excluded": [
+    "sound",
+    "particles",
+    "full_scene_export",
+    "source_mesh_extraction",
+    "blank_wall_placement",
+    "seven_wall_rollout",
+    "multiple_simultaneous_targets",
+    "second_renderer"
+  ],
+  "targetPolicy": {
+    "candidateOrder": [
+      "garage-wide",
+      "garage-central",
+      "driveway-sign"
+    ],
+    "stopAtFirstPassingCandidate": true,
+    "recognitionTrials": 5,
+    "minimumPassingTrials": 4,
+    "acquisitionMaxMs": 3000,
+    "reacquisitionMaxMs": 2000,
+    "anchorErrorMaxPanelWidthFraction": 0.03,
+    "negativeTestHoldMs": 5000,
+    "negativeTestMaxSustainedFalseMatches": 0,
+    "candidateRepairAttempts": 2,
+    "targetNamePrefix": "steampunk-",
+    "physicalSamplePanelWidthMm": 180,
+    "printMode": "full_panel_preserve_aspect_no_stretch",
+    "cliType": "flat",
+    "cliOrientation": "landscape",
+    "cliDefaultCrop": true,
+    "preserveSourceArt": true
+  },
+  "candidates": [
+    {
+      "id": "garage-wide",
+      "wallId": 5,
+      "panelKey": "garageLeft",
+      "source": "../output/previews/05_GARAGE_L_preview.png",
+      "panelImagePx": [
+        1425,
+        1350
+      ],
+      "sourceCropPx": [
+        0,
+        140,
+        1424,
+        1068
+      ],
+      "preCroppedImagePx": [
+        1424,
+        1068
+      ]
+    },
+    {
+      "id": "garage-central",
+      "wallId": 5,
+      "panelKey": "garageLeft",
+      "source": "../output/previews/05_GARAGE_L_preview.png",
+      "panelImagePx": [
+        1425,
+        1350
+      ],
+      "sourceCropPx": [
+        172,
+        390,
+        1080,
+        810
+      ],
+      "preCroppedImagePx": [
+        1080,
+        810
+      ]
+    },
+    {
+      "id": "driveway-sign",
+      "wallId": 3,
+      "panelKey": "driveway",
+      "source": "../output/previews/03_DRIVEWAY_WALL_preview.png",
+      "panelImagePx": [
+        2763,
+        1222
+      ],
+      "sourceCropPx": [
+        741,
+        131,
+        1280,
+        960
+      ],
+      "preCroppedImagePx": [
+        1280,
+        960
+      ]
+    }
+  ],
+  "panels": {
+    "garageLeft": {
+      "wallId": 5,
+      "label": "Garage Left",
+      "imagePx": [
+        1425,
+        1350
+      ],
+      "gearAnchorUV": [
+        0.5,
+        0.6
+      ],
+      "glowAnchorsUV": [
+        [
+          0.12,
+          0.275
+        ],
+        [
+          0.223,
+          0.275
+        ],
+        [
+          0.346,
+          0.275
+        ],
+        [
+          0.448,
+          0.275
+        ],
+        [
+          0.554,
+          0.275
+        ],
+        [
+          0.656,
+          0.275
+        ],
+        [
+          0.773,
+          0.275
+        ],
+        [
+          0.879,
+          0.275
+        ]
+      ],
+      "gearRadius": 0.085,
+      "glowRadius": 0.027
+    },
+    "driveway": {
+      "wallId": 3,
+      "label": "Driveway",
+      "imagePx": [
+        2763,
+        1222
+      ],
+      "gearAnchorUV": [
+        0.25,
+        0.26
+      ],
+      "glowAnchorsUV": [
+        [
+          0.115,
+          0.2
+        ],
+        [
+          0.64,
+          0.195
+        ],
+        [
+          0.477,
+          0.7
+        ],
+        [
+          0.922,
+          0.58
+        ]
+      ],
+      "gearRadius": 0.055,
+      "glowRadius": 0.018
+    }
+  },
+  "effects": {
+    "teeth": 24,
+    "spokes": 6,
+    "gearThickness": 0.0125,
+    "gearZ": 0.025,
+    "idleDegreesPerSecond": 15,
+    "overdriveDegreesPerSecond": 90,
+    "overdriveDurationMs": 3000,
+    "pulsePeriodMs": 2000,
+    "glowIdleOpacity": [
+      0.25,
+      0.45
+    ],
+    "glowOverdriveOpacity": 0.65,
+    "reducedMotionIdleOpacity": 0.35,
+    "reducedMotionOverdriveOpacity": 0.5,
+    "brassHex": "#B88A44",
+    "amberHex": "#FFB547",
+    "maxDeltaMs": 50,
+    "timerOwner": "coordinator",
+    "texture": "code_generated_shared_radial_gradient"
+  },
+  "rendering": {
+    "threeSource": "AFRAME.THREE_injected",
+    "initialMaxDpr": 1.5,
+    "fallbackDpr": 1.0,
+    "lowFpsThreshold": 25,
+    "lowFpsWindowMs": 10000,
+    "fallbackOrder": [
+      "lower_dpr",
+      "disable_glows",
+      "record_failure"
+    ],
+    "shadows": false,
+    "postprocessing": false,
+    "customTrianglesMax": 20000,
+    "customDrawCallsMax": 20,
+    "customAssetTransferBytesMax": 3000000,
+    "totalTransferBytesGoal": 15000000,
+    "textureMaxEdgePx": 2048,
+    "ambientIntensity": 0.8,
+    "directionalIntensity": 1.0,
+    "previewMode": "same_AFrame_scene_XR_stopped_fixed_preview_camera_no_second_renderer"
+  },
+  "ui": {
+    "backgroundHex": "#15120F",
+    "textHex": "#F5EADB",
+    "minButtonPx": 44,
+    "previewLabel": "Animation preview — not live AR.",
+    "controls": [
+      "Start",
+      "Overdrive",
+      "Retry",
+      "Preview animation",
+      "Exit preview",
+      "Reset",
+      "Reduce motion"
+    ],
+    "trackingStates": [
+      "loading",
+      "searching",
+      "tracked",
+      "lost",
+      "paused"
+    ],
+    "extraStates": [
+      "landing",
+      "error",
+      "preview"
+    ],
+    "stateMessages": {
+      "landing": "Bring the steampunk wall to life.",
+      "loading": "Starting camera…",
+      "searching": "Point at the {targetLabel} artwork.",
+      "tracked": "Artwork found. Tap Overdrive.",
+      "lost": "Move back toward the artwork.",
+      "paused": "Camera paused. Tap Retry to resume.",
+      "error": "Unable to start AR.",
+      "preview": "Animation preview — not live AR."
+    },
+    "errorMessages": {
+      "CAMERA_DENIED": "Camera access is off. Allow it in browser site settings, then tap Retry.",
+      "CAMERA_UNAVAILABLE": "Camera unavailable. Close other camera apps, then tap Retry.",
+      "INSECURE_ORIGIN": "Open the HTTPS demo link to use the camera.",
+      "ASSET_LOAD_FAILED": "A demo file could not load. Check your connection, then tap Retry.",
+      "ENGINE_FAILED": "AR could not start. Tap Retry or open Preview animation."
+    },
+    "visibleControlsByState": {
+      "landing": [
+        "Start",
+        "Preview animation",
+        "Reduce motion"
+      ],
+      "loading": [
+        "Reduce motion"
+      ],
+      "searching": [
+        "Preview animation",
+        "Reduce motion"
+      ],
+      "tracked": [
+        "Overdrive",
+        "Reset",
+        "Reduce motion"
+      ],
+      "lost": [
+        "Preview animation",
+        "Reduce motion"
+      ],
+      "paused": [
+        "Retry",
+        "Preview animation",
+        "Reduce motion"
+      ],
+      "error": [
+        "Retry_if_canRetry",
+        "Preview animation",
+        "Reduce motion"
+      ],
+      "preview": [
+        "Overdrive",
+        "Exit preview",
+        "Reset",
+        "Reduce motion"
+      ]
+    }
+  },
+  "timeLimits": {
+    "bootstrapMinutes": 30,
+    "bootstrapRepairAttempts": 2,
+    "trackingGateMinutes": 60,
+    "extraCalibrationMinutes": 15,
+    "previewRendererRepairMinutes": 15,
+    "parallelElapsedHoursEstimate": [
+      2.75,
+      5.75
+    ],
+    "totalWorkHoursEstimate": [
+      5,
+      10
+    ],
+    "parallelElapsedCentralMinutes": 235,
+    "bookingAllowanceMinutes": 390,
+    "timelineSource": "timeline.json"
+  },
+  "verification": {
+    "preferredPhone": "Android Chrome if accessible, otherwise iOS Safari",
+    "secondPlatformRequiredForCrossPlatformClaim": true,
+    "phoneUnavailableAction": "finish_build_record_not_run",
+    "printUnavailableAction": "screen_test_provisional_record_physical_not_run",
+    "runtimeStatus": "not_tested"
+  },
+  "precedence": [
+    "user_instructions",
+    "11_EXECUTION_CONTRACT.md_and_execution_spec.json",
+    "14_TOOLCHAIN_LOCK.md_and_toolchain_lock.json",
+    "12_PARALLEL_EXECUTION.md",
+    "13_WORKER_PROMPTS.md",
+    "other_planning_documents"
+  ]
+}

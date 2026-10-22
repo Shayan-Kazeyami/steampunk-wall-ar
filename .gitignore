@@ -1,0 +1,12 @@
+node_modules/
+dist/
+tmp/
+.DS_Store
+**/HANDOFF.json
+**/evidence/
+src/assets/jellyfish*
+src/assets/flyer.jpg
+src/assets/screenshot-flyer.jpg
+src/assets/video-target.jpg
+image-targets/model-target*
+image-targets/video-target*

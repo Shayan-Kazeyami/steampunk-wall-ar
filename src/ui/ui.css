@@ -1,0 +1,482 @@
+.steampunk-ui,
+.steampunk-ui * {
+  box-sizing: border-box;
+}
+
+.steampunk-ui {
+  --sp-bg: #15120f;
+  --sp-text: #f5eadb;
+  --sp-brass: #b88a44;
+  --sp-amber: #ffb547;
+  --sp-min: 44px;
+  --sp-hairline: rgba(184, 138, 68, 0.42);
+  --sp-hairline-soft: rgba(184, 138, 68, 0.24);
+  --sp-panel: rgba(21, 18, 15, 0.84);
+  --sp-panel-soft: rgba(21, 18, 15, 0.66);
+  --sp-text-dim: rgba(245, 234, 219, 0.72);
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: max(12px, env(safe-area-inset-top));
+  padding-right: max(12px, env(safe-area-inset-right));
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
+  padding-left: max(12px, env(safe-area-inset-left));
+  color: var(--sp-text);
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.35;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.steampunk-ui [hidden] {
+  display: none !important;
+}
+
+.steampunk-ui__atmosphere {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(120% 78% at 50% 26%, rgba(21, 18, 15, 0.52), rgba(21, 18, 15, 0.16) 58%, rgba(21, 18, 15, 0) 100%);
+  transition: opacity 240ms ease;
+}
+
+.steampunk-ui[data-state="landing"] .steampunk-ui__atmosphere,
+.steampunk-ui[data-state="error"] .steampunk-ui__atmosphere {
+  opacity: 1;
+}
+
+.steampunk-ui[data-state="loading"] .steampunk-ui__atmosphere,
+.steampunk-ui[data-state="searching"] .steampunk-ui__atmosphere,
+.steampunk-ui[data-state="tracked"] .steampunk-ui__atmosphere,
+.steampunk-ui[data-state="lost"] .steampunk-ui__atmosphere,
+.steampunk-ui[data-state="paused"] .steampunk-ui__atmosphere,
+.steampunk-ui[data-state="preview"] .steampunk-ui__atmosphere {
+  opacity: 0;
+  transition: none;
+}
+
+.steampunk-ui__top {
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.steampunk-ui__hud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: min(560px, calc(100vw - 24px));
+  text-align: center;
+}
+
+.steampunk-ui__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--sp-hairline-soft);
+  border-radius: 999px;
+  background: var(--sp-panel-soft);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  color: var(--sp-brass);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.steampunk-ui__brand-mark {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg, var(--sp-brass) 0deg 9deg, rgba(184, 138, 68, 0) 9deg 30deg);
+  -webkit-mask: radial-gradient(circle, rgba(0, 0, 0, 0) 0 4px, #000 4.5px);
+  mask: radial-gradient(circle, rgba(0, 0, 0, 0) 0 4px, #000 4.5px);
+  opacity: 0.92;
+}
+
+.steampunk-ui[data-state="landing"] .steampunk-ui__brand-mark {
+  animation: steampunk-ui-turn 18s linear infinite;
+}
+
+.steampunk-ui__status {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px 16px;
+  border: 1px solid var(--sp-hairline);
+  border-radius: 14px;
+  background: var(--sp-panel);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(245, 234, 219, 0.05);
+  color: var(--sp-text);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.steampunk-ui__status:focus-visible {
+  outline: 2px solid var(--sp-amber);
+  outline-offset: 2px;
+}
+
+.steampunk-ui__status-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  margin-top: 0.42em;
+  border-radius: 50%;
+  background: var(--sp-amber);
+  box-shadow: 0 0 0 3px rgba(255, 181, 71, 0.12), 0 0 12px rgba(255, 181, 71, 0.45);
+}
+
+.steampunk-ui[data-state="loading"] .steampunk-ui__status-dot,
+.steampunk-ui[data-state="searching"] .steampunk-ui__status-dot {
+  animation: steampunk-ui-pulse 1.6s ease-in-out infinite;
+}
+
+.steampunk-ui[data-state="lost"] .steampunk-ui__status-dot,
+.steampunk-ui[data-state="paused"] .steampunk-ui__status-dot {
+  background: var(--sp-brass);
+  box-shadow: 0 0 0 3px rgba(184, 138, 68, 0.14);
+}
+
+.steampunk-ui[data-state="tracked"] .steampunk-ui__status {
+  border-color: rgba(255, 181, 71, 0.52);
+}
+
+.steampunk-ui[data-state="preview"] .steampunk-ui__status {
+  border-color: rgba(255, 181, 71, 0.36);
+}
+
+.steampunk-ui[data-state="landing"] .steampunk-ui__status {
+  padding: 16px 20px;
+  border-radius: 16px;
+  font-size: clamp(18px, 4.6vw, 26px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.steampunk-ui[data-state="landing"] .steampunk-ui__status-dot {
+  margin-top: 0.5em;
+}
+
+.steampunk-ui__helper {
+  max-width: 42ch;
+  margin: 0;
+  color: var(--sp-text-dim);
+  font-size: 12.5px;
+  line-height: 1.4;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.66);
+}
+
+.steampunk-ui[data-state="landing"] .steampunk-ui__helper {
+  max-width: 40ch;
+  font-size: 14px;
+}
+
+.steampunk-ui__preview-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  margin: 0;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 181, 71, 0.62);
+  border-radius: 999px;
+  background: var(--sp-panel);
+  box-shadow: 0 0 0 1px rgba(255, 181, 71, 0.08), 0 10px 26px rgba(0, 0, 0, 0.3);
+  color: var(--sp-amber);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.steampunk-ui__preview-flag::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--sp-amber);
+  box-shadow: 0 0 10px rgba(255, 181, 71, 0.75);
+  animation: steampunk-ui-pulse 2s ease-in-out infinite;
+}
+
+.steampunk-ui__dock {
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.steampunk-ui__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px;
+  border: 1px solid var(--sp-hairline);
+  border-radius: 18px;
+  background: var(--sp-panel);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(245, 234, 219, 0.05);
+  pointer-events: auto;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.steampunk-ui__button {
+  appearance: none;
+  -webkit-appearance: none;
+  min-width: var(--sp-min);
+  min-height: var(--sp-min);
+  padding: 0 16px;
+  border: 1px solid rgba(184, 138, 68, 0.5);
+  border-radius: 12px;
+  background: rgba(245, 234, 219, 0.06);
+  color: var(--sp-text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease, transform 100ms ease;
+}
+
+.steampunk-ui__button:hover {
+  border-color: var(--sp-brass);
+  background: rgba(184, 138, 68, 0.14);
+}
+
+.steampunk-ui__button:active {
+  transform: translateY(1px);
+}
+
+.steampunk-ui__button:focus-visible {
+  outline: 2px solid var(--sp-amber);
+  outline-offset: 2px;
+}
+
+.steampunk-ui__button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.steampunk-ui[data-state="landing"] [data-control="start"],
+.steampunk-ui[data-state="tracked"] [data-control="overdrive"],
+.steampunk-ui[data-state="paused"] [data-control="retry"],
+.steampunk-ui[data-state="error"] [data-control="retry"],
+.steampunk-ui[data-state="preview"] [data-control="overdrive"] {
+  border-color: #d9b06a;
+  background: linear-gradient(180deg, #d2a45a, #b88a44);
+  box-shadow: 0 0 0 1px rgba(255, 181, 71, 0.18), 0 6px 18px rgba(184, 138, 68, 0.25);
+  color: #1b150f;
+}
+
+.steampunk-ui[data-state="landing"] [data-control="start"]:hover,
+.steampunk-ui[data-state="tracked"] [data-control="overdrive"]:hover,
+.steampunk-ui[data-state="paused"] [data-control="retry"]:hover,
+.steampunk-ui[data-state="error"] [data-control="retry"]:hover,
+.steampunk-ui[data-state="preview"] [data-control="overdrive"]:hover {
+  background: linear-gradient(180deg, #dfb46c, #c6984f);
+  border-color: #f0c983;
+}
+
+.steampunk-ui__button[data-control="overdrive"].is-active {
+  border-color: var(--sp-amber);
+  background: rgba(255, 181, 71, 0.2);
+  box-shadow: 0 0 0 1px var(--sp-amber), 0 0 20px rgba(255, 181, 71, 0.34);
+  color: #fff4e2;
+}
+
+.steampunk-ui[data-state="tracked"] .steampunk-ui__button[data-control="overdrive"].is-active,
+.steampunk-ui[data-state="preview"] .steampunk-ui__button[data-control="overdrive"].is-active {
+  border-color: #ffd28c;
+  background: linear-gradient(180deg, #ffc977, #d99e4e);
+  box-shadow: 0 0 0 1px rgba(255, 181, 71, 0.6), 0 0 24px rgba(255, 181, 71, 0.45);
+  color: #1b150f;
+}
+
+.steampunk-ui__motion {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: var(--sp-min);
+  min-height: var(--sp-min);
+  padding: 0 12px;
+  border: 1px solid var(--sp-hairline-soft);
+  border-radius: 12px;
+  background: rgba(245, 234, 219, 0.035);
+  color: var(--sp-text);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.steampunk-ui__motion:hover {
+  border-color: var(--sp-brass);
+  background: rgba(184, 138, 68, 0.1);
+}
+
+.steampunk-ui__motion-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.steampunk-ui__motion-box {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  border: 1px solid var(--sp-brass);
+  border-radius: 4px;
+  background: rgba(21, 18, 15, 0.62);
+}
+
+.steampunk-ui__motion-box::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--sp-amber);
+  transform: scale(0);
+  transition: transform 140ms ease;
+}
+
+.steampunk-ui__motion-input:checked + .steampunk-ui__motion-box::after {
+  transform: scale(1);
+}
+
+.steampunk-ui__motion-input:focus-visible + .steampunk-ui__motion-box {
+  outline: 2px solid var(--sp-amber);
+  outline-offset: 2px;
+}
+
+.steampunk-ui__motion-text {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.steampunk-ui.is-reduced-motion .steampunk-ui__brand-mark,
+.steampunk-ui.is-reduced-motion .steampunk-ui__status-dot,
+.steampunk-ui.is-reduced-motion .steampunk-ui__preview-flag::before {
+  animation: none !important;
+}
+
+.steampunk-ui.is-reduced-motion .steampunk-ui__atmosphere,
+.steampunk-ui.is-reduced-motion .steampunk-ui__button,
+.steampunk-ui.is-reduced-motion .steampunk-ui__motion,
+.steampunk-ui.is-reduced-motion .steampunk-ui__motion-box::after {
+  transition: none !important;
+}
+
+.steampunk-ui.is-reduced-motion .steampunk-ui__button:active {
+  transform: none;
+}
+
+@keyframes steampunk-ui-pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes steampunk-ui-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 380px) {
+  .steampunk-ui__controls {
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .steampunk-ui__button {
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .steampunk-ui__motion {
+    padding: 0 10px;
+  }
+
+  .steampunk-ui__motion-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 520px) {
+  .steampunk-ui {
+    gap: 10px;
+  }
+
+  .steampunk-ui__hud {
+    gap: 6px;
+  }
+
+  .steampunk-ui__status {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .steampunk-ui[data-state="landing"] .steampunk-ui__status {
+    padding: 12px 16px;
+    font-size: 18px;
+  }
+
+  .steampunk-ui__helper {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .steampunk-ui .steampunk-ui__brand-mark,
+  .steampunk-ui .steampunk-ui__status-dot,
+  .steampunk-ui .steampunk-ui__preview-flag::before {
+    animation: none !important;
+  }
+
+  .steampunk-ui .steampunk-ui__atmosphere,
+  .steampunk-ui .steampunk-ui__button,
+  .steampunk-ui .steampunk-ui__motion,
+  .steampunk-ui .steampunk-ui__motion-box::after {
+    transition: none !important;
+  }
+}
