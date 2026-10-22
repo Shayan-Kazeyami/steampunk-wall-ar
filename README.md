@@ -4,12 +4,24 @@ Scan the Garage Left artwork for a rotating brass gear and amber lights.
 Preview animation shows the effect without starting the camera. Overdrive lasts
 three seconds; repeated taps restart it. Reduced motion keeps the gear static.
 
-## Status
+## Status and launch
 
-Production build and 15 offline module checks pass. Actual browser rendering,
-phone tracking, physical-print calibration and camera acceptance remain unverified.
-The compiled garage-wide target is provisional. Preview is explicitly labeled as
-not live AR. No full-resolution print files or Blender source are included here.
+Demo delivery complete. The user confirmed that both artwork tracking and the
+animation preview work on 22 October 2026. Production build, 15 offline module
+checks, GitHub Pages deployment and deployed key-file hash checks pass.
+
+- [Open the live demo](https://shayan-kazeyami.github.io/steampunk-wall-ar/)
+- [Print the full-panel sample](https://shayan-kazeyami.github.io/steampunk-wall-ar/assets/target-sample.html)
+- [Download the release](https://github.com/Shayan-Kazeyami/steampunk-wall-ar/releases/latest)
+
+Tap Start, allow camera access, and aim at the Garage Left artwork. Tap Overdrive
+for the three-second boost. Use Preview animation to see the effect without camera
+tracking; its persistent label distinguishes it from live AR.
+
+The user confirmation is a smoke test, not measured calibration or cross-platform
+certification. Acquisition timing, alignment error, lighting range and long-run
+phone performance remain unmeasured; see [acceptance record](ACCEPTANCE.md).
+No full-resolution print files or Blender source are included here.
 
 ## GitHub Pages
 
