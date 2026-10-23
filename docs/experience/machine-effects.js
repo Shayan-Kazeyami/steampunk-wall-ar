@@ -8,6 +8,33 @@
     const gauges = [], lamps = [], outlets = [], valves = [], overlays = [];
     const axis = new THREE.Vector3(0, 0, 1), turn = new THREE.Quaternion();
     const state = {disposed:false, activeParticles:0, pressure:0.48, simulatedSeconds:0};
+    let steamEnabled=true;
+    // Angles measured from the actual 0–30 artwork, not an assumed uniform sweep.
+    const printedValues=[0,5,10,15,20,25,30];
+    const printedAngles=[235.3142857143,192.4,142.9333333333,92.15,41,-9,-59.8];
+    function addGauge(object,data) {
+      const known=/Steam[ _]Pressure[ _]Gauge\.?03[345]_Needle/.test(object.name);
+      const values=Array.isArray(data.gauge_tick_values)?data.gauge_tick_values:(known?printedValues:null);
+      const angles=Array.isArray(data.gauge_tick_angles)?data.gauge_tick_angles:(known?printedAngles:null);
+      const calibrated=!!(values && angles && values.length>=2 && values.length===angles.length && values.every(Number.isFinite) && angles.every(Number.isFinite) && values.every((v,i)=>!i || v>values[i-1]));
+      const index=gauges.length;
+      gauges.push({object,base:object.quaternion.clone(),index,values,angles,calibrated,
+        sourceAngle:Number.isFinite(data.gauge_source_angle_degrees)?data.gauge_source_angle_degrees:-41.54468349,
+        value:calibrated?values[values.length-1]:0,target:calibrated?values[values.length-1]:0,override:null,
+        idle:Number.isFinite(data.gauge_idle_value)?data.gauge_idle_value:[12,15,18][index%3],
+        boost:Number.isFinite(data.gauge_boost_value)?data.gauge_boost_value:[24,27,29][index%3],
+        response:Number.isFinite(data.gauge_response_seconds)?Math.max(.1,data.gauge_response_seconds):[.9,1.2,1.5][index%3]});
+    }
+    function applyGauge(gauge) {
+      if(!gauge.calibrated){gauge.object.quaternion.copy(gauge.base);return;}
+      const last=gauge.values.length-1;
+      const value=Math.max(gauge.values[0],Math.min(gauge.values[last],gauge.value));
+      let i=0;while(i<last-1 && value>gauge.values[i+1])i++;
+      const fraction=(value-gauge.values[i])/(gauge.values[i+1]-gauge.values[i]);
+      gauge.angle=gauge.angles[i]+fraction*(gauge.angles[i+1]-gauge.angles[i]);
+      turn.setFromAxisAngle(axis,(gauge.angle-gauge.sourceAngle)*Math.PI/180);
+      gauge.object.quaternion.copy(gauge.base).multiply(turn);
+    }
     model.updateWorldMatrix(true, true);
     const inverse = new THREE.Matrix4().copy(model.matrixWorld).invert();
     const bounds = new THREE.Box3(), box = new THREE.Box3(), matrix = new THREE.Matrix4();
@@ -35,9 +62,7 @@
     }
     model.traverse(object => {
       const data = object.userData || {}, role = data.animation_role;
-      if (role === 'pressure_needle') gauges.push({object,base:object.quaternion.clone(),index:gauges.length,
-        reference:Number.isFinite(data.reference_pressure) ? data.reference_pressure : .48,
-        sweep:Number.isFinite(data.gauge_sweep_radians) ? data.gauge_sweep_radians : Math.PI * 1.35});
+      if (role === 'pressure_needle') addGauge(object,data);
       if (role === 'pressure_gauge' && data.gauge_needle_overlay === true && Number(data.gauge_radius) > 0) {
         // This opt-in is valid only for a clean dial with the original needle removed.
         const radius = data.gauge_radius;
@@ -46,7 +71,7 @@
         needle.position.set(0,radius*.30,radius*.012);
         const pivot = new THREE.Group(); pivot.name = 'CleanDial_PressureNeedle'; pivot.add(needle); object.add(pivot);
         overlays.push(pivot);
-        gauges.push({object:pivot,base:pivot.quaternion.clone(),index:gauges.length,reference:.48,sweep:Math.PI*1.35});
+        addGauge(pivot,data);
       }
       if ((role === 'lamp' || data.lamp_role) && object.isMesh && object.material) {
         const original = object.material;
@@ -66,6 +91,7 @@
     });
     // No arbitrary floating outlets on models without source metadata.
     if (!outlets.length) for (const valve of valves) mountOutlet(valve, true);
+    for(const gauge of gauges)applyGauge(gauge);
 
     const positions = new Float32Array(count*3), sizes = new Float32Array(count), alphas = new Float32Array(count);
     const ages = new Float32Array(count), lives = new Float32Array(count), velocities = new Float32Array(count*3);
@@ -91,7 +117,9 @@
     function reset() {
       if (state.disposed) return;
       clearSteam(); state.pressure=.48; state.simulatedSeconds=0; pressureVelocity=0; wasBoost=false;
-      for (const gauge of gauges) gauge.object.quaternion.copy(gauge.base);
+      for (const gauge of gauges) {
+        gauge.override=null;gauge.value=gauge.target=gauge.calibrated?gauge.values[gauge.values.length-1]:0;applyGauge(gauge);
+      }
       for (const lamp of lamps) for (const clone of lamp.clones) clone.emissiveIntensity=Number.isFinite(lamp.object.userData.lamp_intensity) ? lamp.object.userData.lamp_intensity : 1.1;
     }
     function emit(outlet, boost) {
@@ -112,14 +140,15 @@
       if (!input.running) { if (!input.elapsed) reset(); else clearSteam(); return; }
       state.simulatedSeconds+=dt;
       const t=state.simulatedSeconds, boost=!!input.overdrive;
-      const target=(boost ? .82 : .48)+Math.sin(t*.83)*.045+Math.sin(t*2.1)*.012;
+      const target=boost ? .82 : .48;
       // Critically damped regulator response; release follows the same pressure as gauges.
       pressureVelocity+=(20*(target-state.pressure)-9*pressureVelocity)*dt;
       state.pressure=Math.max(.12,Math.min(.94,state.pressure+pressureVelocity*dt));
       for (const gauge of gauges) {
-        const pressure=Math.max(0,Math.min(1,state.pressure+Math.sin(t*1.5+gauge.index)*.012));
-        turn.setFromAxisAngle(axis,-(pressure-gauge.reference)*gauge.sweep);
-        gauge.object.quaternion.copy(gauge.base).multiply(turn);
+        if(!gauge.calibrated)continue;
+        gauge.target=Math.max(gauge.values[0],Math.min(gauge.values[gauge.values.length-1],gauge.override===null?(boost?gauge.boost:gauge.idle):gauge.override));
+        gauge.value+=(gauge.target-gauge.value)*(1-Math.exp(-dt/gauge.response));
+        applyGauge(gauge);
       }
       for (const lamp of lamps) {
         const phase=t*2*Math.PI/(boost ? 1.2 : 3.8)+lamp.index*1.1;
@@ -127,7 +156,7 @@
         const base=Number.isFinite(lamp.object.userData.lamp_intensity) ? lamp.object.userData.lamp_intensity : 1.1;
         for (const clone of lamp.clones) clone.emissiveIntensity=base*(boost ? 2.2 : 1)*pulse;
       }
-      for (const outlet of outlets) {
+      if(steamEnabled) for (const outlet of outlets) {
         // Brief packing leaks every few seconds, staggered across real source joints.
         const releasing=boost || ((t+outlet.phase)%4.9 < 1.25);
         if (boost && !wasBoost) for(let i=0;i<5;i++) emit(outlet,true);
@@ -154,8 +183,15 @@
       geometry.setDrawRange(0,active ? count : 0); steam.visible=active>0;
     }
     return {steam,state,update,reset,
+      setSteamEnabled(value) {if(state.disposed)return;steamEnabled=!!value;if(!steamEnabled)clearSteam();},
+      setGaugeValue(name,value) {
+        const gauge=gauges.find(g=>g.object.name===name);
+        if(state.disposed || !gauge?.calibrated || !Number.isFinite(value))return false;
+        gauge.override=Math.max(gauge.values[0],Math.min(gauge.values[gauge.values.length-1],value));return true;
+      },
       getDiagnostics() {return {gaugeCount:gauges.length,lampCount:lamps.length,outletCount:outlets.length,
         fallbackOutlets:outlets.some(o=>!o.explicit),
+        gauges:gauges.map(g=>({name:g.object.name,calibrated:g.calibrated,value:g.value,target:g.target,angleDegrees:g.angle,scale:g.calibrated?[g.values[0],g.values[g.values.length-1]]:null})),
         particleCapacity:count,activeParticles:state.activeParticles,pressure:state.pressure,disposed:state.disposed};},
       dispose() {
         if(state.disposed)return;reset();state.disposed=true;
