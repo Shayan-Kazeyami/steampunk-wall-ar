@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Driveway — animated wall and geometry comparison</title>
+<script src="../external/scripts/8frame-1.5.0.min.js"></script>
+<script src="animation-runtime.js"></script>
+<script src="machine-effects.js"></script>
+<script src="experience-polish.js"></script>
+<script type="module" src="environment-lighting.js"></script>
+<style>html,body{height:100%;width:100%;overflow:hidden}body{margin:0;background:#15120f;color:#f1e5cb;font:14px system-ui}header{position:fixed;top:12px;left:12px;right:12px;z-index:4;pointer-events:none}h1{font-size:18px;margin:0 0 4px}p{max-width:650px;line-height:1.35;margin:4px 0}nav{position:fixed;bottom:10px;left:12px;right:12px;z-index:5;display:flex;flex-wrap:wrap;gap:5px;max-height:35vh;overflow:auto;padding:7px;background:#15120fe8;border-radius:10px}button,select{padding:8px 10px;color:#f1e5cb;background:#32261b;border:1px solid #a47b42;border-radius:8px;font:inherit;cursor:pointer}button:disabled,select:disabled{opacity:.45;cursor:default}button[aria-pressed="true"]{background:#6b4827}label{display:flex;align-items:center;gap:5px;padding:5px}#animation-status{font-size:12px;color:#ead3a9}#reference{display:none;position:fixed;inset:20% 3%;width:94%;height:60%;object-fit:contain;z-index:3;background:#15120f}#stats{font-size:12px;color:#cdbb98}canvas{touch-action:none}@media(max-width:500px){body{font-size:12px}header p{max-width:100%}button,select{padding:7px 9px}h1{font-size:16px}}</style>
+</head><body>
+<style>:root{color-scheme:dark}header{top:14px;left:16px}header h1{letter-spacing:.04em}header p{font-size:12px;color:#c9b99b}nav{padding:10px;border:1px solid #5a4329;border-radius:14px;max-height:43vh;display:block;backdrop-filter:blur(10px)}.transport,.tools{display:flex;align-items:center;flex-wrap:wrap;gap:6px}button,select{min-height:40px}#play{background:#a8783a;color:#130f09;font-weight:650;min-width:72px}details{width:100%}summary{cursor:pointer;color:#cdbb98;padding:8px 2px 2px;font-size:12px}.tools{margin-top:8px}#audio-status:empty{display:none}#audio-status,#environment-status{font-size:12px;color:#d6b88d}input[type=range]{max-width:130px;accent-color:#d9a75e}.hint{font-size:11px;color:#b9a784}dialog{max-width:min(86vw,360px);background:#21190f;color:#f1e5cb;border:1px solid #a47b42;border-radius:16px;padding:22px;text-align:center}dialog::backdrop{background:#000a}dialog img{display:block;width:240px;max-width:90%;margin:16px auto;background:white;border:12px solid white;border-radius:8px}dialog a{color:#edc58c;overflow-wrap:anywhere}dialog h2{font-size:19px}#stats{font-size:11px}@media(max-width:540px){nav{padding:8px;bottom:8px;left:8px;right:8px}.transport{gap:5px}header h1{font-size:16px}}</style>
+<header><h1>DRIVEWAY · THE STEAM WORKS</h1><p>Drag to explore the machinery. Zoom in for the details.</p><p id="animation-status" role="status">Loading the wall…</p></header>
+<img id="reference" alt="Original Driveway artwork reference" src="assets/driveway.jpg">
+<nav aria-label="Wall controls"><div class="transport"><button disabled id="play" aria-pressed="false">Play</button><button disabled id="stop">Stop</button><button disabled id="overdrive">Overdrive · 3s</button><button disabled id="sound" aria-pressed="false">Sound off</button><button id="qr">Open on phone</button></div><p id="audio-status" role="status"></p><details id="advanced"><summary>View, lighting &amp; comparisons</summary><div class="tools"><button id="front">Front</button><button id="angle">Angled view</button><button id="zoom-in">Zoom +</button><button id="zoom-out">Zoom −</button><button id="compare">Artwork reference</button><label>Lighting <input id="lighting" type="range" min="0" max="1.5" value="0.55" step="0.05"></label><label><input type="checkbox" id="reduced-motion">Reduced motion</label><select disabled id="topology" aria-label="Model quality and comparison"><option value="polished">Enhanced · sharp textures</option><option value="animated">Previous animation</option><option value="android">Android candidate (static)</option><option value="fidelity">4K fidelity reference</option></select><button id="wireframe" aria-pressed="false">Wireframe</button></div><p id="environment-status" role="status">Loading HDRI studio lighting…</p><p id="stats">Loading 3D model…</p><p class="hint">Physical Android performance and AR tracking are not yet tested for this version. Sound is synthesized; enable it to hear the machine.</p></details></nav>
+<dialog id="qr-dialog"><h2>Take the wall with you</h2><img src="assets/site-qr.png" alt="QR code for the public Driveway experience"><p><a href="https://shayan-kazeyami.github.io/steampunk-wall-ar/experience/" target="_blank" rel="noopener">Open the online experience</a></p><p class="hint">Scan with your phone camera to open the enhanced experience.</p><form method="dialog"><button>Close</button></form></dialog>
+<a-scene embedded renderer="colorManagement:true;antialias:true" vr-mode-ui="enabled:false" device-orientation-permission-ui="enabled:false" background="color:#15120f" style="position:fixed;inset:0;width:100%;height:100%">
+
+<a-entity id="wall" gltf-model="assets/driveway-polished.glb"></a-entity>
+<a-camera id="camera" position="0 0 1.05" look-controls="enabled:false" wasd-controls="enabled:false"></a-camera>
+<a-light type="ambient" intensity="0.25" color="#b9c7d2"></a-light><a-light type="directional" position="-1 2 3" intensity="0.85" color="#ffe1b6"></a-light><a-light type="directional" position="2 .5 2" intensity="0.38" color="#c8d8ef"></a-light><a-light type="directional" position="0 2 -1" intensity="0.6" color="#ffb85e"></a-light>
+</a-scene>
+<script>
+const scene=document.querySelector('a-scene'),wall=document.querySelector('#wall'),camera=document.querySelector('#camera'),stats=document.querySelector('#stats');let dragging=false,last=0,lastY=0,panning=false,zoom=1;
+let wireEnabled=new URLSearchParams(location.search).has('wireframe'),wireMaterial=null,wireSurface=null;
+const originalMaterials=new WeakMap(),wireOverlays=new WeakMap(),wireButton=document.querySelector('#wireframe');
+let previousModel=null;
+let animation=null,machineEffects=null,polish=null,environment=null,requestedRunning=false,soundPending=false;
+const soundButton=document.querySelector('#sound'),audioStatus=document.querySelector('#audio-status');
+const playButton=document.querySelector('#play'),stopButton=document.querySelector('#stop'),overdriveButton=document.querySelector('#overdrive'),motionToggle=document.querySelector('#reduced-motion'),animationStatus=document.querySelector('#animation-status');
+const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');motionToggle.checked=motionPreference.matches;
+function refreshAnimationUI(){
+ const active=!!animation,state=animation?.state;
+ playButton.disabled=!active;stopButton.disabled=!active;overdriveButton.disabled=!active||motionToggle.checked||!requestedRunning;
+ playButton.textContent=requestedRunning?'Pause':'Play';playButton.setAttribute('aria-pressed',String(requestedRunning));
+ soundButton.disabled=!polish||soundPending;soundButton.textContent=soundPending?'Starting sound…':polish?.soundEnabled?'Sound on':'Sound off';soundButton.setAttribute('aria-pressed',String(!!polish?.soundEnabled));
+ const status=!active?'Static comparison · animation unavailable':document.hidden?'Stopped · page hidden':motionToggle.checked?'Reduced motion · movement and steam off':!requestedRunning?'Paused / stopped':state?.overdrive?'Overdrive · pressure rising':machineEffects?`Running · ${state?.gearCount||0} gears · ${machineEffects.getDiagnostics().gaugeCount} pressure meters · steam leaks`:`Running · ${state?.gearCount||0} gears`;
+ if(animationStatus.textContent!==status)animationStatus.textContent=status;
+}
+function stopAnimation(){requestedRunning=false;if(animation){animation.setRunning(false);animation.reset()}machineEffects?.reset();polish?.reset();audioStatus.textContent='';refreshAnimationUI()}
+function restoreWireframe(model){if(!model)return;const meshes=[];model.traverse(mesh=>{if(mesh.isMesh&&!mesh.userData.debugWireOverlay)meshes.push(mesh)});for(const mesh of meshes){const stored=originalMaterials.get(mesh);if(stored)mesh.material=stored;originalMaterials.delete(mesh);wireOverlays.get(mesh)?.removeFromParent();wireOverlays.delete(mesh)}}
+function disposeAnimation(){restoreWireframe(previousModel);stopAnimation();animation?.dispose();machineEffects?.dispose();polish?.dispose();animation=null;machineEffects=null;polish=null;refreshAnimationUI()}
+function installAnimation(model){const version=document.querySelector('#topology').value;if(version!=='animated'&&version!=='polished')return;animation=window.createWallAnimation({THREE:AFRAME.THREE,model});if(version==='polished'){machineEffects=window.createMachineEffects({THREE:AFRAME.THREE,model});animation.setSteamEnabled(false);polish=window.createExperiencePolish({THREE:AFRAME.THREE,model})}animation.setReducedMotion(motionToggle.checked);animation.setTracked(true);requestedRunning=!document.hidden;animation.setRunning(requestedRunning)}
+soundButton.onclick=async()=>{const current=polish;if(!current||soundPending)return;soundPending=true;soundButton.disabled=true;audioStatus.textContent='';const enabled=await current.setSoundEnabled(!current.soundEnabled);soundPending=false;if(current!==polish){refreshAnimationUI();return}if(!enabled&&['error','unavailable'].includes(current.state.audioStatus))audioStatus.textContent=current.state.audioStatus==='unavailable'?'Sound is unavailable in this browser.':`Sound could not start: ${current.state.audioError||'browser audio permission'}`;refreshAnimationUI()};
+playButton.onclick=()=>{if(!animation)return;requestedRunning=!requestedRunning;if(requestedRunning)animation.setRunning(true);else animation.pause();refreshAnimationUI()};
+stopButton.onclick=stopAnimation;
+overdriveButton.onclick=()=>{if(animation&&requestedRunning&&!motionToggle.checked){animation.triggerOverdrive(performance.now());refreshAnimationUI()}};
+motionToggle.onchange=()=>{animation?.setReducedMotion(motionToggle.checked);if(motionToggle.checked)machineEffects?.reset();refreshAnimationUI()};
+motionPreference.addEventListener('change',event=>{motionToggle.checked=event.matches;motionToggle.onchange()});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stopAnimation()});
+wall.addEventListener('model-loaded',()=>{
+ const model=wall.getObject3D('mesh');
+ disposeAnimation();
+ if(previousModel&&previousModel!==model){
+  const geometries=new Set(),materials=new Set(),textures=new Set();
+  previousModel.traverse(mesh=>{
+   if(!mesh.isMesh)return;
+   geometries.add(mesh.geometry);
+   if(mesh.userData.debugWireOverlay)return;
+   const stored=originalMaterials.get(mesh)||mesh.material;
+   for(const material of (Array.isArray(stored)?stored:[stored])){
+    if(!material||material===wireSurface||material===wireMaterial)continue;
+    materials.add(material);
+    for(const value of Object.values(material))if(value?.isTexture)textures.add(value);
+   }
+  });
+  for(const geometry of geometries)geometry.dispose();
+  for(const material of materials)material.dispose();
+  for(const texture of textures)texture.dispose();
+ }
+ previousModel=model;document.querySelector('#topology').disabled=false;model.traverse(mesh=>{if(mesh.isMesh)for(const mat of(Array.isArray(mesh.material)?mesh.material:[mesh.material]))if(mat.name==='Source_Print_Baked_Wall'){mat.toneMapped=false;mat.needsUpdate=true}});
+ const anisotropy=Math.min(8,scene.renderer?.capabilities.getMaxAnisotropy()||1);model.traverse(mesh=>{if(!mesh.isMesh)return;for(const material of(Array.isArray(mesh.material)?mesh.material:[mesh.material]))for(const value of Object.values(material))if(value?.isTexture){value.anisotropy=anisotropy;value.needsUpdate=true}});
+ installAnimation(model);environment?.setIntensity(Number(document.querySelector('#lighting').value));
+ refreshAnimationUI();
+});
+
+function applyWireframe(){
+ const model=wall.getObject3D('mesh');if(!model)return;
+ if(!wireMaterial){wireMaterial=new AFRAME.THREE.MeshBasicMaterial({color:'#79bed8',wireframe:true,toneMapped:false});wireSurface=new AFRAME.THREE.MeshBasicMaterial({color:'#151b20',toneMapped:false,polygonOffset:true,polygonOffsetFactor:1,polygonOffsetUnits:1})}
+ const meshes=[];model.traverse(mesh=>{if(mesh.isMesh&&!mesh.userData.debugWireOverlay&&!mesh.parent?.userData.experiencePolishEffect)meshes.push(mesh)});
+ meshes.forEach(mesh=>{
+  if(!originalMaterials.has(mesh))originalMaterials.set(mesh,mesh.material);
+  if(!wireOverlays.has(mesh)){const overlay=new AFRAME.THREE.Mesh(mesh.geometry,wireMaterial);overlay.userData.debugWireOverlay=true;overlay.renderOrder=1;mesh.add(overlay);wireOverlays.set(mesh,overlay)}
+  mesh.material=wireEnabled?wireSurface:originalMaterials.get(mesh);wireOverlays.get(mesh).visible=wireEnabled;
+ });
+ wireButton.setAttribute('aria-pressed',String(wireEnabled));wireButton.textContent=wireEnabled?'Show shaded model':'Wireframe';
+ const label={polished:'Drag to explore the machinery. Zoom in for the details.',animated:'Previous animation for comparison.',fidelity:'4K textured fidelity reference.',android:'Android geometry candidate.',}[document.querySelector('#topology').value];document.querySelector('header p').textContent=wireEnabled?'Triangle wireframe of the selected geometry.':label;
+}
+wall.addEventListener('model-loaded',applyWireframe);
+wireButton.onclick=()=>{wireEnabled=!wireEnabled;applyWireframe()};
+document.querySelector('#topology').onchange=e=>{const paths={polished:'assets/driveway-polished.glb',animated:'assets/driveway-polished.glb',android:'assets/driveway-android.glb',fidelity:'assets/driveway-reference-4k.glb',};disposeAnimation();e.target.disabled=true;stats.dataset.summary='';stats.textContent='Loading selected geometry...';animationStatus.textContent='Loading selected geometry…';wall.setAttribute('gltf-model',paths[e.target.value])};
+window.addEventListener('pagehide',event=>{disposeAnimation();if(!event.persisted){environment?.dispose();if(wireMaterial){wireMaterial.dispose();wireSurface.dispose()}}});
+window.addEventListener('pageshow',event=>{if(event.persisted&&previousModel){installAnimation(previousModel);applyWireframe();refreshAnimationUI()}});
+function fit(){if(!scene.camera)return;scene.camera.aspect=innerWidth/innerHeight;scene.camera.updateProjectionMatrix();const angle=wall.object3D.rotation.y,tan=Math.tan(scene.camera.fov*Math.PI/360),reserved=document.querySelector('header').offsetHeight+document.querySelector('nav').offsetHeight+44,available=Math.max(.25,1-reserved/innerHeight);camera.object3D.position.z=(Math.max(.5*Math.abs(Math.cos(angle))/(tan*scene.camera.aspect),.222/(tan*available))*1.06)/zoom+.5*Math.abs(Math.sin(angle))+.09;scene.renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));scene.renderer.toneMapping=AFRAME.THREE.ACESFilmicToneMapping;scene.renderer.toneMappingExposure=.75}
+wall.addEventListener('model-loaded',()=>{let triangles=0,draws=0;wall.getObject3D('mesh').traverse(o=>{if(o.isMesh&&!o.userData.debugWireOverlay){triangles+=(o.geometry.index?o.geometry.index.count:o.geometry.attributes.position.count)/3;draws++}});const bb=new AFRAME.THREE.Box3().setFromObject(wall.getObject3D('mesh'));stats.dataset.diagnostics=JSON.stringify({min:bb.min.toArray(),max:bb.max.toArray(),camera:camera.object3D.position.toArray(),graph:animation?.state.gearContacts,fx:machineEffects?.getDiagnostics()});stats.dataset.summary=`${triangles.toLocaleString()} scene triangles · ${draws} mesh parts`;stats.textContent=stats.dataset.summary+' · drag for depth';if(!scene.isPlaying)scene.play();scene.resize();fit()});
+wall.addEventListener('model-error',()=>{disposeAnimation();document.querySelector('#topology').disabled=false;stats.textContent='The selected model could not load. Choose another version.';animationStatus.textContent='Animation unavailable · model failed to load'});
+AFRAME.registerComponent('review-metrics',{
+ init(){this.start=performance.now();this.frames=0},
+ tick(time,delta){
+  const now=performance.now();animation?.update(delta||0,now);if(animation){machineEffects?.update(delta||0,now,animation.state);polish?.update(delta||0,now,animation.state)}refreshAnimationUI();
+  if(!document.querySelector('#advanced').open||!delta||document.hidden||!stats.dataset.summary){this.start=performance.now();this.frames=0;return}
+  this.frames++;const elapsed=performance.now()-this.start;
+  if(elapsed<2000)return;
+  const info=scene.renderer?.info;
+  stats.textContent=stats.dataset.summary+` · ${Math.round(this.frames*1000/elapsed)} fps in this browser · ${info?.render.calls||0} draw calls · ${info?.memory.textures||0} textures`;
+  this.start=performance.now();this.frames=0;
+ }
+});
+scene.setAttribute('review-metrics','');
+window.addEventListener('resize',fit);scene.addEventListener('loaded',fit);
+async function setupEnvironment(){if(environment||!scene.renderer||!window.createEnvironmentLighting)return;environment=window.createEnvironmentLighting({THREE:AFRAME.THREE,scene:scene.object3D,renderer:scene.renderer,url:'assets/studio_small_09_1k.hdr',intensity:Number(document.querySelector('#lighting').value)});try{const result=await environment.ready;document.querySelector('#environment-status').textContent=result?.status==='ready'?'HDRI studio lighting · Poly Haven CC0':'HDRI could not load · directional lighting active'}catch(error){document.querySelector('#environment-status').textContent='HDRI could not load · directional lighting active'}}
+window.addEventListener('load',setupEnvironment);scene.addEventListener('renderstart',setupEnvironment);scene.addEventListener('loaded',setupEnvironment);
+document.querySelector('#lighting').oninput=e=>environment?.setIntensity(Number(e.target.value));document.querySelector('#advanced').addEventListener('toggle',fit);
+document.querySelector('#qr').onclick=()=>document.querySelector('#qr-dialog').showModal();
+scene.addEventListener('pointerdown',e=>{dragging=true;last=e.clientX;lastY=e.clientY;panning=e.shiftKey;scene.setPointerCapture?.(e.pointerId)});
+window.addEventListener('pointerup',()=>dragging=false);
+window.addEventListener('pointermove',e=>{if(!dragging)return;if(panning){const units=2*camera.object3D.position.z*Math.tan(scene.camera.fov*Math.PI/360)/innerHeight;wall.object3D.position.x+=(e.clientX-last)*units;wall.object3D.position.y-=(e.clientY-lastY)*units}else{wall.object3D.rotation.y=Math.max(-.9,Math.min(.9,wall.object3D.rotation.y+(e.clientX-last)*.006))}last=e.clientX;lastY=e.clientY;fit()});
+document.querySelector('#front').onclick=()=>{wall.object3D.rotation.set(0,0,0);wall.object3D.position.set(0,0,0);zoom=1;fit()};
+document.querySelector('#angle').onclick=()=>{wall.object3D.rotation.set(0,-.49,0);fit()};
+document.querySelector('#zoom-in').onclick=()=>{zoom=Math.min(12,zoom*1.25);fit()};
+document.querySelector('#zoom-out').onclick=()=>{zoom=Math.max(.65,zoom/1.25);fit()};
+document.querySelector('#compare').onclick=e=>{const img=document.querySelector('#reference'),show=img.style.display!=='block';img.style.display=show?'block':'none';e.target.textContent=show?'Show 3D model':'Show artwork reference'};
+</script></body></html>
+
