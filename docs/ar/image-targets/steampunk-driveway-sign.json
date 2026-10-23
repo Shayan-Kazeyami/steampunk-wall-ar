@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/steampunk-driveway-sign_luminance.png",
+  "metadata": null,
+  "name": "steampunk-driveway-sign",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 960,
+    "height": 1280,
+    "isRotated": true,
+    "originalWidth": 960,
+    "originalHeight": 1280
+  },
+  "resources": {
+    "originalImage": "steampunk-driveway-sign_original.png",
+    "croppedImage": "steampunk-driveway-sign_cropped.png",
+    "thumbnailImage": "steampunk-driveway-sign_thumbnail.png",
+    "luminanceImage": "steampunk-driveway-sign_luminance.png"
+  },
+  "created": 1792689346944,
+  "updated": 1792689346944
+}
