@@ -1,0 +1,649 @@
+{
+  "status": "EXPERIMENTAL_OPT_IN_TRIALS_DESKTOP_HARDWARE_VERIFIED_FIELD_UNVERIFIED",
+  "bundle_sha256": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf",
+  "renderer_sha256": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f",
+  "model_sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+  "candidate_manifest_sha256": "6e65dfd167d8be552c5c1314547dd8666ae095e3b7e5cae264d1bdfa75ac51be",
+  "files": [
+    {
+      "file": "image.html",
+      "sha256": "b0951807dc94d29227bb3ac92f84c3baad745d668ef6ac124ea72e81d71b5b19",
+      "config": {
+        "schemaVersion": 1,
+        "bundleHash": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf",
+        "modelHash": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+        "rendererHash": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f",
+        "targetHash": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917",
+        "worldTracking": false,
+        "variant": "A0",
+        "disableColorMatch": false,
+        "target": {
+          "manifest": {
+            "schemaVersion": 1,
+            "contractVersion": "1.0.0",
+            "candidateId": "driveway-sign",
+            "wallId": 3,
+            "panelImagePx": [
+              2763,
+              1222
+            ],
+            "sourceCropPx": [
+              741,
+              131,
+              1280,
+              960
+            ],
+            "compiledTargetName": "steampunk-driveway-sign",
+            "compiledJsonPath": "image-targets/steampunk-driveway-sign.json",
+            "trackingImagePath": "image-targets/steampunk-driveway-sign_luminance.png",
+            "compiledCropInSourcePx": [
+              741,
+              131,
+              1280,
+              960
+            ],
+            "compiledMetadata": {
+              "type": "PLANAR",
+              "properties": {
+                "left": 0,
+                "top": 0,
+                "width": 960,
+                "height": 1280,
+                "isRotated": true,
+                "originalWidth": 960,
+                "originalHeight": 1280
+              }
+            },
+            "targetPoseCalibration": {
+              "verified": false,
+              "axes": "identity_provisional",
+              "rotationDeg": null,
+              "mirrorX": null,
+              "offsetPanel": null,
+              "notes": "Provisional identity axes; Driveway phone corner calibration NOT MEASURED. CLI storage rotation is recorded separately in compiledMetadata and is not a measured pose correction."
+            },
+            "physicalSampleArtworkMm": [
+              180,
+              79.60912052117264
+            ],
+            "verification": {
+              "status": "provisional",
+              "calibrationVerified": false,
+              "compiledTargetPresent": true,
+              "selectedByPhoneGate": false,
+              "phoneTracking": "not_tested",
+              "physicalPrint": "not_tested",
+              "https": "not_tested"
+            }
+          },
+          "compiledTarget": {
+            "imagePath": "__PRIVATE_LUMINANCE__",
+            "metadata": null,
+            "name": "steampunk-driveway-sign",
+            "type": "PLANAR",
+            "properties": {
+              "left": 0,
+              "top": 0,
+              "width": 960,
+              "height": 1280,
+              "isRotated": true,
+              "originalWidth": 960,
+              "originalHeight": 1280
+            },
+            "resources": {
+              "originalImage": "steampunk-driveway-sign_original.png",
+              "croppedImage": "steampunk-driveway-sign_cropped.png",
+              "thumbnailImage": "steampunk-driveway-sign_thumbnail.png",
+              "luminanceImage": "steampunk-driveway-sign_luminance.png"
+            },
+            "created": 1792689346944,
+            "updated": 1792689346944
+          },
+          "targetHash": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917",
+          "luminanceHash": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb"
+        },
+        "luminanceRelative": "image-targets/steampunk-driveway-sign_luminance.png"
+      }
+    },
+    {
+      "file": "world.html",
+      "sha256": "992d231ec24a57d018054776afeeaac6e4eda4460087fd8f382a353e3e5a694f",
+      "config": {
+        "schemaVersion": 1,
+        "bundleHash": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf",
+        "modelHash": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+        "rendererHash": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f",
+        "targetHash": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917",
+        "worldTracking": true,
+        "variant": "B0",
+        "disableColorMatch": false,
+        "target": {
+          "manifest": {
+            "schemaVersion": 1,
+            "contractVersion": "1.0.0",
+            "candidateId": "driveway-sign",
+            "wallId": 3,
+            "panelImagePx": [
+              2763,
+              1222
+            ],
+            "sourceCropPx": [
+              741,
+              131,
+              1280,
+              960
+            ],
+            "compiledTargetName": "steampunk-driveway-sign",
+            "compiledJsonPath": "image-targets/steampunk-driveway-sign.json",
+            "trackingImagePath": "image-targets/steampunk-driveway-sign_luminance.png",
+            "compiledCropInSourcePx": [
+              741,
+              131,
+              1280,
+              960
+            ],
+            "compiledMetadata": {
+              "type": "PLANAR",
+              "properties": {
+                "left": 0,
+                "top": 0,
+                "width": 960,
+                "height": 1280,
+                "isRotated": true,
+                "originalWidth": 960,
+                "originalHeight": 1280
+              }
+            },
+            "targetPoseCalibration": {
+              "verified": false,
+              "axes": "identity_provisional",
+              "rotationDeg": null,
+              "mirrorX": null,
+              "offsetPanel": null,
+              "notes": "Provisional identity axes; Driveway phone corner calibration NOT MEASURED. CLI storage rotation is recorded separately in compiledMetadata and is not a measured pose correction."
+            },
+            "physicalSampleArtworkMm": [
+              180,
+              79.60912052117264
+            ],
+            "verification": {
+              "status": "provisional",
+              "calibrationVerified": false,
+              "compiledTargetPresent": true,
+              "selectedByPhoneGate": false,
+              "phoneTracking": "not_tested",
+              "physicalPrint": "not_tested",
+              "https": "not_tested"
+            }
+          },
+          "compiledTarget": {
+            "imagePath": "__PRIVATE_LUMINANCE__",
+            "metadata": null,
+            "name": "steampunk-driveway-sign",
+            "type": "PLANAR",
+            "properties": {
+              "left": 0,
+              "top": 0,
+              "width": 960,
+              "height": 1280,
+              "isRotated": true,
+              "originalWidth": 960,
+              "originalHeight": 1280
+            },
+            "resources": {
+              "originalImage": "steampunk-driveway-sign_original.png",
+              "croppedImage": "steampunk-driveway-sign_cropped.png",
+              "thumbnailImage": "steampunk-driveway-sign_thumbnail.png",
+              "luminanceImage": "steampunk-driveway-sign_luminance.png"
+            },
+            "created": 1792689346944,
+            "updated": 1792689346944
+          },
+          "targetHash": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917",
+          "luminanceHash": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb"
+        },
+        "luminanceRelative": "image-targets/steampunk-driveway-sign_luminance.png"
+      }
+    },
+    {
+      "file": "reference-central.html",
+      "sha256": "53f79e728b0f7f2739cc361409f3bbc2386412d99ce1c89a91ab706bcf770121",
+      "config": {
+        "schemaVersion": 1,
+        "bundleHash": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf",
+        "modelHash": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+        "rendererHash": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f",
+        "targetHash": "f8fda2fe1ff52f90b76348889d5e9e6bfb5edbe28f40e96cda86aeec13d4423a",
+        "worldTracking": false,
+        "variant": "REF-central",
+        "disableColorMatch": true,
+        "target": {
+          "manifest": {
+            "schemaVersion": 1,
+            "contractVersion": "1.0.0",
+            "candidateId": "driveway-trial-central-20261025",
+            "wallId": 3,
+            "panelImagePx": [
+              2763,
+              1222
+            ],
+            "sourceCropPx": [
+              741,
+              131,
+              1280,
+              960
+            ],
+            "compiledCropInSourcePx": [
+              741,
+              131,
+              1280,
+              960
+            ],
+            "compiledTargetName": "steampunk-driveway-trial-central-20261025",
+            "compiledJsonPath": "image-targets/steampunk-driveway-trial-central-20261025.json",
+            "trackingImagePath": "image-targets/steampunk-driveway-trial-central-20261025_luminance.png",
+            "compiledMetadata": {
+              "type": "PLANAR",
+              "properties": {
+                "left": 0,
+                "top": 0,
+                "width": 960,
+                "height": 1280,
+                "isRotated": true,
+                "originalWidth": 960,
+                "originalHeight": 1280
+              }
+            },
+            "targetPoseCalibration": {
+              "verified": false,
+              "axes": "identity_provisional",
+              "rotationDeg": null,
+              "mirrorX": null,
+              "offsetPanel": null,
+              "notes": "Provisional display geometry; exact storage rotation verified separately, native phone axes/corners NOT MEASURED."
+            },
+            "verification": {
+              "status": "private_candidate",
+              "compiledTargetPresent": true,
+              "calibrationVerified": false,
+              "selectedByPhoneGate": false,
+              "engineRecognition": "not_tested",
+              "phoneTracking": "not_tested",
+              "physicalPrint": "not_tested",
+              "https": "not_published"
+            }
+          },
+          "compiledTarget": {
+            "imagePath": "__PRIVATE_LUMINANCE__",
+            "metadata": null,
+            "name": "steampunk-driveway-trial-central-20261025",
+            "type": "PLANAR",
+            "properties": {
+              "left": 0,
+              "top": 0,
+              "width": 960,
+              "height": 1280,
+              "isRotated": true,
+              "originalWidth": 960,
+              "originalHeight": 1280
+            },
+            "resources": {
+              "originalImage": "steampunk-driveway-trial-central-20261025_original.png",
+              "croppedImage": "steampunk-driveway-trial-central-20261025_cropped.png",
+              "thumbnailImage": "steampunk-driveway-trial-central-20261025_thumbnail.png",
+              "luminanceImage": "steampunk-driveway-trial-central-20261025_luminance.png"
+            },
+            "created": 1792919215724,
+            "updated": 1792919215724
+          },
+          "targetHash": "f8fda2fe1ff52f90b76348889d5e9e6bfb5edbe28f40e96cda86aeec13d4423a",
+          "luminanceHash": "d8c37e2e8d3033bf47ee3699ba156ac400d434a817ea67ebb91607de50223243"
+        },
+        "luminanceRelative": "references/central/steampunk-driveway-trial-central-20261025_luminance.png"
+      }
+    },
+    {
+      "file": "reference-wider.html",
+      "sha256": "9c8d04ee591c75bdcef49bbe199df5448693fbb95b062a85af6b4efe3101059c",
+      "config": {
+        "schemaVersion": 1,
+        "bundleHash": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf",
+        "modelHash": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+        "rendererHash": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f",
+        "targetHash": "b3805ec7fb3eea92ee303f047e215de3793e0e87b6f37ae32fd1e42ff7780270",
+        "worldTracking": false,
+        "variant": "REF-wider",
+        "disableColorMatch": true,
+        "target": {
+          "manifest": {
+            "schemaVersion": 1,
+            "contractVersion": "1.0.0",
+            "candidateId": "driveway-trial-wider-20261025",
+            "wallId": 3,
+            "panelImagePx": [
+              2763,
+              1222
+            ],
+            "sourceCropPx": [
+              381,
+              131,
+              2000,
+              960
+            ],
+            "compiledCropInSourcePx": [
+              381,
+              131,
+              2000,
+              960
+            ],
+            "compiledTargetName": "steampunk-driveway-trial-wider-20261025",
+            "compiledJsonPath": "image-targets/steampunk-driveway-trial-wider-20261025.json",
+            "trackingImagePath": "image-targets/steampunk-driveway-trial-wider-20261025_luminance.png",
+            "compiledMetadata": {
+              "type": "PLANAR",
+              "properties": {
+                "left": 0,
+                "top": 0,
+                "width": 960,
+                "height": 2000,
+                "isRotated": true,
+                "originalWidth": 960,
+                "originalHeight": 2000
+              }
+            },
+            "targetPoseCalibration": {
+              "verified": false,
+              "axes": "identity_provisional",
+              "rotationDeg": null,
+              "mirrorX": null,
+              "offsetPanel": null,
+              "notes": "Provisional display geometry; exact storage rotation verified separately, native phone axes/corners NOT MEASURED."
+            },
+            "verification": {
+              "status": "private_candidate",
+              "compiledTargetPresent": true,
+              "calibrationVerified": false,
+              "selectedByPhoneGate": false,
+              "engineRecognition": "not_tested",
+              "phoneTracking": "not_tested",
+              "physicalPrint": "not_tested",
+              "https": "not_published"
+            }
+          },
+          "compiledTarget": {
+            "imagePath": "__PRIVATE_LUMINANCE__",
+            "metadata": null,
+            "name": "steampunk-driveway-trial-wider-20261025",
+            "type": "PLANAR",
+            "properties": {
+              "left": 0,
+              "top": 0,
+              "width": 960,
+              "height": 2000,
+              "isRotated": true,
+              "originalWidth": 960,
+              "originalHeight": 2000
+            },
+            "resources": {
+              "originalImage": "steampunk-driveway-trial-wider-20261025_original.png",
+              "croppedImage": "steampunk-driveway-trial-wider-20261025_cropped.png",
+              "thumbnailImage": "steampunk-driveway-trial-wider-20261025_thumbnail.png",
+              "luminanceImage": "steampunk-driveway-trial-wider-20261025_luminance.png"
+            },
+            "created": 1792919215967,
+            "updated": 1792919215967
+          },
+          "targetHash": "b3805ec7fb3eea92ee303f047e215de3793e0e87b6f37ae32fd1e42ff7780270",
+          "luminanceHash": "abf38b844f83694c02f0d5de18b66a038fe6b8a9c79610e9c699e16fc96357bf"
+        },
+        "luminanceRelative": "references/wider/steampunk-driveway-trial-wider-20261025_luminance.png"
+      }
+    },
+    {
+      "file": "reference-full-wall.html",
+      "sha256": "ec56a81f8c2592edc4240a1afa6be2cd1a5fb87f35c2105f728283547022cae7",
+      "config": {
+        "schemaVersion": 1,
+        "bundleHash": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf",
+        "modelHash": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+        "rendererHash": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f",
+        "targetHash": "a5fa65ef260271180b18111a449e554df70521dc92e3a3885927dd54c5cd8309",
+        "worldTracking": false,
+        "variant": "REF-full-wall",
+        "disableColorMatch": true,
+        "target": {
+          "manifest": {
+            "schemaVersion": 1,
+            "contractVersion": "1.0.0",
+            "candidateId": "driveway-trial-full-wall-20261025",
+            "wallId": 3,
+            "panelImagePx": [
+              2763,
+              1222
+            ],
+            "sourceCropPx": [
+              0,
+              0,
+              2763,
+              1222
+            ],
+            "compiledCropInSourcePx": [
+              0,
+              0,
+              2763,
+              1222
+            ],
+            "compiledTargetName": "steampunk-driveway-trial-full-wall-20261025",
+            "compiledJsonPath": "image-targets/steampunk-driveway-trial-full-wall-20261025.json",
+            "trackingImagePath": "image-targets/steampunk-driveway-trial-full-wall-20261025_luminance.png",
+            "compiledMetadata": {
+              "type": "PLANAR",
+              "properties": {
+                "left": 0,
+                "top": 0,
+                "width": 1222,
+                "height": 2763,
+                "isRotated": true,
+                "originalWidth": 1222,
+                "originalHeight": 2763
+              }
+            },
+            "targetPoseCalibration": {
+              "verified": false,
+              "axes": "identity_provisional",
+              "rotationDeg": null,
+              "mirrorX": null,
+              "offsetPanel": null,
+              "notes": "Provisional display geometry; exact storage rotation verified separately, native phone axes/corners NOT MEASURED."
+            },
+            "verification": {
+              "status": "private_candidate",
+              "compiledTargetPresent": true,
+              "calibrationVerified": false,
+              "selectedByPhoneGate": false,
+              "engineRecognition": "not_tested",
+              "phoneTracking": "not_tested",
+              "physicalPrint": "not_tested",
+              "https": "not_published"
+            }
+          },
+          "compiledTarget": {
+            "imagePath": "__PRIVATE_LUMINANCE__",
+            "metadata": null,
+            "name": "steampunk-driveway-trial-full-wall-20261025",
+            "type": "PLANAR",
+            "properties": {
+              "left": 0,
+              "top": 0,
+              "width": 1222,
+              "height": 2763,
+              "isRotated": true,
+              "originalWidth": 1222,
+              "originalHeight": 2763
+            },
+            "resources": {
+              "originalImage": "steampunk-driveway-trial-full-wall-20261025_original.png",
+              "croppedImage": "steampunk-driveway-trial-full-wall-20261025_cropped.png",
+              "thumbnailImage": "steampunk-driveway-trial-full-wall-20261025_thumbnail.png",
+              "luminanceImage": "steampunk-driveway-trial-full-wall-20261025_luminance.png"
+            },
+            "created": 1792919216324,
+            "updated": 1792919216324
+          },
+          "targetHash": "a5fa65ef260271180b18111a449e554df70521dc92e3a3885927dd54c5cd8309",
+          "luminanceHash": "104451aa4ddbf30cfbe888543ea5127f2ed04053f2db7ba4128a35f6a5036cd1"
+        },
+        "luminanceRelative": "references/full-wall/steampunk-driveway-trial-full-wall-20261025_luminance.png"
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/driveway.jpg",
+      "source": "App/dist/assets/driveway.jpg",
+      "sha256": "fa0ede95427d79a89b036ab2684306ee4f74e27a39d5abc1c569358f49d037c2",
+      "bytes": 419241
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/driveway-qr.png",
+      "source": "App/dist/assets/driveway-qr.png",
+      "sha256": "37711ccd8b3bf8aa8435ac9467da4fe661387f921944f6cddc2d3cc21bf8949c",
+      "bytes": 903
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/driveway-target.png",
+      "source": "App/dist/assets/driveway-target.png",
+      "sha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88",
+      "bytes": 1908164
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/driveway-sample.html",
+      "source": "App/dist/assets/driveway-sample.html",
+      "sha256": "cddee19d98a5816f5b7f59617e048062548ca505b641ae45cbc75dcc8f52f882",
+      "bytes": 1565
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/driveway-adaptive.glb",
+      "source": "App/dist/assets/full-wall/driveway-adaptive.glb",
+      "sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+      "bytes": 27154392
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/studio_small_09_1k.hdr",
+      "source": "App/dist/assets/full-wall/studio_small_09_1k.hdr",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45",
+      "bytes": 1615248
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/image-targets/steampunk-driveway-sign.json",
+      "source": "App/dist/image-targets/steampunk-driveway-sign.json",
+      "sha256": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917",
+      "bytes": 639
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/image-targets/steampunk-driveway-sign_luminance.png",
+      "source": "App/dist/image-targets/steampunk-driveway-sign_luminance.png",
+      "sha256": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb",
+      "bytes": 397877
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/bundle.js.LICENSE.txt",
+      "source": "App/dist/bundle.js.LICENSE.txt",
+      "sha256": "8c9946dfc859a2bfb26cc541125631cd96e7110fa20a702eb19275c9d1658805",
+      "bytes": 163
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/NOTICES.txt",
+      "source": "App/dist/assets/NOTICES.txt",
+      "sha256": "1ac3ad12da0c0fff6e5f4e1696f2e42cd6121af113f8c5c58a3b141995c8a8ac",
+      "bytes": 263
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/MIT_NOTICES.txt",
+      "source": "App/dist/assets/MIT_NOTICES.txt",
+      "sha256": "16ad3f4b3959af130db6b1cf71721913445e3ea8ed68c4915357d0731077be33",
+      "bytes": 1061
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/XR_ENGINE_LICENSE.txt",
+      "source": "App/dist/assets/XR_ENGINE_LICENSE.txt",
+      "sha256": "910ef68267345289c25ad7f59f216e39a5bae49cb01c1678c55aab6aa2df4fe6",
+      "bytes": 15932
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/HDRI-PROVENANCE.json",
+      "source": "App/dist/assets/full-wall/HDRI-PROVENANCE.json",
+      "sha256": "e308302dfa2f8c02334d5cf676da76a991ae37ef4f78bed988537abec0c21367",
+      "bytes": 756
+    },
+    {
+      "path": "Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/THREE-LICENSE.txt",
+      "source": "App/dist/assets/full-wall/THREE-LICENSE.txt",
+      "sha256": "dfbcc6bc161ba4d2f56cbdf0ad8b85b3879fb2534980f2acb0465350be3a7511",
+      "bytes": 1104
+    },
+    {
+      "path": null,
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/central/target-manifest.json",
+      "sha256": "4c6909b8d9479cd850f105cda67240f06196a0ef4f58322172d1efdbdc17b9d1",
+      "bytes": 1377
+    },
+    {
+      "path": null,
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/central/image-targets/steampunk-driveway-trial-central-20261025.json",
+      "sha256": "f8fda2fe1ff52f90b76348889d5e9e6bfb5edbe28f40e96cda86aeec13d4423a",
+      "bytes": 747
+    },
+    {
+      "path": "references/central/steampunk-driveway-trial-central-20261025_luminance.png",
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/central/image-targets/steampunk-driveway-trial-central-20261025_luminance.png",
+      "sha256": "d8c37e2e8d3033bf47ee3699ba156ac400d434a817ea67ebb91607de50223243",
+      "bytes": 397877
+    },
+    {
+      "path": null,
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/wider/target-manifest.json",
+      "sha256": "1b26e21c822c4b3738fcd573d053006cbda946c30b343e4039bac121c10c23bd",
+      "bytes": 1369
+    },
+    {
+      "path": null,
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/wider/image-targets/steampunk-driveway-trial-wider-20261025.json",
+      "sha256": "b3805ec7fb3eea92ee303f047e215de3793e0e87b6f37ae32fd1e42ff7780270",
+      "bytes": 735
+    },
+    {
+      "path": "references/wider/steampunk-driveway-trial-wider-20261025_luminance.png",
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/wider/image-targets/steampunk-driveway-trial-wider-20261025_luminance.png",
+      "sha256": "abf38b844f83694c02f0d5de18b66a038fe6b8a9c79610e9c699e16fc96357bf",
+      "bytes": 271794
+    },
+    {
+      "path": null,
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/full-wall/target-manifest.json",
+      "sha256": "52a46e2c283b5058a6297d87afa04a53a4e22859b2d2826fe328807a144d29a3",
+      "bytes": 1381
+    },
+    {
+      "path": null,
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/full-wall/image-targets/steampunk-driveway-trial-full-wall-20261025.json",
+      "sha256": "a5fa65ef260271180b18111a449e554df70521dc92e3a3885927dd54c5cd8309",
+      "bytes": 761
+    },
+    {
+      "path": "references/full-wall/steampunk-driveway-trial-full-wall-20261025_luminance.png",
+      "source": "Models/driveway-target-trials/candidates-2026-10-25/full-wall/image-targets/steampunk-driveway-trial-full-wall-20261025_luminance.png",
+      "sha256": "104451aa4ddbf30cfbe888543ea5127f2ed04053f2db7ba4128a35f6a5036cd1",
+      "bytes": 243671
+    }
+  ],
+  "sharedRenderer": "Models/driveway-target-trials/runtime/renderer-ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f.js",
+  "index_sha256": "5b4ae53fc1313f9c49efde41d2b4624e919f9ccd577fd92cd1f39eafd42b1d85",
+  "publication": "EXPERIMENTAL_OPT_IN_RELEASE; deployment verified separately by release commit and HTTPS hashes",
+  "gpu_browser": "PASS_HARDWARE_DESKTOP_LOCAL_AND_STAGED_CONTROLLED_XR_ONLY",
+  "native_recognition": "NOT_ESTABLISHED",
+  "world_phone": "NOT_RUN",
+  "print_acceptance": "NOT_RUN",
+  "defaultPolicy": "Bundled immediate root hiding and150ms phase recovery preserved; no configuration override",
+  "snowConfound": "B0 adds snow when native world pose valid. Reduced motion on both suppresses visible/animated snow, but B0 allocation/reset/check overhead remains."
+}
