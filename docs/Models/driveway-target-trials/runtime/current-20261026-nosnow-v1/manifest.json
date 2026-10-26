@@ -19,7 +19,7 @@
   "files": [
     {
       "file": "image.html",
-      "sha256": "8acb7dcffea89eac99cb72d508d09d35f7f7645c0f44b18ee72934e67264aa46",
+      "sha256": "0a422440bdeea2c9d9d142a3860f9ad34a01b17f46ed0d3cfe19de916e6c5540",
       "config": {
         "schemaVersion": 1,
         "bundleHash": "68b9cf57bc5725156fe478ae060a48721277b7bc3379ffeb5fc20a676c3f3696",
@@ -120,7 +120,7 @@
     },
     {
       "file": "world.html",
-      "sha256": "5b501cfc35f99b99f7cd506de010abc4a2be96d3b28265a138a165bfee5a400a",
+      "sha256": "44de8db87a55c4762201b5f3ffba4c9f0d1b12730c2991eca11801c8f17edffd",
       "config": {
         "schemaVersion": 1,
         "bundleHash": "68b9cf57bc5725156fe478ae060a48721277b7bc3379ffeb5fc20a676c3f3696",
