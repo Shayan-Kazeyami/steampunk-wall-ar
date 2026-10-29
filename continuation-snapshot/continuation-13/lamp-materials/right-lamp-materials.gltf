@@ -1,0 +1,1861 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "C13 exact source assigned lamp subsets"
+  },
+  "extensionsUsed": [
+    "KHR_materials_ior",
+    "KHR_materials_transmission",
+    "KHR_materials_emissive_strength"
+  ],
+  "materials": [
+    {
+      "name": "plastic",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      },
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "extensions": {
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.0
+        },
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 0.0
+        }
+      },
+      "extras": {
+        "source_family": "plastic",
+        "scope": "constant active source sockets; no GI equivalence"
+      }
+    },
+    {
+      "name": "Emission",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      },
+      "emissiveFactor": [
+        0.5805548429489136,
+        0.22875744104385376,
+        0.008749574422836304
+      ],
+      "extensions": {
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1.0
+        },
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 20000.0
+        }
+      },
+      "extras": {
+        "source_family": "Emission",
+        "scope": "constant active source sockets; no GI equivalence"
+      }
+    },
+    {
+      "name": "silver",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 1.0,
+        "roughnessFactor": 0.4000000059604645
+      },
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "extensions": {
+        "KHR_materials_ior": {
+          "ior": 1.4500000476837158
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 0.0
+        },
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 0.0
+        }
+      },
+      "extras": {
+        "source_family": "silver",
+        "scope": "constant active source sockets; no GI equivalence"
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "plastic",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Emission",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "silver",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "plastic_Left bulb.048",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.048",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.049",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.049",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.050",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.050",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.051",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.051",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.052",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.052",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.053",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.053",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.054",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.054",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.055",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.055",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.056",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.056",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.057",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.057",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.058",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754352331161499,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.058",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.059",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.059",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.060",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.060",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.061",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.061",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.062",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.062",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "plastic_Left bulb.063",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754313588142395,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.063",
+        "source_family": "plastic",
+        "ar_source_subset": "historical_source_material:plastic",
+        "source_assigned_polygons": 2640,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.048",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.048",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.049",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.049",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.050",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.050",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.051",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.051",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.052",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.052",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.053",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.053",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.054",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.054",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.055",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.055",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.056",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.056",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.057",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.057",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.058",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754352331161499,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.058",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.059",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.059",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.060",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.060",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.061",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.061",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.062",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.062",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "Emission_Left bulb.063",
+      "mesh": 1,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754313588142395,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.063",
+        "source_family": "Emission",
+        "ar_source_subset": "historical_source_material:Emission",
+        "source_assigned_polygons": 1200,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.048",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.048",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.049",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.049",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.050",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.050",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.051",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.051",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.052",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.052",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.053",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.053",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.054",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.054",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.055",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.055",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.056",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.056",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.057",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.057",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.058",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754352331161499,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.058",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.059",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.059",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.060",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.060",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.061",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.061",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.062",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.062",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    },
+    {
+      "name": "silver_Left bulb.063",
+      "mesh": 2,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754313588142395,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.063",
+        "source_family": "silver",
+        "ar_source_subset": "historical_source_material:silver",
+        "source_assigned_polygons": 621,
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "runtime_contract": "C13_CONSTANT_SOURCE_SOCKETS_v1"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    }
+  ],
+  "scene": 0,
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 15480,
+      "type": "VEC3",
+      "min": [
+        -0.007346898317337036,
+        -0.1060245931148529,
+        -0.00861978530883789
+      ],
+      "max": [
+        0.009060531854629517,
+        -0.04858620464801788,
+        0.00861978530883789
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 15480,
+      "type": "VEC3",
+      "min": [
+        -0.9999387264251709,
+        -0.9998804330825806,
+        -1.0
+      ],
+      "max": [
+        0.9998685121536255,
+        0.9998809099197388,
+        0.9999999403953552
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 15480,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 15480,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 7200,
+      "type": "VEC3",
+      "min": [
+        -0.007397770881652832,
+        -0.10423058271408081,
+        -0.008515417575836182
+      ],
+      "max": [
+        0.008810073137283325,
+        -0.05031046271324158,
+        0.008515387773513794
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 7200,
+      "type": "VEC3",
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9999927878379822
+      ],
+      "max": [
+        1.0,
+        1.0,
+        0.9999927878379822
+      ]
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 7200,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 7200,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 3600,
+      "type": "VEC3",
+      "min": [
+        -0.012122094631195068,
+        -0.025406427681446075,
+        -0.011937916278839111
+      ],
+      "max": [
+        0.012122094631195068,
+        0.0,
+        0.011937946081161499
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 3600,
+      "type": "VEC3",
+      "min": [
+        -1.0,
+        -1.0,
+        -0.9850804209709167
+      ],
+      "max": [
+        0.999975323677063,
+        1.0,
+        0.9865381717681885
+      ]
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 3600,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5125,
+      "count": 3600,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 185760
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 185760,
+      "byteLength": 185760
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 371520,
+      "byteLength": 123840
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 495360,
+      "byteLength": 61920
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 557280,
+      "byteLength": 86400
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 643680,
+      "byteLength": 86400
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 730080,
+      "byteLength": 57600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 787680,
+      "byteLength": 28800
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 816480,
+      "byteLength": 43200
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 859680,
+      "byteLength": 43200
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 902880,
+      "byteLength": 28800
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 931680,
+      "byteLength": 14400
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "right-lamp-materials.bin",
+      "byteLength": 946080
+    }
+  ]
+}

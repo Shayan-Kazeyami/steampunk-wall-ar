@@ -1,0 +1,1022 @@
+{
+  "plastic": {
+    "source_graph": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "inputs": [
+            {
+              "name": "Base Color",
+              "value": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Metallic",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Roughness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "IOR",
+              "value": 1.4500000476837158,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Alpha",
+              "value": 1.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Wall",
+              "value": false,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Weight",
+              "value": 0.0,
+              "unavailable": true,
+              "enabled": false,
+              "linked": false
+            },
+            {
+              "name": "Diffuse Roughness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Radius",
+              "value": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Scale",
+              "value": 0.05000000074505806,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface IOR",
+              "value": 1.399999976158142,
+              "unavailable": true,
+              "enabled": false,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Anisotropy",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Specular IOR Level",
+              "value": 0.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Specular Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Anisotropic",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Anisotropic Rotation",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Tangent",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Transmission Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Roughness",
+              "value": 0.029999999329447746,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat IOR",
+              "value": 1.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Roughness",
+              "value": 0.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Emission Color",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Emission Strength",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Film Thickness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Film IOR",
+              "value": 1.3300000429153442,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            }
+          ]
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "inputs": [
+            {
+              "name": "Surface",
+              "value": null,
+              "unavailable": false,
+              "enabled": true,
+              "linked": true
+            },
+            {
+              "name": "Volume",
+              "value": null,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Displacement",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thickness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "active_output": "Material Output",
+    "reachable_nodes": [
+      "Material Output",
+      "Principled BSDF"
+    ],
+    "disconnected_nodes": [],
+    "unavailable_weight": [
+      [
+        true,
+        0.0
+      ]
+    ]
+  },
+  "Emission": {
+    "source_graph": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "inputs": [
+            {
+              "name": "Base Color",
+              "value": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Metallic",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Roughness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "IOR",
+              "value": 1.4500000476837158,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Alpha",
+              "value": 1.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Wall",
+              "value": false,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Weight",
+              "value": 0.0,
+              "unavailable": true,
+              "enabled": false,
+              "linked": false
+            },
+            {
+              "name": "Diffuse Roughness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Radius",
+              "value": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Scale",
+              "value": 0.05000000074505806,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface IOR",
+              "value": 1.399999976158142,
+              "unavailable": true,
+              "enabled": false,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Anisotropy",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Specular IOR Level",
+              "value": 0.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Specular Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Anisotropic",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Anisotropic Rotation",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Tangent",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Transmission Weight",
+              "value": 1.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Roughness",
+              "value": 0.029999999329447746,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat IOR",
+              "value": 1.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Roughness",
+              "value": 0.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Emission Color",
+              "value": [
+                0.5805548429489136,
+                0.22875744104385376,
+                0.008749574422836304,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Emission Strength",
+              "value": 20000.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Film Thickness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Film IOR",
+              "value": 1.3300000429153442,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            }
+          ]
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "inputs": [
+            {
+              "name": "Surface",
+              "value": null,
+              "unavailable": false,
+              "enabled": true,
+              "linked": true
+            },
+            {
+              "name": "Volume",
+              "value": null,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Displacement",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thickness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            }
+          ]
+        },
+        {
+          "name": "Blackbody",
+          "type": "BLACKBODY",
+          "inputs": [
+            {
+              "name": "Temperature",
+              "value": 1900.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "active_output": "Material Output",
+    "reachable_nodes": [
+      "Material Output",
+      "Principled BSDF"
+    ],
+    "disconnected_nodes": [
+      "Blackbody"
+    ],
+    "unavailable_weight": [
+      [
+        true,
+        0.0
+      ]
+    ]
+  },
+  "silver": {
+    "source_graph": {
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "inputs": [
+            {
+              "name": "Base Color",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Metallic",
+              "value": 1.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Roughness",
+              "value": 0.4000000059604645,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "IOR",
+              "value": 1.4500000476837158,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Alpha",
+              "value": 1.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Wall",
+              "value": false,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Weight",
+              "value": 0.0,
+              "unavailable": true,
+              "enabled": false,
+              "linked": false
+            },
+            {
+              "name": "Diffuse Roughness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Radius",
+              "value": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Scale",
+              "value": 0.05000000074505806,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Subsurface IOR",
+              "value": 1.399999976158142,
+              "unavailable": true,
+              "enabled": false,
+              "linked": false
+            },
+            {
+              "name": "Subsurface Anisotropy",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Specular IOR Level",
+              "value": 0.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Specular Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Anisotropic",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Anisotropic Rotation",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Tangent",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Transmission Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Roughness",
+              "value": 0.029999999329447746,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat IOR",
+              "value": 1.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Coat Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Weight",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Roughness",
+              "value": 0.5,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Sheen Tint",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Emission Color",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Emission Strength",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Film Thickness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thin Film IOR",
+              "value": 1.3300000429153442,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            }
+          ]
+        },
+        {
+          "name": "Material Output",
+          "type": "OUTPUT_MATERIAL",
+          "inputs": [
+            {
+              "name": "Surface",
+              "value": null,
+              "unavailable": false,
+              "enabled": true,
+              "linked": true
+            },
+            {
+              "name": "Volume",
+              "value": null,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Displacement",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            },
+            {
+              "name": "Thickness",
+              "value": 0.0,
+              "unavailable": false,
+              "enabled": true,
+              "linked": false
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from_node": "Principled BSDF",
+          "from_socket": "BSDF",
+          "to_node": "Material Output",
+          "to_socket": "Surface"
+        }
+      ]
+    },
+    "active_output": "Material Output",
+    "reachable_nodes": [
+      "Material Output",
+      "Principled BSDF"
+    ],
+    "disconnected_nodes": [],
+    "unavailable_weight": [
+      [
+        true,
+        0.0
+      ]
+    ]
+  }
+}

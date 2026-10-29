@@ -1,0 +1,57 @@
+{
+  "status": "PASS_C13_CURRENT_SOURCE_COVERAGE_LEFT_GLASS_AND_RIGHT_MATERIAL_ASSEMBLY_REVIEWED",
+  "source_coverage": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\inventory\\SOURCE_COVERAGE.json",
+    "exists": true,
+    "sha256": "e03e57e8eeeb6615f738a241ff1e6e56f017907bd70c0303b36344900561f6a0",
+    "bytes": 48892
+  },
+  "left_glass_review": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\inventory\\LEFT_GLASS_REVIEW.json",
+    "sha256": "6c8c71c614faff04c32a360dc25ce59f813060c49267fbf6e2e7ce13f278a8aa",
+    "bytes": 6812
+  },
+  "right_materials_review": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\inventory\\RIGHT_MATERIALS_REVIEW.json",
+    "sha256": "45f706cca6e3f48d8f6f359eca7802e888744a7dbe7fa2f857eb5ff03a7ed2d2",
+    "bytes": 12464
+  },
+  "current_lane_results": {
+    "left": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\RESULT.json",
+      "sha256": "7ef001af8f634575b323ed0bf3464a1b022f9c2d90cf472515fdc42eb1789736",
+      "bytes": 10096
+    },
+    "right": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\RESULT.json",
+      "sha256": "2f2d251b229d3e271c15468cdd1edb913d263dd608baf544e6fa76bb7a03aa7d",
+      "bytes": 7932
+    },
+    "right_assembly_browser": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\ASSEMBLY_BROWSER_RESULT.json",
+      "sha256": "d0c8c6b9ddea8e2e0a0d26a80aaed4adc7ca2670e4258b937b7c01a176c6ad32",
+      "bytes": 8006
+    }
+  },
+  "known_open_gate": "C11 empty-reference shadow receiver guard remains FAILED and open; no C13 claim closes it.",
+  "no_workers_launched_by_inventory_review": true,
+  "all_reviewed_harness_hashes_match": true,
+  "right_browser_workers_closed": {
+    "three_family": {
+      "status": "EXITED",
+      "server_pid": 46428,
+      "server_closed": true,
+      "browser_exit": 0,
+      "seconds": 3.337836980819702,
+      "prelaunch_free_RAM_GiB": 31.22
+    },
+    "five_family_assembly": {
+      "status": "EXITED",
+      "server_pid": 55544,
+      "server_closed": true,
+      "browser_exit": 0,
+      "seconds": 2.531785011291504,
+      "prelaunch_free_RAM_GiB": 29.43
+    }
+  }
+}

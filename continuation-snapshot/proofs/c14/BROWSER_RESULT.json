@@ -1,0 +1,124 @@
+{
+  "status": "PASS_HARDWARE_ALL48_SOURCE_FAMILY_BINDINGS_AND_MAPPED_SOCKETS",
+  "diagnostics": {
+    "status": "READY",
+    "contract": {
+      "validated": 48,
+      "scope": "Exact source family bindings and mapped active sockets; shadow flags untouched; no GI equivalence"
+    },
+    "meshes": 48,
+    "triangles": 140160,
+    "materials": 3,
+    "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5060 Ti (0x00002D04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "supportedExtensions": [
+      "KHR_materials_clearcoat",
+      "KHR_texture_basisu",
+      "EXT_texture_webp",
+      "EXT_texture_avif",
+      "KHR_materials_sheen",
+      "KHR_materials_transmission",
+      "KHR_materials_volume",
+      "KHR_materials_ior",
+      "KHR_materials_emissive_strength",
+      "KHR_materials_specular",
+      "KHR_materials_iridescence",
+      "KHR_materials_anisotropy",
+      "KHR_lights_punctual",
+      "EXT_meshopt_compression",
+      "EXT_mesh_gpu_instancing"
+    ],
+    "castShadow": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "material": {
+      "ior": 1.4500000476837158,
+      "transmission": 0,
+      "roughness": 0,
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    }
+  },
+  "family_visible_witnesses": {
+    "plastic": {
+      "visible_vs_empty_pixels_above5": 2240,
+      "restored_exact": true
+    },
+    "Emission": {
+      "visible_vs_empty_pixels_above5": 13950,
+      "restored_exact": true
+    },
+    "silver": {
+      "visible_vs_empty_pixels_above5": 452651,
+      "restored_exact": true
+    }
+  },
+  "negative_controls": [
+    "late_wrong_source_hash",
+    "late_wrong_final_roughness",
+    "wrong_emission_strength"
+  ],
+  "applicationErrors": [],
+  "httpErrors": [],
+  "limits": [
+    "Constant source active socket mapping; no complete Principled/GI/radiometric/wholewall/phone equivalence",
+    "Emission is luminous surface only, no standard glTF indirect scene illumination"
+  ],
+  "harness_hashes": {
+    "browser.html": "413636a9cf2e18d63702a584ac92ae50b08f261b8a0b93c46252a8a0f791bd20",
+    "check_browser.py": "c71d74c333b521c61bd4c2f809f21956b672826011a7c3ca8c1d81c1c254b1fb",
+    "lamp-contract.mjs": "6d72e185969564055f806311ca79687d018a7814abbda794dc3d55b73683c471",
+    "runtime-manifest.json": "02d25bb4bbcce2a8de7e7eb2ef7c32a0842dcf5859e0631748d5734cd8c80a82",
+    "left-lamp-materials.gltf": "33a30ff6e353518784f56dab962a681b14997427a77968bbe67491f47e0efd9c",
+    "left-lamp-materials.bin": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664"
+  }
+}

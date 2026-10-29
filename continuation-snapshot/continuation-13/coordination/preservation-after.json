@@ -1,0 +1,281 @@
+{
+  "timeUtc": "2026-10-29T15:50:02.796689+00:00",
+  "protectedMetadata": {
+    "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\source-baselines\\v79-6879ac01468b\\steampunk_V79.blend": {
+      "bytes": 1764063343,
+      "mtimeNs": 1792584054973404900,
+      "fileId": 1407374885622489
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\01_House_Number_Wall_150PPI_16bit_CMYK_LZW.tif": {
+      "bytes": 287151005,
+      "mtimeNs": 1792996648537314200,
+      "fileId": 1407374885620425
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\01_House_Number_Wall_150PPI_16bit_CMYK_LZW_V2.tif": {
+      "bytes": 305528746,
+      "mtimeNs": 1793022725656104600,
+      "fileId": 3377699722421686
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\01_House_Number_Wall_16bit_CMYK_V2.pdf": {
+      "bytes": 260356498,
+      "mtimeNs": 1793022737129077700,
+      "fileId": 2814749769143507
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\01_House_Number_Wall_16bit_RGB_LZW_V2.tif": {
+      "bytes": 262860804,
+      "mtimeNs": 1793022712703928700,
+      "fileId": 1970324839011548
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\01_House_Number_Wall_Preview_RGB_V2.png": {
+      "bytes": 4321644,
+      "mtimeNs": 1793022728435853500,
+      "fileId": 2251799815722201
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\02_Left_Wall_150PPI_16bit_CMYK_LZW.tif": {
+      "bytes": 3267051462,
+      "mtimeNs": 1792996694743981600,
+      "fileId": 1407374885620428
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\02_Left_Wall_150PPI_16bit_CMYK_LZW_V2.tif": {
+      "bytes": 3309010743,
+      "mtimeNs": 1793021118480807000,
+      "fileId": 11258999068981060
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\02_Left_Wall_16bit_CMYK_V2.pdf": {
+      "bytes": 2920995459,
+      "mtimeNs": 1793022861999560000,
+      "fileId": 844424932168945
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\02_Left_Wall_16bit_RGB_LZW_V2.tif": {
+      "bytes": 2958366799,
+      "mtimeNs": 1793020988765705600,
+      "fileId": 2814749767667858
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\02_Left_Wall_Preview_RGB_V2.png": {
+      "bytes": 3277141,
+      "mtimeNs": 1793022758766862000,
+      "fileId": 1688849862300878
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\03_Right_Wall_150PPI_16bit_CMYK_LZW.tif": {
+      "bytes": 2790578703,
+      "mtimeNs": 1792996750289408800,
+      "fileId": 2251799815752395
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\03_Right_Wall_150PPI_16bit_CMYK_LZW_V2.tif": {
+      "bytes": 2824243969,
+      "mtimeNs": 1793022598462187100,
+      "fileId": 4785074604642490
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\03_Right_Wall_16bit_CMYK_V2.pdf": {
+      "bytes": 2475997111,
+      "mtimeNs": 1793023096794903900,
+      "fileId": 844424932168979
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\03_Right_Wall_16bit_RGB_LZW_V2.tif": {
+      "bytes": 2508829777,
+      "mtimeNs": 1793022480628893400,
+      "fileId": 1407374885590140
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\03_Right_Wall_Preview_RGB_V2.png": {
+      "bytes": 3608807,
+      "mtimeNs": 1793023006702470800,
+      "fileId": 1125899908879611
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\04_Driveway_Wall_150PPI_16bit_CMYK_LZW.tif": {
+      "bytes": 2716532497,
+      "mtimeNs": 1792996804206849100,
+      "fileId": 2251799815752401
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\05_Narrow_Strip_150PPI_16bit_CMYK_LZW.tif": {
+      "bytes": 206917981,
+      "mtimeNs": 1792996820343513600,
+      "fileId": 1688849862331092
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\06_Garage_L_150PPI_16bit_CMYK_LZW.tif": {
+      "bytes": 1608831890,
+      "mtimeNs": 1792996844880376200,
+      "fileId": 1407374885620495
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\07_Garage_R_150PPI_16bit_CMYK_LZW.tif": {
+      "bytes": 1607655498,
+      "mtimeNs": 1792996873898252500,
+      "fileId": 1688849862331144
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\README_PRINTING.txt": {
+      "bytes": 822,
+      "mtimeNs": 1792997004371564800,
+      "fileId": 1407374885620543
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\README_V2.txt": {
+      "bytes": 1095,
+      "mtimeNs": 1793023379224151500,
+      "fileId": 562949955489986
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_CMYK_TIFF_LZW_2026-10-26\\SHA256SUMS_V2.txt": {
+      "bytes": 1257,
+      "mtimeNs": 1793023379224151500,
+      "fileId": 562949955489985
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\01_Print_PDF\\01_House_Number_Wall_16bit_CMYK.pdf": {
+      "bytes": 247778147,
+      "mtimeNs": 1792611881398093700,
+      "fileId": 2814749769168802
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\01_Print_PDF\\02_Left_Wall_16bit_CMYK.pdf": {
+      "bytes": 2921290235,
+      "mtimeNs": 1792611884487496700,
+      "fileId": 2814749769168805
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\01_Print_PDF\\03_Right_Wall_16bit_CMYK.pdf": {
+      "bytes": 2476723916,
+      "mtimeNs": 1792611890122509900,
+      "fileId": 2814749769168808
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\01_Print_PDF\\04_Driveway_Wall_16bit_CMYK.pdf": {
+      "bytes": 2438882636,
+      "mtimeNs": 1792611895548089700,
+      "fileId": 2814749769168811
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\01_Print_PDF\\05_Narrow_Strip_16bit_CMYK.pdf": {
+      "bytes": 186381676,
+      "mtimeNs": 1792611902266699700,
+      "fileId": 2814749769168814
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\01_Print_PDF\\06_Garage_L_16bit_CMYK.pdf": {
+      "bytes": 1485096123,
+      "mtimeNs": 1792611906493233200,
+      "fileId": 2814749769168817
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\01_Print_PDF\\07_Garage_R_16bit_CMYK.pdf": {
+      "bytes": 1485213190,
+      "mtimeNs": 1792611912662726200,
+      "fileId": 2814749769168820
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\02_RGB_TIFF_Masters\\01_House_Number_Wall_16bit_RGB.tif": {
+      "bytes": 256712253,
+      "mtimeNs": 1792611881645686200,
+      "fileId": 2814749769168803
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\02_RGB_TIFF_Masters\\02_Left_Wall_16bit_RGB.tif": {
+      "bytes": 2959735889,
+      "mtimeNs": 1792611887317983000,
+      "fileId": 2814749769168806
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\02_RGB_TIFF_Masters\\03_Right_Wall_16bit_RGB.tif": {
+      "bytes": 2510650370,
+      "mtimeNs": 1792611893117273200,
+      "fileId": 2814749769168809
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\02_RGB_TIFF_Masters\\04_Driveway_Wall_16bit_RGB.tif": {
+      "bytes": 2464895534,
+      "mtimeNs": 1792611901953012600,
+      "fileId": 2814749769168812
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\02_RGB_TIFF_Masters\\05_Narrow_Strip_16bit_RGB.tif": {
+      "bytes": 185256842,
+      "mtimeNs": 1792611902732275600,
+      "fileId": 2814749769168815
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\02_RGB_TIFF_Masters\\06_Garage_L_16bit_RGB.tif": {
+      "bytes": 1501441384,
+      "mtimeNs": 1792611909700405600,
+      "fileId": 2814749769168818
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\02_RGB_TIFF_Masters\\07_Garage_R_16bit_RGB.tif": {
+      "bytes": 1501651425,
+      "mtimeNs": 1792611915276973300,
+      "fileId": 2814749769168821
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\03_Reference_Previews\\01_House_Number_Wall_REFERENCE.png": {
+      "bytes": 2935607,
+      "mtimeNs": 1792611881652424700,
+      "fileId": 2814749769168804
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\03_Reference_Previews\\02_Left_Wall_REFERENCE.png": {
+      "bytes": 2001228,
+      "mtimeNs": 1792611887391126900,
+      "fileId": 2814749769168807
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\03_Reference_Previews\\03_Right_Wall_REFERENCE.png": {
+      "bytes": 2310582,
+      "mtimeNs": 1792611893122310300,
+      "fileId": 2814749769168810
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\03_Reference_Previews\\04_Driveway_Wall_REFERENCE.png": {
+      "bytes": 2113901,
+      "mtimeNs": 1792611902002596300,
+      "fileId": 2814749769168813
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\03_Reference_Previews\\05_Narrow_Strip_REFERENCE.png": {
+      "bytes": 920361,
+      "mtimeNs": 1792611902812684800,
+      "fileId": 2814749769168816
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\03_Reference_Previews\\06_Garage_L_REFERENCE.png": {
+      "bytes": 4442410,
+      "mtimeNs": 1792611909813099500,
+      "fileId": 2814749769168819
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\03_Reference_Previews\\07_Garage_R_REFERENCE.png": {
+      "bytes": 4453140,
+      "mtimeNs": 1792611915452995600,
+      "fileId": 3096224745879428
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\04_Color_Profiles\\ISOcoated_v2_300_eci.icc": {
+      "bytes": 1829093,
+      "mtimeNs": 1792611915461182900,
+      "fileId": 3096224745879479
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\CLIENT_DELIVERY\\Steampunk_Wall_Prints_2026-10-22\\04_Color_Profiles\\sRGB_Color_Space_Profile.icm": {
+      "bytes": 3144,
+      "mtimeNs": 1792611915465877900,
+      "fileId": 2814749769168825
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\steampunk_V79.blend": {
+      "bytes": 183947519,
+      "mtimeNs": 1793002780162602400,
+      "fileId": 1970324839042796
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\steampunk_V79.blend1": {
+      "bytes": 1764063343,
+      "mtimeNs": 1792584054973404900,
+      "fileId": 1407374885614796
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\steampunk_V80.blend": {
+      "bytes": 184193654,
+      "mtimeNs": 1793003145913521500,
+      "fileId": 1688849862332148
+    },
+    "D:\\Shayan\\Projects\\Wall-Print-Steampunk\\steampunk_V80.blend1": {
+      "bytes": 184195562,
+      "mtimeNs": 1793003125568232800,
+      "fileId": 1688849862332147
+    }
+  },
+  "appStatus": " M config/webpack.config.js\n M docs/bundle.js\n M docs/index.html\n M package.json\n M src/effects/evidence/contract-check.js\n M src/effects/index.js\n M src/index.html\n M src/main.js\n M src/shared/spec.json\n M src/tracking/index.js\n M src/ui/controller.js\n M src/ui/ui.css\n?? .github/\n?? FULL_WALL_AR.md\n?? assets/targets/driveway-sign.compiler.log\n?? assets/targets/driveway-sign.png\n?? assets/targets/driveway-sign.provenance.json\n?? config/targets/\n?? config/wall-color-reference.json\n?? docs/assets/driveway-sample.html\n?? docs/assets/driveway.jpg\n?? docs/experience/\n?? docs/image-targets/steampunk-driveway-sign.json\n?? docs/image-targets/steampunk-driveway-sign_luminance.png\n?? image-targets/steampunk-driveway-sign.json\n?? image-targets/steampunk-driveway-sign_cropped.png\n?? image-targets/steampunk-driveway-sign_luminance.png\n?? image-targets/steampunk-driveway-sign_original.png\n?? image-targets/steampunk-driveway-sign_thumbnail.png\n?? src/assets/driveway-qr.png\n?? src/assets/driveway-sample.html\n?? src/assets/driveway-target.png\n?? src/assets/driveway.jpg\n?? src/assets/full-wall/\n?? src/catalog/\n?? src/full-wall/\n?? src/shared/field-session.js\n?? src/shared/load-preview.js\n?? src/shared/load-wall.js\n?? src/shared/render-benchmark.js\n?? src/shared/tracking-events.js\n?? src/shared/world-snow.js\n?? src/tracking/camera-lighting.js\n?? src/tracking/wall-color-match.js\n?? src/tracking/wall-coverage.js\n?? tests/\n?? tools/\n",
+  "appChangedTrackedHashes": {
+    "config/webpack.config.js": "a66dd73124b163b50ec82506086ff09d602857251027d56d2be65ec93d1cae24",
+    "docs/bundle.js": "721969b6f9d2d2a246dec7da903decde95fb995c9d00f9104d36e59868a9b8ed",
+    "docs/index.html": "65bc69db1bcbebf2cb926359ef74ef18651bc6b477026d2f733c41d43f99d8dd",
+    "package.json": "955b1d878eb619e50cce19bbf47569d40d731bbf3e762fafb1c79f7318c50e80",
+    "src/effects/evidence/contract-check.js": "6d082d844a08115e1a73924e6eb393007a796d31c4e2bf9a4f261129178f6a05",
+    "src/effects/index.js": "26440653a48ef581811abe66df8291c01775f7d6c50e8f37e13baed7bc3f59c4",
+    "src/index.html": "1068c37b3f4be3639e2e50665b3d03fdf20b91c6620b9a72da6b5d74838a9b21",
+    "src/main.js": "63ad467065581bd8b50803b9025b8241bd7067fbb1e0e635d06c4c84e6ded4cc",
+    "src/shared/spec.json": "f91722263e1beb516762a7be0b71aa5b2d5fab3e7a197aee626ff2195db06ab5",
+    "src/tracking/index.js": "49405e2c10037bde885df003dd878b638784aa72d5e346e72660fa7290a65728",
+    "src/ui/controller.js": "4eee8934b7bb10032d89bb420004e8793c7568bc4269f5ff7a0f17c4bc7c1160",
+    "src/ui/ui.css": "3a5db16e1f86cf775bf43af730d18bc4c5d19ecec39ce23864ad152e3c741c72"
+  },
+  "publishingStatus": "",
+  "publishingHead": "ff3f90646a7c888de9470d252b64ded47f3febc4",
+  "scope": "Exact listed metadata and App tracked dirty-file hashes; no redundant print verification or recursive junction traversal.",
+  "checks": {
+    "protectedMetadata": true,
+    "appStatus": true,
+    "appChangedTrackedHashes": true,
+    "publishingStatus": true,
+    "publishingHead": true
+  },
+  "status": "PASS"
+}

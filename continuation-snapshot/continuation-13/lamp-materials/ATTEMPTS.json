@@ -1,0 +1,37 @@
+{
+  "attempts": [
+    {
+      "stage": "CPU extraction prelaunch",
+      "status": "REFUSED_NO_WORKER",
+      "free_RAM_GiB": 11.92,
+      "minimum_RAM_GiB": 12,
+      "active_Blender_count": 0
+    },
+    {
+      "stage": "guarded CPU extraction",
+      "status": "EXIT_0",
+      "worker": "build-worker.json",
+      "owned_pid": 50648,
+      "owned_worker_closed": true
+    },
+    {
+      "stage": "final hashed hardware runtime proofs",
+      "status": "PASS_BOTH_EXIT_0",
+      "three_family_worker": "browser-worker.json",
+      "assembly_worker": "assembly-browser-worker.json",
+      "owned_server_pids": [
+        46428,
+        55544
+      ],
+      "both_owned_servers_closed": true,
+      "browsers_closed_in_finally": true,
+      "earlier_successful_diagnostics_preserved": [
+        "prior-assembly-literal-count-diagnostic",
+        "prior-assembly-subset-focus",
+        "prior-three-family-before-extra-factor-guards",
+        "prior-assembly-before-extra-factor-guards",
+        "prior-proof-before-harness-hash-metadata"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1067 @@
+{
+  "status": "PASS_REFRESHED_C13_SOURCE_COVERAGE_AND_FINAL_LANE_HASHES",
+  "scope": "Read-only comparison of the fresh C9 historical source assignment audit against every listed source NPZ and the C11 Right/C12 Left repaired captures. C13 CPU/browser outputs reviewed separately. No source or lane artifacts changed.",
+  "source": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\source-baselines\\v79-6879ac01468b\\steampunk_V79.blend",
+    "sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456"
+  },
+  "source_audit": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\SOURCE_AUDIT.json",
+    "sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+    "bytes": 3571653
+  },
+  "npz_hash_check": {
+    "expected_entries": 32,
+    "actual_entries": 32,
+    "all_expected_sha256_match": true,
+    "unique_content_hashes": 1,
+    "entries": [
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.032",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.032-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.033",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.033-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.034",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.034-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.035",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.035-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.036",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.036-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.037",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.037-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.038",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.038-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.039",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.039-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.040",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.040-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.041",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.041-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.043",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.043-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.044",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.044-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.045",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.045-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.046",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.046-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.047",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.047-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "05_GARAGE_L",
+        "source_object": "Left bulb.042",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\05_GARAGE_L-Left_bulb.042-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.048",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.048-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.049",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.049-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.050",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.050-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.051",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.051-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.052",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.052-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.053",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.053-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.054",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.054-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.055",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.055-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.056",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.056-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.057",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.057-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.058",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.058-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.059",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.059-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.060",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.060-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.061",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.061-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.062",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.062-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      },
+      {
+        "wall": "06_GARAGE_R",
+        "source_object": "Left bulb.063",
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\06_GARAGE_R-Left_bulb.063-fresh-source.npz",
+        "expected_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "actual_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+        "hash_match": true,
+        "polygons": 6141,
+        "source_assigned_material_counts": {
+          "silver": 621,
+          "bulb": 592,
+          "glass": 1088,
+          "plastic": 2640,
+          "Emission": 1200
+        }
+      }
+    ]
+  },
+  "assigned_family_counts_per_lamp": {
+    "bulb": 592,
+    "silver": 621,
+    "glass": 1088,
+    "plastic": 2640,
+    "Emission": 1200,
+    "black metal": 0
+  },
+  "assigned_family_counts_per_wall": {
+    "bulb": 9472,
+    "silver": 9936,
+    "glass": 17408,
+    "plastic": 42240,
+    "Emission": 19200,
+    "black metal": 0,
+    "total": 98256
+  },
+  "assigned_family_counts_both_walls": {
+    "bulb": 18944,
+    "silver": 19872,
+    "glass": 34816,
+    "plastic": 84480,
+    "Emission": 38400,
+    "total": 196512
+  },
+  "source_geometry_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+  "repair_comparison": {
+    "C12_Left": {
+      "result": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-12\\garage-left\\RESULT.json",
+        "sha256": "6e83e999c94d48b2fc2fa9a2dd100a839920a6091a625636c1635a5ab9a5ee32",
+        "bytes": 10023
+      },
+      "repair_proof": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-12\\garage-left\\repair-proof.json",
+        "sha256": "75b1f68d3263706bccb02e0cf54174b219e0baf34fcc8c142b1b54d7a47cf3e5",
+        "bytes": 12308377
+      },
+      "status": "PASS_PRIVATE_LEFT_FULL_CAPTURE_SOURCE_MATERIAL_ASSIGNMENT_REPAIR",
+      "output_sha256": "c751d11ad0b286a6af21f5095d80996a1c0c48ba18dcd6c417915dffcbe4ede5",
+      "repair_count": 16,
+      "source_material_counts_per_lamp": {
+        "silver": 621,
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200
+      }
+    },
+    "C11_Right": {
+      "result": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-11\\garage\\REPAIR_RESULT.json",
+        "sha256": "972b8f9d49034774079a5568dd6e117f2c330d83e21d3f750ed47d2d40718107",
+        "bytes": 7648
+      },
+      "repair_proof": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-11\\garage\\repair-proof.json",
+        "sha256": "fa12d56ca17c2015f142daf2db72976924696ddca21369797a45f81c841f0181",
+        "bytes": 12192713
+      },
+      "status": "PASS_PRIVATE_RIGHT_FULL_CAPTURE_SOURCE_MATERIAL_ASSIGNMENT_REPAIR",
+      "output_sha256": "01228cf771d9e5b0559564f7d8ff9f55d75da3311ee140c8d410a0d4fd060a41",
+      "repair_count": 16,
+      "source_material_counts_per_lamp": {
+        "silver": 621,
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200
+      }
+    }
+  },
+  "source_graph_semantics": {
+    "plastic": "Constant Principled to Output, no image/UV input.",
+    "silver": "Constant Principled to Output, white base, metallic 1, roughness 0.4; no image/UV input.",
+    "Emission": {
+      "active_graph": "Principled to Output; its active emission color/strength and transmission are part of the source graph",
+      "emission_inputs_found": {
+        "Transmission Weight": 1.0,
+        "Emission Color": [
+          0.5805548429489136,
+          0.22875744104385376,
+          0.008749574422836304,
+          1.0
+        ],
+        "Emission Strength": 20000.0
+      },
+      "disconnected_node": "Blackbody 1900 K is disconnected; no claim that it drives output.",
+      "runtime_limit": "Surface emission only; no standard glTF indirect illumination / GI claim."
+    },
+    "glass": "Light Path Is Shadow Ray drives Mix Shader; camera branch is Principled and shadow branch is white Transparent; no image/UV input."
+  },
+  "C13_lane_evidence_at_snapshot": {
+    "left_glass": {
+      "RESULT.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\RESULT.json",
+        "exists": true,
+        "sha256": "7ef001af8f634575b323ed0bf3464a1b022f9c2d90cf472515fdc42eb1789736",
+        "bytes": 10096
+      },
+      "VERIFICATION.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\VERIFICATION.json",
+        "exists": true,
+        "sha256": "21429e3cecc383963225c5df087485c794899fcbfa66b6b6243e5174c65ce8ea",
+        "bytes": 9736
+      },
+      "CONTRACT_TEST.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\CONTRACT_TEST.json",
+        "exists": true,
+        "sha256": "f00c92c989f92b888e09227cd3d88408fec73e39fe1dff7b7fbbcf8b5cf6b81a",
+        "bytes": 1174
+      },
+      "BROWSER_RESULT.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\BROWSER_RESULT.json",
+        "exists": true,
+        "sha256": "23a6a7b756e63b8acb94d6bf59ec00d58f66decaa3df44f175944183343fa161",
+        "bytes": 3464
+      },
+      "left-glass.gltf": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\left-glass.gltf",
+        "exists": true,
+        "sha256": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+        "bytes": 20529
+      },
+      "left-glass.bin": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\left-glass.bin",
+        "exists": true,
+        "sha256": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+        "bytes": 235008
+      },
+      "glass-contract.mjs": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\glass-contract.mjs",
+        "exists": true,
+        "sha256": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8",
+        "bytes": 3117
+      },
+      "test-contract.mjs": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\test-contract.mjs",
+        "exists": true,
+        "sha256": "6b77ca787c7bb556f7e28c6c32b9812243d34c733895a630600988a7aca275a5",
+        "bytes": 3772
+      }
+    },
+    "right_plastic_emission_silver": {
+      "RESULT.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\RESULT.json",
+        "exists": true,
+        "sha256": "2f2d251b229d3e271c15468cdd1edb913d263dd608baf544e6fa76bb7a03aa7d",
+        "bytes": 7932
+      },
+      "VERIFICATION.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\VERIFICATION.json",
+        "exists": true,
+        "sha256": "c500af6a45030933e144fe4c25d5e7acb19910a6a34f7f2236179f1d1e2f5dca",
+        "bytes": 14821
+      },
+      "CONTRACT_TEST.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\CONTRACT_TEST.json",
+        "exists": true,
+        "sha256": "015bb656c9b8552e5a982890a7ef46d0138e33e37adbb6770a4baaf794498f74",
+        "bytes": 634
+      },
+      "BROWSER_RESULT.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\BROWSER_RESULT.json",
+        "exists": true,
+        "sha256": "99579f7973a40f0ae673274b91800160a1da0e318d367c3a5f3031923bedc099",
+        "bytes": 3271
+      },
+      "ASSEMBLY_SOURCE_PROOF.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\ASSEMBLY_SOURCE_PROOF.json",
+        "exists": true,
+        "sha256": "2f212de0af0586e637ffd1a18d16a3f857c4506247717226db9e95616622e76e",
+        "bytes": 4616
+      },
+      "ASSEMBLY_BROWSER_RESULT.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\ASSEMBLY_BROWSER_RESULT.json",
+        "exists": true,
+        "sha256": "d0c8c6b9ddea8e2e0a0d26a80aaed4adc7ca2670e4258b937b7c01a176c6ad32",
+        "bytes": 8006
+      },
+      "right-lamp-materials.gltf": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\right-lamp-materials.gltf",
+        "exists": true,
+        "sha256": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd",
+        "bytes": 52351
+      },
+      "right-lamp-materials.bin": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\right-lamp-materials.bin",
+        "exists": true,
+        "sha256": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+        "bytes": 946080
+      },
+      "lamp-contract.mjs": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\lamp-contract.mjs",
+        "exists": true,
+        "sha256": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6",
+        "bytes": 3872
+      },
+      "test-contract.mjs": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\test-contract.mjs",
+        "exists": true,
+        "sha256": "4e225dc18539f3f80254322e06ab2cf40a2ec30b24c11e8eb9d3cd58324057ec",
+        "bytes": 3258
+      },
+      "runtime-manifest.json": {
+        "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\runtime-manifest.json",
+        "exists": true,
+        "sha256": "79ea8651c126f7807d611cb22e06c68618f577cd0c3efe8cba551ccc2ddd72eb",
+        "bytes": 19911
+      }
+    }
+  },
+  "verified_lane_scopes": {
+    "left_glass": "16 source-assigned inner-stem glass subsets; 17,408 polygons; 1 unique serialized mesh / 2,176 serialized triangles and 34,816 instanced triangles; exact source positions/raw normals/UVs and world position/unit-normal max 0; C9 origin alignment max 0; hardware runtime camera/socket + transparent-shadow flag contract verified.",
+    "right_materials": "16 lamps x 3 selected source families (plastic/Emission/silver), 48 bindings; 140,160 triangles; exact source geometry/winding/world and mapped constant sockets; browser rendered family witnesses and checks mapped sockets. Assembly browser covers all five families across 16 Right lamps: 80 mesh instances, 193,920 triangles, 20 unique geometry objects, exact origin alignment."
+  },
+  "known_limits": [
+    "C11 empty-reference shadow receiver guard remains FAILED and open; C13 lane passes do not close it.",
+    "No full wall, complete Principled, solid glass/refraction equivalence, GI, radiometric/photometric equivalence, phone/native app acceptance, or print acceptance is established.",
+    "Right Emission is surface radiance, not scene illumination.",
+    "Glass Thin Wall=false versus runtime zero-volume/thickness behavior is engine-dependent; no solid refraction claim.",
+    "No new matched-source Cycles rendering or actual shadow-equivalence experiment in C13.",
+    "Right PLAN uses legacy field name C11_repaired_capture; the pinned path/hash must be used to establish the selected input."
+  ],
+  "process_and_storage_snapshot": {
+    "query": "Get-CimInstance Win32_Process filter Name matching blender|python; command lines truncated to 220 chars.",
+    "matching_blender_or_python_processes": 0,
+    "D_drive_free_GB": 44.15,
+    "cpu_only_python_not_classified_as_gpu_work": true
+  },
+  "reviewer_note": "Hashes in this inventory were computed directly from the listed files at review time. Lane reports and assertions were read; no build/browser jobs were launched.",
+  "final_refresh": {
+    "date": "2026-10-29",
+    "left_result": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\RESULT.json",
+      "sha256": "7ef001af8f634575b323ed0bf3464a1b022f9c2d90cf472515fdc42eb1789736",
+      "bytes": 10096
+    },
+    "left_verification": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\VERIFICATION.json",
+      "sha256": "21429e3cecc383963225c5df087485c794899fcbfa66b6b6243e5174c65ce8ea",
+      "bytes": 9736
+    },
+    "left_cpu_contract": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\CONTRACT_TEST.json",
+      "sha256": "f00c92c989f92b888e09227cd3d88408fec73e39fe1dff7b7fbbcf8b5cf6b81a",
+      "bytes": 1174
+    },
+    "left_browser": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\BROWSER_RESULT.json",
+      "sha256": "23a6a7b756e63b8acb94d6bf59ec00d58f66decaa3df44f175944183343fa161",
+      "bytes": 3464
+    },
+    "right_result": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\RESULT.json",
+      "sha256": "2f2d251b229d3e271c15468cdd1edb913d263dd608baf544e6fa76bb7a03aa7d",
+      "bytes": 7932
+    },
+    "right_verification": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\VERIFICATION.json",
+      "sha256": "c500af6a45030933e144fe4c25d5e7acb19910a6a34f7f2236179f1d1e2f5dca",
+      "bytes": 14821
+    },
+    "right_cpu_contract": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\CONTRACT_TEST.json",
+      "sha256": "015bb656c9b8552e5a982890a7ef46d0138e33e37adbb6770a4baaf794498f74",
+      "bytes": 634
+    },
+    "right_browser": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\BROWSER_RESULT.json",
+      "sha256": "99579f7973a40f0ae673274b91800160a1da0e318d367c3a5f3031923bedc099",
+      "bytes": 3271
+    },
+    "right_assembly_source_proof": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\ASSEMBLY_SOURCE_PROOF.json",
+      "sha256": "2f212de0af0586e637ffd1a18d16a3f857c4506247717226db9e95616622e76e",
+      "bytes": 4616
+    },
+    "right_assembly_browser": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\lamp-materials\\ASSEMBLY_BROWSER_RESULT.json",
+      "sha256": "d0c8c6b9ddea8e2e0a0d26a80aaed4adc7ca2670e4258b937b7c01a176c6ad32",
+      "bytes": 8006
+    },
+    "right_independent_technical_review": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\RIGHT_MATERIALS_TECHNICAL_REVIEW.json",
+      "sha256": "7d0011b9b347b8bc0d0903d597e290025f63afc0b866752410694f13c5c65c68",
+      "bytes": 5027
+    },
+    "right_independent_runtime_controls": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\RIGHT_RUNTIME_INDEPENDENT_CONTROLS.json",
+      "sha256": "fcefccad2263b7e006a09ac310027a059b7c9f9935da74f28227a9bc1bf25a18",
+      "bytes": 1244
+    },
+    "harness_hash_checks": {
+      "left_browser": {
+        "browser.html": {
+          "expected": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1",
+          "actual": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1",
+          "matches": true
+        },
+        "glass-contract.mjs": {
+          "expected": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8",
+          "actual": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8",
+          "matches": true
+        },
+        "left-glass.gltf": {
+          "expected": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+          "actual": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+          "matches": true
+        },
+        "left-glass.bin": {
+          "expected": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+          "actual": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+          "matches": true
+        }
+      },
+      "right_three_family_browser": {
+        "browser.html": {
+          "expected": "cdcc020a569a032623edfebf5d65c263d2234cf80bb0e15404fd74bc9081b2ea",
+          "actual": "cdcc020a569a032623edfebf5d65c263d2234cf80bb0e15404fd74bc9081b2ea",
+          "matches": true
+        },
+        "check_browser.py": {
+          "expected": "49a5c6875d00b63a400f2462a6815fa7a0ea0d08cb934563d22456bd319e4cf2",
+          "actual": "49a5c6875d00b63a400f2462a6815fa7a0ea0d08cb934563d22456bd319e4cf2",
+          "matches": true
+        },
+        "lamp-contract.mjs": {
+          "expected": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6",
+          "actual": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6",
+          "matches": true
+        },
+        "runtime-manifest.json": {
+          "expected": "79ea8651c126f7807d611cb22e06c68618f577cd0c3efe8cba551ccc2ddd72eb",
+          "actual": "79ea8651c126f7807d611cb22e06c68618f577cd0c3efe8cba551ccc2ddd72eb",
+          "matches": true
+        },
+        "right-lamp-materials.gltf": {
+          "expected": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd",
+          "actual": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd",
+          "matches": true
+        },
+        "right-lamp-materials.bin": {
+          "expected": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+          "actual": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+          "matches": true
+        }
+      },
+      "right_five_family_assembly_browser": {
+        "assembly-browser.html": {
+          "expected": "e518cf6f754e6b3416b646e77877edca12857d85ea15bd88ea9128c5d163c8c0",
+          "actual": "e518cf6f754e6b3416b646e77877edca12857d85ea15bd88ea9128c5d163c8c0",
+          "matches": true
+        },
+        "check_assembly.py": {
+          "expected": "f3ff1fdf60b3d0c8eb804a4b649d87f349d93acf3f993e80a44e304b9484635f",
+          "actual": "f3ff1fdf60b3d0c8eb804a4b649d87f349d93acf3f993e80a44e304b9484635f",
+          "matches": true
+        },
+        "lamp-contract.mjs": {
+          "expected": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6",
+          "actual": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6",
+          "matches": true
+        },
+        "assembly-pins.json": {
+          "expected": "80c60e4dfa00d5852c31b25addcdcb1e64be76247944a6ce881c0915e39d59cf",
+          "actual": "80c60e4dfa00d5852c31b25addcdcb1e64be76247944a6ce881c0915e39d59cf",
+          "matches": true
+        }
+      },
+      "all_match": true
+    },
+    "metrics": {
+      "left_glass": {
+        "cpu_geometry_controls": 9,
+        "cpu_runtime_controls": 29,
+        "browser_controls": 6,
+        "visible_vs_empty_pixels_gt5": 19073,
+        "wrong_transmission_pixels_gt5": 19041,
+        "restored_pixels_exact": true,
+        "worker": {
+          "status": "EXITED",
+          "server_pid": 54672,
+          "server_closed": true,
+          "browser_exit": 0,
+          "seconds": 2.6653695106506348,
+          "prelaunch_free_RAM_GiB": 39.55
+        }
+      },
+      "right_materials": {
+        "owner_cpu_controls": 17,
+        "independent_controls": 33,
+        "independent_geometry_reexecution_checks": 48,
+        "three_family_browser_controls": 3,
+        "family_witnesses": {
+          "plastic": {
+            "visible_vs_empty_pixels_above5": 2240,
+            "restored_exact": true
+          },
+          "Emission": {
+            "visible_vs_empty_pixels_above5": 13950,
+            "restored_exact": true
+          },
+          "silver": {
+            "visible_vs_empty_pixels_above5": 452649,
+            "restored_exact": true
+          }
+        },
+        "all_family_restores_exact": true,
+        "source_partition_status": "PASS_ALL16_FIVE_FAMILY_DISJOINT_COMPLETE_SOURCE_FACE_PARTITION",
+        "source_partition_objects": 16,
+        "all_partition_checks_true": true,
+        "assembly_status": "PASS_HARDWARE_PRIVATE_RIGHT_ALL16_LAMPS_FIVE_SOURCE_FAMILY_ASSEMBLY",
+        "assembly": {
+          "sourceObjects": 16,
+          "families": 5,
+          "meshes": 80,
+          "familyCounts": {
+            "plastic": 16,
+            "Emission": 16,
+            "silver": 16,
+            "bulb": 16,
+            "glass": 16
+          },
+          "totalTriangles": 193920,
+          "uniqueGeometryObjects": 20,
+          "uniqueMaterials": 5,
+          "alignment": [
+            {
+              "source": "Left bulb.048",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.049",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.050",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.051",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.052",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.053",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.054",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.055",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.056",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.057",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.058",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.059",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.060",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.061",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.062",
+              "families": 5,
+              "world_origin_max": 0
+            },
+            {
+              "source": "Left bulb.063",
+              "families": 5,
+              "world_origin_max": 0
+            }
+          ],
+          "bulbContract": {
+            "applied": 16,
+            "untouched": 0
+          },
+          "glassContract": {
+            "applied": 16,
+            "uniqueGeometryObjects": 1,
+            "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+          }
+        },
+        "UV_max": 2.9802322387695312e-08,
+        "other_geometry_maxima": {
+          "local_position_max": 0.0,
+          "raw_normal_max": 0.0,
+          "world_position_max": 0.0,
+          "world_unit_normal_max": 0.0
+        }
+      }
+    }
+  },
+  "C13_lane_statuses": {
+    "left_glass": "PASS_PRIVATE_ACTUAL_SOURCE_ASSIGNED_GLASS_CAMERA_SOCKET_MAPPING_AND_RUNTIME_CONTRACT",
+    "right_materials": "PASS_PRIVATE_RIGHT_16_LAMPS_REMAINING_THREE_SOURCE_MATERIAL_SUBSETS_AND_FIVE_FAMILY_RUNTIME_ASSEMBLY",
+    "C11_empty_reference_shadow_guard": "FAILED_OPEN_UNCHANGED"
+  }
+}

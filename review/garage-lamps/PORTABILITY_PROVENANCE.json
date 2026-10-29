@@ -1,0 +1,28 @@
+{
+  "transformations": [
+    {
+      "path": "continuation-13/lamp-materials/assembly-browser.html",
+      "canonical_sha256": "e518cf6f754e6b3416b646e77877edca12857d85ea15bd88ea9128c5d163c8c0",
+      "portable_sha256": "b7a86c02d1521292756c76a0ed78178895698ede7fcb26cc2c7286b13d8ca93d",
+      "reason": "Relative local paths replace project-root absolute URLs; copied pages tested after rewrite."
+    },
+    {
+      "path": "continuation-13/lamp-materials/assembly-pins.json",
+      "canonical_sha256": "80c60e4dfa00d5852c31b25addcdcb1e64be76247944a6ce881c0915e39d59cf",
+      "portable_sha256": "776b1144750d7924de5090604e5963c410995d7af7b58d85a6643710da700c29",
+      "reason": "Relative local paths replace project-root absolute URLs; copied pages tested after rewrite."
+    },
+    {
+      "path": "continuation-14/left-lamp-materials/assembly-browser.html",
+      "canonical_sha256": "f1aec829036b810940cec8177f7540889a66157017e631d36c286aa405bdb1b7",
+      "portable_sha256": "79eaafd04d064376f6b0299af78337bfd7eadf27658450202da3693eb12abd04",
+      "reason": "Relative local paths replace project-root absolute URLs; copied pages tested after rewrite."
+    },
+    {
+      "path": "continuation-14/left-lamp-materials/assembly-pins.json",
+      "canonical_sha256": "a9a0586ced0f5bbcea5125de0a2619728eb1481e71c4a9b09a7389c889fccf34",
+      "portable_sha256": "1226a9d0c26be5b6df05f686bb8af3d0e98fc79c88062043053955dde3064551",
+      "reason": "Relative local paths replace project-root absolute URLs; copied pages tested after rewrite."
+    }
+  ]
+}

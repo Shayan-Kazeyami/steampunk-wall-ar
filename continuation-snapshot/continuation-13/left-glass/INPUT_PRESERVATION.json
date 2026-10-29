@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\source-baselines\\v79-6879ac01468b\\steampunk_V79.blend",
+      "bytes": 1764063343,
+      "mtime_ns": 1792584054973404900
+    },
+    {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-12\\garage-left\\garage-left-source-materials-repaired.blend",
+      "bytes": 231875556,
+      "mtime_ns": 1793265088278517600
+    },
+    {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-9\\garage-bulbs\\SOURCE_AUDIT.json",
+      "bytes": 3571653,
+      "mtime_ns": 1793171603752376700
+    }
+  ],
+  "post_completion_metadata_unchanged": true
+}

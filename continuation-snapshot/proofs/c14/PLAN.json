@@ -1,0 +1,18 @@
+{
+  "source": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\source-baselines\\v79-6879ac01468b\\steampunk_V79.blend",
+  "source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+  "C9_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+  "C12_repaired_capture": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-12\\garage-left\\garage-left-source-materials-repaired.blend",
+  "C12_repaired_capture_sha256": "c751d11ad0b286a6af21f5095d80996a1c0c48ba18dcd6c417915dffcbe4ede5",
+  "status": "PLANNED_LEFT_EXACT_SOURCE_CONSTANT_SOCKET_SUBSETS",
+  "families": {
+    "plastic": 2640,
+    "Emission": 1200,
+    "silver": 621
+  },
+  "limits": [
+    "Native constant active socket mapping only; no complete Principled/radiance/lighting/GI equivalence",
+    "Emission source strength20000 is luminous surface only; standard native runtime does not indirectly light other objects",
+    "C11 failed empty-reference shadow guard remains FAILED unchanged"
+  ]
+}

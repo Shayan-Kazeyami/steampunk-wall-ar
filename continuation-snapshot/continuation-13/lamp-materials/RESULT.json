@@ -1,0 +1,220 @@
+{
+  "status": "PASS_PRIVATE_RIGHT_16_LAMPS_REMAINING_THREE_SOURCE_MATERIAL_SUBSETS_AND_FIVE_FAMILY_RUNTIME_ASSEMBLY",
+  "source_wall": "06_GARAGE_R",
+  "source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+  "new_component": {
+    "families": {
+      "plastic": {
+        "polygons_per_lamp": 2640,
+        "triangles_per_lamp": 5160,
+        "all16_arrays_exact": true
+      },
+      "Emission": {
+        "polygons_per_lamp": 1200,
+        "triangles_per_lamp": 2400,
+        "all16_arrays_exact": true
+      },
+      "silver": {
+        "polygons_per_lamp": 621,
+        "triangles_per_lamp": 1200,
+        "all16_arrays_exact": true
+      }
+    },
+    "nodes": 48,
+    "unique_meshes": 3,
+    "payload_bytes": 998431
+  },
+  "geometry_measured_max": {
+    "local_position_max": 0.0,
+    "raw_normal_max": 0.0,
+    "UV_max": 2.9802322387695312e-08,
+    "world_position_max": 0.0,
+    "world_unit_normal_max": 0.0
+  },
+  "complete_lamp_cohort_assembly": {
+    "sourceObjects": 16,
+    "families": 5,
+    "meshes": 80,
+    "familyCounts": {
+      "plastic": 16,
+      "Emission": 16,
+      "silver": 16,
+      "bulb": 16,
+      "glass": 16
+    },
+    "totalTriangles": 193920,
+    "uniqueGeometryObjects": 20,
+    "uniqueMaterials": 5,
+    "alignment": [
+      {
+        "source": "Left bulb.048",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.049",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.050",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.051",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.052",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.053",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.054",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.055",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.056",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.057",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.058",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.059",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.060",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.061",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.062",
+        "families": 5,
+        "world_origin_max": 0
+      },
+      {
+        "source": "Left bulb.063",
+        "families": 5,
+        "world_origin_max": 0
+      }
+    ],
+    "bulbContract": {
+      "applied": 16,
+      "untouched": 0
+    },
+    "glassContract": {
+      "applied": 16,
+      "uniqueGeometryObjects": 1,
+      "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+    }
+  },
+  "source_partition_polygons": 98256,
+  "runtime_contract_negative_controls": [
+    "late_wrong_family",
+    "late_wrong_source_hash",
+    "late_wrong_roughness",
+    "wrong_emission_strength",
+    "missing_extensions",
+    "late_texture_added",
+    "late_opacity_changed",
+    "late_wrong_material_type",
+    "late_wrong_side",
+    "unpinned_manifest",
+    "late_active_clearcoat",
+    "late_active_sheen",
+    "late_active_iridescence",
+    "late_active_anisotropy",
+    "late_active_thickness",
+    "late_active_dispersion",
+    "late_specular_intensity"
+  ],
+  "browser_family_visible_witnesses": {
+    "plastic": {
+      "visible_vs_empty_pixels_above5": 2240,
+      "restored_exact": true
+    },
+    "Emission": {
+      "visible_vs_empty_pixels_above5": 13950,
+      "restored_exact": true
+    },
+    "silver": {
+      "visible_vs_empty_pixels_above5": 452649,
+      "restored_exact": true
+    }
+  },
+  "source_active_graph_summary": "Each family has constant unlinked Principled inputs -> active Output. Emission Blackbody node disconnected; source emission strength20000 retained.",
+  "limits": [
+    "Native constant socket mapping only; no complete Principled/lighting/GI equivalence",
+    "Emission surface radiance does not light other objects in standard glTF runtime",
+    "C11 failed empty-reference shadow gate remains open",
+    "Five source-assigned subsets aligned in common runtime frame, not fullwall approval",
+    "C9bulb uses coordinate conversion in local geometry; new native subsets use fixedS node matrices, so common world origins checked; source geometry equivalence rests on pinned independent geometry proofs",
+    "Bulb/glass castShadow=false flags only; no actual shadow or GI equivalence",
+    "Emission luminous surface does not illuminate other objects in standard native runtime",
+    "No phone/physicalprint/radiometric/full Principled equivalence",
+    "C11 failed empty-reference shadow guard remains FAILED unchanged",
+    "No App/Publishing/source/print writes",
+    "Three-family runtime contract validates all48 meshes without changing shadow flags"
+  ],
+  "evidence_sha256": {
+    "PLAN.json": "a209151606ae21cbd7bf2b66bfff1eb33da44620518a3bb0d035dfd1873b5dfd",
+    "BUILD_RESULT.json": "c570738311bbfdc62a83cf3dd4d6813180ae2854f24bc336aaef4212ed9136a9",
+    "VERIFICATION.json": "c500af6a45030933e144fe4c25d5e7acb19910a6a34f7f2236179f1d1e2f5dca",
+    "CONTRACT_TEST.json": "015bb656c9b8552e5a982890a7ef46d0138e33e37adbb6770a4baaf794498f74",
+    "BROWSER_RESULT.json": "99579f7973a40f0ae673274b91800160a1da0e318d367c3a5f3031923bedc099",
+    "ASSEMBLY_SOURCE_PROOF.json": "2f212de0af0586e637ffd1a18d16a3f857c4506247717226db9e95616622e76e",
+    "ASSEMBLY_BROWSER_RESULT.json": "d0c8c6b9ddea8e2e0a0d26a80aaed4adc7ca2670e4258b937b7c01a176c6ad32",
+    "assembly-pins.json": "80c60e4dfa00d5852c31b25addcdcb1e64be76247944a6ce881c0915e39d59cf",
+    "lamp-contract.mjs": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6",
+    "browser.html": "cdcc020a569a032623edfebf5d65c263d2234cf80bb0e15404fd74bc9081b2ea",
+    "assembly-browser.html": "e518cf6f754e6b3416b646e77877edca12857d85ea15bd88ea9128c5d163c8c0",
+    "check_browser.py": "49a5c6875d00b63a400f2462a6815fa7a0ea0d08cb934563d22456bd319e4cf2",
+    "check_assembly.py": "f3ff1fdf60b3d0c8eb804a4b649d87f349d93acf3f993e80a44e304b9484635f",
+    "build.py": "a776419c747b2ee390a3163ccd295afa270a6f5010125497588510e3ca65d1fc",
+    "verify.py": "3f672b213450306d4e6929f187dc29163a27e5a292e317ec88cc91fc1e9c1686",
+    "right-lamp-materials.gltf": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd",
+    "right-lamp-materials.bin": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+    "runtime-manifest.json": "79ea8651c126f7807d611cb22e06c68618f577cd0c3efe8cba551ccc2ddd72eb",
+    "build-worker.json": "7a10c6f0e3267cab57c37637fdd2ac237ec252547f981260dadc5f3fbdc94e84",
+    "browser-worker.json": "b1493b76bf85157d020572a20c56836099cb7f87ede0d0c16a273a52364c2d22",
+    "assembly-browser-worker.json": "b6904810396a8a06e2feab176e7cb12e65cf6459088429130b97c2a83df03259"
+  },
+  "owned_workers_closed": true,
+  "retained_attempts": [
+    "ATTEMPTS.json",
+    "prior-assembly-literal-count-diagnostic",
+    "prior-assembly-subset-focus",
+    "prior-three-family-before-extra-factor-guards",
+    "prior-assembly-before-extra-factor-guards",
+    "prior-proof-before-harness-hash-metadata"
+  ]
+}

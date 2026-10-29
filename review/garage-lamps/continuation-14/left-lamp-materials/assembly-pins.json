@@ -1,0 +1,15 @@
+{
+  "../../continuation-13/left-glass/RESULT.json": "7ef001af8f634575b323ed0bf3464a1b022f9c2d90cf472515fdc42eb1789736",
+  "../../continuation-9/garage-bulbs/05_GARAGE_L-source-bulb-subset.glb": "4178c24ac6de57cf16f1c214703ef82eed9a6e7bdefa267b9aaaafe305256b4d",
+  "../../continuation-9/garage-bulbs/SOURCE_SUBSET_RESULT.json": "5481cf8d9111ea2cf006a81c03b6f8afd0b797fe188cc9c5baef8121efed5b54",
+  "../../continuation-9/garage-bulbs/SOURCE_SUBSET_VERIFICATION.json": "92d42e4b68d958f51ad8f75315d32b251549e7c9eb1e8f77d25d793e4be49485",
+  "../../continuation-9/garage-bulbs/shadow-contract.mjs": "8745be3552047c88f260f0cb9cb6299d5b54e3b7ffa61fa636f0a18b92d37bb6",
+  "../../continuation-13/left-glass/left-glass.gltf": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+  "../../continuation-13/left-glass/left-glass.bin": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+  "../../continuation-13/left-glass/PLAN.json": "905dca989e64db9bb969bdecacdf9042e357774e478b9253feb95bc240c4fbbf",
+  "../../continuation-13/left-glass/glass-contract.mjs": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8",
+  "../../continuation-13/left-glass/VERIFICATION.json": "21429e3cecc383963225c5df087485c794899fcbfa66b6b6243e5174c65ce8ea",
+  "../../continuation-14/left-lamp-materials/left-lamp-materials.gltf": "33a30ff6e353518784f56dab962a681b14997427a77968bbe67491f47e0efd9c",
+  "../../continuation-14/left-lamp-materials/left-lamp-materials.bin": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+  "../../continuation-14/left-lamp-materials/lamp-contract.mjs": "6d72e185969564055f806311ca79687d018a7814abbda794dc3d55b73683c471"
+}

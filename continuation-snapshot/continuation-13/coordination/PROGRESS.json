@@ -1,0 +1,37 @@
+{
+  "dateLocal": "2026-10-29",
+  "status": "PASS_PRIVATE_LEFT_GLASS_RIGHT_THREE_MATERIALS_AND_FIVE_FAMILY_LAMP_RUNTIME_ASSEMBLY",
+  "ownership": {
+    "left-glass/": {
+      "agent": "sol_left_glass",
+      "model": "gpt-6.1-sol",
+      "scope": "Actual source-assigned Left glass stems, strict CPU proof and bounded hardware runtime check"
+    },
+    "lamp-materials/": {
+      "agent": "sol_browser",
+      "model": "gpt-6.1-sol",
+      "scope": "Actual Right plastic/Emission/silver subsets and constant source-camera-factor native runtime mapping"
+    },
+    "inventory/": {
+      "agent": "luna_inventory",
+      "model": "gpt-6-luna",
+      "scope": "Independent source coverage, output hashes and scoped evidence review"
+    },
+    "coordination/": {
+      "agent": "root",
+      "scope": "Worker queue, preservation and handover"
+    }
+  },
+  "sourcePolicy": "Pin fresh C9 historical-source audit/NPZ and independently validated C11 Right/C12 Left lamp assignment repairs. Never infer original source material fidelity from old faulty retained capture assignments.",
+  "heavyPolicy": "One heavy GPU job; one writer per file. Immediate guarded process/RAM checks before every granted bounded worker. Other C9 lanes and unrelated projects retain ownership; never terminate their workers.",
+  "acceptance": "C11 predeclared empty-reference shadow guard remains FAILED. Native camera-factor mapping is bounded; full shader/refraction/radiance/GI, full-wall, phone and physical-print AR acceptance remain open.",
+  "taskCounts": {
+    "total": 43,
+    "completeAtStatedScope": 15,
+    "openIncludingT21": 27,
+    "merged": 1
+  },
+  "preservation": "Private C13 outputs only; original sources/backups, verified prints, App/Publishing and previous candidates preserved. No completed bake or print production restart.",
+  "activeOwnedWorkers": [],
+  "finalResult": "coordination/CONTINUATION_RESULT.json"
+}

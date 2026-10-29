@@ -1,0 +1,292 @@
+{
+  "status": "PASS_ALL16_ACTUAL_GLASS_FACE_FILTER_NATIVE_GEOMETRY_AND_CAMERA_SOCKET_MAPPING",
+  "objects": 16,
+  "unique_serialized_meshes": 1,
+  "source_assigned_glass_polygons": 17408,
+  "instanced_triangles": 34816,
+  "unique_serialized_triangles": 2176,
+  "source_only_quad_boundary_winding_and_complete_coverage": true,
+  "shared_geometry_proved_exact_against_all16_fresh_source_dumps": true,
+  "all_intermediate_and_fresh_source_audit_hashes_pinned": true,
+  "checks": [
+    {
+      "source": "Left bulb.032",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.033",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.034",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.035",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.036",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.037",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.038",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.039",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.040",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.041",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.043",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.044",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.045",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.046",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.047",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    },
+    {
+      "source": "Left bulb.042",
+      "source_glass_polygons": 1088,
+      "triangles": 2176,
+      "local_position_max": 0.0,
+      "raw_source_normal_max": 0.0,
+      "UV_max": 0.0,
+      "matrix_exact_to_fresh_source_after_inverseS": true,
+      "source_normalized_world_position_max": 0.0,
+      "world_position_8ULP_tolerance": 9.5367431640625e-07,
+      "world_unit_normal_max": 0.0
+    }
+  ],
+  "existing_C9_bulb_runtime_common_coordinate_frame_alignment": [
+    {
+      "source": "Left bulb.032",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.033",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.034",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.035",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.036",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.037",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.038",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.039",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.040",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.041",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.043",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.044",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.045",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.046",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.047",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    },
+    {
+      "source": "Left bulb.042",
+      "C9_existing_glTF_origin_alignment_max": 0.0
+    }
+  ],
+  "alignment_reference_pins": {
+    "candidate_sha256": "4178c24ac6de57cf16f1c214703ef82eed9a6e7bdefa267b9aaaafe305256b4d",
+    "SOURCE_SUBSET_RESULT_sha256": "5481cf8d9111ea2cf006a81c03b6f8afd0b797fe188cc9c5baef8121efed5b54",
+    "SOURCE_SUBSET_VERIFICATION_sha256": "92d42e4b68d958f51ad8f75315d32b251549e7c9eb1e8f77d25d793e4be49485"
+  },
+  "negative_controls_rejected": [
+    "wrong_selected_material_family",
+    "wrong_final_material_role",
+    "wrong_final_IOR",
+    "wrong_final_transmission",
+    "wrong_source_transform",
+    "position_mutation",
+    "raw_normal_mutation",
+    "UV_mutation",
+    "reversed_triangle_winding"
+  ],
+  "limits": [
+    "Native camera socket mapping and transparent-shadow role contract only; no full PBR/solid-glass/GI equivalence",
+    "No old whole-bulb geometry reused; source glass-only",
+    "C11 failed empty-shadow guard retained; not retuned"
+  ]
+}

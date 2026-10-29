@@ -1,0 +1,183 @@
+{
+  "status": "PASS_ALL16_FIVE_FAMILY_DISJOINT_COMPLETE_SOURCE_FACE_PARTITION",
+  "checks": [
+    {
+      "source": "Left bulb.048",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.049",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.050",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.051",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.052",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.053",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.054",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.055",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.056",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.057",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.058",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.059",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.060",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.061",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.062",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    },
+    {
+      "source": "Left bulb.063",
+      "per_family_polygons": {
+        "bulb": 592,
+        "glass": 1088,
+        "plastic": 2640,
+        "Emission": 1200,
+        "silver": 621
+      },
+      "complete_disjoint_source_polygon_partition": true
+    }
+  ],
+  "source_polygons": 98256,
+  "scope": "Source lamp cohort only. Existing source-specific native geometry proofs plus new3family proof; no wholewall or shadow/GI equivalence"
+}

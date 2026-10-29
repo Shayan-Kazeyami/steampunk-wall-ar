@@ -1,0 +1,25 @@
+{
+  "status": "PASS_GLASS_RUNTIME_CONTRACT_CPU_FIXTURES",
+  "negativeControls": [
+    "duplicate_source",
+    "missing_node",
+    "wrong_wall",
+    "wrong_source_hash",
+    "wrong_audit_hash",
+    "wrong_contract_version",
+    "missing_contract",
+    "wrong_bulb_family",
+    "wrong_wholeobject_family",
+    "late_bad_node_no_partial_shadow_mutation",
+    "unexpected_transmissionMap",
+    "unexpected_alphaMap",
+    "unexpected_roughnessMap",
+    "unexpected_metalnessMap",
+    "unexpected_specularColorMap",
+    "unexpected_normalMap",
+    "unexpected_thicknessMap"
+  ],
+  "every_rejection_preserves_all_shadow_flags": true,
+  "valid_fixture_all16_castShadow_false": true,
+  "scope": "CPU fixture logic only; actual browser checks separate"
+}

@@ -1,0 +1,167 @@
+{
+  "status": "ACTUAL_SOURCE_GLASS_CAMERA_BRANCH_NATIVE_EXPORT_PENDING_INDEPENDENT_VERIFICATION",
+  "source_assigned_glass_polygons": 17408,
+  "nodes": 16,
+  "unique_meshes": 1,
+  "unique_serialized_triangles": 2176,
+  "instanced_triangles": 34816,
+  "serialized_geometry_sharing_proved_by_exact_selected_source_arrays": true,
+  "no_GPU_memory_saving_claim": true,
+  "source_material_graph_equals_fresh_C9_audit": true,
+  "source_material_indexed_links": [
+    {
+      "from_node": "Mix Shader",
+      "from_socket": "Shader",
+      "to_node": "Material Output",
+      "to_input_index": 0,
+      "to_socket_identifier": "Surface"
+    },
+    {
+      "from_node": "Principled BSDF",
+      "from_socket": "BSDF",
+      "to_node": "Mix Shader",
+      "to_input_index": 1,
+      "to_socket_identifier": "Shader"
+    },
+    {
+      "from_node": "Light Path",
+      "from_socket": "Is Shadow Ray",
+      "to_node": "Mix Shader",
+      "to_input_index": 0,
+      "to_socket_identifier": "Fac"
+    },
+    {
+      "from_node": "Transparent BSDF",
+      "from_socket": "BSDF",
+      "to_node": "Mix Shader",
+      "to_input_index": 2,
+      "to_socket_identifier": "Shader_001"
+    }
+  ],
+  "source_constants": {
+    "Base Color": [
+      0.800000011920929,
+      0.800000011920929,
+      0.800000011920929,
+      1.0
+    ],
+    "Metallic": 0.0,
+    "Roughness": 0.0,
+    "IOR": 1.3329999446868896,
+    "Alpha": 1.0,
+    "Thin Wall": false,
+    "Normal": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Weight": 0.0,
+    "Diffuse Roughness": 0.0,
+    "Subsurface Weight": 0.0,
+    "Subsurface Radius": [
+      1.0,
+      0.20000000298023224,
+      0.10000000149011612
+    ],
+    "Subsurface Scale": 0.05000000074505806,
+    "Subsurface IOR": 1.399999976158142,
+    "Subsurface Anisotropy": 0.0,
+    "Specular IOR Level": 0.5,
+    "Specular Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Anisotropic": 0.0,
+    "Anisotropic Rotation": 0.0,
+    "Tangent": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Transmission Weight": 1.0,
+    "Coat Weight": 0.0,
+    "Coat Roughness": 0.029999999329447746,
+    "Coat IOR": 1.5,
+    "Coat Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Coat Normal": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Sheen Weight": 0.0,
+    "Sheen Roughness": 0.5,
+    "Sheen Tint": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Emission Color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "Emission Strength": 0.0,
+    "Thin Film Thickness": 0.0,
+    "Thin Film IOR": 1.3300000429153442
+  },
+  "source_bsdf_distribution": "MULTI_GGX",
+  "source_backface_culling": false,
+  "runtime_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+  "all_C12_matrices_unchanged": true,
+  "coordinate_conversion": {
+    "normalized_capture_to_existing_C9_glTF": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "method": "Pre-multiply node matrices by fixedS; keep local source positions/normals exact. S^-1 glTFworld recovers normalized source world."
+  },
+  "unavailable_Weight_never_assigned": true,
+  "C12_repair_sha256": "c751d11ad0b286a6af21f5095d80996a1c0c48ba18dcd6c417915dffcbe4ede5",
+  "source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+  "source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+  "files": {
+    "left-glass.gltf": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+    "left-glass.bin": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+    "source-glass-reference.npz": "f0ceda5c7783e6cbd6862b4a2abec35dbf4ea411d77084e3e201b6850e921071",
+    "source-role-reference.json": "1e3f0d9a93ca0c96aa3f65badba5e2cdf2c4c21f1e55bd6116c9737ce839e661"
+  },
+  "limits": [
+    "C11 empty-shadow-reference guard remains FAILED; no threshold retune or GI approval",
+    "Source physical solid glass vs browser transmission/zero-volume behavior remains engine dependent",
+    "No App/Publishing/source/print/shared handover writes",
+    "KHR camera socket mapping + transparent shadow contract; source solid-glass/engine/GI equivalence not claimed",
+    "No old whole-bulb geometry used"
+  ],
+  "lineage_metadata_correction": "Renamed inherited C11 field labels to C12 for actual Left repaired input; no arrays, glTF, binary or matrices changed. Independent verifier rerun after metadata correction."
+}

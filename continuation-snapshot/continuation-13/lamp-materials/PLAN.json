@@ -1,0 +1,18 @@
+{
+  "source": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\source-baselines\\v79-6879ac01468b\\steampunk_V79.blend",
+  "source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+  "C9_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+  "C11_repaired_capture": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-11\\garage\\garage-right-clock-source-materials-repaired.blend",
+  "C11_repaired_capture_sha256": "01228cf771d9e5b0559564f7d8ff9f55d75da3311ee140c8d410a0d4fd060a41",
+  "status": "PLANNED_EXACT_SOURCE_CONSTANT_SOCKET_SUBSETS",
+  "families": {
+    "plastic": 2640,
+    "Emission": 1200,
+    "silver": 621
+  },
+  "limits": [
+    "Native constant socket mapping only; no complete Principled/lighting/GI equivalence",
+    "Emission surface radiance does not light other objects in standard glTF runtime",
+    "C11 failed empty-reference shadow gate remains open"
+  ]
+}

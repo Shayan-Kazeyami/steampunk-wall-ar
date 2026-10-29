@@ -1,0 +1,155 @@
+{
+  "status": "PASS_LEFT_GLASS_SOURCE_SUBSET_AND_HARDENED_RUNTIME_CONTRACT_WITHIN_SCOPE",
+  "lane_result": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\RESULT.json",
+    "sha256": "7ef001af8f634575b323ed0bf3464a1b022f9c2d90cf472515fdc42eb1789736",
+    "bytes": 10096
+  },
+  "source_geometry_verification": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\VERIFICATION.json",
+    "sha256": "21429e3cecc383963225c5df087485c794899fcbfa66b6b6243e5174c65ce8ea",
+    "bytes": 9736
+  },
+  "cpu_contract_fixture_report": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\CONTRACT_TEST.json",
+    "sha256": "f00c92c989f92b888e09227cd3d88408fec73e39fe1dff7b7fbbcf8b5cf6b81a",
+    "bytes": 1174
+  },
+  "hardware_browser_report": {
+    "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\BROWSER_RESULT.json",
+    "sha256": "23a6a7b756e63b8acb94d6bf59ec00d58f66decaa3df44f175944183343fa161",
+    "bytes": 3464
+  },
+  "output_files": {
+    "gltf": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\left-glass.gltf",
+      "sha256": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+      "bytes": 20529
+    },
+    "bin": {
+      "path": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-13\\left-glass\\left-glass.bin",
+      "sha256": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+      "bytes": 235008
+    }
+  },
+  "harness_hash_checks": {
+    "browser.html": {
+      "expected": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1",
+      "actual": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1",
+      "matches": true
+    },
+    "glass-contract.mjs": {
+      "expected": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8",
+      "actual": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8",
+      "matches": true
+    },
+    "left-glass.gltf": {
+      "expected": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+      "actual": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+      "matches": true
+    },
+    "left-glass.bin": {
+      "expected": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+      "actual": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+      "matches": true
+    }
+  },
+  "assertions": {
+    "result_status": "PASS_PRIVATE_ACTUAL_SOURCE_ASSIGNED_GLASS_CAMERA_SOCKET_MAPPING_AND_RUNTIME_CONTRACT",
+    "verification_status": "PASS_ALL16_ACTUAL_GLASS_FACE_FILTER_NATIVE_GEOMETRY_AND_CAMERA_SOCKET_MAPPING",
+    "cpu_contract_status": "PASS_GLASS_RUNTIME_CONTRACT_CPU_FIXTURES",
+    "browser_status": "PASS_HARDWARE_RUNTIME_ACTUAL_GLASS_ONLY_CAMERA_MAPPING_CONTRACT",
+    "source_lamps": 16,
+    "source_glass_faces": 17408,
+    "unique_serialized_meshes": 1,
+    "serialized_triangles": 2176,
+    "instanced_triangles": 34816,
+    "model_payload_bytes": 255537,
+    "source_positions_uvs_raw_normals_exact": true,
+    "world_position_unit_normal_max": 0.0,
+    "C9_common_frame_origin_error_max": 0.0,
+    "geometry_negative_controls": [
+      "wrong_selected_material_family",
+      "wrong_final_material_role",
+      "wrong_final_IOR",
+      "wrong_final_transmission",
+      "wrong_source_transform",
+      "position_mutation",
+      "raw_normal_mutation",
+      "UV_mutation",
+      "reversed_triangle_winding"
+    ],
+    "CPU_runtime_negative_controls": [
+      "duplicate_source",
+      "missing_node",
+      "wrong_wall",
+      "wrong_source_hash",
+      "wrong_audit_hash",
+      "wrong_contract_version",
+      "missing_contract",
+      "wrong_bulb_family",
+      "wrong_wholeobject_family",
+      "late_bad_node_no_partial_shadow_mutation",
+      "unexpected_transmissionMap",
+      "unexpected_alphaMap",
+      "unexpected_roughnessMap",
+      "unexpected_metalnessMap",
+      "unexpected_specularColorMap",
+      "unexpected_normalMap",
+      "unexpected_thicknessMap",
+      "unsupported_active_clearcoat",
+      "unsupported_active_sheen",
+      "unsupported_active_iridescence",
+      "unsupported_active_anisotropy",
+      "unsupported_active_thickness",
+      "unsupported_active_dispersion",
+      "unexpected_nonzero_emission",
+      "invalid_emissive_intensity",
+      "unsupported_specularIntensity",
+      "unsupported_specularColor",
+      "unsupported_attenuationColor",
+      "unsupported_attenuationDistance"
+    ],
+    "browser_negative_controls": [
+      "wrong_selected_glass_role",
+      "missing_source_shadow_contract",
+      "unsupported_active_clearcoat",
+      "unexpected_nonzero_emission",
+      "wrong_final_IOR",
+      "unsupported_material_extensions"
+    ],
+    "browser_visible_vs_empty_pixels_gt5": 19073,
+    "wrong_transmission_witness_pixels_gt5": 19041,
+    "restored_exact": true,
+    "runtime_contract_closure": {
+      "contract": {
+        "applied": 16,
+        "uniqueGeometryObjects": 1,
+        "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+      },
+      "allCastShadowFalse": true,
+      "allTransmissionOne": true,
+      "allMaterialGlass": true
+    },
+    "HTTP_errors": [],
+    "application_errors": [],
+    "worker": {
+      "status": "EXITED",
+      "server_pid": 54672,
+      "server_closed": true,
+      "browser_exit": 0,
+      "seconds": 2.6653695106506348,
+      "prelaunch_free_RAM_GiB": 39.55
+    },
+    "total_CPU_controls": 38
+  },
+  "limits": [
+    "Actual historical glass route exists; earlier capture-only glass N/A does not apply to repaired source-faithful geometry.",
+    "Source Thin Wall=false vs browser default zero-volume/thickness remains engine-dependent; no solid refraction equivalence approved.",
+    "No new Cycles source/glass matched render or actual shadow equivalence experiment in C13.",
+    "C11 empty-shadow reference guard remains FAILED and untouched.",
+    "Runtime model payload excludes pre-existing shared environment/runtime libraries; no GPU memory reuse saving or phone budget approval.",
+    "No full-wall/App/Publishing/native phone/physical-print acceptance.",
+    "Original source/prints, existing derivatives and shared handover unchanged."
+  ]
+}

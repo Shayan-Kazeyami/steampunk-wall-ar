@@ -1,0 +1,668 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "C12 source-assigned GLASS native serializer"
+  },
+  "extensionsUsed": [
+    "KHR_materials_transmission",
+    "KHR_materials_ior"
+  ],
+  "materials": [
+    {
+      "name": "RIGHT_GLASS_SOURCE_CAMERA_BRANCH",
+      "doubleSided": true,
+      "alphaMode": "OPAQUE",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      },
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1.0
+        },
+        "KHR_materials_ior": {
+          "ior": 1.3329999446868896
+        }
+      },
+      "extras": {
+        "source_family": "glass",
+        "source_shadow_ray_branch": "white Transparent",
+        "camera_branch_scope": "Constant source socket mapping only; no GI or full solid-glass equivalence"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "GLASS_ONLY_Left bulb.048",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.048",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.049",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.15176144242286682,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.049",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.050",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.050",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.051",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.05500243604183197,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.051",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.052",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.052",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.053",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.3681107759475708,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.053",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.054",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.030363555997610092,
+        -0.17474403977394104,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.054",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.055",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        -0.27135172486305237,
+        0.03036351688206196,
+        -0.23541191220283508,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.055",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.056",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.056",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.057",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.2786760926246643,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.057",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.058",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754352331161499,
+        0.03036351688206196,
+        -0.2347663938999176,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.058",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.059",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.059",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.060",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.0616813525557518,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.060",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.061",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.030363555997610092,
+        -0.17419788241386414,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.061",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.062",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.15844038128852844,
+        0.03036351688206196,
+        -0.2348656952381134,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.062",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    },
+    {
+      "name": "GLASS_ONLY_Left bulb.063",
+      "mesh": 0,
+      "matrix": [
+        0.32778334617614746,
+        8.650466248899901e-17,
+        1.3521470054733697e-10,
+        0.0,
+        1.352147421807004e-10,
+        -1.1722443105099956e-07,
+        -0.3277832269668579,
+        0.0,
+        -3.8148123939234894e-17,
+        0.3277832269668579,
+        -1.1722443105099956e-07,
+        0.0,
+        0.3754313588142395,
+        0.030363555997610092,
+        -0.17409858107566833,
+        1.0
+      ],
+      "extras": {
+        "ar_source_component": "Left bulb.063",
+        "ar_source_subset": "historical_source_material:glass",
+        "ar_wall": "06_GARAGE_R",
+        "ar_source_sha256": "6879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456",
+        "ar_source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+        "ar_shadow_contract": "source_glass_IsShadowRay_white_Transparent:castShadow=false",
+        "ar_shadow_contract_version": 1,
+        "source_assigned_polygons": 1088
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "EXACT_SHARED_SOURCE_GLASS_ONLY_2176_TRIANGLES",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "mode": 4,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "scene": 0,
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 6528,
+      "type": "VEC3",
+      "min": [
+        -0.004440367221832275,
+        -0.10415655374526978,
+        -0.004440367221832275
+      ],
+      "max": [
+        0.004440367221832275,
+        -0.023884624242782593,
+        0.004440367221832275
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 6528,
+      "type": "VEC3",
+      "min": [
+        -1.0,
+        -0.9941433072090149,
+        -1.0
+      ],
+      "max": [
+        1.0,
+        0.9948090314865112,
+        1.0
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 6528,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 6528,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 78336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 78336,
+      "byteLength": 78336
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 156672,
+      "byteLength": 52224
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 208896,
+      "byteLength": 26112
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "right-glass.bin",
+      "byteLength": 235008
+    }
+  ]
+}
