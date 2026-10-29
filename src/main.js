@@ -16,6 +16,7 @@ function boot() {
   const panel = Object.values(spec.panels).find(p => p.wallId === manifest.wallId)
   const effects = createEffects({THREE, config:{...spec.effects, panel}})
   const cameraEl = document.querySelector('#main-camera')
+  let retryAction = 'ar'
   let mode = 'landing', until = 0, epoch = 0, disposed = false, preview = null
   let reduced = matchMedia('(prefers-reduced-motion: reduce)').matches
   let lowSince = null, fallback = 0, queue = Promise.resolve()
@@ -44,6 +45,7 @@ function boot() {
     scene.object3D.background = null
   }
   function request(action) {
+    if (action === 'ar' || action === 'preview') retryAction = action
     const token = ++epoch
     mode = 'transition'; cancel()
     // Invalidate any camera start synchronously, before queued UI transitions.
@@ -77,7 +79,7 @@ function boot() {
     return queue
   }
   const ui = createUI({mount:document.querySelector('#ui'),
-    onStart:() => request('ar'), onRetry:() => request('ar'),
+    onStart:() => request('ar'), onRetry:() => request(retryAction),
     onPreview:() => request('preview'), onClosePreview:() => request('landing'),
     onReset:() => boost(false),
     onOverdrive:() => { if(mode !== 'tracked' && mode !== 'preview')return; until = performance.now()+3000; boost(true) },
