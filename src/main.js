@@ -122,9 +122,16 @@ function boot() {
     if(disposed)return
     disposed=true; ++epoch; tick=()=>{}
     document.removeEventListener('visibilitychange',visibility); window.removeEventListener('resize',fit)
+    window.removeEventListener('pagehide',onPageHide)
     await tracker.stop(); removePreview(); effects.dispose(); ui.dispose(); await tracker.dispose()
   }
-  window.addEventListener('pagehide',teardown,{once:true})
+  function onPageHide(event) {
+    // Cached history entries resume this same document; keep its UI usable.
+    // Returning to the landing state also invalidates pending camera starts.
+    if (event.persisted) return request('landing')
+    return teardown()
+  }
+  window.addEventListener('pagehide',onPageHide)
   if(new URLSearchParams(location.search).has('qa')) {
     const pre=document.createElement('pre');pre.id='qa-results';pre.style.cssText='position:fixed;inset:0;z-index:100;background:white;color:black;overflow:auto;pointer-events:none'
     try {pre.textContent=JSON.stringify(runEffectsContractChecks({THREE,spec}),null,2)}catch(e){pre.textContent=e.stack}

@@ -48,3 +48,18 @@ Based on the official 8th Wall A-Frame image-target starter, commit
 including docs/assets/XR_ENGINE_LICENSE.txt and licenses under external/.
 The XR runtime is governed by its included agreement; this repository does not
 relicense the engine. Original steampunk artwork is provided for this demo.
+
+## Compatibility and privacy boundaries
+
+The preview needs JavaScript and WebGL, but does not request the camera. AR needs
+a camera-enabled mobile browser on HTTPS, camera permission and the Garage Left
+artwork. Internet access is required for the pinned third-party 8th Wall scripts
+served by jsDelivr. Loading this page therefore contacts a third-party CDN before
+Start is pressed. The project does not add an analytics or upload endpoint in its
+application source; this is not a traffic audit of the bundled XR runtime.
+
+Reduced-motion preference is read on entry; the Reduce motion control can change
+it during use. Start is explicit after cached Back/Forward navigation. Browser
+zoom is enabled, but narrow-screen/zoom layout and screen-reader behavior still
+require real-device testing. No cross-browser or physical-print certification is
+claimed by the cloud build. See ACCEPTANCE.md for the remaining measured gates.
