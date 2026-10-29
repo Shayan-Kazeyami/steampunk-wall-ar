@@ -17,3 +17,7 @@ All owned bounded CPU/GPU workers are closed after validation; no automatic queu
 Historical baseline Models/source-baselines/v79-6879ac01468b/steampunk_V79.blend SHA2566879ac01468bc99eb052928d5a4f6f1f3d1cbadec66ce13b9bf9088ad08e4456 remains authoritative; current named print V79 differs and remains preserved. Preserve preexisting App changes. Publishing's local commit remains ff3f90646a7c888de9470d252b64ded47f3febc4/bundle71a25712. Run python output/scripts/update_handover.py from the print root after meaningful status changes.
 
 [Previous C13 checkpoint](CONTEXT_CHECKPOINT_2026-10-29.md) · [Source material integrity](SOURCE_MATERIAL_INTEGRITY_2026-10-28.md)
+
+<!-- C14_ACTUAL_UPLOAD_START -->
+GitHub review package is prepared and hardware-checked; actual upload receipt is pending.
+<!-- C14_ACTUAL_UPLOAD_END -->

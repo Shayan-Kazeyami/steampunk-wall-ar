@@ -1,0 +1,10 @@
+{
+  "status": "PASS_DOCUMENTATION_ONLY_POST_PROOF_UPDATE",
+  "files": {
+    "review/garage-lamps/README.md": {
+      "proof_time_sha256": "65f595062deb956feee1d15fa09eec0381375b3071051b168b83cf522d8d92d4",
+      "current_sha256": "5369774ca7d36c85183ccc31d8e807faffbd705f8bd6d8145b9bca4bd90bcb41",
+      "reason": "After successful portable hardware verification, README pending-proof sentence was replaced by actual PASS status and proof link. No HTML, scripts, contracts, models, environment or other proof-pinned bytes changed."
+    }
+  }
+}

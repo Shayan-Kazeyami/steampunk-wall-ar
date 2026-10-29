@@ -1087,8 +1087,8 @@
     },
     {
       "path": "continuation-snapshot/handover/C14_LEFT_LAMPS_AND_GITHUB_2026-10-30.md",
-      "bytes": 6328,
-      "sha256": "443feebb2a0c150bb407caedef7d12a86b6edfb0d2ed703c21a348b7071a87b9"
+      "bytes": 6346,
+      "sha256": "9d1e8b62913bcee6390756cd3dcdc475327a9cb611d0716731a23a5cf92a813e"
     },
     {
       "path": "continuation-snapshot/handover/CONTEXT_CHECKPOINT_2026-10-29.md",
@@ -1097,8 +1097,8 @@
     },
     {
       "path": "continuation-snapshot/handover/CONTEXT_CHECKPOINT_2026-10-30.md",
-      "bytes": 4399,
-      "sha256": "740719d5906a7c98df65be5872c74243e8723f803b8c471b4f0abdb64d8e533d"
+      "bytes": 4577,
+      "sha256": "f7548c76a5f73c36da577c76da42258f052095f37933bba21b861c271e139183"
     },
     {
       "path": "continuation-snapshot/handover/SOURCE_MATERIAL_INTEGRITY_2026-10-28.md",
@@ -1139,6 +1139,11 @@
       "path": "continuation-snapshot/proofs/c14/check_browser.py",
       "bytes": 4362,
       "sha256": "c71d74c333b521c61bd4c2f809f21956b672826011a7c3ca8c1d81c1c254b1fb"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/CONTINUATION_RESULT.json",
+      "bytes": 3786,
+      "sha256": "0e6b06b8f702f68e62422c56a813dbafa5028a01f366179f4e3c1cb11898e870"
     },
     {
       "path": "continuation-snapshot/proofs/c14/CONTRACT_TEST.json",

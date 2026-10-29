@@ -1,0 +1,85 @@
+{
+  "dateLocal": "2026-10-30",
+  "updatedAtUtc": "2026-10-29T21:14:26.976740+00:00",
+  "status": "PASS_C14_LAMP_AND_PORTABLE_PROOFS_GITHUB_UPLOAD_PENDING",
+  "summary": "Left plastic/Emission/silver and complete five-family lamp preview pass source, strict contract and hardware proofs. Portable copies for both Garages pass hardware checks. The bounded development/context snapshot is prepared in an isolated public GitHub review branch; see upload receipt for actual remote status.",
+  "LeftMaterials": {
+    "nodes": 48,
+    "sharedMeshes": 3,
+    "sourcePolygons": 71376,
+    "uniqueTriangles": 8760,
+    "instancedTriangles": 140160,
+    "bytes": 1005015,
+    "errors": {
+      "local_position_max": 0.0,
+      "raw_normal_max": 0.0,
+      "UV_max": 2.9802322387695312e-08,
+      "world_position_max": 0.0,
+      "world_unit_normal_max": 0.0
+    }
+  },
+  "LeftAssembly": {
+    "sourceLamps": 16,
+    "families": 5,
+    "meshes": 80,
+    "materials": 5,
+    "geometryObjects": 20,
+    "triangles": 193920,
+    "sourcePolygons": 98256,
+    "worldOriginMax": 0
+  },
+  "portablePackage": {
+    "status": "PASS_BOTH_HARDWARE_ASSEMBLY_REVIEWS",
+    "sides": 2,
+    "sourceLampsPerSide": 16,
+    "scope": "Assembly readiness, geometry, contracts, origins and zero errors; canonical pixel witnesses remain separate"
+  },
+  "github": {
+    "status": "PENDING",
+    "branch": "continuation-14/context-upload"
+  },
+  "reviews": {
+    "LEFT_MATERIALS_REVIEW.json": "PASS_C14_LEFT_MATERIALS_AND_FIVE_FAMILY_ASSEMBLY_WITHIN_RECORDED_SCOPE",
+    "GITHUB_PACKAGE_REVIEW.json": "PASS_ALLOWLIST_SCOPE_PROTECTED_CONTENT_AND_PORTABLE_PROOF_WITHIN_RECORDED_SCOPE",
+    "RESULT.json": "PASS_C14_SOURCE_COVERAGE_LEFT_MATERIALS_AND_PORTABLE_PACKAGE_REVIEW"
+  },
+  "evidence": {
+    "left": "left-lamp-materials/RESULT.json",
+    "portable": "github/portable-proof/RESULT.json",
+    "inventory": "inventory/RESULT.json",
+    "upload": "github/UPLOAD_RESULT.json",
+    "preservation": "coordination/preservation-after.json",
+    "handover": "Handover/C14_LEFT_LAMPS_AND_GITHUB_2026-10-30.md"
+  },
+  "evidenceSha256": {
+    "left-lamp-materials/RESULT.json": "6152d136b809dfb4dca07c2de54ec841d5c1e30fa14c430d783007e554c3a75f",
+    "github/portable-proof/RESULT.json": "dc49b0b7aede4bb127d124866b8c6c26c1eef4047ea9ace4680671661d2ddadf",
+    "inventory/LEFT_MATERIALS_REVIEW.json": "3ec9efa0d8ea0e18ad7daddcc436cce87ee45f5b959702860ec880b9fe721ab4",
+    "inventory/GITHUB_PACKAGE_REVIEW.json": "844c3b44aac964b4d40bde192e256bf029c82e35f8fb7e1774ae5257dd217a27",
+    "inventory/RESULT.json": "de5831dffa3de1cb40cde5c333de2158b14bcde1f94773e61f582616d8b64d44"
+  },
+  "taskCounts": {
+    "total": 43,
+    "completeAtStatedScope": 15,
+    "openIncludingT21": 27,
+    "merged": 1
+  },
+  "activeOwnedWorkers": [],
+  "shadowWitnessAccepted": false,
+  "fullWallAccepted": false,
+  "phoneAccepted": false,
+  "actualPrintARAccepted": false,
+  "preservation": {
+    "status": "PASS",
+    "protectedMetadataFiles": 50,
+    "scope": "Exact listed metadata and App tracked dirty-file hashes; no redundant print verification or recursive junction traversal.",
+    "publishingHead": "ff3f90646a7c888de9470d252b64ded47f3febc4"
+  },
+  "limits": [
+    "C11 empty-reference shadow guard remains FAILED.",
+    "No full Principled/solid-refraction/radiance/GI/actual-shadow equivalence.",
+    "Both Garages inactive; whole-wall, phone and actual-print AR acceptance remain open.",
+    "Development source snapshot is partial; isolated build and34offline checks pass but full-wall suite is incomplete owing to omitted sibling fixtures.",
+    "Upload is a separate review branch; main and existing deployed tree are outside its mutation scope."
+  ]
+}

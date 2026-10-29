@@ -25,7 +25,7 @@ Target repository is the existing public [steampunk-wall-ar](https://github.com/
 An isolated overlay build passes with webpack performance warnings; 34 offline checks pass. The full-wall suite is **incomplete** because required sibling model/coverage fixtures are outside the bounded snapshot. It is not reported as a full regression pass. Credential-pattern scans found no hits, and explicit package review excludes original/source blends, print outputs and credentials. Remote main has no root GitHub workflow; no root workflow or Pages configuration is added. Pages server settings were not independently readable.
 
 <!-- C14_GITHUB_RECEIPT_START -->
-GitHub package is locally prepared and checked. Actual push and draft-PR receipt are pending final upload.
+GitHub review package is prepared and hardware-checked; actual upload receipt is pending.
 <!-- C14_GITHUB_RECEIPT_END -->
 
 ## Limits and next work
