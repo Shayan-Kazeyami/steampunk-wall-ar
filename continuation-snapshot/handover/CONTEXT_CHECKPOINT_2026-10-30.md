@@ -18,6 +18,7 @@ Historical baseline Models/source-baselines/v79-6879ac01468b/steampunk_V79.blend
 
 [Previous C13 checkpoint](CONTEXT_CHECKPOINT_2026-10-29.md) · [Source material integrity](SOURCE_MATERIAL_INTEGRITY_2026-10-28.md)
 
+
 <!-- C14_ACTUAL_UPLOAD_START -->
-GitHub review package is prepared and hardware-checked; actual upload receipt is pending.
+Uploaded as a [draft pull request](https://github.com/Shayan-Kazeyami/steampunk-wall-ar/pull/1). Main and the deployed tree remain unchanged.
 <!-- C14_ACTUAL_UPLOAD_END -->

@@ -1,7 +1,7 @@
 {
   "dateLocal": "2026-10-30",
-  "updatedAtUtc": "2026-10-29T21:14:26.976740+00:00",
-  "status": "PASS_C14_LAMP_AND_PORTABLE_PROOFS_GITHUB_UPLOAD_PENDING",
+  "updatedAtUtc": "2026-10-29T21:15:14.616113+00:00",
+  "status": "PASS_C14_LEFT_LAMP_ASSEMBLY_CONTEXT_AND_GITHUB_UPLOAD",
   "summary": "Left plastic/Emission/silver and complete five-family lamp preview pass source, strict contract and hardware proofs. Portable copies for both Garages pass hardware checks. The bounded development/context snapshot is prepared in an isolated public GitHub review branch; see upload receipt for actual remote status.",
   "LeftMaterials": {
     "nodes": 48,
@@ -35,8 +35,20 @@
     "scope": "Assembly readiness, geometry, contracts, origins and zero errors; canonical pixel witnesses remain separate"
   },
   "github": {
-    "status": "PENDING",
-    "branch": "continuation-14/context-upload"
+    "status": "PASS_GITHUB_REVIEW_BRANCH_PUSH_AND_DRAFT_PR_CREATED",
+    "repository": "https://github.com/Shayan-Kazeyami/steampunk-wall-ar",
+    "visibility": "public",
+    "branch": "continuation-14/context-upload",
+    "branchUrl": "https://github.com/Shayan-Kazeyami/steampunk-wall-ar/tree/continuation-14/context-upload",
+    "pullRequestUrl": "https://github.com/Shayan-Kazeyami/steampunk-wall-ar/pull/1",
+    "pullRequestDraft": true,
+    "initialUploadedCommit": "9ad7c1e0e4a81daa96a0df47b76d6ca8fc94eaee",
+    "remoteCommit": "9ad7c1e0e4a81daa96a0df47b76d6ca8fc94eaee",
+    "mainBefore": "ff3f90646a7c888de9470d252b64ded47f3febc4",
+    "mainAfter": "ff3f90646a7c888de9470d252b64ded47f3febc4",
+    "uploadedAtUtc": "2026-10-29T21:15:07.496590+00:00",
+    "verification": "Actual git push succeeded; ls-remote matches local commit; main unchanged. Draft PR created through authenticated GitHub API and attached to this chat.",
+    "scope": "Additive portable component review and partial development/context archive; no source blends, print delivery or deployment."
   },
   "reviews": {
     "LEFT_MATERIALS_REVIEW.json": "PASS_C14_LEFT_MATERIALS_AND_FIVE_FAMILY_ASSEMBLY_WITHIN_RECORDED_SCOPE",

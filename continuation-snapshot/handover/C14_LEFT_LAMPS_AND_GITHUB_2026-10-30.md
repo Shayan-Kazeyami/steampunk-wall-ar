@@ -25,7 +25,9 @@ Target repository is the existing public [steampunk-wall-ar](https://github.com/
 An isolated overlay build passes with webpack performance warnings; 34 offline checks pass. The full-wall suite is **incomplete** because required sibling model/coverage fixtures are outside the bounded snapshot. It is not reported as a full regression pass. Credential-pattern scans found no hits, and explicit package review excludes original/source blends, print outputs and credentials. Remote main has no root GitHub workflow; no root workflow or Pages configuration is added. Pages server settings were not independently readable.
 
 <!-- C14_GITHUB_RECEIPT_START -->
-GitHub review package is prepared and hardware-checked; actual upload receipt is pending.
+Uploaded as a [draft pull request](https://github.com/Shayan-Kazeyami/steampunk-wall-ar/pull/1). Main and the deployed tree remain unchanged.
+
+Repository branch: `continuation-14/context-upload`. Verified remote upload commit: `9ad7c1e0e4a81daa96a0df47b76d6ca8fc94eaee`. See `continuation-14/github/UPLOAD_RESULT.json` for the current local receipt. The branch remains a review snapshot; no merge or Pages release was requested.
 <!-- C14_GITHUB_RECEIPT_END -->
 
 ## Limits and next work

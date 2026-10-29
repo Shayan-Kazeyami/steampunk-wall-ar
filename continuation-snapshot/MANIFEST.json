@@ -1081,14 +1081,19 @@
       "sha256": "e01fe8c3fa45995ca2776d6ea6a05fa54bf474d8b10e0001b625a2799419e6ed"
     },
     {
+      "path": "continuation-snapshot/GITHUB_UPLOAD.md",
+      "bytes": 419,
+      "sha256": "aba27fe7b5e030904c7fd345238d3b1bc09d68445495822b40bcbe2f32c551af"
+    },
+    {
       "path": "continuation-snapshot/handover/C13_GARAGE_RUNTIME_MATERIALS_2026-10-29.md",
       "bytes": 6352,
       "sha256": "9e8f3734af352df3c23cfc0dc317bb2f0a2f5fbb370295968c1f8d2941d19ae8"
     },
     {
       "path": "continuation-snapshot/handover/C14_LEFT_LAMPS_AND_GITHUB_2026-10-30.md",
-      "bytes": 6346,
-      "sha256": "9d1e8b62913bcee6390756cd3dcdc475327a9cb611d0716731a23a5cf92a813e"
+      "bytes": 6687,
+      "sha256": "732aff94858913f4c9ae5f46ef5201eeb7c85a31b17bcd475ec576fff6738cad"
     },
     {
       "path": "continuation-snapshot/handover/CONTEXT_CHECKPOINT_2026-10-29.md",
@@ -1097,8 +1102,8 @@
     },
     {
       "path": "continuation-snapshot/handover/CONTEXT_CHECKPOINT_2026-10-30.md",
-      "bytes": 4577,
-      "sha256": "f7548c76a5f73c36da577c76da42258f052095f37933bba21b861c271e139183"
+      "bytes": 4631,
+      "sha256": "7ecad5a7275d50e58f0162f9e3f09ca12d54b2a01bf39ad6c3bf7c3b913815d8"
     },
     {
       "path": "continuation-snapshot/handover/SOURCE_MATERIAL_INTEGRITY_2026-10-28.md",
@@ -1142,8 +1147,8 @@
     },
     {
       "path": "continuation-snapshot/proofs/c14/CONTINUATION_RESULT.json",
-      "bytes": 3786,
-      "sha256": "0e6b06b8f702f68e62422c56a813dbafa5028a01f366179f4e3c1cb11898e870"
+      "bytes": 4798,
+      "sha256": "ffe0466df0080fa4dacdd42331d072fb8b0c3a3db8ad856afad38c180eecb9bd"
     },
     {
       "path": "continuation-snapshot/proofs/c14/CONTRACT_TEST.json",
