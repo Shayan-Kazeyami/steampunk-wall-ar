@@ -21,7 +21,7 @@ const CONTROL_KEY_BY_LABEL = Object.fromEntries(CONTROL_DEFINITIONS.map(item => 
 CONTROL_KEY_BY_LABEL['Reduce motion'] = 'reduceMotion'
 
 const HELPER_TEXT = {
-  landing: 'Start scans the printed artwork. Preview animation shows the gear without AR.',
+  landing: 'Preview animation needs no camera. For AR, open this HTTPS page in a camera-enabled mobile browser and scan the Garage Left artwork. Internet access is required.',
   loading: 'Allow camera access when your browser asks.',
   searching: 'Fill the frame with the print.',
   tracked: 'Turn away to release; aim back to reacquire.',
@@ -170,7 +170,14 @@ export function createUIController({
   const helper = createElement('p', 'steampunk-ui__helper')
   helper.hidden = true
 
-  hud.append(brand, previewFlag, status, helper)
+  const artwork = createElement('a', 'steampunk-ui__helper', 'View or print the Garage Left artwork')
+  artwork.href = './assets/target-sample.html'
+  artwork.target = '_blank'
+  artwork.rel = 'noopener'
+  artwork.style.pointerEvents = 'auto'
+  artwork.style.color = 'inherit'
+  artwork.setAttribute('aria-label', 'View or print the Garage Left artwork (opens a new tab)')
+  hud.append(brand, previewFlag, status, helper, artwork)
   top.append(hud)
 
   const dock = createElement('div', 'steampunk-ui__dock')
@@ -333,6 +340,7 @@ export function createUIController({
     helper.hidden = helperText === ''
 
     previewFlag.hidden = currentState !== 'preview'
+    artwork.hidden = !['landing', 'error'].includes(currentState)
 
     const visible = resolveVisible(currentState, canRetry)
     for (const definition of CONTROL_DEFINITIONS) {
