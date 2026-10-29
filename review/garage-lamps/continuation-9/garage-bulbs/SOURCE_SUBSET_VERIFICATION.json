@@ -1,0 +1,435 @@
+{
+  "status": "PASS_INDEPENDENT_FRESH_SOURCE_BULB_SUBSETS_ALL32",
+  "source_audit_sha256": "0fd6fa2802c64f05acd50e0ae7dbd5018e8aef77a4041b6ca74b9a5458dec724",
+  "objects": [
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.032",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.033",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.034",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.035",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.036",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.037",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.038",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.039",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.040",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.041",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.043",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.044",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.045",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.046",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.047",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "05_GARAGE_L",
+      "source": "Left bulb.042",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.048",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.049",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.050",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.051",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.052",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.053",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.054",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.055",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.056",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.057",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.058",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.059",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.060",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.061",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.062",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    },
+    {
+      "stem": "06_GARAGE_R",
+      "source": "Left bulb.063",
+      "polygons": 592,
+      "triangles": 1184,
+      "max_absolute_position_normal_uv_error": [
+        1.405155188732854e-08,
+        7.417729741554524e-08,
+        5.774199962615967e-08
+      ],
+      "all_and_only_fresh_source_bulb_faces": true,
+      "cyclic_winding_preserved": true
+    }
+  ],
+  "strict_absolute_bound": 2e-06,
+  "source_unavailable_weight_preserved": true,
+  "other_source_materials_excluded": [
+    "plastic",
+    "Emission",
+    "silver",
+    "glass"
+  ],
+  "limitations": [
+    "Only genuine source bulb material polygons, not complete mechanical lamp assemblies",
+    "Source-assigned glass is real and remains separate unconverted material scope",
+    "No fullwall, GI,caustics,phone or print acceptance"
+  ]
+}

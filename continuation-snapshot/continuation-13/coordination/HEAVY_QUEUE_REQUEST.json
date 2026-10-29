@@ -1,0 +1,8 @@
+{
+  "owner": "C13 coordinator",
+  "status": "PASS_PRIVATE_LEFT_GLASS_RIGHT_THREE_MATERIALS_AND_FIVE_FAMILY_LAMP_RUNTIME_ASSEMBLY",
+  "activeOwnedWorkers": [],
+  "next": [],
+  "coordination": "C13 complete; owned jobs closed, slot released. No automatic queue. C9 retains separate ownership.",
+  "finalResult": "coordination/CONTINUATION_RESULT.json"
+}

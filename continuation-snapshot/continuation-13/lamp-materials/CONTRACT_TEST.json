@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FAIL_CLOSED_48_SOURCE_BINDINGS_AND_MAPPED_SOCKETS",
+  "negative_controls": [
+    "late_wrong_family",
+    "late_wrong_source_hash",
+    "late_wrong_roughness",
+    "wrong_emission_strength",
+    "missing_extensions",
+    "late_texture_added",
+    "late_opacity_changed",
+    "late_wrong_material_type",
+    "late_wrong_side",
+    "unpinned_manifest",
+    "late_active_clearcoat",
+    "late_active_sheen",
+    "late_active_iridescence",
+    "late_active_anisotropy",
+    "late_active_thickness",
+    "late_active_dispersion",
+    "late_specular_intensity"
+  ],
+  "every_rejection_preserves_all_shadow_flags": true
+}

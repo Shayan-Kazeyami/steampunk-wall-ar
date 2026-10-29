@@ -1,0 +1,17 @@
+{
+  "name": "steampunk-wall-ar-verification",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Isolated offline checks; not an AR runtime dependency",
+  "scripts": {
+    "test": "node ../../tests/offline-checks.cjs"
+  },
+  "engines": {
+    "node": "22.23.4",
+    "npm": "10.9.9"
+  },
+  "dependencies": {
+    "jsdom": "26.1.0",
+    "three": "0.158.0"
+  }
+}

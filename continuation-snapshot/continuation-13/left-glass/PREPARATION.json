@@ -1,0 +1,34 @@
+{
+  "status": "CPU_PREPARED_AWAITING_ROOT_BLENDER_SLOT",
+  "source_wall": "05_GARAGE_L",
+  "expected_source_ids": [
+    "Left bulb.032",
+    "Left bulb.033",
+    "Left bulb.034",
+    "Left bulb.035",
+    "Left bulb.036",
+    "Left bulb.037",
+    "Left bulb.038",
+    "Left bulb.039",
+    "Left bulb.040",
+    "Left bulb.041",
+    "Left bulb.042",
+    "Left bulb.043",
+    "Left bulb.044",
+    "Left bulb.045",
+    "Left bulb.046",
+    "Left bulb.047"
+  ],
+  "all_source_ids_exact": true,
+  "source_graph_exact_to_C12_Right_audit": true,
+  "material_differences": [],
+  "launch_command": "python Models/delivery-wave-2026-10-26/reconstruction/continuation-13/left-glass/run_job.py build",
+  "bounded_seconds": 120,
+  "source_blend": "D:\\Shayan\\Projects\\Upwork\\Steampunk-AR\\Models\\delivery-wave-2026-10-26\\reconstruction\\continuation-12\\garage-left\\garage-left-source-materials-repaired.blend",
+  "source_blend_sha256": "c751d11ad0b286a6af21f5095d80996a1c0c48ba18dcd6c417915dffcbe4ede5",
+  "scope_limits": [
+    "C11 empty-shadow-reference guard remains FAILED; no threshold retune or GI approval",
+    "Source physical solid glass vs browser transmission/zero-volume behavior remains engine dependent",
+    "No App/Publishing/source/print/shared handover writes"
+  ]
+}

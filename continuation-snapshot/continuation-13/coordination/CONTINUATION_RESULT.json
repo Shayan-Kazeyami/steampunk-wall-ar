@@ -1,0 +1,99 @@
+{
+  "dateLocal": "2026-10-29",
+  "updatedAtUtc": "2026-10-29T15:50:02.874996+00:00",
+  "status": "PASS_PRIVATE_LEFT_GLASS_RIGHT_THREE_MATERIALS_AND_FIVE_FAMILY_LAMP_RUNTIME_ASSEMBLY",
+  "summary": "Left actual glass stems and Right plastic/Emission/silver subsets pass source geometry, bounded constant camera-material mapping, rejection controls and hardware checks. Right runtime preview combines all five source-assigned families for all sixteen lamps with complete disjoint source coverage. Overall shadow/GI, full-wall and phone acceptance remain open.",
+  "LeftGlass": {
+    "nodes": 16,
+    "sourcePolygons": 17408,
+    "uniqueTriangles": 2176,
+    "instancedTriangles": 34816,
+    "bytes": 255537
+  },
+  "RightMaterials": {
+    "families": [
+      "plastic",
+      "Emission",
+      "silver"
+    ],
+    "nodes": 48,
+    "sourcePolygons": 71376,
+    "sharedMeshes": 3,
+    "uniqueTriangles": 8760,
+    "instancedTriangles": 140160,
+    "bytes": 998431,
+    "measuredLocalAndWorldErrors": "See lamp-materials/VERIFICATION.json"
+  },
+  "RightAssembly": {
+    "sourceLamps": 16,
+    "families": 5,
+    "meshes": 80,
+    "sourcePolygons": 98256,
+    "scope": "Runtime assembly preview of independently source-verified subsets; not a full-wall model or GI/shadow/radiance equivalence result"
+  },
+  "files": {
+    "left-glass/left-glass.gltf": {
+      "bytes": 20529,
+      "sha256": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229"
+    },
+    "left-glass/left-glass.bin": {
+      "bytes": 235008,
+      "sha256": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f"
+    },
+    "lamp-materials/right-lamp-materials.gltf": {
+      "bytes": 52351,
+      "sha256": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd"
+    },
+    "lamp-materials/right-lamp-materials.bin": {
+      "bytes": 946080,
+      "sha256": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664"
+    }
+  },
+  "reviews": {
+    "LEFT_GLASS_REVIEW.json": "PASS_LEFT_GLASS_SOURCE_SUBSET_AND_HARDENED_RUNTIME_CONTRACT_WITHIN_SCOPE",
+    "RIGHT_MATERIALS_REVIEW.json": "PASS_RIGHT_THREE_FAMILY_SUBSETS_AND_FIVE_FAMILY_ASSEMBLY_WITHIN_SCOPE",
+    "RESULT.json": "PASS_C13_CURRENT_SOURCE_COVERAGE_LEFT_GLASS_AND_RIGHT_MATERIAL_ASSEMBLY_REVIEWED"
+  },
+  "technicalReview": "PASS_READONLY_SOURCE_GEOMETRY_NATIVE_FACTORS_AND_HARDENED_RUNTIME_CONTRACT",
+  "evidence": {
+    "left": "left-glass/RESULT.json",
+    "right": "lamp-materials/RESULT.json",
+    "assembly": "lamp-materials/ASSEMBLY_BROWSER_RESULT.json",
+    "coverage": "lamp-materials/ASSEMBLY_SOURCE_PROOF.json",
+    "inventory": "inventory/RESULT.json",
+    "preservation": "coordination/preservation-after.json",
+    "handover": "Handover/C13_GARAGE_RUNTIME_MATERIALS_2026-10-29.md"
+  },
+  "evidenceSha256": {
+    "left-glass\\RESULT.json": "7ef001af8f634575b323ed0bf3464a1b022f9c2d90cf472515fdc42eb1789736",
+    "lamp-materials\\RESULT.json": "2f2d251b229d3e271c15468cdd1edb913d263dd608baf544e6fa76bb7a03aa7d",
+    "lamp-materials\\ASSEMBLY_BROWSER_RESULT.json": "d0c8c6b9ddea8e2e0a0d26a80aaed4adc7ca2670e4258b937b7c01a176c6ad32",
+    "inventory\\LEFT_GLASS_REVIEW.json": "6c8c71c614faff04c32a360dc25ce59f813060c49267fbf6e2e7ce13f278a8aa",
+    "inventory\\RIGHT_MATERIALS_REVIEW.json": "45f706cca6e3f48d8f6f359eca7802e888744a7dbe7fa2f857eb5ff03a7ed2d2",
+    "inventory\\RESULT.json": "eab26fabc48cbb2535fda94c3e1ce6438b97f5beb4949cddd1c0c7de5367f9b4"
+  },
+  "taskCounts": {
+    "total": 43,
+    "completeAtStatedScope": 15,
+    "openIncludingT21": 27,
+    "merged": 1
+  },
+  "activeOwnedWorkers": [],
+  "shadowWitnessAccepted": false,
+  "fullWallAccepted": false,
+  "phoneAccepted": false,
+  "actualPrintARAccepted": false,
+  "preservation": {
+    "status": "PASS",
+    "protectedMetadataFiles": 50,
+    "publishingHead": "ff3f90646a7c888de9470d252b64ded47f3febc4",
+    "scope": "Exact listed metadata and App tracked dirty-file hashes; no redundant print verification or recursive junction traversal."
+  },
+  "limits": [
+    "Constant source camera-material factors only; no full Principled/solid-refraction/radiometric/GI equivalence.",
+    "Native emissive surfaces do not provide source GI illumination of neighboring objects.",
+    "C11 empty-reference shadow guard remains FAILED.",
+    "Both Garages inactive; complete walls, Left remaining three material routes, phones and physical-print AR acceptance remain open.",
+    "Shared runtime/environment excluded from model payload; no phone resource budget approval."
+  ]
+}

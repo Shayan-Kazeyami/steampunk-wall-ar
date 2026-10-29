@@ -1,0 +1,1214 @@
+{
+  "files": [
+    {
+      "path": "continuation-snapshot/app-changes/.github/workflows/verify.yml",
+      "bytes": 1659,
+      "sha256": "f3216de7e81191c78e73b32e542c0972a9071809089c9f119f246fd26c56384a"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/assets/targets/driveway-sign.png",
+      "bytes": 1908164,
+      "sha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/assets/targets/driveway-sign.provenance.json",
+      "bytes": 4596,
+      "sha256": "2411be9e0d0ee491dc0073944409ff286c653ed47826eef8428d2b6eed901476"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/config/targets/driveway.json",
+      "bytes": 1446,
+      "sha256": "240e882da9d00df9597b0db70f77acda1db41ebfb7c336c4be37bb8f7c3f5ab4"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/config/wall-color-reference.json",
+      "bytes": 2692,
+      "sha256": "e02adacab9b17fae557619db044b904f4e252728b4a3d89c987d16ed9a18f17f"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/config/webpack.config.js",
+      "bytes": 3938,
+      "sha256": "a66dd73124b163b50ec82506086ff09d602857251027d56d2be65ec93d1cae24"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/FULL_WALL_AR.md",
+      "bytes": 8342,
+      "sha256": "3aabdb5a11456fc2997ca0951a9ff232f22a31ce72da83513211358915673cf4"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/image-targets/steampunk-driveway-sign.json",
+      "bytes": 639,
+      "sha256": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/image-targets/steampunk-driveway-sign_luminance.png",
+      "bytes": 397877,
+      "sha256": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/image-targets/steampunk-driveway-sign_thumbnail.png",
+      "bytes": 220877,
+      "sha256": "199793099d144a3f128fadb9d84bf5952590367e9a2ce9616a30c042ff6a7767"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/package.json",
+      "bytes": 1404,
+      "sha256": "955b1d878eb619e50cce19bbf47569d40d731bbf3e762fafb1c79f7318c50e80"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/assets/driveway-qr.png",
+      "bytes": 903,
+      "sha256": "37711ccd8b3bf8aa8435ac9467da4fe661387f921944f6cddc2d3cc21bf8949c"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/assets/driveway-sample.html",
+      "bytes": 1565,
+      "sha256": "cddee19d98a5816f5b7f59617e048062548ca505b641ae45cbc75dcc8f52f882"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/assets/driveway-target.png",
+      "bytes": 1908164,
+      "sha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/assets/driveway.jpg",
+      "bytes": 419241,
+      "sha256": "fa0ede95427d79a89b036ab2684306ee4f74e27a39d5abc1c569358f49d037c2"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/assets/full-wall/HDRI-PROVENANCE.json",
+      "bytes": 756,
+      "sha256": "e308302dfa2f8c02334d5cf676da76a991ae37ef4f78bed988537abec0c21367"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/assets/full-wall/studio_small_09_1k.hdr",
+      "bytes": 1615248,
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/assets/full-wall/THREE-LICENSE.txt",
+      "bytes": 1104,
+      "sha256": "dfbcc6bc161ba4d2f56cbdf0ad8b85b3879fb2534980f2acb0465350be3a7511"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/catalog/index.js",
+      "bytes": 810,
+      "sha256": "8469ee8c2cf26c6f88c46a07c09bebdc4cd78f352f1c962710db0b25b3591f02"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/effects/evidence/contract-check.js",
+      "bytes": 11303,
+      "sha256": "6d082d844a08115e1a73924e6eb393007a796d31c4e2bf9a4f261129178f6a05"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/effects/index.js",
+      "bytes": 23233,
+      "sha256": "26440653a48ef581811abe66df8291c01775f7d6c50e8f37e13baed7bc3f59c4"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/index.js",
+      "bytes": 21097,
+      "sha256": "6e6dbb64bca73d472803d0253c275e5d0901d24134a7f0f8c323c69150b14b82"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/runtime/animation-runtime.js",
+      "bytes": 13417,
+      "sha256": "56645d75b63290d25281d21cfec6532032e98ba0bc195eff5d2be8d9082ac9e0"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/runtime/asset-instancing.js",
+      "bytes": 19177,
+      "sha256": "728ae5b010ebcab3c6e689e4770c33ebae3e3d385c3c919fefd3c0208603b1b7"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/runtime/border-extension.js",
+      "bytes": 4807,
+      "sha256": "60ea7eff68ffec51e9e37a128fbe059cccdbffe7bbe0716846b50cf124e3b32e"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/runtime/connector-appearance.js",
+      "bytes": 7321,
+      "sha256": "4e24db9082d408a1b93e0881d28bd5843826d252713af8f32e59cab0df472764"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/runtime/environment-lighting.js",
+      "bytes": 20196,
+      "sha256": "e899be30dbc87986d7a2130fd9cc35ee20aa8c138b1d69f9e5ce326bf23d10e3"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/runtime/experience-polish.js",
+      "bytes": 10659,
+      "sha256": "cf30e7f1502d050069d274dad9bd65654f63cf2b007b5c7b3ffc0bff8c08fb91"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/full-wall/runtime/machine-effects.js",
+      "bytes": 21520,
+      "sha256": "d9e8dc05522198c694402c293d62f29b0c3a3f55eb477cca564b0e9feb0d066b"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/index.html",
+      "bytes": 1822,
+      "sha256": "1068c37b3f4be3639e2e50665b3d03fdf20b91c6620b9a72da6b5d74838a9b21"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/main.js",
+      "bytes": 30686,
+      "sha256": "63ad467065581bd8b50803b9025b8241bd7067fbb1e0e635d06c4c84e6ded4cc"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/shared/field-session.js",
+      "bytes": 5532,
+      "sha256": "aacdf39a536e6cd4be4eacc589d18e1af0362495554ed20dbd26fdd48752ce77"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/shared/load-preview.js",
+      "bytes": 1349,
+      "sha256": "7fcf3258cb1e7a03b96ef1521134e5d6809527e67a562d72a9b56f9936c0eb3c"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/shared/load-wall.js",
+      "bytes": 5804,
+      "sha256": "a12c447ad7876badd672a2d01c3df2e1335b3b79c405f364aaae2119c0630cf2"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/shared/render-benchmark.js",
+      "bytes": 7592,
+      "sha256": "b660b17456b9cdca56c7459db25bf3699816530b754fb90ae4da23b9244c9df2"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/shared/spec.json",
+      "bytes": 10322,
+      "sha256": "f91722263e1beb516762a7be0b71aa5b2d5fab3e7a197aee626ff2195db06ab5"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/shared/tracking-events.js",
+      "bytes": 11561,
+      "sha256": "e5c377c37fc7e2420cc7b82ec67c4d875eb66a844dee0682c6d336b12e9b7d89"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/shared/world-snow.js",
+      "bytes": 4858,
+      "sha256": "b567e41d2948396459ce18aff57a28d4d428ad6f0c8c0f71ce5042ab6b91f923"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/tracking/camera-lighting.js",
+      "bytes": 8566,
+      "sha256": "47aac893d58a319301e4340fc6ce0847bbdc62a29419c8d20c7a37eee72717f9"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/tracking/index.js",
+      "bytes": 56081,
+      "sha256": "49405e2c10037bde885df003dd878b638784aa72d5e346e72660fa7290a65728"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/tracking/wall-color-match.js",
+      "bytes": 8692,
+      "sha256": "96f79535170f85511163e6795fcb0b1645b7bec44ccbe7896c23847dc6139993"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/tracking/wall-coverage.js",
+      "bytes": 2962,
+      "sha256": "f4de46fd3d3efbad8f744998ec82d04b846f51a5356fc4565b6a892f297f5bdb"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/ui/controller.js",
+      "bytes": 40902,
+      "sha256": "4eee8934b7bb10032d89bb420004e8793c7568bc4269f5ff7a0f17c4bc7c1160"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/src/ui/ui.css",
+      "bytes": 41698,
+      "sha256": "3a5db16e1f86cf775bf43af730d18bc4c5d19ecec39ce23864ad152e3c741c72"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/adaptive-runtime.cjs",
+      "bytes": 5286,
+      "sha256": "8b312c52eff986fe910b6b7c1ec33dce6d207d1ccfad898fadc60e9f20bbf0eb"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/appearance.cjs",
+      "bytes": 6286,
+      "sha256": "317e15a322e940af85cc69b4bc62c1ba4a2e56b4f08ff5ebab5485d57c3040e5"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/asset-instancing-integration.cjs",
+      "bytes": 9132,
+      "sha256": "12c26cc7f96bdeda128c9bfea082b2f8da2858e637059bbf6bf5a16e85e10d66"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/asset-instancing.cjs",
+      "bytes": 17359,
+      "sha256": "840a7d917661ac14216aad03e49c43434c8e2975bd872f3b4e0514bb5c0fafed"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/border-extension.cjs",
+      "bytes": 3638,
+      "sha256": "13202c55ee2394196d2d5255ed7e4c45e9e8174155b22fe262a2732f8ca2dd8e"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/camera-reference-lighting.cjs",
+      "bytes": 2673,
+      "sha256": "000e8dfdbca8953e900d0d6348d320902b31fc766d340bc26487ae5a9e9865cf"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/camera-wall-correspondence.cjs",
+      "bytes": 6265,
+      "sha256": "c962be457e810ae9684f00e90563c0c1047d174743ef4fba40ebf9cbffbc1fe7"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/connector-appearance.cjs",
+      "bytes": 3669,
+      "sha256": "42a70d7d87af4077816949c0493b36e82dc848c835db021c71cd431b92288442"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/coordinator-lifecycle.cjs",
+      "bytes": 7811,
+      "sha256": "b9b2604644565faaeb55a169eda818f8d31f700e9a2c7fdb2a5f869b238530e7"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/coordinator-observations.cjs",
+      "bytes": 3427,
+      "sha256": "7d8cc3f3618fda86620dea8923b7eb25278bccad7717db2d75f6f4fe4d6c5256"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/driveway-effects.cjs",
+      "bytes": 4875,
+      "sha256": "f6ea154a5e58a029a36d405b226f3fb2a9377de6aa3570e18b473b717038c5a9"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/driveway-enhancements.cjs",
+      "bytes": 8539,
+      "sha256": "863ddf371ef97cd72134ad4c9b90f5e039894fa45087c13e68fe54d98dcebc07"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/environment-lighting.cjs",
+      "bytes": 14907,
+      "sha256": "76aeeef0b800506f42d7a638377ada02ba4e03f52704b3e192be760e35e34287"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/environment-recovery-integration.cjs",
+      "bytes": 9814,
+      "sha256": "37cda4d0b0a62687574f94271480a8033e739f00740b499184efbec05a17a8a0"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/field-session.cjs",
+      "bytes": 3536,
+      "sha256": "22a2e168b09a47a71270d42a055f0c812ae485f012dbb6716975dbbe8a1d9f2c"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/fixtures/wall-color-artwork.json",
+      "bytes": 4442,
+      "sha256": "4b04040c9f8217dc4b4910afac87fd4b3cf8292c0a59d564a67602672cd1dfde"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/full-wall-coordinator.cjs",
+      "bytes": 11078,
+      "sha256": "4ac008343c6f797c79ab84065723258ce543f6a838f9f2895d53335825db5451"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/full-wall-effects.cjs",
+      "bytes": 11147,
+      "sha256": "d09354fb98f2e93ce9bfe6405b3673fc99cc50d20c8ab7d05a081ff292c1bed5"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/full-wall-loader.cjs",
+      "bytes": 5969,
+      "sha256": "af2304186711086d60100537ab9629d11b90873dae064fc1b8e7c0a4e2041d10"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/full-wall-tracking.cjs",
+      "bytes": 8952,
+      "sha256": "e11478d3358584999c5536686e0b1815600c20eae39286c296e57b9350d11c09"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/full-wall-ui.cjs",
+      "bytes": 6890,
+      "sha256": "59f38e1aef72c6f30b51d107e609377d2d3d147fa4106f011ddf9e7ec2088680"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/loading-progress-loader.cjs",
+      "bytes": 3449,
+      "sha256": "6b72286565cc079c5ac1c2b1870c6167ddb55fe503171a7ca7edaa906965f0ba"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/loading-progress-ui.cjs",
+      "bytes": 7219,
+      "sha256": "6751b74cdf877022452f78c95f5ad08dbe0948b9d34c5539ece064067faf830e"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/machine-interactions.cjs",
+      "bytes": 4375,
+      "sha256": "f1ed69b6ffae20afff004502d1615858afeaea5a479730f6df24f8de1d6e55a6"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/mobile-options-ui.cjs",
+      "bytes": 3431,
+      "sha256": "235bfa8e628d224a024f40264769db97d5de87366c1ab14d7428b2408a85dfd1"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/offline-checks.cjs",
+      "bytes": 10949,
+      "sha256": "f6c2f2e9c0cfc2f2a9633ba369aeed62aeb94d51822a7a19f1ca2f0a498dcedb"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/preview-loader.cjs",
+      "bytes": 1964,
+      "sha256": "4bcc2987352803efd12bcded362a9f6a37683cd7eea33c40c04eb325b1e52116"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/README.md",
+      "bytes": 6704,
+      "sha256": "f756e38de3a312afda7303e4103cdf031e0054b3c10295718be8cd1fff2a9ce5"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/render-benchmark.cjs",
+      "bytes": 5953,
+      "sha256": "c31313b74e02a486097771eb8aa70bd9276c1a880996d8db7ef54921119c9229"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/runtime-regressions.cjs",
+      "bytes": 5994,
+      "sha256": "123662f81099de145f94336f780f97d87e95ed2ea1dceb8b484b67a489f857e7"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/steam-variation.cjs",
+      "bytes": 13052,
+      "sha256": "322f157591b79a77c41ded9eb65bd446f8dbacca9c6f2756ef3f91d53f237bf3"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/tracked-wall-lighting.cjs",
+      "bytes": 6161,
+      "sha256": "ad52f201625cbfe115321be8b347e69aad8cc475f30069a50634367635397a3b"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/tracking-events.cjs",
+      "bytes": 12042,
+      "sha256": "d3e306612b8d7b4f2175f3be89050c671ab6def0c8a1944641266f9ca1ebc78e"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/tracking-observations.cjs",
+      "bytes": 14952,
+      "sha256": "9e365e2f8d0aac025df0409bc761d842b93f7cfbc30758a69427e15a7a7b3b84"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/tracking-stabilization.cjs",
+      "bytes": 4824,
+      "sha256": "f84f1361ae68a1ac18b34dfe6cc3f745e6844448af128be8084df4ce8b11d53f"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/two-wall-coordinator.cjs",
+      "bytes": 18948,
+      "sha256": "1c18105253f65a2db8a204487a8a2d58169a9bda887ec9be2bf459a6546556dc"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/two-wall-tracking.cjs",
+      "bytes": 17915,
+      "sha256": "c1bb5016b728118a2837ae22a748c42a1166109bc2f428cf6767895510f5e507"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/two-wall-ui.cjs",
+      "bytes": 6216,
+      "sha256": "0240fda05a6240cc9575222cc98b810f3a6cc70721bff36faa056846cd939520"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/wall-color-match.cjs",
+      "bytes": 8517,
+      "sha256": "71d105ae1883c8ffab74eb9ac3572c2155b928aa78c4fe5d100fe7cbb580d8f7"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/wall-coverage-coordinator.cjs",
+      "bytes": 4712,
+      "sha256": "7d9e6e4e1e223cd8462e3b11d8740df5c20290660f00b02b845ecd2897910e27"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/wall-coverage.cjs",
+      "bytes": 8639,
+      "sha256": "d12e55262330a376b651d4968b35f300711d7ea76307a7ebf8c5316e0a0f332c"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tests/world-snow.cjs",
+      "bytes": 4511,
+      "sha256": "273acdd5909ff7894537787b929b26c67d3c2371b5278c5f61f37ce265bb48fd"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tools/build-pages.cjs",
+      "bytes": 3706,
+      "sha256": "b4554662953ae669b8a76afcf0a2e613813adac675a619155b7d1a66006dfd2a"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tools/verification/.gitignore",
+      "bytes": 25,
+      "sha256": "5900e4bf44f0fc3a6bf86845e7c22a917d0c0fbc092f00e8340684842a6b5f0d"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tools/verification/check-static.cjs",
+      "bytes": 2592,
+      "sha256": "d7664e131778ac82a6c24d88de1be607fa7991bbf0d4a5bdc3dbee7be475bdf0"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tools/verification/package-lock.json",
+      "bytes": 18789,
+      "sha256": "98e236b41001ec6c3b09aef8290dcfe092ef9b120cd8cf90a4c8741a88c88cb7"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tools/verification/package.json",
+      "bytes": 383,
+      "sha256": "a728913ac3a0ef3fddbe4fa9e016b2f5251dffdb446e1bb1c5dba3b49d350f82"
+    },
+    {
+      "path": "continuation-snapshot/app-changes/tools/verification/run-full-wall.cjs",
+      "bytes": 2080,
+      "sha256": "6df93831f044af0bb0fd8707b2b1b898cf2cf1cf8b9bd4f5605db419b8d9c3bb"
+    },
+    {
+      "path": "continuation-snapshot/app-tracked-source.patch",
+      "bytes": 240188,
+      "sha256": "e637a6ab87f14e7366e02392baef466b465bdf0bc5211b57e0d344a0984f35dc"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/CONTINUATION_RESULT.json",
+      "bytes": 4608,
+      "sha256": "beac17482240b288c292c37f5ae5b62889ec797552783cff9e47893524e72111"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/finalize.py",
+      "bytes": 8121,
+      "sha256": "894c0e6284846f6b37bf4ad99ae4347c72774c23f63f7d1259b92c45539460e8"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/HEAVY_QUEUE_REQUEST.json",
+      "bytes": 358,
+      "sha256": "d1ec91be9e348c19a2140e04646b1f06874a772642b44950cd4a6e350ecd5427"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/preservation-after.json",
+      "bytes": 15660,
+      "sha256": "0405f4cdf04e7b272bbb517ce5f9289c330b3202cc1be49253ade7ecf5bd14eb"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/preservation-before.json",
+      "bytes": 15465,
+      "sha256": "18077eedf6aae728999ab56124d029e39b772930cc66fb10262eb3f9d6d348dd"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/preservation.py",
+      "bytes": 2429,
+      "sha256": "3f9cfd2f51ce84b8cb23ec15bdf29fa7a5dcf78e39e07d88f536d1310e7b2b48"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/PROGRESS.json",
+      "bytes": 1942,
+      "sha256": "fd3ee313163d6489b43f61b8ab3817a224ea8f9a1f193d084d42d87d793c2748"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/coordination/update_context.py",
+      "bytes": 8466,
+      "sha256": "baa029d1763c3190c05d9708dd98644a081d93d652f6da1d19a05fe399532c03"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/inventory/LEFT_GLASS_REVIEW.json",
+      "bytes": 6812,
+      "sha256": "6c8c71c614faff04c32a360dc25ce59f813060c49267fbf6e2e7ce13f278a8aa"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/inventory/RESULT.json",
+      "bytes": 2641,
+      "sha256": "eab26fabc48cbb2535fda94c3e1ce6438b97f5beb4949cddd1c0c7de5367f9b4"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/inventory/RIGHT_MATERIALS_REVIEW.json",
+      "bytes": 12464,
+      "sha256": "45f706cca6e3f48d8f6f359eca7802e888744a7dbe7fa2f857eb5ff03a7ed2d2"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/inventory/SOURCE_COVERAGE.json",
+      "bytes": 48892,
+      "sha256": "e03e57e8eeeb6615f738a241ff1e6e56f017907bd70c0303b36344900561f6a0"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/inventory/SOURCE_COVERAGE.md",
+      "bytes": 1551,
+      "sha256": "500a8e73124047202a62188734e7b7e85d7bd65d66f7e1d98747d4d4ade57e02"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/__pycache__/build.cpython-313.pyc",
+      "bytes": 21903,
+      "sha256": "cfefca79b883ba6058cdb5f02c33c7da674d5ad59154faae4b13aed2b2f01984"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/assembly-all16.png",
+      "bytes": 13296,
+      "sha256": "ad58116bfb95b1858d2b130e71a4f332cb1e12c8d1b3c8a2d333c7da9dc46a2d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/assembly-browser-worker.json",
+      "bytes": 167,
+      "sha256": "b6904810396a8a06e2feab176e7cb12e65cf6459088429130b97c2a83df03259"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/assembly-browser.html",
+      "bytes": 7439,
+      "sha256": "e518cf6f754e6b3416b646e77877edca12857d85ea15bd88ea9128c5d163c8c0"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/assembly-first-lamp.png",
+      "bytes": 117623,
+      "sha256": "ff3fe21ab1535cb472ad35e7ac34b98e09d9f6faaf12f0760e5b25aab0b411b9"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/assembly-pins.json",
+      "bytes": 2079,
+      "sha256": "80c60e4dfa00d5852c31b25addcdcb1e64be76247944a6ce881c0915e39d59cf"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/ASSEMBLY_BROWSER_RESULT.json",
+      "bytes": 8006,
+      "sha256": "d0c8c6b9ddea8e2e0a0d26a80aaed4adc7ca2670e4258b937b7c01a176c6ad32"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/ASSEMBLY_SOURCE_PROOF.json",
+      "bytes": 4616,
+      "sha256": "2f212de0af0586e637ffd1a18d16a3f857c4506247717226db9e95616622e76e"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/ATTEMPTS.json",
+      "bytes": 1092,
+      "sha256": "d7ab610ec0dd14a772a2fcbc54bfd65f3e3d496cfc829dece6d8019258ea64e9"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/browser-all48-overview.png",
+      "bytes": 9750,
+      "sha256": "e5aadd7d2acc485e0770e83c529240e64eb7a6bd7935a8061b10e2aa9797998d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/browser-worker.json",
+      "bytes": 167,
+      "sha256": "b1493b76bf85157d020572a20c56836099cb7f87ede0d0c16a273a52364c2d22"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/browser.html",
+      "bytes": 4488,
+      "sha256": "cdcc020a569a032623edfebf5d65c263d2234cf80bb0e15404fd74bc9081b2ea"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/BROWSER_RESULT.json",
+      "bytes": 3271,
+      "sha256": "99579f7973a40f0ae673274b91800160a1da0e318d367c3a5f3031923bedc099"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/build-worker.json",
+      "bytes": 96,
+      "sha256": "7a10c6f0e3267cab57c37637fdd2ac237ec252547f981260dadc5f3fbdc94e84"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/build.py",
+      "bytes": 7860,
+      "sha256": "a776419c747b2ee390a3163ccd295afa270a6f5010125497588510e3ca65d1fc"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/BUILD_RESULT.json",
+      "bytes": 49638,
+      "sha256": "c570738311bbfdc62a83cf3dd4d6813180ae2854f24bc336aaef4212ed9136a9"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/check_assembly.py",
+      "bytes": 3708,
+      "sha256": "f3ff1fdf60b3d0c8eb804a4b649d87f349d93acf3f993e80a44e304b9484635f"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/check_browser.py",
+      "bytes": 4359,
+      "sha256": "49a5c6875d00b63a400f2462a6815fa7a0ea0d08cb934563d22456bd319e4cf2"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/CONTRACT_TEST.json",
+      "bytes": 634,
+      "sha256": "015bb656c9b8552e5a982890a7ef46d0138e33e37adbb6770a4baaf794498f74"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/Emission-empty.png",
+      "bytes": 8632,
+      "sha256": "6c349c57a7fa06cd5b21623f5907f83aab7674aa9601a337578e5bd10ea98878"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/Emission-restored.png",
+      "bytes": 11714,
+      "sha256": "615130a121e0778518d16eadfb63a3243a173b36f5e10d5dc595ebfda95e8ffb"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/Emission-runtime.png",
+      "bytes": 11714,
+      "sha256": "615130a121e0778518d16eadfb63a3243a173b36f5e10d5dc595ebfda95e8ffb"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/finalize.py",
+      "bytes": 3493,
+      "sha256": "1e88ec49ef47689b029c664312d27adffd4bab5f705ac701f7fe015e837def5c"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/lamp-contract.mjs",
+      "bytes": 3872,
+      "sha256": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/material-map.json",
+      "bytes": 4948,
+      "sha256": "de78951849eecf2e74412d48a5d4a17882f90f7d6ae69ec12770d0c38b299e1d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/PLAN.json",
+      "bytes": 1015,
+      "sha256": "a209151606ae21cbd7bf2b66bfff1eb33da44620518a3bb0d035dfd1873b5dfd"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/plastic-empty.png",
+      "bytes": 8528,
+      "sha256": "6203b11fef49848200c30128bf82ddec7f338f6d6be00b6c1c599bc64d25fa26"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/plastic-restored.png",
+      "bytes": 17706,
+      "sha256": "9e6aed561bc5a426c6ec3b11afb089da4fbd32004721b21c806bf880eac97456"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/plastic-runtime.png",
+      "bytes": 17706,
+      "sha256": "9e6aed561bc5a426c6ec3b11afb089da4fbd32004721b21c806bf880eac97456"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-before-extra-factor-guards/assembly-all16.png",
+      "bytes": 13296,
+      "sha256": "ad58116bfb95b1858d2b130e71a4f332cb1e12c8d1b3c8a2d333c7da9dc46a2d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-before-extra-factor-guards/assembly-browser-worker.json",
+      "bytes": 167,
+      "sha256": "8ad70464ececd0818dc5215d6a248d170e8f1d3cf074600bf8e1cefb1f81e11e"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-before-extra-factor-guards/assembly-first-lamp.png",
+      "bytes": 117623,
+      "sha256": "ff3fe21ab1535cb472ad35e7ac34b98e09d9f6faaf12f0760e5b25aab0b411b9"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-before-extra-factor-guards/ASSEMBLY_BROWSER_RESULT.json",
+      "bytes": 7597,
+      "sha256": "69dccda45ed59b2875167836ae4167cc0bfece4bcdbacdf25f82584dd5936d28"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-literal-count-diagnostic/assembly-all16.png",
+      "bytes": 13296,
+      "sha256": "ad58116bfb95b1858d2b130e71a4f332cb1e12c8d1b3c8a2d333c7da9dc46a2d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-literal-count-diagnostic/assembly-browser-worker.json",
+      "bytes": 166,
+      "sha256": "d0143582149d0ec12363bf1e275e1a3f86f9c222d5f7d779aee3f835e9f0ac38"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-literal-count-diagnostic/assembly-first-lamp.png",
+      "bytes": 264288,
+      "sha256": "b6c94da1b65e69bb944e8b89afaa553fca25d183f8ce8710cac04c8c0eee8ae8"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-literal-count-diagnostic/ASSEMBLY_BROWSER_RESULT.json",
+      "bytes": 7350,
+      "sha256": "80708def78b6d7d44fa67cf676bb9fb40a41ca1ea79ac1ddc8b10e5a37c7aea9"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-subset-focus/assembly-all16.png",
+      "bytes": 13296,
+      "sha256": "ad58116bfb95b1858d2b130e71a4f332cb1e12c8d1b3c8a2d333c7da9dc46a2d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-subset-focus/assembly-browser-worker.json",
+      "bytes": 168,
+      "sha256": "b0a1b85e0faff314c5be0f9aa2f748a6d32eba6d420c48f749d6a89d7d502473"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-subset-focus/assembly-first-lamp.png",
+      "bytes": 264288,
+      "sha256": "b6c94da1b65e69bb944e8b89afaa553fca25d183f8ce8710cac04c8c0eee8ae8"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-assembly-subset-focus/ASSEMBLY_BROWSER_RESULT.json",
+      "bytes": 7597,
+      "sha256": "69dccda45ed59b2875167836ae4167cc0bfece4bcdbacdf25f82584dd5936d28"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-proof-before-harness-hash-metadata/assembly-browser-worker.json",
+      "bytes": 168,
+      "sha256": "89bf9835f855bc9bb4d3910f95ecb89b421a1554488ec34481663f04594e52ee"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-proof-before-harness-hash-metadata/ASSEMBLY_BROWSER_RESULT.json",
+      "bytes": 7597,
+      "sha256": "ed6c3c022d2bbf359eaf2fa7e16caa21e18e6c4ed0a0f70e47a7b1b332a3d7d7"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-proof-before-harness-hash-metadata/browser-worker.json",
+      "bytes": 168,
+      "sha256": "ad0cf5c6ba4a9c4b14dc918cfdcbd1a0a7ca1e9a562efb590a0a313144b9414f"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-proof-before-harness-hash-metadata/BROWSER_RESULT.json",
+      "bytes": 2666,
+      "sha256": "91d446af581efb02129aae8cb1c08a387201fddd4b01dd5428bf38138df407ff"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-three-family-before-extra-factor-guards/browser-all48-overview.png",
+      "bytes": 9750,
+      "sha256": "e5aadd7d2acc485e0770e83c529240e64eb7a6bd7935a8061b10e2aa9797998d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-three-family-before-extra-factor-guards/browser-worker.json",
+      "bytes": 166,
+      "sha256": "666b769633f9c7316b7aee4082e31f10d8b57e0766ab95836942f3227e8f535f"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/prior-three-family-before-extra-factor-guards/BROWSER_RESULT.json",
+      "bytes": 2666,
+      "sha256": "91d446af581efb02129aae8cb1c08a387201fddd4b01dd5428bf38138df407ff"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/RESULT.json",
+      "bytes": 7932,
+      "sha256": "2f2d251b229d3e271c15468cdd1edb913d263dd608baf544e6fa76bb7a03aa7d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/right-lamp-materials.bin",
+      "bytes": 946080,
+      "sha256": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/right-lamp-materials.gltf",
+      "bytes": 52351,
+      "sha256": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/run_assembly.py",
+      "bytes": 1685,
+      "sha256": "b51413dd74af9cc0ca8e999ad5243a9f435013608279888c9ee802a52e428760"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/run_browser.py",
+      "bytes": 1630,
+      "sha256": "b4f496454c0d01c145b0e96f9f43c5cefb6d58353ca4779bb2bf0acbb7c0cf7b"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/run_job.py",
+      "bytes": 1479,
+      "sha256": "138ce7f47c6d07febbf7d967bcf572cc380fdcfdefb196b01929eaa1a015bb5c"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/runtime-manifest.json",
+      "bytes": 19911,
+      "sha256": "79ea8651c126f7807d611cb22e06c68618f577cd0c3efe8cba551ccc2ddd72eb"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/SHA256SUMS.txt",
+      "bytes": 1814,
+      "sha256": "3512f17995b3c46537a09877402a2afe46583a346125963020e01e92c64214e0"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/silver-empty.png",
+      "bytes": 8770,
+      "sha256": "df6aa10ad52d4bf71628b05235184f09370fd8c840cc09884d7b6615d51412bd"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/silver-restored.png",
+      "bytes": 196330,
+      "sha256": "873e97cac4edea04513c7b59f4576f17671c37d1148b3a8383bd5333eb7591ef"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/silver-runtime.png",
+      "bytes": 196330,
+      "sha256": "873e97cac4edea04513c7b59f4576f17671c37d1148b3a8383bd5333eb7591ef"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/source-graphs.json",
+      "bytes": 27427,
+      "sha256": "d4931101c08ab0de0050790fc2eb7be94a6dd8298065dcb6378e4ff4a3856ae4"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/source-rows.json",
+      "bytes": 12421,
+      "sha256": "d804437364df68ccb404b105c14b1b6fc9a51c67d3edbc9a669fcecfc877630e"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/test-contract.mjs",
+      "bytes": 3258,
+      "sha256": "4e225dc18539f3f80254322e06ab2cf40a2ec30b24c11e8eb9d3cd58324057ec"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/VERIFICATION.json",
+      "bytes": 14821,
+      "sha256": "c500af6a45030933e144fe4c25d5e7acb19910a6a34f7f2236179f1d1e2f5dca"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/lamp-materials/verify.py",
+      "bytes": 5975,
+      "sha256": "3f672b213450306d4e6929f187dc29163a27e5a292e317ec88cc91fc1e9c1686"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/browser-all16-overview.png",
+      "bytes": 9234,
+      "sha256": "c10088115b3431bc8f63cc29c16a3a28adc1635dd67af231892c71f3f14b6d32"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/browser-empty.png",
+      "bytes": 15683,
+      "sha256": "d5e843d5b281afe4409bc16b2e04f847daf333566009e3b3b7d4b50e0f51262b"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/browser-glass.png",
+      "bytes": 36837,
+      "sha256": "75d8723b298b6e825e35786ddacf84ad9247befaf433da3cdde2f8e89b7bf4ac"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/browser-restored.png",
+      "bytes": 36837,
+      "sha256": "75d8723b298b6e825e35786ddacf84ad9247befaf433da3cdde2f8e89b7bf4ac"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/browser-worker.json",
+      "bytes": 166,
+      "sha256": "bbd14a8ec67882f94119cc000b90b35781deeb76fca87c044ff2ef63afc11863"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/browser-wrong-transmission.png",
+      "bytes": 22372,
+      "sha256": "719b0c8bca213d3115d4b734b9ca61b95b1b4f7563077da601a20814e28ca3de"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/BROWSER_RESULT.json",
+      "bytes": 3391,
+      "sha256": "0dca561af60a6a79ac4c395aa8c2b3dc2aaf79975468478a564f6d9ed0209247"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/check_browser.py",
+      "bytes": 4963,
+      "sha256": "858b21e2df626c325b76a811c5d83de991401e6dcf96ac8ee39a49b57c168d52"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/CONTRACT_TEST.json",
+      "bytes": 768,
+      "sha256": "44f22a639d6850498c3074e068b7d040c6831828b66688187544a268f29683c7"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/glass-contract.mjs",
+      "bytes": 2425,
+      "sha256": "707a2db1a911722ca777c9d1e2e38fe22caf587b8613b226fc843fac23d86ae2"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/RESULT.json",
+      "bytes": 9475,
+      "sha256": "2afe429ad9481097108598d25e34c7e8e54386f4b4b96f443c7da4e99a660d04"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/attempts/initial-runtime-pass/test-contract.mjs",
+      "bytes": 2980,
+      "sha256": "be9f2fcf10e587f6ce7f233fcbae91ed3d2d4c1bb3cf5096e67dc2846121cf0e"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/browser-all16-overview.png",
+      "bytes": 9234,
+      "sha256": "c10088115b3431bc8f63cc29c16a3a28adc1635dd67af231892c71f3f14b6d32"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/browser-empty.png",
+      "bytes": 15683,
+      "sha256": "d5e843d5b281afe4409bc16b2e04f847daf333566009e3b3b7d4b50e0f51262b"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/browser-glass.png",
+      "bytes": 36837,
+      "sha256": "75d8723b298b6e825e35786ddacf84ad9247befaf433da3cdde2f8e89b7bf4ac"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/browser-restored.png",
+      "bytes": 36837,
+      "sha256": "75d8723b298b6e825e35786ddacf84ad9247befaf433da3cdde2f8e89b7bf4ac"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/browser-worker.json",
+      "bytes": 168,
+      "sha256": "c4975b7369dd2b6b493e92cad0c28792538abc6205a6ddac6a672fd002251f00"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/browser-wrong-transmission.png",
+      "bytes": 22372,
+      "sha256": "719b0c8bca213d3115d4b734b9ca61b95b1b4f7563077da601a20814e28ca3de"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/browser.html",
+      "bytes": 4442,
+      "sha256": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/BROWSER_RESULT.json",
+      "bytes": 3464,
+      "sha256": "23a6a7b756e63b8acb94d6bf59ec00d58f66decaa3df44f175944183343fa161"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/build-worker.json",
+      "bytes": 96,
+      "sha256": "066a8ed40ad92871c8a37426905c5eafc42ae2ba6fa8f0ec1c80a8608f595172"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/build.py",
+      "bytes": 10416,
+      "sha256": "2d3a201a181ca23dba67693c80c715d8f3292cee42a212eeae994f05bedf4ed1"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/BUILD_RESULT.json",
+      "bytes": 4793,
+      "sha256": "016ea0c165ed9309d958b7aaf2b56b91eba45bf7160d26ff389abf64689a5fa8"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/check_browser.py",
+      "bytes": 5249,
+      "sha256": "723499ef0f6b83a9e06e1978815b687d79abc5eba51ece89a2bdb50fbee52b19"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/CONTRACT_TEST.json",
+      "bytes": 1174,
+      "sha256": "f00c92c989f92b888e09227cd3d88408fec73e39fe1dff7b7fbbcf8b5cf6b81a"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/finalize.py",
+      "bytes": 3988,
+      "sha256": "429d8a3f9d32ef8a57bfcbc9998de0d47b7292ce8fab9342bc6008ac5feda79d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/glass-contract.mjs",
+      "bytes": 3117,
+      "sha256": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/INPUT_PRESERVATION.json",
+      "bytes": 783,
+      "sha256": "50172780992c1c6248f34cd35bb2684097a79bd2e4cab18b6d90ea3b5e85d68d"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/left-glass.bin",
+      "bytes": 235008,
+      "sha256": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/left-glass.gltf",
+      "bytes": 20529,
+      "sha256": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/PLAN.json",
+      "bytes": 278058,
+      "sha256": "905dca989e64db9bb969bdecacdf9042e357774e478b9253feb95bc240c4fbbf"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/plan.py",
+      "bytes": 3637,
+      "sha256": "1572c81c3f694faa22b740740324257bf73bc644641b4c163ab06f567d26a3e1"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/PREPARATION.json",
+      "bytes": 1310,
+      "sha256": "31b1c02939640832f0af231e78c7778fddfbd19ffdeb837d6c598e7d14f87428"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/prepare_browser_checks.py",
+      "bytes": 1879,
+      "sha256": "ff774ecaf3561008ad7ef784f1c02c51a847842136d9ff94ef6974568413f8fa"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/README.md",
+      "bytes": 1263,
+      "sha256": "d33f26f201acf9deb8f92278cc36de71771db3964a7f24e9032d6cf10196b814"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/RESULT.json",
+      "bytes": 10096,
+      "sha256": "7ef001af8f634575b323ed0bf3464a1b022f9c2d90cf472515fdc42eb1789736"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/review_right_contract.mjs",
+      "bytes": 4460,
+      "sha256": "31343af71dc38d9fa79f1e36cd5d5b2d603821a88315c28087d25eb78bbb5f3e"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/RIGHT_MATERIALS_TECHNICAL_REVIEW.json",
+      "bytes": 5027,
+      "sha256": "7d0011b9b347b8bc0d0903d597e290025f63afc0b866752410694f13c5c65c68"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/RIGHT_RUNTIME_INDEPENDENT_CONTROLS.json",
+      "bytes": 1244,
+      "sha256": "fcefccad2263b7e006a09ac310027a059b7c9f9935da74f28227a9bc1bf25a18"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/run_browser.py",
+      "bytes": 1630,
+      "sha256": "467f52601e499911b16846a40f6e0762683451119cd810eacafe1dbbeb9ba50c"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/run_job.py",
+      "bytes": 1518,
+      "sha256": "bedde2a257eebd796181277bc2f5bc9b4bedba574ce579c5cbfb03224888f0cf"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/source-role-reference.json",
+      "bytes": 241720,
+      "sha256": "1e3f0d9a93ca0c96aa3f65badba5e2cdf2c4c21f1e55bd6116c9737ce839e661"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/source_role_plot.py",
+      "bytes": 1645,
+      "sha256": "974f225b586a651ebb781c624e6e147d762201191767ab91bb4520728fce4efb"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/test-contract.mjs",
+      "bytes": 3772,
+      "sha256": "6b77ca787c7bb556f7e28c6c32b9812243d34c733895a630600988a7aca275a5"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/VERIFICATION.json",
+      "bytes": 9736,
+      "sha256": "21429e3cecc383963225c5df087485c794899fcbfa66b6b6243e5174c65ce8ea"
+    },
+    {
+      "path": "continuation-snapshot/continuation-13/left-glass/verify.py",
+      "bytes": 9891,
+      "sha256": "e01fe8c3fa45995ca2776d6ea6a05fa54bf474d8b10e0001b625a2799419e6ed"
+    },
+    {
+      "path": "continuation-snapshot/handover/C13_GARAGE_RUNTIME_MATERIALS_2026-10-29.md",
+      "bytes": 6352,
+      "sha256": "9e8f3734af352df3c23cfc0dc317bb2f0a2f5fbb370295968c1f8d2941d19ae8"
+    },
+    {
+      "path": "continuation-snapshot/handover/C14_LEFT_LAMPS_AND_GITHUB_2026-10-30.md",
+      "bytes": 6328,
+      "sha256": "443feebb2a0c150bb407caedef7d12a86b6edfb0d2ed703c21a348b7071a87b9"
+    },
+    {
+      "path": "continuation-snapshot/handover/CONTEXT_CHECKPOINT_2026-10-29.md",
+      "bytes": 3900,
+      "sha256": "4cb44351d9da106d55aba78496e55e78b3d54fa02496c3c901ae06e41a4d916b"
+    },
+    {
+      "path": "continuation-snapshot/handover/CONTEXT_CHECKPOINT_2026-10-30.md",
+      "bytes": 4399,
+      "sha256": "740719d5906a7c98df65be5872c74243e8723f803b8c471b4f0abdb64d8e533d"
+    },
+    {
+      "path": "continuation-snapshot/handover/SOURCE_MATERIAL_INTEGRITY_2026-10-28.md",
+      "bytes": 3073,
+      "sha256": "6441f75385c7ec2d9e259df58a302194ee863c8a8819f36ea621fc27932d9ad7"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/ASSEMBLY_BROWSER_RESULT.json",
+      "bytes": 8169,
+      "sha256": "5535b465a87c8da68454ea4aaa67c4dd5eb53e55d39cdacd9b6fdfa8014491dd"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/ASSEMBLY_SOURCE_PROOF.json",
+      "bytes": 4621,
+      "sha256": "1fe5f036275049fad3f88b3bdbfa035bcc93501e13c7eea660f6726f15c978be"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/BROWSER_RESULT.json",
+      "bytes": 3269,
+      "sha256": "acc2d82a38e5356efe24563b11658837c46d81a536ab324155c1a8e3fb4a4607"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/build.py",
+      "bytes": 7935,
+      "sha256": "eb31fbcd2851c286ff1659cd2dcd2c0bfc0696cc77831670d3903ba4c7df3955"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/BUILD_RESULT.json",
+      "bytes": 49692,
+      "sha256": "818d3306a09b3a71ad2580f8436c952cd4c56afaef226c0d846b8d1e5ae697b8"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/check_assembly.py",
+      "bytes": 3712,
+      "sha256": "426906eed446b8fda85a71d861f1689fe6f0670ac4457a58485457843cc7a936"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/check_browser.py",
+      "bytes": 4362,
+      "sha256": "c71d74c333b521c61bd4c2f809f21956b672826011a7c3ca8c1d81c1c254b1fb"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/CONTRACT_TEST.json",
+      "bytes": 739,
+      "sha256": "f21d0394895bb2d915275894e3ba9a3d945f7c186156ee289f402be0fdd91ce5"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/finalize.py",
+      "bytes": 3425,
+      "sha256": "e2bbf4b62e6e714e7bcf14338a023d0c8f95c494e994799b298b5d3bce912d54"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/lamp-contract.mjs",
+      "bytes": 4043,
+      "sha256": "6d72e185969564055f806311ca79687d018a7814abbda794dc3d55b73683c471"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/material-map.json",
+      "bytes": 4948,
+      "sha256": "de78951849eecf2e74412d48a5d4a17882f90f7d6ae69ec12770d0c38b299e1d"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/PLAN.json",
+      "bytes": 1087,
+      "sha256": "fc20d0afe86404bfac7e9ad75c12bd89c4fe6d56c1efc87d7ea5cf179ec59f0c"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/prepare_runtime.py",
+      "bytes": 3043,
+      "sha256": "5dec213faf507df7b14c30e33be032965d41f27bfcfdf478e116f4e1373f4238"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/RESULT.json",
+      "bytes": 8465,
+      "sha256": "6152d136b809dfb4dca07c2de54ec841d5c1e30fa14c430d783007e554c3a75f"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/runtime-manifest.json",
+      "bytes": 19970,
+      "sha256": "02d25bb4bbcce2a8de7e7eb2ef7c32a0842dcf5859e0631748d5734cd8c80a82"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/source-graphs.json",
+      "bytes": 27427,
+      "sha256": "d4931101c08ab0de0050790fc2eb7be94a6dd8298065dcb6378e4ff4a3856ae4"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/source-rows.json",
+      "bytes": 12408,
+      "sha256": "9a30884b40a57768dc05af33f017b2cc2e9e30654546eb9db586be878dee8a8c"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/test-contract.mjs",
+      "bytes": 3877,
+      "sha256": "4574ddde38a42145a38c2856f7b6527bc9c3b609e0c8426b2e2fd8f2a218b52e"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/VERIFICATION.json",
+      "bytes": 14890,
+      "sha256": "fea8f0ba6e220d23ff68b39d227f5ae037e22552477b416e06c479c183588699"
+    },
+    {
+      "path": "continuation-snapshot/proofs/c14/verify.py",
+      "bytes": 6293,
+      "sha256": "18282b2e7a4fc14d28d03401b7561cf9173074f7af0b5fb439caf100df9ed07d"
+    },
+    {
+      "path": "continuation-snapshot/README.md",
+      "bytes": 1494,
+      "sha256": "b94e72e595aca181e4df9c2e60574e292ba9415a59fe2a7289009442896a66d2"
+    }
+  ]
+}

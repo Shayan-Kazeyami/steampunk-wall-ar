@@ -1,0 +1,273 @@
+{
+  "status": "PASS_PRIVATE_ACTUAL_SOURCE_ASSIGNED_GLASS_CAMERA_SOCKET_MAPPING_AND_RUNTIME_CONTRACT",
+  "source_wall": "05_GARAGE_L",
+  "source_assigned_glass_role": "INNER STEM (actual source-assigned glass faces; not outer bulb)",
+  "source_glass_polygons": 17408,
+  "source_lamps": 16,
+  "unique_serialized_meshes": 1,
+  "unique_serialized_triangles": 2176,
+  "instanced_triangles": 34816,
+  "model_payload_bytes": 255537,
+  "runtime_assets": [
+    "left-glass.gltf",
+    "left-glass.bin"
+  ],
+  "source_material_indexed_links": [
+    {
+      "from_node": "Mix Shader",
+      "from_socket": "Shader",
+      "to_node": "Material Output",
+      "to_input_index": 0,
+      "to_socket_identifier": "Surface"
+    },
+    {
+      "from_node": "Principled BSDF",
+      "from_socket": "BSDF",
+      "to_node": "Mix Shader",
+      "to_input_index": 1,
+      "to_socket_identifier": "Shader"
+    },
+    {
+      "from_node": "Light Path",
+      "from_socket": "Is Shadow Ray",
+      "to_node": "Mix Shader",
+      "to_input_index": 0,
+      "to_socket_identifier": "Fac"
+    },
+    {
+      "from_node": "Transparent BSDF",
+      "from_socket": "BSDF",
+      "to_node": "Mix Shader",
+      "to_input_index": 2,
+      "to_socket_identifier": "Shader_001"
+    }
+  ],
+  "camera_branch_constants": {
+    "Base Color": [
+      0.800000011920929,
+      0.800000011920929,
+      0.800000011920929,
+      1.0
+    ],
+    "Metallic": 0.0,
+    "Roughness": 0.0,
+    "IOR": 1.3329999446868896,
+    "Alpha": 1.0,
+    "Transmission Weight": 1.0,
+    "Specular IOR Level": 0.5,
+    "Thin Wall": false,
+    "Emission Strength": 0.0
+  },
+  "source_shadow_branch": "White Transparent BSDF at Mix input2 when IsShadowRay; camera Principled at input1",
+  "source_geometry": {
+    "all_and_only_assigned_glass_faces": true,
+    "all_selected_source_positions_UVs_raw_normals_exact": true,
+    "all16_shared_source_arrays_exact": true,
+    "source_normalized_world_position_and_unit_normal_max": 0.0,
+    "C9_runtime_origin_alignment_max": 0.0,
+    "coordinate_conversion": {
+      "normalized_capture_to_existing_C9_glTF": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "method": "Pre-multiply node matrices by fixedS; keep local source positions/normals exact. S^-1 glTFworld recovers normalized source world."
+    }
+  },
+  "evidence": {
+    "source_and_final_graph_gate": "BUILD_RESULT.json",
+    "geometry_role_material_and_hash_proof": "VERIFICATION.json",
+    "CPU_contract_fixture_proof": "CONTRACT_TEST.json",
+    "actual_hardware_browser": "BROWSER_RESULT.json"
+  },
+  "geometry_material_negative_controls": [
+    "wrong_selected_material_family",
+    "wrong_final_material_role",
+    "wrong_final_IOR",
+    "wrong_final_transmission",
+    "wrong_source_transform",
+    "position_mutation",
+    "raw_normal_mutation",
+    "UV_mutation",
+    "reversed_triangle_winding"
+  ],
+  "runtime_fixture_negative_controls": [
+    "duplicate_source",
+    "missing_node",
+    "wrong_wall",
+    "wrong_source_hash",
+    "wrong_audit_hash",
+    "wrong_contract_version",
+    "missing_contract",
+    "wrong_bulb_family",
+    "wrong_wholeobject_family",
+    "late_bad_node_no_partial_shadow_mutation",
+    "unexpected_transmissionMap",
+    "unexpected_alphaMap",
+    "unexpected_roughnessMap",
+    "unexpected_metalnessMap",
+    "unexpected_specularColorMap",
+    "unexpected_normalMap",
+    "unexpected_thicknessMap"
+  ],
+  "browser": {
+    "status": "PASS_HARDWARE_RUNTIME_ACTUAL_GLASS_ONLY_CAMERA_MAPPING_CONTRACT",
+    "diagnostics": {
+      "status": "READY",
+      "contract": {
+        "applied": 16,
+        "uniqueGeometryObjects": 1,
+        "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+      },
+      "meshes": 16,
+      "triangles": 34816,
+      "materials": 1,
+      "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5060 Ti (0x00002D04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "supportedExtensions": [
+        "KHR_materials_clearcoat",
+        "KHR_texture_basisu",
+        "EXT_texture_webp",
+        "EXT_texture_avif",
+        "KHR_materials_sheen",
+        "KHR_materials_transmission",
+        "KHR_materials_volume",
+        "KHR_materials_ior",
+        "KHR_materials_emissive_strength",
+        "KHR_materials_specular",
+        "KHR_materials_iridescence",
+        "KHR_materials_anisotropy",
+        "KHR_lights_punctual",
+        "EXT_meshopt_compression",
+        "EXT_mesh_gpu_instancing"
+      ],
+      "castShadow": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "material": {
+        "ior": 1.3329999446868896,
+        "transmission": 1,
+        "roughness": 0,
+        "color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929
+        ]
+      }
+    },
+    "focused_source_role": {
+      "source": "Left bulb.032",
+      "scope": "One actual source-glass internal stem close view; all16glass meshes remain loaded and validated",
+      "distance": 0.023517880492187546,
+      "bounds": [
+        [
+          -0.15426688648321427,
+          0.028908080900581536,
+          -0.16609567603414355
+        ],
+        [
+          -0.1513559296199142,
+          0.031819046104192894,
+          -0.13978388290472232
+        ]
+      ]
+    },
+    "visible_glass_vs_empty_pixels_above5": 19073,
+    "wrong_transmission_witness_pixels_above5": 19041,
+    "restored_pixels_exact": true,
+    "negative_controls": [
+      "wrong_selected_glass_role",
+      "missing_source_shadow_contract",
+      "wrong_final_IOR",
+      "unsupported_material_extensions"
+    ],
+    "final_contract_closure": {
+      "contract": {
+        "applied": 16,
+        "uniqueGeometryObjects": 1,
+        "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+      },
+      "allCastShadowFalse": true,
+      "allTransmissionOne": true,
+      "allMaterialGlass": true
+    },
+    "applicationErrors": [],
+    "httpErrors": [],
+    "harness_hashes": {
+      "browser.html": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1",
+      "glass-contract.mjs": "707a2db1a911722ca777c9d1e2e38fe22caf587b8613b226fc843fac23d86ae2",
+      "left-glass.gltf": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+      "left-glass.bin": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f"
+    },
+    "limits": [
+      "Visible runtime/camera material witness and transparent-shadow flag contract only",
+      "No source solid-glass/refraction/GI/phone/fullwall appearance equivalence",
+      "C11 failed empty-shadow receiver guard remains untouched"
+    ]
+  },
+  "worker": {
+    "status": "EXITED",
+    "server_pid": 47876,
+    "server_closed": true,
+    "browser_exit": 0,
+    "seconds": 4.104135751724243,
+    "prelaunch_free_RAM_GiB": 18.4
+  },
+  "failures_preserved": [],
+  "scope": "Source-assigned glass-only geometry, constant camera-branch socket mapping and per-mesh transparent-shadow runtime flags. Not source-solid-glass/PBR/GI/photometric equivalence.",
+  "limits": [
+    "Actual historical glass route exists; earlier capture-only glass N/A does not apply to repaired source-faithful geometry.",
+    "Source Thin Wall=false vs browser default zero-volume/thickness remains engine-dependent; no solid refraction equivalence approved.",
+    "No new Cycles source/glass matched render or actual shadow equivalence experiment in C13.",
+    "C11 empty-shadow reference guard remains FAILED and untouched.",
+    "Runtime model payload excludes pre-existing shared environment/runtime libraries; no GPU memory reuse saving or phone budget approval.",
+    "No full-wall/App/Publishing/native phone/physical-print acceptance.",
+    "Original source/prints, existing derivatives and shared handover unchanged."
+  ],
+  "evidence_sha256": {
+    "left-glass.gltf": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+    "left-glass.bin": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+    "BUILD_RESULT.json": "016ea0c165ed9309d958b7aaf2b56b91eba45bf7160d26ff389abf64689a5fa8",
+    "VERIFICATION.json": "21429e3cecc383963225c5df087485c794899fcbfa66b6b6243e5174c65ce8ea",
+    "CONTRACT_TEST.json": "44f22a639d6850498c3074e068b7d040c6831828b66688187544a268f29683c7",
+    "BROWSER_RESULT.json": "0dca561af60a6a79ac4c395aa8c2b3dc2aaf79975468478a564f6d9ed0209247",
+    "glass-contract.mjs": "707a2db1a911722ca777c9d1e2e38fe22caf587b8613b226fc843fac23d86ae2",
+    "browser.html": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1",
+    "check_browser.py": "858b21e2df626c325b76a811c5d83de991401e6dcf96ac8ee39a49b57c168d52"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "status": "PASS_HARDWARE_ALL48_SOURCE_FAMILY_BINDINGS_AND_MAPPED_SOCKETS",
+  "diagnostics": {
+    "status": "READY",
+    "contract": {
+      "validated": 48,
+      "scope": "Exact source family bindings and mapped active sockets; shadow flags untouched; no GI equivalence"
+    },
+    "meshes": 48,
+    "triangles": 140160,
+    "materials": 3,
+    "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5060 Ti (0x00002D04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "supportedExtensions": [
+      "KHR_materials_clearcoat",
+      "KHR_texture_basisu",
+      "EXT_texture_webp",
+      "EXT_texture_avif",
+      "KHR_materials_sheen",
+      "KHR_materials_transmission",
+      "KHR_materials_volume",
+      "KHR_materials_ior",
+      "KHR_materials_emissive_strength",
+      "KHR_materials_specular",
+      "KHR_materials_iridescence",
+      "KHR_materials_anisotropy",
+      "KHR_lights_punctual",
+      "EXT_meshopt_compression",
+      "EXT_mesh_gpu_instancing"
+    ],
+    "castShadow": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "material": {
+      "ior": 1.4500000476837158,
+      "transmission": 0,
+      "roughness": 0,
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    }
+  },
+  "family_visible_witnesses": {
+    "plastic": {
+      "visible_vs_empty_pixels_above5": 2240,
+      "restored_exact": true
+    },
+    "Emission": {
+      "visible_vs_empty_pixels_above5": 13950,
+      "restored_exact": true
+    },
+    "silver": {
+      "visible_vs_empty_pixels_above5": 452649,
+      "restored_exact": true
+    }
+  },
+  "negative_controls": [
+    "late_wrong_source_hash",
+    "late_wrong_final_roughness",
+    "wrong_emission_strength"
+  ],
+  "applicationErrors": [],
+  "httpErrors": [],
+  "limits": [
+    "Constant source active socket mapping; no complete Principled/GI/radiometric/wholewall/phone equivalence",
+    "Emission is luminous surface only, no standard glTF indirect scene illumination"
+  ]
+}

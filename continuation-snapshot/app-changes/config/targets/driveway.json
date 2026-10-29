@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "1.0.0",
+  "candidateId": "driveway-sign",
+  "wallId": 3,
+  "panelImagePx": [
+    2763,
+    1222
+  ],
+  "sourceCropPx": [
+    741,
+    131,
+    1280,
+    960
+  ],
+  "compiledTargetName": "steampunk-driveway-sign",
+  "compiledJsonPath": "image-targets/steampunk-driveway-sign.json",
+  "trackingImagePath": "image-targets/steampunk-driveway-sign_luminance.png",
+  "compiledCropInSourcePx": [
+    741,
+    131,
+    1280,
+    960
+  ],
+  "compiledMetadata": {
+    "type": "PLANAR",
+    "properties": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1280,
+      "isRotated": true,
+      "originalWidth": 960,
+      "originalHeight": 1280
+    }
+  },
+  "targetPoseCalibration": {
+    "verified": false,
+    "axes": "identity_provisional",
+    "rotationDeg": null,
+    "mirrorX": null,
+    "offsetPanel": null,
+    "notes": "Provisional identity axes; Driveway phone corner calibration NOT MEASURED. CLI storage rotation is recorded separately in compiledMetadata and is not a measured pose correction."
+  },
+  "physicalSampleArtworkMm": [
+    180,
+    79.60912052117264
+  ],
+  "verification": {
+    "status": "provisional",
+    "calibrationVerified": false,
+    "compiledTargetPresent": true,
+    "selectedByPhoneGate": false,
+    "phoneTracking": "not_tested",
+    "physicalPrint": "not_tested",
+    "https": "not_tested"
+  }
+}

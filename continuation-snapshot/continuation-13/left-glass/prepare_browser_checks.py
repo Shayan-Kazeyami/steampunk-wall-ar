@@ -1,0 +1,9 @@
+from pathlib import Path
+B=Path(__file__).resolve().parent;p=B/'check_browser.py';s=p.read_text().replace('Object.keys(r.g.parser.extensions)','r.supportedExtensions')
+if 'missing_source_shadow_contract'not in s:s=s.replace('const ior=m.material.ior;',"const shadow=m.userData.ar_shadow_contract;reject('missing_source_shadow_contract',()=>delete m.userData.ar_shadow_contract,()=>m.userData.ar_shadow_contract=shadow);const ior=m.material.ior;")
+if 'finalClosure=page.evaluate'not in s:s=s.replace("assert not errors and not http,(errors,http)","finalClosure=page.evaluate('()=>{const r=review;const contract=r.applyGlassContract(r.g.scene,r.manifest,r.supportedExtensions);return {contract,allCastShadowFalse:r.meshes.every(o=>o.castShadow===false),allTransmissionOne:r.meshes.every(o=>o.material.transmission===1),allMaterialGlass:r.meshes.every(o=>o.material.userData.source_family===\"glass\")}}');assert finalClosure['allCastShadowFalse']and finalClosure['allTransmissionOne']and finalClosure['allMaterialGlass'];assert not errors and not http,(errors,http)")
+if "'final_contract_closure':finalClosure"not in s:s=s.replace("'negative_controls':controls,", "'negative_controls':controls,'final_contract_closure':finalClosure,")
+s=s.replace("'final_contract_closure':finalClosure,'final_contract_closure':finalClosure,", "'final_contract_closure':finalClosure,")
+if 'browser-all16-overview.png'not in s:s=s.replace("page.locator('canvas').screenshot(path=str(B/'browser-glass.png'))", "page.locator('canvas').screenshot(path=str(B/'browser-all16-overview.png'));focus=page.evaluate('()=>{const result=review.focusFirst();review.render();return result}');page.locator('canvas').screenshot(path=str(B/'browser-glass.png'))")
+if "'focused_source_role':focus"not in s:s=s.replace("'diagnostics':diag,", "'diagnostics':diag,'focused_source_role':focus,")
+p.write_text(s)

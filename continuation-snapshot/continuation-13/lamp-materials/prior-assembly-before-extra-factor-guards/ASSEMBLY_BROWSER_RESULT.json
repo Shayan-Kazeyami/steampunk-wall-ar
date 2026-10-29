@@ -1,0 +1,229 @@
+{
+  "status": "PASS_HARDWARE_PRIVATE_RIGHT_ALL16_LAMPS_FIVE_SOURCE_FAMILY_ASSEMBLY",
+  "diagnostics": {
+    "status": "READY",
+    "contract": {
+      "validated": 48,
+      "scope": "Exact source family bindings and mapped active sockets; shadow flags untouched; no GI equivalence"
+    },
+    "meshes": 48,
+    "triangles": 140160,
+    "materials": 3,
+    "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5060 Ti (0x00002D04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "supportedExtensions": [
+      "KHR_materials_clearcoat",
+      "KHR_texture_basisu",
+      "EXT_texture_webp",
+      "EXT_texture_avif",
+      "KHR_materials_sheen",
+      "KHR_materials_transmission",
+      "KHR_materials_volume",
+      "KHR_materials_ior",
+      "KHR_materials_emissive_strength",
+      "KHR_materials_specular",
+      "KHR_materials_iridescence",
+      "KHR_materials_anisotropy",
+      "KHR_lights_punctual",
+      "EXT_meshopt_compression",
+      "EXT_mesh_gpu_instancing"
+    ],
+    "castShadow": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "material": {
+      "ior": 1.4500000476837158,
+      "transmission": 0,
+      "roughness": 0,
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    "assembly": {
+      "sourceObjects": 16,
+      "families": 5,
+      "meshes": 80,
+      "familyCounts": {
+        "plastic": 16,
+        "Emission": 16,
+        "silver": 16,
+        "bulb": 16,
+        "glass": 16
+      },
+      "totalTriangles": 193920,
+      "uniqueGeometryObjects": 20,
+      "uniqueMaterials": 5,
+      "alignment": [
+        {
+          "source": "Left bulb.048",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.049",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.050",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.051",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.052",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.053",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.054",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.055",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.056",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.057",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.058",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.059",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.060",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.061",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.062",
+          "families": 5,
+          "world_origin_max": 0
+        },
+        {
+          "source": "Left bulb.063",
+          "families": 5,
+          "world_origin_max": 0
+        }
+      ],
+      "bulbContract": {
+        "applied": 16,
+        "untouched": 0
+      },
+      "glassContract": {
+        "applied": 16,
+        "uniqueGeometryObjects": 1,
+        "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+      }
+    }
+  },
+  "closure": {
+    "meshCount": 80,
+    "bulbCastShadowFalse": true,
+    "glassCastShadowFalse": true,
+    "threeFamilyContract": {
+      "validated": 48,
+      "scope": "Exact source family bindings and mapped active sockets; shadow flags untouched; no GI equivalence"
+    }
+  },
+  "artifact_pins": {
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-9/garage-bulbs/06_GARAGE_R-source-bulb-subset.glb": "a03190355ffa693631994ca427a4bd9e5871c1025a7746eb44db754c7bdd98f1",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-9/garage-bulbs/SOURCE_SUBSET_RESULT.json": "5481cf8d9111ea2cf006a81c03b6f8afd0b797fe188cc9c5baef8121efed5b54",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-9/garage-bulbs/SOURCE_SUBSET_VERIFICATION.json": "92d42e4b68d958f51ad8f75315d32b251549e7c9eb1e8f77d25d793e4be49485",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-9/garage-bulbs/shadow-contract.mjs": "8745be3552047c88f260f0cb9cb6299d5b54e3b7ffa61fa636f0a18b92d37bb6",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-12/garage-glass/right-glass.gltf": "1a9424119dfa935fa34329803afe93518aabd2b0633d8766fabca69484e38eab",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-12/garage-glass/right-glass.bin": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-12/garage-glass/PLAN.json": "62b8cc3128a0c82bf38aadf269316ed86682eb1ea26c4a822a6a5faaa673f8f5",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-12/garage-glass/glass-contract.mjs": "ef8d0ca47097109152dd811aa789bcec8184cebd1d9d1651cec7d3b5758ef8d5",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-12/garage-glass/VERIFICATION.json": "496b84498a217665de3e5a093aa09f62870c98e92ac15b9704bdf0010237c78c",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-13/lamp-materials/right-lamp-materials.gltf": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-13/lamp-materials/right-lamp-materials.bin": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+    "/Models/delivery-wave-2026-10-26/reconstruction/continuation-13/lamp-materials/lamp-contract.mjs": "8df2c70cf7637e69347a39990884da4ee70e9cfe7cbf9738f102c568eb41d471"
+  },
+  "applicationErrors": [],
+  "httpErrors": [],
+  "limits": [
+    "Five source-assigned subsets aligned in common runtime frame, not fullwall approval",
+    "C9bulb uses coordinate conversion in local geometry; new native subsets use fixedS node matrices, so common world origins checked; source geometry equivalence rests on pinned independent geometry proofs",
+    "Bulb/glass castShadow=false flags only; no actual shadow or GI equivalence",
+    "Emission luminous surface does not illuminate other objects in standard native runtime",
+    "No phone/physicalprint/radiometric/full Principled equivalence"
+  ]
+}

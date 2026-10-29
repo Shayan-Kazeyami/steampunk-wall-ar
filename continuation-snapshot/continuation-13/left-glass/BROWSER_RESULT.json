@@ -1,0 +1,111 @@
+{
+  "status": "PASS_HARDWARE_RUNTIME_ACTUAL_GLASS_ONLY_CAMERA_MAPPING_CONTRACT",
+  "diagnostics": {
+    "status": "READY",
+    "contract": {
+      "applied": 16,
+      "uniqueGeometryObjects": 1,
+      "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+    },
+    "meshes": 16,
+    "triangles": 34816,
+    "materials": 1,
+    "glRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5060 Ti (0x00002D04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "supportedExtensions": [
+      "KHR_materials_clearcoat",
+      "KHR_texture_basisu",
+      "EXT_texture_webp",
+      "EXT_texture_avif",
+      "KHR_materials_sheen",
+      "KHR_materials_transmission",
+      "KHR_materials_volume",
+      "KHR_materials_ior",
+      "KHR_materials_emissive_strength",
+      "KHR_materials_specular",
+      "KHR_materials_iridescence",
+      "KHR_materials_anisotropy",
+      "KHR_lights_punctual",
+      "EXT_meshopt_compression",
+      "EXT_mesh_gpu_instancing"
+    ],
+    "castShadow": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "material": {
+      "ior": 1.3329999446868896,
+      "transmission": 1,
+      "roughness": 0,
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    }
+  },
+  "focused_source_role": {
+    "source": "Left bulb.032",
+    "scope": "One actual source-glass internal stem close view; all16glass meshes remain loaded and validated",
+    "distance": 0.023517880492187546,
+    "bounds": [
+      [
+        -0.15426688648321427,
+        0.028908080900581536,
+        -0.16609567603414355
+      ],
+      [
+        -0.1513559296199142,
+        0.031819046104192894,
+        -0.13978388290472232
+      ]
+    ]
+  },
+  "visible_glass_vs_empty_pixels_above5": 19073,
+  "wrong_transmission_witness_pixels_above5": 19041,
+  "restored_pixels_exact": true,
+  "negative_controls": [
+    "wrong_selected_glass_role",
+    "missing_source_shadow_contract",
+    "unsupported_active_clearcoat",
+    "unexpected_nonzero_emission",
+    "wrong_final_IOR",
+    "unsupported_material_extensions"
+  ],
+  "final_contract_closure": {
+    "contract": {
+      "applied": 16,
+      "uniqueGeometryObjects": 1,
+      "scope": "Actual source-glass-only meshes. Constant camera-branch material mapping + white transparent shadow contract; no GI/solid-glass equivalence."
+    },
+    "allCastShadowFalse": true,
+    "allTransmissionOne": true,
+    "allMaterialGlass": true
+  },
+  "applicationErrors": [],
+  "httpErrors": [],
+  "harness_hashes": {
+    "browser.html": "ee7b5635041988413c19ce40fc982a33f77e7d2141c2ae3093a628f9845fe5e1",
+    "glass-contract.mjs": "b822aef0831b1f939c33de3c7a1fee1ccf8ef277f0e74af866473d44c51899c8",
+    "left-glass.gltf": "89160458d875f290a7e11dd97450622a832f9f747a4a1e9a78fce9b7d5948229",
+    "left-glass.bin": "f7d8a13700015a042ed63dcb05d671a5a548803fcc5ec9e28be2fa6319b24d1f"
+  },
+  "limits": [
+    "Visible runtime/camera material witness and transparent-shadow flag contract only",
+    "No source solid-glass/refraction/GI/phone/fullwall appearance equivalence",
+    "C11 failed empty-shadow receiver guard remains untouched"
+  ]
+}

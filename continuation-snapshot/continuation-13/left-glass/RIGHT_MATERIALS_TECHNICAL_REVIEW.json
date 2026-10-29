@@ -1,0 +1,117 @@
+{
+  "status": "PASS_READONLY_SOURCE_GEOMETRY_NATIVE_FACTORS_AND_HARDENED_RUNTIME_CONTRACT",
+  "readonly_Right_verifier_reexecution_checks": 48,
+  "source_material_constants_independently_rederived_from_audit": [
+    {
+      "family": "plastic",
+      "source_faces_per_lamp": 2640,
+      "source_polygons_total": 42240,
+      "triangles_per_lamp": 5160,
+      "source_graph_constants_rederived_from_C9_audit": true
+    },
+    {
+      "family": "Emission",
+      "source_faces_per_lamp": 1200,
+      "source_polygons_total": 19200,
+      "triangles_per_lamp": 2400,
+      "source_graph_constants_rederived_from_C9_audit": true
+    },
+    {
+      "family": "silver",
+      "source_faces_per_lamp": 621,
+      "source_polygons_total": 9936,
+      "triangles_per_lamp": 1200,
+      "source_graph_constants_rederived_from_C9_audit": true
+    }
+  ],
+  "all_world_errors_zero": true,
+  "initial_runtime_contract_findings": [
+    "No texture-map rejection",
+    "No physical material class/opacity/transparency/alphaTest/side rejection",
+    "No fixed sourcewall/audit/expectedsourceID manifest gate"
+  ],
+  "right_artifact_hashes": {
+    "right-lamp-materials.gltf": "609a4bfa606953ba0b180b909e2d4d0660fa34dfcdbead6f5ca17ca072fab1fd",
+    "right-lamp-materials.bin": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+    "verify.py": "3f672b213450306d4e6929f187dc29163a27e5a292e317ec88cc91fc1e9c1686",
+    "lamp-contract.mjs": "627dbf3bb8aef47d9c3e1982682596e61a3c327182611f3d57f7db66ef3692a6",
+    "CONTRACT_TEST.json": "015bb656c9b8552e5a982890a7ef46d0138e33e37adbb6770a4baaf794498f74",
+    "BROWSER_RESULT.json": "99579f7973a40f0ae673274b91800160a1da0e318d367c3a5f3031923bedc099",
+    "ASSEMBLY_BROWSER_RESULT.json": "d0c8c6b9ddea8e2e0a0d26a80aaed4adc7ca2670e4258b937b7c01a176c6ad32",
+    "check_browser.py": "49a5c6875d00b63a400f2462a6815fa7a0ea0d08cb934563d22456bd319e4cf2",
+    "browser.html": "cdcc020a569a032623edfebf5d65c263d2234cf80bb0e15404fd74bc9081b2ea",
+    "RESULT.json": "2f2d251b229d3e271c15468cdd1edb913d263dd608baf544e6fa76bb7a03aa7d"
+  },
+  "scope": "Read-only CPU source geometry/factor derivation and independent runtime mutation rejection. Current owner hardware proof hashes pinned, not independently rerun by this reviewer. Shadow flags unchanged; no GI equivalence.",
+  "initial_runtime_findings_fixed_by_owner": true,
+  "independent_runtime_controls": {
+    "status": "PASS_FAIL_CLOSED_48_SOURCE_BINDINGS_AND_MAPPED_SOCKETS",
+    "negative_controls": [
+      "late_wrong_family",
+      "late_wrong_source_hash",
+      "late_wrong_roughness",
+      "wrong_emission_strength",
+      "missing_extensions",
+      "late_texture_added",
+      "late_opacity_changed",
+      "late_wrong_material_type",
+      "late_wrong_side",
+      "unpinned_manifest",
+      "late_active_clearcoat",
+      "late_active_sheen",
+      "late_active_iridescence",
+      "late_active_anisotropy",
+      "late_active_thickness",
+      "late_active_dispersion",
+      "late_specular_intensity",
+      "independent_forbidden_alphaMap",
+      "independent_forbidden_transmissionMap",
+      "independent_forbidden_emissiveMap",
+      "independent_forbidden_metalnessMap",
+      "independent_forbidden_thicknessMap",
+      "independent_transparent_flag",
+      "independent_alphaTest",
+      "independent_bad_audit_manifest",
+      "independent_wrong_source_ID_manifest",
+      "independent_active_clearcoat",
+      "independent_active_sheen",
+      "independent_active_iridescence",
+      "independent_active_anisotropy",
+      "independent_active_thickness",
+      "independent_active_dispersion",
+      "independent_wrong_specularColor"
+    ],
+    "every_rejection_preserves_all_shadow_flags": true
+  },
+  "extra_active_factor_gap": [],
+  "all_initial_runtime_findings_fixed_by_owner": true,
+  "current_owner_contract_controls": {
+    "status": "PASS_FAIL_CLOSED_48_SOURCE_BINDINGS_AND_MAPPED_SOCKETS",
+    "negative_controls": [
+      "late_wrong_family",
+      "late_wrong_source_hash",
+      "late_wrong_roughness",
+      "wrong_emission_strength",
+      "missing_extensions",
+      "late_texture_added",
+      "late_opacity_changed",
+      "late_wrong_material_type",
+      "late_wrong_side",
+      "unpinned_manifest",
+      "late_active_clearcoat",
+      "late_active_sheen",
+      "late_active_iridescence",
+      "late_active_anisotropy",
+      "late_active_thickness",
+      "late_active_dispersion",
+      "late_specular_intensity"
+    ],
+    "every_rejection_preserves_all_shadow_flags": true
+  },
+  "final_owner_hardware_status": {
+    "BROWSER_RESULT.json": "PASS_HARDWARE_ALL48_SOURCE_FAMILY_BINDINGS_AND_MAPPED_SOCKETS",
+    "ASSEMBLY_BROWSER_RESULT.json": "PASS_HARDWARE_PRIVATE_RIGHT_ALL16_LAMPS_FIVE_SOURCE_FAMILY_ASSEMBLY",
+    "RESULT.json": "PASS_PRIVATE_RIGHT_16_LAMPS_REMAINING_THREE_SOURCE_MATERIAL_SUBSETS_AND_FIVE_FAMILY_RUNTIME_ASSEMBLY"
+  },
+  "final_review_complete": true
+}

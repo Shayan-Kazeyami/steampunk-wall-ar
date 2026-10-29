@@ -1,0 +1,7 @@
+# Continuation source snapshot
+
+This is a partial review archive, not an installable release. `app-changes` contains selected dirty source, configuration, tests and supporting small files from App at base commit `14beeb1364e7b47aa4afe78d6ecbb5773c89416f`. `app-tracked-source.patch` records tracked source/config/package changes relative to that base; untracked files are in `app-changes`. Generated docs, logs, assets over 2 MB, source blends, prints and dependencies are excluded. In particular, missing large GLBs and sibling model data mean the archive alone cannot reproduce the complete application build or test suite. Current remote main is preserved independently; do not overlay this snapshot on main as a release without integration review. C13 records are historical private-component evidence, not complete-wall or phone acceptance.
+
+The portable proof checker is archived for provenance; its recorded run expected it in the private github/ working directory beside staging/. The review pages themselves can be served from the repository root as described in review/garage-lamps/README.md.
+
+C14 continuation and current status: [C14 handover](handover/C14_LEFT_LAMPS_AND_GITHUB_2026-10-30.md), [October 30 checkpoint](handover/CONTEXT_CHECKPOINT_2026-10-30.md), and [C14 verification records](proofs/c14/). Portable component pages, setup and proof are in [Garage lamps review](../review/garage-lamps/README.md). These components do not establish full-wall or phone acceptance.

@@ -1,0 +1,1804 @@
+{
+  "status": "EXTRACTED_EXACT_ASSIGNED_SUBSETS_CONSTANT_ACTIVE_GRAPH",
+  "families": {
+    "plastic": {
+      "polygons_per_lamp": 2640,
+      "triangles_per_lamp": 5160,
+      "all16_arrays_exact": true
+    },
+    "Emission": {
+      "polygons_per_lamp": 1200,
+      "triangles_per_lamp": 2400,
+      "all16_arrays_exact": true
+    },
+    "silver": {
+      "polygons_per_lamp": 621,
+      "triangles_per_lamp": 1200,
+      "all16_arrays_exact": true
+    }
+  },
+  "graphs": {
+    "plastic": {
+      "source_graph": {
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": [
+              {
+                "name": "Base Color",
+                "value": [
+                  0.800000011920929,
+                  0.800000011920929,
+                  0.800000011920929,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Metallic",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Roughness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "IOR",
+                "value": 1.4500000476837158,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Alpha",
+                "value": 1.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Wall",
+                "value": false,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Normal",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Weight",
+                "value": 0.0,
+                "unavailable": true,
+                "enabled": false,
+                "linked": false
+              },
+              {
+                "name": "Diffuse Roughness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Radius",
+                "value": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Scale",
+                "value": 0.05000000074505806,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface IOR",
+                "value": 1.399999976158142,
+                "unavailable": true,
+                "enabled": false,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Anisotropy",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Specular IOR Level",
+                "value": 0.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Specular Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Anisotropic",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Anisotropic Rotation",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Tangent",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Transmission Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Roughness",
+                "value": 0.029999999329447746,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat IOR",
+                "value": 1.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Normal",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Roughness",
+                "value": 0.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Emission Color",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Emission Strength",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Film Thickness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Film IOR",
+                "value": 1.3300000429153442,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              }
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "inputs": [
+              {
+                "name": "Surface",
+                "value": null,
+                "unavailable": false,
+                "enabled": true,
+                "linked": true
+              },
+              {
+                "name": "Volume",
+                "value": null,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Displacement",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thickness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "from_node": "Principled BSDF",
+            "from_socket": "BSDF",
+            "to_node": "Material Output",
+            "to_socket": "Surface"
+          }
+        ]
+      },
+      "active_output": "Material Output",
+      "reachable_nodes": [
+        "Material Output",
+        "Principled BSDF"
+      ],
+      "disconnected_nodes": [],
+      "unavailable_weight": [
+        [
+          true,
+          0.0
+        ]
+      ]
+    },
+    "Emission": {
+      "source_graph": {
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": [
+              {
+                "name": "Base Color",
+                "value": [
+                  0.800000011920929,
+                  0.800000011920929,
+                  0.800000011920929,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Metallic",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Roughness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "IOR",
+                "value": 1.4500000476837158,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Alpha",
+                "value": 1.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Wall",
+                "value": false,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Normal",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Weight",
+                "value": 0.0,
+                "unavailable": true,
+                "enabled": false,
+                "linked": false
+              },
+              {
+                "name": "Diffuse Roughness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Radius",
+                "value": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Scale",
+                "value": 0.05000000074505806,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface IOR",
+                "value": 1.399999976158142,
+                "unavailable": true,
+                "enabled": false,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Anisotropy",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Specular IOR Level",
+                "value": 0.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Specular Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Anisotropic",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Anisotropic Rotation",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Tangent",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Transmission Weight",
+                "value": 1.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Roughness",
+                "value": 0.029999999329447746,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat IOR",
+                "value": 1.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Normal",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Roughness",
+                "value": 0.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Emission Color",
+                "value": [
+                  0.5805548429489136,
+                  0.22875744104385376,
+                  0.008749574422836304,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Emission Strength",
+                "value": 20000.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Film Thickness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Film IOR",
+                "value": 1.3300000429153442,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              }
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "inputs": [
+              {
+                "name": "Surface",
+                "value": null,
+                "unavailable": false,
+                "enabled": true,
+                "linked": true
+              },
+              {
+                "name": "Volume",
+                "value": null,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Displacement",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thickness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              }
+            ]
+          },
+          {
+            "name": "Blackbody",
+            "type": "BLACKBODY",
+            "inputs": [
+              {
+                "name": "Temperature",
+                "value": 1900.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "from_node": "Principled BSDF",
+            "from_socket": "BSDF",
+            "to_node": "Material Output",
+            "to_socket": "Surface"
+          }
+        ]
+      },
+      "active_output": "Material Output",
+      "reachable_nodes": [
+        "Material Output",
+        "Principled BSDF"
+      ],
+      "disconnected_nodes": [
+        "Blackbody"
+      ],
+      "unavailable_weight": [
+        [
+          true,
+          0.0
+        ]
+      ]
+    },
+    "silver": {
+      "source_graph": {
+        "nodes": [
+          {
+            "name": "Principled BSDF",
+            "type": "BSDF_PRINCIPLED",
+            "inputs": [
+              {
+                "name": "Base Color",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Metallic",
+                "value": 1.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Roughness",
+                "value": 0.4000000059604645,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "IOR",
+                "value": 1.4500000476837158,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Alpha",
+                "value": 1.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Wall",
+                "value": false,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Normal",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Weight",
+                "value": 0.0,
+                "unavailable": true,
+                "enabled": false,
+                "linked": false
+              },
+              {
+                "name": "Diffuse Roughness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Radius",
+                "value": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Scale",
+                "value": 0.05000000074505806,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Subsurface IOR",
+                "value": 1.399999976158142,
+                "unavailable": true,
+                "enabled": false,
+                "linked": false
+              },
+              {
+                "name": "Subsurface Anisotropy",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Specular IOR Level",
+                "value": 0.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Specular Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Anisotropic",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Anisotropic Rotation",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Tangent",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Transmission Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Roughness",
+                "value": 0.029999999329447746,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat IOR",
+                "value": 1.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Coat Normal",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Weight",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Roughness",
+                "value": 0.5,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Sheen Tint",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Emission Color",
+                "value": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Emission Strength",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Film Thickness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thin Film IOR",
+                "value": 1.3300000429153442,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              }
+            ]
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "inputs": [
+              {
+                "name": "Surface",
+                "value": null,
+                "unavailable": false,
+                "enabled": true,
+                "linked": true
+              },
+              {
+                "name": "Volume",
+                "value": null,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Displacement",
+                "value": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              },
+              {
+                "name": "Thickness",
+                "value": 0.0,
+                "unavailable": false,
+                "enabled": true,
+                "linked": false
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "from_node": "Principled BSDF",
+            "from_socket": "BSDF",
+            "to_node": "Material Output",
+            "to_socket": "Surface"
+          }
+        ]
+      },
+      "active_output": "Material Output",
+      "reachable_nodes": [
+        "Material Output",
+        "Principled BSDF"
+      ],
+      "disconnected_nodes": [],
+      "unavailable_weight": [
+        [
+          true,
+          0.0
+        ]
+      ]
+    }
+  },
+  "rows": [
+    {
+      "source": "Left bulb.032",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.15281140804290771
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.032-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.033",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.15281140804290771
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.033-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.034",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.05276846885681152
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.034-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.035",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.05276846885681152
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.035-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.036",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.3692234754562378
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.036-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.037",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.3692234754562378
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.037-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.038",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.272464394569397
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.038-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.039",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          -0.272464394569397
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.039-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.040",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.274914026260376
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.040-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.041",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.274914026260376
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.041-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.043",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.3720088005065918
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.043-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.044",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.05666613578796387
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.044-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.045",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.05666613578796387
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.045-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.046",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.15342509746551514
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.046-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.047",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.15342509746551514
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.234592467546463
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.03036351688206196
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.047-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    },
+    {
+      "source": "Left bulb.042",
+      "matrix": [
+        [
+          0.32778334617614746,
+          1.352147421807004e-10,
+          -3.8148123939234894e-17,
+          0.37200498580932617
+        ],
+        [
+          -1.3521470054733697e-10,
+          0.3277832269668579,
+          1.1722443105099956e-07,
+          0.17392465472221375
+        ],
+        [
+          8.650466248899901e-17,
+          -1.1722443105099956e-07,
+          0.3277832269668579,
+          0.030363555997610092
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_dump": "05_GARAGE_L-Left_bulb.042-fresh-source.npz",
+      "source_dump_sha256": "69cebfff5ecd60b2d37512a2d59ac9cd791555427640e4792effff7148203132",
+      "matrix_error": 7.105427357601002e-15
+    }
+  ],
+  "materials": {
+    "plastic": {
+      "constants": {
+        "Base Color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.0,
+        "IOR": 1.4500000476837158,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.05000000074505806,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      },
+      "doubleSided": true
+    },
+    "Emission": {
+      "constants": {
+        "Base Color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.0,
+        "IOR": 1.4500000476837158,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.05000000074505806,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 1.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          0.5805548429489136,
+          0.22875744104385376,
+          0.008749574422836304,
+          1.0
+        ],
+        "Emission Strength": 20000.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      },
+      "doubleSided": true
+    },
+    "silver": {
+      "constants": {
+        "Base Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Metallic": 1.0,
+        "Roughness": 0.4000000059604645,
+        "IOR": 1.4500000476837158,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.05000000074505806,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      },
+      "doubleSided": true
+    }
+  },
+  "files": {
+    "Emission-reference.npz": "31f9ddd27e8c11ff7ac238b1b487c8df2269c17b83311e8151ce568807bf5587",
+    "left-lamp-materials.bin": "49e7b6f6e9978ef19e6564c8a1e84a6e21923568360276cdb300e9c9dd38b664",
+    "left-lamp-materials.gltf": "33a30ff6e353518784f56dab962a681b14997427a77968bbe67491f47e0efd9c",
+    "plastic-reference.npz": "d18838de499273a7fc27c47070b32ab62f84f1c8fb3f6a68678ec2984e98db3c",
+    "silver-reference.npz": "1fc2d4d6a9e43365be5b7dded97822335f24fa0e054f516c792c22350847601d"
+  },
+  "limits": [
+    "Native constant active socket mapping only; no complete Principled/radiance/lighting/GI equivalence",
+    "Emission source strength20000 is luminous surface only; standard native runtime does not indirectly light other objects",
+    "C11 failed empty-reference shadow guard remains FAILED unchanged"
+  ]
+}

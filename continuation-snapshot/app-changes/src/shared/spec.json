@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "1.0.0",
+  "decisionsLocked": true,
+  "implementationStarted": true,
+  "workingDirectory": "AR_GITHUB",
+  "coordinatorEntry": "src/main.js",
+  "starterEntry": "src/app.js",
+  "toolchainLock": "toolchain_lock.json",
+  "language": "JavaScript ES modules",
+  "framework": "Pinned official A-Frame image-target starter",
+  "trackingMode": "image_only_disable_world_tracking",
+  "host": {
+    "provider": "GitHub Pages",
+    "method": "main:/docs",
+    "accessMissingAction": "package_progress_without_invented_publication"
+  },
+  "workers": {
+    "A": {
+      "entry": "src/tracking/index.js",
+      "writePaths": [
+        "src/tracking/",
+        "image-targets/",
+        "assets/targets/",
+        "config/target-manifest.json"
+      ],
+      "handoff": "src/tracking/HANDOFF.json"
+    },
+    "B": {
+      "entry": "src/effects/index.js",
+      "writePaths": [
+        "src/effects/"
+      ],
+      "handoff": "src/effects/HANDOFF.json"
+    },
+    "C": {
+      "entry": "src/ui/index.js",
+      "writePaths": [
+        "src/ui/"
+      ],
+      "handoff": "src/ui/HANDOFF.json"
+    }
+  },
+  "excluded": [
+    "sound",
+    "full_scene_export",
+    "source_mesh_extraction",
+    "blank_wall_placement",
+    "multiple_simultaneous_targets",
+    "second_renderer",
+    "unbounded_particles"
+  ],
+  "targetPolicy": {
+    "candidateOrder": [
+      "garage-wide",
+      "garage-central",
+      "driveway-sign"
+    ],
+    "stopAtFirstPassingCandidate": true,
+    "recognitionTrials": 5,
+    "minimumPassingTrials": 4,
+    "acquisitionMaxMs": 3000,
+    "reacquisitionMaxMs": 2000,
+    "anchorErrorMaxPanelWidthFraction": 0.03,
+    "negativeTestHoldMs": 5000,
+    "negativeTestMaxSustainedFalseMatches": 0,
+    "candidateRepairAttempts": 2,
+    "targetNamePrefix": "steampunk-",
+    "physicalSamplePanelWidthMm": 180,
+    "printMode": "full_panel_preserve_aspect_no_stretch",
+    "cliType": "flat",
+    "cliOrientation": "landscape",
+    "cliDefaultCrop": true,
+    "preserveSourceArt": true
+  },
+  "candidates": [
+    {
+      "id": "garage-wide",
+      "wallId": 5,
+      "panelKey": "garageLeft",
+      "source": "../output/previews/05_GARAGE_L_preview.png",
+      "panelImagePx": [
+        1425,
+        1350
+      ],
+      "sourceCropPx": [
+        0,
+        140,
+        1424,
+        1068
+      ],
+      "preCroppedImagePx": [
+        1424,
+        1068
+      ]
+    },
+    {
+      "id": "garage-central",
+      "wallId": 5,
+      "panelKey": "garageLeft",
+      "source": "../output/previews/05_GARAGE_L_preview.png",
+      "panelImagePx": [
+        1425,
+        1350
+      ],
+      "sourceCropPx": [
+        172,
+        390,
+        1080,
+        810
+      ],
+      "preCroppedImagePx": [
+        1080,
+        810
+      ]
+    },
+    {
+      "id": "driveway-sign",
+      "wallId": 3,
+      "panelKey": "driveway",
+      "source": "../output/previews/03_DRIVEWAY_WALL_preview.png",
+      "panelImagePx": [
+        2763,
+        1222
+      ],
+      "sourceCropPx": [
+        741,
+        131,
+        1280,
+        960
+      ],
+      "preCroppedImagePx": [
+        1280,
+        960
+      ]
+    }
+  ],
+  "panels": {
+    "garageLeft": {
+      "wallId": 5,
+      "label": "Garage Left",
+      "imagePx": [
+        1425,
+        1350
+      ],
+      "gearAnchorUV": [
+        0.5,
+        0.6
+      ],
+      "glowAnchorsUV": [
+        [
+          0.12,
+          0.275
+        ],
+        [
+          0.223,
+          0.275
+        ],
+        [
+          0.346,
+          0.275
+        ],
+        [
+          0.448,
+          0.275
+        ],
+        [
+          0.554,
+          0.275
+        ],
+        [
+          0.656,
+          0.275
+        ],
+        [
+          0.773,
+          0.275
+        ],
+        [
+          0.879,
+          0.275
+        ]
+      ],
+      "gearRadius": 0.085,
+      "glowRadius": 0.027
+    },
+    "driveway": {
+      "wallId": 3,
+      "label": "Driveway",
+      "imagePx": [
+        2763,
+        1222
+      ],
+      "gearAnchorUV": [
+        0.25,
+        0.26
+      ],
+      "glowAnchorsUV": [
+        [
+          0.115,
+          0.2
+        ],
+        [
+          0.64,
+          0.195
+        ],
+        [
+          0.477,
+          0.7
+        ],
+        [
+          0.922,
+          0.58
+        ]
+      ],
+      "gearRadius": 0.055,
+      "glowRadius": 0.018
+    }
+  },
+  "effects": {
+    "teeth": 24,
+    "spokes": 6,
+    "gearThickness": 0.0125,
+    "gearZ": 0.025,
+    "idleDegreesPerSecond": 15,
+    "overdriveDegreesPerSecond": 90,
+    "overdriveDurationMs": 3000,
+    "pulsePeriodMs": 2000,
+    "glowIdleOpacity": [
+      0.25,
+      0.45
+    ],
+    "glowOverdriveOpacity": 0.65,
+    "reducedMotionIdleOpacity": 0.35,
+    "reducedMotionOverdriveOpacity": 0.5,
+    "brassHex": "#B88A44",
+    "amberHex": "#FFB547",
+    "maxDeltaMs": 50,
+    "timerOwner": "coordinator",
+    "texture": "code_generated_shared_radial_gradient",
+    "steam": {
+      "enabled": true,
+      "emittersUV": [
+        [
+          0.74,
+          0.29
+        ],
+        [
+          0.516,
+          0.67
+        ]
+      ],
+      "maxParticles": 24,
+      "idleParticles": 8,
+      "overdriveParticles": 24,
+      "rise": 0.065,
+      "idleLifetimeMs": 1400,
+      "overdriveLifetimeMs": 900,
+      "z": 0.03
+    },
+    "valves": {
+      "enabled": true,
+      "anchorsUV": [
+        [
+          0.102,
+          0.547
+        ],
+        [
+          0.318,
+          0.361
+        ],
+        [
+          0.658,
+          0.643
+        ],
+        [
+          0.83,
+          0.128
+        ]
+      ],
+      "radii": [
+        0.018,
+        0.019,
+        0.018,
+        0.02
+      ],
+      "z": 0.018,
+      "colorHex": "#71332B",
+      "idleAmplitudeDeg": 8,
+      "idlePeriodMs": 4000,
+      "overdriveDegreesPerSecond": 120
+    }
+  },
+  "rendering": {
+    "threeSource": "AFRAME.THREE_injected",
+    "initialMaxDpr": 2.0,
+    "fallbackDpr": 1.0,
+    "lowFpsThreshold": 25,
+    "lowFpsWindowMs": 10000,
+    "fallbackOrder": [
+      "dpr_1_5",
+      "dpr_1",
+      "disable_steam",
+      "disable_glows",
+      "record_failure"
+    ],
+    "shadows": false,
+    "postprocessing": false,
+    "customTrianglesMax": 20000,
+    "customDrawCallsMax": 20,
+    "customAssetTransferBytesMax": 3000000,
+    "totalTransferBytesGoal": 15000000,
+    "textureMaxEdgePx": 2048,
+    "ambientIntensity": 0.8,
+    "directionalIntensity": 1.0,
+    "previewMode": "same_AFrame_scene_XR_stopped_fixed_preview_camera_no_second_renderer",
+    "antialias": true
+  },
+  "ui": {
+    "backgroundHex": "#15120F",
+    "textHex": "#F5EADB",
+    "minButtonPx": 44,
+    "previewLabel": "Animation preview \u2014 not live AR.",
+    "controls": [
+      "Start",
+      "Overload",
+      "Retry",
+      "Preview animation",
+      "Exit preview",
+      "Reset",
+      "Reduce motion",
+      "Cancel",
+      "Stop camera"
+    ],
+    "trackingStates": [
+      "loading",
+      "searching",
+      "tracked",
+      "lost",
+      "paused"
+    ],
+    "extraStates": [
+      "landing",
+      "error",
+      "preview"
+    ],
+    "stateMessages": {
+      "landing": "Bring the steampunk wall to life.",
+      "loading": "Starting camera\u2026",
+      "searching": "Point at the {targetLabel} artwork.",
+      "tracked": "Artwork found. Tap Overload.",
+      "lost": "Move back toward the artwork.",
+      "paused": "Camera paused. Tap Retry to resume.",
+      "error": "Unable to start AR.",
+      "preview": "Animation preview \u2014 not live AR."
+    },
+    "errorMessages": {
+      "CAMERA_DENIED": "Camera access is off. Allow it in browser site settings, then tap Retry.",
+      "CAMERA_UNAVAILABLE": "Camera unavailable. Close other camera apps, then tap Retry.",
+      "INSECURE_ORIGIN": "Open the HTTPS demo link to use the camera.",
+      "ASSET_LOAD_FAILED": "A demo file could not load. Check your connection, then tap Retry.",
+      "ENGINE_FAILED": "AR could not start. Tap Retry or open Preview animation."
+    },
+    "visibleControlsByState": {
+      "landing": [
+        "Start",
+        "Preview animation",
+        "Reduce motion"
+      ],
+      "loading": [
+        "Cancel",
+        "Reduce motion"
+      ],
+      "searching": [
+        "Preview animation",
+        "Stop camera",
+        "Reduce motion"
+      ],
+      "tracked": [
+        "Overdrive",
+        "Reset",
+        "Stop camera",
+        "Reduce motion"
+      ],
+      "lost": [
+        "Preview animation",
+        "Stop camera",
+        "Reduce motion"
+      ],
+      "paused": [
+        "Retry",
+        "Preview animation",
+        "Stop camera",
+        "Reduce motion"
+      ],
+      "error": [
+        "Retry_if_canRetry",
+        "Preview animation",
+        "Reduce motion"
+      ],
+      "preview": [
+        "Overdrive",
+        "Exit preview",
+        "Reset",
+        "Reduce motion"
+      ]
+    }
+  },
+  "timeLimits": {
+    "bootstrapMinutes": 30,
+    "bootstrapRepairAttempts": 2,
+    "trackingGateMinutes": 60,
+    "extraCalibrationMinutes": 15,
+    "previewRendererRepairMinutes": 15,
+    "parallelElapsedHoursEstimate": [
+      2.75,
+      5.75
+    ],
+    "totalWorkHoursEstimate": [
+      5,
+      10
+    ],
+    "parallelElapsedCentralMinutes": 235,
+    "bookingAllowanceMinutes": 390,
+    "timelineSource": "timeline.json"
+  },
+  "verification": {
+    "preferredPhone": "Android Chrome if accessible, otherwise iOS Safari",
+    "secondPlatformRequiredForCrossPlatformClaim": true,
+    "phoneUnavailableAction": "finish_build_record_not_run",
+    "printUnavailableAction": "screen_test_provisional_record_physical_not_run",
+    "runtimeStatus": "per_wall_evidence_recorded_separately"
+  },
+  "precedence": [
+    "user_instructions",
+    "11_EXECUTION_CONTRACT.md_and_execution_spec.json",
+    "14_TOOLCHAIN_LOCK.md_and_toolchain_lock.json",
+    "12_PARALLEL_EXECUTION.md",
+    "13_WORKER_PROMPTS.md",
+    "other_planning_documents"
+  ],
+  "planVersion": "4.0"
+}
