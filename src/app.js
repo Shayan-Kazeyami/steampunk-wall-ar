@@ -1,1 +1,2 @@
-import './main.js'
+import {startApplication} from './startup.js'
+startApplication()

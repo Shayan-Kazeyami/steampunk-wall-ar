@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
 function boot(){
-  const source=fs.readFileSync(path.join(__dirname,'../src/main.js'),'utf8').replace(/^import .*$/gm,'');
+  const source=fs.readFileSync(path.join(__dirname,'../src/main.js'),'utf8').replace(/^import .*$/gm,'').replace(/^export /gm,'')+'\nprepareScene(); boot();';
   const spec=JSON.parse(fs.readFileSync(path.join(__dirname,'../src/shared/spec.json'),'utf8'));
   const manifest=JSON.parse(fs.readFileSync(path.join(__dirname,'../config/target-manifest.json'),'utf8'));
   const states=[],listeners={};let callbacks,starts=0,textures=0,disposed=0,stops=0;

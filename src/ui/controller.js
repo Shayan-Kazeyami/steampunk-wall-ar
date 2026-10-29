@@ -335,7 +335,10 @@ export function createUIController({
 
     if (statusText.textContent !== message) statusText.textContent = message
 
-    const helperText = HELPER_TEXT[currentState] || ''
+    const graphicsUnavailable = next.graphicsUnavailable === true
+    const helperText = graphicsUnavailable
+      ? 'AR and animation preview both need WebGL graphics. You can still view or print the artwork.'
+      : HELPER_TEXT[currentState] || ''
     if (helper.textContent !== helperText) helper.textContent = helperText
     helper.hidden = helperText === ''
 
@@ -344,12 +347,14 @@ export function createUIController({
 
     const visible = resolveVisible(currentState, canRetry)
     for (const definition of CONTROL_DEFINITIONS) {
-      buttons[definition.key].hidden = !visible.has(definition.key)
+      buttons[definition.key].hidden = !visible.has(definition.key) || (graphicsUnavailable && definition.key !== 'retry')
+      buttons[definition.key].disabled = next.controlsPending === true
     }
-    motion.hidden = !visible.has('reduceMotion')
+    motion.hidden = !visible.has('reduceMotion') || graphicsUnavailable
+    motionInput.disabled = next.controlsPending === true
 
     const overdriveAllowed = currentState === 'tracked' || currentState === 'preview'
-    buttons.overdrive.disabled = !overdriveAllowed
+    buttons.overdrive.disabled = !overdriveAllowed || next.controlsPending === true
     if (!overdriveAllowed) applyOverdrive(false)
 
     keepFocusVisible(previousActive)

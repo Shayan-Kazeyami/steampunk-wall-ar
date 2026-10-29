@@ -7,9 +7,11 @@ import manifest from '../config/target-manifest.json'
 
 const A = window.AFRAME
 let tick = () => {}
-A.registerComponent('steampunk-coordinator', {tick(time, delta) { tick(time, delta) }})
+export function prepareScene() {
+  A.registerComponent('steampunk-coordinator', {tick(time, delta) { tick(time, delta) }})
+}
 
-function boot() {
+export function boot() {
   const scene = document.querySelector('a-scene')
   if (!scene.hasLoaded) { scene.addEventListener('loaded', boot, {once:true}); return }
   const THREE = A.THREE
@@ -138,5 +140,3 @@ function boot() {
     document.body.appendChild(pre)
   }
 }
-if(document.readyState === 'loading')document.addEventListener('DOMContentLoaded',boot,{once:true})
-else boot()
