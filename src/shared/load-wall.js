@@ -44,6 +44,7 @@ export function loadWallModel({THREE,sceneEl,url,signal,timeoutMs=60000,fetchFil
       if(!system?.getDRACOLoader)throw new Error('The A-Frame Draco decoder is unavailable')
       loader.setDRACOLoader(system.getDRACOLoader())
       progress('download','loading',0,null)
+      if(settled)return
       const response=await fetchFile(url,{signal:controller.signal})
       if(!response.ok)throw new Error('Wall model HTTP '+response.status)
       if(settled)return
@@ -73,7 +74,9 @@ export function loadWallModel({THREE,sceneEl,url,signal,timeoutMs=60000,fetchFil
       if(settled)return
       if(total!==loaded)total=null
       progress('download','complete',loaded,total)
+      if(settled)return
       progress('decode','loading')
+      if(settled)return
       const base=new URL('.',new URL(url,sceneEl.ownerDocument.baseURI)).href
       // Draco work can finish after cancellation; finish() releases that late model.
       const gltf=await loader.parseAsync(buffer,base)
