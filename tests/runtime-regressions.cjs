@@ -42,7 +42,7 @@ module.exports = async function runtimeRegressions({load, THREE, JSDOM, spec, ma
     const {createTrackingAdapter} = load('src/tracking/index.js', ['createTrackingAdapter'], {
       document, window, targetManifestModule:manifest, compiledTargetModule:compiled,
     })
-    const adapter = createTrackingAdapter({sceneEl:scene, onState:event => states.push(event), onError:error => errors.push(error)})
+    const adapter = createTrackingAdapter({sceneEl:scene, engineStopTimeoutMs:10, onState:event => states.push(event), onError:error => errors.push(error)})
     return {dom, window, document, scene, attrs, states, errors, adapter}
   }
   for (const stalled of ['scene', 'engine']) {
@@ -84,6 +84,55 @@ module.exports = async function runtimeRegressions({load, THREE, JSDOM, spec, ma
     assert.equal(h.states.at(-1).state, 'tracked', 'Explicit retry must clear error latch')
     results.push({id:'tracking-error-latched-until-retry', result:'pass', detail:'Late found/lost events cannot erase camera error; explicit retry permits acquisition.'})
   } finally { await within(h.adapter.dispose()); h.dom.window.close() }
+
+  // A stopped UI is not evidence that XR8 actually released the camera.
+  // Exercise the real adapter queue with controllable stop promises.
+  for (const outcome of ['resolved', 'rejected', 'pending']) {
+    const camera = harness()
+    let configureCalls = 0, stopCalls = 0, resolveStop
+    const pendingStop = new Promise(resolve => { resolveStop = resolve })
+    camera.window.XR8.XrController.configure = () => { configureCalls++ }
+    camera.window.XR8.stop = () => {
+      stopCalls++
+      if (outcome === 'rejected') return Promise.reject(new Error('stop failed'))
+      if (outcome === 'pending') return pendingStop
+      return Promise.resolve()
+    }
+    try {
+      await within(camera.adapter.start())
+      assert.equal(configureCalls, 1)
+      const stopped = camera.adapter.stop()
+      // An intervening restart must never configure a second session before stop settles.
+      const restart = camera.adapter.start()
+      await sleep(20)
+      if (outcome === 'pending') assert.equal(configureCalls, 1)
+      await within(Promise.all([stopped, restart]), 5000)
+      if (outcome === 'resolved') {
+        assert.equal(configureCalls, 2, 'confirmed stop permits restart')
+      } else {
+        assert.equal(configureCalls, 1, `${outcome} stop must block restart`)
+        assert(camera.errors.some(error => error.code === 'ENGINE_STOP_UNCERTAIN' && error.retryable === false), `${outcome} stop must report an actionable failure`)
+        assert.equal(camera.adapter.getDiagnostics().engineStopUncertain, true)
+        const attempts = camera.attrs.filter(key => key === 'xrweb').length
+        await within(camera.adapter.start(), 5000)
+        assert.equal(camera.attrs.filter(key => key === 'xrweb').length, attempts, 'repeat Start cannot overlap an uncertain camera')
+        assert.equal(configureCalls, 1)
+      }
+      assert(stopCalls >= 1)
+      if (outcome === 'pending') {
+        resolveStop()
+        await sleep(20)
+        assert.equal(camera.adapter.getDiagnostics().engineStopUncertain, false)
+        await within(camera.adapter.start(), 5000)
+        assert.equal(configureCalls, 2, 'a later confirmed stop permits a new camera session')
+      }
+      results.push({id:`tracking-xr-stop-${outcome}`, result:'pass', detail:'Real adapter queue and mocked XR stop; no camera hardware claim.'})
+    } finally {
+      resolveStop()
+      await within(camera.adapter.dispose(), 5000)
+      camera.dom.window.close()
+    }
+  }
 
   const dom = new JSDOM('<div id="mount"></div>', {url:'https://test.invalid/'})
   try {

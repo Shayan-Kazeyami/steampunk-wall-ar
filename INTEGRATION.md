@@ -53,3 +53,7 @@ Each region also needs the compiled JSON at its manifest's `compiledJsonPath` an
 No such fixture tree was found in the inspected main/PR Git trees. Drive searches for `coverage-wave-2026-10-25`, `coverage-manifest`, and `target-manifest` returned no results. An original authorized Drive archive may still contain them under an opaque name; that has not been established. Full source blends, original textures and print masters remain outside this baseline and were not accessed.
 
 Remaining gates: recover authoritative coverage fixtures, supported WebGL browser/mobile rendering, real camera/print trials and performance, source material/shadow acceptance (including the previously reported failed C11 shadow guard). A passing local build does not close those gates.
+
+## Bounded engine-stop recovery
+
+XR8 stop has a three-second observation deadline. Rejection or deadline expiry is an uncertain camera stop, blocks new XR starts and presents reload guidance. A later fulfilled stop can clear uncertainty. Local teardown releases owned assets before awaiting bounded engine cleanup. This does not revoke device permissions or certify hardware camera shutdown. Adversarial adapter/coordinator tests cover resolved, rejected, pending and late stop, repeated Start/Preview and cached-page restoration. Current offline suite: 41 checks passed; production build passed. Missing coverage fixtures, failed recorded C11 shadow guard and real-device acceptance remain open.

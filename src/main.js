@@ -135,6 +135,12 @@ export function boot(){
       error:'Check camera permissions or try an artwork preview.'}
     ui.setState({state:next,targetLabel:experience.label,helperText:helpers[next] || '',...extra})
   }
+  function showUncertainStop(){
+    loadingConsumer=null;cancelEffects();park();removePreview()
+    state('error',{code:'ENGINE_STOP_UNCERTAIN',
+      message:'The camera stop could not be confirmed. Reload this page before scanning again.',
+      canRetry:false,helperText:'Reload this page before starting another camera session.'})
+  }
   const tracker=createTrackingAdapter({sceneEl:scene,manifest:experiences[0].manifest,compiledTarget:experiences[0].compiledTarget,
     transientLossMs:150,worldTracking,coverageTargets,
     onObservation:event=>{
@@ -173,6 +179,11 @@ export function boot(){
       state(event.state)
     },
     onError(error){
+      if(error.code==='ENGINE_STOP_UNCERTAIN'){
+        if(disposed || suspended)return
+        showUncertainStop()
+        return
+      }
       if(disposed || suspended || ['landing','preview','transition'].includes(mode))return
       if(mode==='tracked')observe('render-hidden',{reason:'tracking-error'})
       observe('tracking-stopped',{reason:error.code || 'tracking-error'})
@@ -254,14 +265,20 @@ export function boot(){
     if(action!=='landing'){retryAction=action;retryWall=id}
     if(mode==='tracked')observe('render-hidden',{reason:'request-'+action})
     // Preparation can be cancelled before the adapter owns any camera session.
-    observe('tracking-stopped',{reason:'request-'+action})
+    observe('tracking-paused',{reason:'request-'+action})
     invalidate();const token=epoch,controller=new AbortController();operation=controller;pauseField();mode='transition'
     const stopped=tracker.stop()
-    if(action==='landing'){park();removePreview();state('landing');queue=Promise.resolve(stopped);return queue}
+    if(action==='landing'){park();removePreview();state('landing');queue=Promise.resolve(stopped).then(()=>{
+      if(!disposed && !suspended && tracker.getDiagnostics?.().engineStopUncertain)showUncertainStop()
+    });return queue}
     state('loading',{message:action==='preview'?'Opening '+records.get(id).entry.label+'…':undefined})
     queue=queue.then(async()=>{
       await stopped
       if(disposed || suspended || token!==epoch)return
+      if(tracker.getDiagnostics?.().engineStopUncertain){
+        showUncertainStop()
+        return
+      }
       if(action==='ar')beginTrials()
       loadingConsumer={token,id:action==='ar'?(experiences.find(entry=>entry.fullWall && records.get(entry.id).assetsState!=='ready')?.id || activeId):id}
       const pending=records.get(loadingConsumer.id)
@@ -399,10 +416,15 @@ export function boot(){
     canvas?.removeEventListener('pointerdown',pointerDown);canvas?.removeEventListener('pointerup',pointerUp);canvas?.removeEventListener('pointercancel',pointerCancel)
     document.removeEventListener('visibilitychange',visibility);window.removeEventListener('resize',fit)
     window.removeEventListener('pagehide',pagehide);window.removeEventListener('pageshow',pageshow);motionQuery.removeEventListener?.('change',applySystemMotion)
-    await tracker.stop();park();removePreview();releaseAll();worldSnow?.dispose();ui.dispose();await tracker.dispose()
+    park();removePreview();releaseAll();worldSnow?.dispose();ui.dispose()
+    await tracker.stop();await tracker.dispose()
   }
   function pagehide(event){if(!event.persisted){teardown();return}observe('tracking-paused',{reason:'page-cache'});suspended=true;pauseField();invalidate();mode='transition';tracker.stop();park();removePreview();releaseAll()}
-  function pageshow(event){if(!event.persisted || disposed)return;suspended=false;invalidate();mode='transition';tracker.stop().then(()=>{if(!disposed && mode==='transition'){activate(activeId);state('landing');preload()}})}
+  function pageshow(event){if(!event.persisted || disposed)return;suspended=false;invalidate();mode='transition';tracker.stop().then(()=>{
+    if(disposed || mode!=='transition')return
+    if(tracker.getDiagnostics?.().engineStopUncertain){showUncertainStop();return}
+    activate(activeId);state('landing');preload()
+  })}
   window.addEventListener('pagehide',pagehide);window.addEventListener('pageshow',pageshow)
   preload()
   if(new URLSearchParams(location.search).has('qa')){

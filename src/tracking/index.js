@@ -25,6 +25,7 @@ export const TRACKING_ERROR_CODES = Object.freeze({
   INSECURE_ORIGIN: 'INSECURE_ORIGIN',
   ASSET_LOAD_FAILED: 'ASSET_LOAD_FAILED',
   ENGINE_FAILED: 'ENGINE_FAILED',
+  ENGINE_STOP_UNCERTAIN: 'ENGINE_STOP_UNCERTAIN',
 })
 
 const TARGET_COMPONENT = 'xrextras-named-image-target'
@@ -34,6 +35,7 @@ const XREXTRAS_LOAD_TIMEOUT_MS = 10000
 const ENTITY_LOAD_TIMEOUT_MS = 10000
 const POLL_INTERVAL_MS = 50
 const TARGET_LOAD_TIMEOUT_MS = 30000
+const ENGINE_STOP_TIMEOUT_MS = 3000
 
 const ERROR_MESSAGES = Object.freeze({
   CAMERA_DENIED: 'Camera access was denied. Allow it in browser site settings, then retry.',
@@ -198,6 +200,7 @@ export function createTrackingAdapter({
   coverageTargets = [],
   coverageStaleAfterMs = 1000,
   transientLossMs = 0,
+  engineStopTimeoutMs = ENGINE_STOP_TIMEOUT_MS,
 } = {}) {
   const documentRef = typeof document !== 'undefined' ? document : null
   // Fixed for this adapter's lifetime. A different mode needs a fresh session;
@@ -219,6 +222,7 @@ export function createTrackingAdapter({
   let targetFound = false
   let currentState = null
   let lastReportedErrorCode = null
+  let engineStopUncertain = null
   let sceneListenersAttached = false
   let queue = Promise.resolve()
   let debugGroup = null
@@ -394,7 +398,7 @@ export function createTrackingAdapter({
   function getDiagnostics(){
     const selected=findTarget(focusedTargetName || lastFocusedTargetName) || primary()
     const declared=name=>scanningTargets.some(target=>target.name===name)
-    return {state:currentState,active,starting,ready,disposed,
+    return {state:currentState,active,starting,ready,disposed,engineStopUncertain:!!engineStopUncertain,
       worldTracking:worldTrackingEnabled,worldTrackingStatus,worldTrackingValid,
       activeTarget:focusedTargetName,lastActiveTarget:lastFocusedTargetName,targetCount:1+extraTargets.length,
       lossPending:!!pendingLoss,stabilization:{enabled:true,lagMaxTargetWidth:.015,lagMaxRotationDegrees:1.5},
@@ -534,6 +538,16 @@ export function createTrackingAdapter({
       code,
       message: message || ERROR_MESSAGES[code] || ERROR_MESSAGES.ENGINE_FAILED,
       retryable: retryable === true,
+    })
+  }
+
+  function reportUncertainStop() {
+    if (lastReportedErrorCode === TRACKING_ERROR_CODES.ENGINE_STOP_UNCERTAIN) return
+    lastReportedErrorCode = TRACKING_ERROR_CODES.ENGINE_STOP_UNCERTAIN
+    safeCallback(onError, {
+      code: TRACKING_ERROR_CODES.ENGINE_STOP_UNCERTAIN,
+      message: 'The camera stop could not be confirmed. Reload this page before scanning again.',
+      retryable: false,
     })
   }
 
@@ -892,28 +906,45 @@ export function createTrackingAdapter({
     hideTargets(true)
     removeLighting()
     removeWorldObservation()
-    if (!sceneEl) return
+    if (!sceneEl) return !engineStopUncertain
     try {
       sceneEl.removeAttribute('xrweb')
     } catch (error) {}
-    if (typeof window !== 'undefined' && window.XR8 && typeof window.XR8.stop === 'function') {
-      try {
-        await Promise.resolve(window.XR8.stop())
-      } catch (error) {}
+    if (!engineStopUncertain && typeof window !== 'undefined' && window.XR8 && typeof window.XR8.stop === 'function') {
+      let timer
+      const engine = window.XR8
+      const stop = Promise.resolve().then(() => engine.stop())
+      const settled = stop.then(
+        () => { if (engineStopUncertain === 'timed-out') engineStopUncertain = null; return true },
+        () => { engineStopUncertain = 'rejected'; return false },
+      )
+      const limit = Number.isFinite(engineStopTimeoutMs) && engineStopTimeoutMs > 0 ? engineStopTimeoutMs : ENGINE_STOP_TIMEOUT_MS
+      const finished = await Promise.race([
+        settled,
+        new Promise(resolve => { timer = setTimeout(() => {
+          engineStopUncertain = 'timed-out'
+          resolve(false)
+        }, limit) }),
+      ])
+      clearTimeout(timer)
+      if (!finished) reportUncertainStop()
     }
     try {
       sceneEl.removeAttribute('xrconfig')
     } catch (error) {}
+    return !engineStopUncertain
   }
 
   async function doStart(token) {
     const canceled = () => disposed || token !== epoch
     if (canceled()) return
+    if (engineStopUncertain) { reportUncertainStop(); return }
     if (active) {
       if (!lastReportedErrorCode) return
       await stopRuntime()
     }
     if (canceled()) return
+    if (engineStopUncertain) { reportUncertainStop(); return }
     startupController = new AbortController()
     const signal = startupController.signal
     starting = true
@@ -998,7 +1029,8 @@ export function createTrackingAdapter({
     if (canceled() || lastReportedErrorCode) return
     if (documentRef && documentRef.visibilityState === 'hidden') {
       observationPaused=true;emitObservation('tracking-paused',{reason:'document-hidden'})
-      await stopRuntime()
+      const stopped = await stopRuntime()
+      if (!stopped) return
       emitState(TRACKING_STATES.PAUSED)
       return
     }
@@ -1007,9 +1039,10 @@ export function createTrackingAdapter({
   }
 
   async function doStop() {
-    await stopRuntime()
+    const stopped = await stopRuntime()
     targetFound = false
     if (root) root.visible = false
+    return stopped
   }
 
   async function doDispose() {
@@ -1077,7 +1110,8 @@ export function createTrackingAdapter({
     hideTargets(true)
     enqueue(async () => {
       if (disposed) return
-      await stopRuntime()
+      const stopped = await stopRuntime()
+      if (!stopped) return
       targetFound = false
       if (root) root.visible = false
       if (!lastReportedErrorCode && currentState !== TRACKING_STATES.PAUSED) {
@@ -1120,7 +1154,7 @@ export function createTrackingAdapter({
 
   function stop() {
     if (disposed) return Promise.resolve()
-    if(active || starting || observationPaused)emitObservation('tracking-stopped',{reason:'explicit-stop'})
+    const wasRunning = active || starting || observationPaused
     observationPaused=false
     epoch++
     cancelTargetLoadWatch()
@@ -1131,7 +1165,10 @@ export function createTrackingAdapter({
     targetFound = false
     if (root) root.visible = false
     hideTargets(true)
-    return enqueue(doStop)
+    return enqueue(async () => {
+      const stopped = await doStop()
+      if (stopped && wasRunning) emitObservation('tracking-stopped',{reason:'explicit-stop'})
+    })
   }
 
   function dispose() {

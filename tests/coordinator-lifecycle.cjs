@@ -9,18 +9,25 @@ module.exports = async function coordinatorLifecycle({load,THREE,JSDOM,spec,mani
   const {createEffects}=load('src/effects/index.js',['createEffects'])
   const {runEffectsContractChecks}=load('src/effects/evidence/contract-check.js',['runEffectsContractChecks'],{createEffects})
   const {loadPreviewTexture}=load('src/shared/load-preview.js',['loadPreviewTexture'])
-  function harness({pendingTexture=false}={}) {
+  function harness({pendingTexture=false, stopOutcome=null}={}) {
     const dom = new JSDOM('<div id="ui"></div><a-scene><canvas class="a-canvas"></canvas></a-scene><a-camera id="main-camera"></a-camera>', {url:'https://test.invalid/',pretendToBeVisual:true})
     const window=dom.window,document=window.document,scene=document.querySelector('a-scene')
     const ratios=[]
     scene.hasLoaded=true;scene.object3D=new THREE.Scene();scene.camera=new THREE.PerspectiveCamera(60,1,.1,100);scene.renderer={setPixelRatio(value){ratios.push(value)}}
     document.querySelector('a-camera').object3D=new THREE.Group()
-    let component,lateLoad,disposed=0,now=0
+    let component,lateLoad,disposed=0,now=0,configures=0,stopCalls=0,resolveStop,currentStopOutcome=stopOutcome
+    const pendingStop=new Promise(resolve=>{resolveStop=resolve})
     const fakeThree={...THREE,TextureLoader:class {load(url,onLoad) {
       if(pendingTexture){lateLoad=onLoad;return}
       onLoad(new THREE.Texture())
     }}}
     window.AFRAME={THREE:fakeThree,components:{xrweb:{}},registerComponent(name,value){component=value}}
+    if(stopOutcome){
+      window.AFRAME.components['xrextras-named-image-target']={}
+      const create=document.createElement.bind(document)
+      document.createElement=tag=>{const element=create(tag);if(tag==='a-entity'){element.hasLoaded=true;element.object3D=new THREE.Group();element.components={'xrextras-named-image-target':{}}}return element}
+      window.XR8={XrController:{configure(){configures++}},stop(){stopCalls++;if(currentStopOutcome==='pending')return pendingStop;if(currentStopOutcome==='rejected')return Promise.reject(Error('stop failed'));return Promise.resolve()}}
+    }
     window.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){}})
     const {createUIController}=load('src/ui/controller.js',['createUIController'],{document,window})
     const {createTrackingAdapter}=load('src/tracking/index.js',['createTrackingAdapter'],{document,window,targetManifestModule:manifest,compiledTargetModule:compiled})
@@ -28,7 +35,7 @@ module.exports = async function coordinatorLifecycle({load,THREE,JSDOM,spec,mani
     const experience={id:'garage-left',label:'Garage Left',panel,manifest,compiledTarget:compiled,previewImage:'assets/garage-left.jpg',effectsConfig:{...spec.effects,panel}}
     const context={createFieldSession,createTrackingEventRecorder,window,document,location:window.location,THREE:fakeThree,spec,performance:{now:()=>now},matchMedia:window.matchMedia,
       innerHeight:900,devicePixelRatio:3,URLSearchParams,AbortController,setTimeout,clearTimeout,console,
-      getExperience:()=>experience,configuredExperiences:[experience],loadPreviewTexture,createEffects,runEffectsContractChecks,createTrackingAdapter,
+      getExperience:()=>experience,configuredExperiences:[experience],loadPreviewTexture,createEffects,runEffectsContractChecks,createTrackingAdapter:options=>createTrackingAdapter({...options,engineStopTimeoutMs:10}),
       createUI:options=>createUIController({...options,spec}),
     }
     vm.createContext(context)
@@ -40,10 +47,10 @@ module.exports = async function coordinatorLifecycle({load,THREE,JSDOM,spec,mani
       assert(button && !button.hidden && !button.disabled,`Missing usable ${label}`)
       button.click()
     }
-    return {dom,window,document,scene,click,ratios,tick(step=16){now+=step;component.tick(now,step)},
+    return {dom,window,document,scene,click,ratios,get configures(){return configures},get stopCalls(){return stopCalls},resolveStop,setStopOutcome(value){currentStopOutcome=value},tick(step=16){now+=step;component.tick(now,step)},
       late(){lateLoad({dispose(){disposed++}})},disposed:()=>disposed,
       mode(){component.tick(0,16);return window.__steampunkDiagnostics.mode},
-      async close(){window.dispatchEvent(new window.PageTransitionEvent('pagehide',{persisted:false}));await sleep(10);window.close()},
+      async close(){resolveStop();window.dispatchEvent(new window.PageTransitionEvent('pagehide',{persisted:false}));await sleep(10);window.close()},
     }
   }
   const h=harness({pendingTexture:true})
@@ -85,6 +92,41 @@ module.exports = async function coordinatorLifecycle({load,THREE,JSDOM,spec,mani
     assert.equal(cached.document.querySelectorAll('.wall-picker').length,0)
     results.push({id:'coordinator-bfcache-reusable-ui',result:'pass',detail:'Persisted pagehide/pageshow returns landing; preview/boost reusable without a page-switching picker; unchanged simulated canvas count; DOM events only.'})
   } finally {await cached.close()}
+  for(const stopOutcome of ['rejected','pending']){
+    const unsafe=harness({stopOutcome})
+    try{
+      unsafe.click('Start')
+      await sleep(100)
+      assert.equal(unsafe.configures,0,`${stopOutcome} stop before Start cannot configure camera`)
+      assert.equal(unsafe.mode(),'error',`${stopOutcome} stop must present recovery, not landing`)
+      assert.match(unsafe.document.querySelector('#ui').textContent,/reload/i,'uncertain camera stop needs reload guidance')
+      unsafe.window.dispatchEvent(new unsafe.window.PageTransitionEvent('pagehide',{persisted:true}))
+      unsafe.window.dispatchEvent(new unsafe.window.PageTransitionEvent('pageshow',{persisted:true}))
+      await sleep(100)
+      assert.equal(unsafe.configures,0,'page restoration cannot restart an uncertain camera')
+      assert.notEqual(unsafe.mode(),'landing','page restoration cannot claim camera stopped')
+      results.push({id:`coordinator-xr-stop-${stopOutcome}`,result:'pass',detail:'Mocked XR failure, UI recovery and page cache restoration; no camera hardware claim.'})
+    } finally {await unsafe.close()}
+  }
+  for(const stopOutcome of ['rejected','pending']){
+    const unsafe=harness({stopOutcome:'resolved'})
+    try{
+      unsafe.click('Start');await sleep(30)
+      assert.equal(unsafe.configures,1,'camera session started before testing Stop')
+      unsafe.setStopOutcome(stopOutcome)
+      unsafe.click('Stop camera');await sleep(100)
+      assert.equal(unsafe.mode(),'error','failed active stop must not claim landing')
+      assert.match(unsafe.document.querySelector('#ui').textContent,/reload/i)
+      for(const label of ['Start','Preview animation']){
+        const button=[...unsafe.document.querySelectorAll('button')].find(button=>button.textContent===label)
+        if(button && !button.disabled){button.click();button.click()}
+      }
+      await sleep(100)
+      assert.equal(unsafe.configures,1,'repeated Start or Preview must not overlap uncertain camera')
+      assert.notEqual(unsafe.mode(),'preview')
+      results.push({id:`coordinator-active-xr-stop-${stopOutcome}`,result:'pass',detail:'Actual UI and adapter with mocked camera stop failure; no hardware claim.'})
+    } finally {await unsafe.close()}
+  }
   const quality=harness()
   try {
     assert.deepEqual(quality.ratios,[1.5],'High-DPR devices start at the contracted cap')
