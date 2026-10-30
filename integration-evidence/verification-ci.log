@@ -1,0 +1,8 @@
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'steampunk-wall-ar-verification@1.0.0',
+npm warn EBADENGINE   required: { node: '22.23.4', npm: '10.9.9' },
+npm warn EBADENGINE   current: { node: 'v24.19.0', npm: '11.9.0' }
+npm warn EBADENGINE }
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 40 packages in 2s

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "Independent actual-runtime CPU integration; no GLSL compilation, GPU/visual or phone acceptance",
+  "oracle": {
+    "sourceChecks": 320,
+    "maxNormalError": 3.288611005763374e-8,
+    "maxPositionError": 4.435270940884464e-9
+  },
+  "lifecycle": {
+    "touch": {
+      "action": "gear",
+      "part": "independent-gear-A"
+    },
+    "disposals": {
+      "texture": 1,
+      "material": 1,
+      "geometry": 1,
+      "paletteGeometry": 1,
+      "paletteMaterial": 1
+    }
+  }
+}

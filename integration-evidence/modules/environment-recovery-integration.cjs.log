@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "Independent actual full-wall CPU recovery integration; no WebGL or phone acceptance",
+  "results": [
+    "lost preload + authored studio light + four restores",
+    "lost preload + camera calibration + four restores",
+    "initial HDR failure retains correct authored fallback multipliers",
+    "dispose during pending lost preload excludes all late GPU work",
+    "later scene-environment owner survives restoration and disposal"
+  ]
+}

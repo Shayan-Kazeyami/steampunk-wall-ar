@@ -1,0 +1,22 @@
+{
+  "expected_source": "PR FULL_WALL_AR.md",
+  "expected_sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534",
+  "destination": "src/assets/full-wall/driveway-adaptive.glb",
+  "candidates": [
+    {
+      "source": "docs/ar/assets/full-wall/driveway-adaptive.glb",
+      "bytes": 27154392,
+      "sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534"
+    },
+    {
+      "source": "docs/experience/assets/driveway-adaptive.glb",
+      "bytes": 27154392,
+      "sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534"
+    },
+    {
+      "source": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/driveway-adaptive.glb",
+      "bytes": 27154392,
+      "sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534"
+    }
+  ]
+}

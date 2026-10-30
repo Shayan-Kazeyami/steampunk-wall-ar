@@ -1,0 +1,155 @@
+
+> aframe-image-targets-example@0.1.0 test:full-wall
+> node tools/verification/run-full-wall.cjs
+
+Full-wall offline checks: v24.19.0 (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node)
+
+Running full-wall-effects.cjs
+[
+  {
+    "id": "full-wall-source-model-effects-lifecycle",
+    "result": "pass",
+    "detail": "Real runtimes: tracking/reduced/boost/steam, unchanged front frame, baked tone mapping, existing renderer, gesture audio and cancellation, hidden cleanup, deduplicated source disposal."
+  }
+]
+
+Running full-wall-ui.cjs
+PASS: optional UI sound control, immediate gesture callback, async failure/cancellation, authoritative parent state, visibility, Stop/loss/disposal and legacy states
+
+Running full-wall-tracking.cjs
+PASS fullwall tracking: actual Driveway crop corners, centered width1/+Yup/+Zoutward, unverified pose ignored, explicit pose applied, geometry gate, loss/reacquisition, Stop/late events, pending-start cancel, bundled GLTF/Draco loader availability. Physical camera calibration NOT tested.
+
+Running full-wall-loader.cjs
+PASS fullwall loader: owned GLB delivery; shared decoder; base URL; fetch/byte/parse cancellation; timeout abort and late cleanup; HTTP/decode failures; geometry/material/texture dedup disposal. No real Draco/GPU claim.
+
+Running full-wall-coordinator.cjs
+PASS fullwall coordinator: actual UI/coordinator/loader; model-only preview; prepare-before-camera; startup preload, fetch/parse Cancel retains shared preload; Stop/restart reuse; loss/visibility audio release; Reset delegation; bfcache reuse; one-time model disposal; unchanged one-canvas DOM fixture (not GPU verification).
+
+Running adaptive-runtime.cjs
+PASS camera RGB/exposure fallback/throttle; separate dial readings; all seven printed tick angles/clamping/pause; offscreen GPU warm-up state restoration and lost-context exclusion (mock renderer).
+
+Running environment-lighting.cjs
+PASS environment lighting: header/body timeout and disposal; real HDR parse; bounded cached source; repeated GPU replacement without refetch; renderer-listener ordering; intensity/version identity; ownership takeover; queued restore cancellation; mid-build loss; download/context races; initial/restore GPU failure fallback; all temporary/owned GPU resources released.
+
+Running field-session.cjs
+PASS bounded frame-loop aggregates/ring, pauses/gaps, marks, observed heap, snapshot isolation, stop/restart and honest physical gates
+
+Running steam-variation.cjs
+PASS steam/gear variation: source joint clouds, real double pulses, varied duty/boost, fixed pools/lifecycle, touching gears equal/opposite pitch travel with variable cadence, source phases restored; no GPU/phone claim
+
+Running driveway-enhancements.cjs
+PASS Driveway enhancements: neutral-weighted/directional camera estimates, bounded smoothing/fallback, steam tint, real valve/gear/gauge screen picking, finite pressure release/recovery, startup, fixed artwork and reduced/lost/hidden/disposed cleanup, accessible optional controls.
+
+Running two-wall-tracking.cjs
+PASS two-wall tracking: two real target declarations, one camera startup, independent crop transforms/geometry gates, automatic handoff, stale-loss isolation, fallback, active-wall diagnostics, simultaneous update stability, raw-event recovery/loss, hidden pause, malformed-target rejection, bounded target-load recovery without permission timeout, Stop/restart/error/cancel/disposal. XR events mocked; no phone recognition claim.
+
+Running two-wall-coordinator.cjs
+PASS two-wall coordinator: real coordinator/UI; one startup download and camera across handoffs; idle/lost/hidden update gating; active updates resume; cross-wall quality fallback and hidden-time FPS isolation; inactive model/audio/boost/light cleanup; guarded gestures/help/reduced motion; pending-model/texture cancellation; original-wall Retry; preview reuse; bfcache and one-time disposal. XR, model and effects boundaries controlled; no phone/rendering claim.
+
+Running two-wall-ui.cjs
+PASS: two-wall cards/previews, actionable state focus, guide Escape/cancel/focus/disposal hooks, clear loading/error states, active-only sound and machine controls
+
+Running wall-color-match.cjs
+PASS wall reference match: linear RGB/exposure ratios, bounded output, asymmetric cover/letterbox/portrait/landscape projection and padded rows; contamination/outlier rejection; clipping, support, pose/frame/identity gates; deterministic source-backed reference grid.
+
+Running tracked-wall-lighting.cjs
+PASS tracked-wall lighting output: authored linear base × qualified ratio once,800ms easing/no drift, raw-fallback isolation with independent PBR/steam adaptation, bounded input, stale/long-loss neutral fade, exact studio/mode reset and disposed guard. Controlled samples; physical wall colour match unmeasured.
+
+Running tracking-stabilization.cjs
+PASS tracking stabilization: separate real world parents, untouched raw poses, adaptive/bounded follow, discontinuity/handoff reset, immediate hidden genuine loss, opt-in150ms resume/commit and timer cancellation. Phone stability not measured.
+
+Running camera-wall-correspondence.cjs
+PASS wall-camera integration: previous-FBO/raw-pose pairing, exact viewport, first-frame/motion/loss/handoff/resize rejection and local wall identity. No camera pixels stored or uploaded.
+PASS actual adapter camera-fit wiring: engine viewport API, unfiltered native panel history and loss reset.
+
+Running tracking-events.cjs
+PASS Explicit session start, metadata defaults and first acquisition use search clock
+PASS Repeated loss/reacquisition trials and duplicate raw callbacks stay distinct
+PASS Render continuity and world validity never create raw tracking or acquisition success
+PASS Pause censors initial search; paused callbacks cannot complete it; paused time excluded
+PASS Pause after acquisition labels resumed window separately from actual loss reacquisition
+PASS Stopped or cancelled search is censored, never a success; stop is idempotent
+PASS New session cancels old pending trial and resets all current measurements
+PASS Overflow retains chronological bounded rings and unbiased whole-session aggregates
+PASS Invalid, nonfinite and late timestamps never mutate tracking trials
+PASS Throwing clock and invalid initial clock fail safely
+PASS Metadata, event detail, trials, summaries and prior-session snapshots are isolated
+PASS Foreign targets, unspecified searches and unknown event types do not invent timings
+PASS Capacity default, minimum and hard maximum remain bounded
+PASS tracking event recorder: 13 cases; offline instrumentation only, not integrated or physical acceptance
+
+Running tracking-observations.cjs
+PASS tracking observations: 7 groups; default/image+world configure-before-pipeline/run, restart/retry/Stop/cancellation, raw duplicates, no synthetic acquisition, camera/search boundary, native status qualification, observer isolation and hidden lifecycle. Supported-phone checks remain NOT RUN.
+
+Running loading-progress-ui.cjs
+PASS: truthful download-only meter, unknown/decode indeterminate, phase-only announcements, focus/dock preservation, fallback/skipped/camera/target phases, cancellation/error/retry/ready/hidden/disposal cleanup
+
+Running loading-progress-loader.cjs
+PASS Known total and decode phases share one fetch
+PASS Unknown/compressed/inconsistent total {}
+PASS Unknown/compressed/inconsistent total {"content-length":"bad"}
+PASS Unknown/compressed/inconsistent total {"content-length":"999"}
+PASS Unknown/compressed/inconsistent total {"content-length":"2"}
+PASS Unknown/compressed/inconsistent total {"content-length":"4","content-encoding":"gzip"}
+PASS Presentation exception cannot fail loading
+PASS Abort cancels unresponsive stream and stops progress
+PASS Deadline cancels reader without waiting for its promise
+PASS loader progress: 9 cases; no GPU/phone claim
+
+Running coordinator-observations.cjs
+PASS coordinator raw/export/cancelled-preload/private-mode boundaries; XR controlled
+
+Running mobile-options-ui.cjs
+PASS mobile options: existing callbacks, Escape/focus, state cleanup, reduced motion, desktop restoration and visible error recovery
+
+Running world-snow.cjs
+PASS Explicit world pose gate and active gate default to hidden
+PASS Native world coordinates preserve flakes across ordinary camera motion
+PASS Stop, invalid pose and reduced motion clear the old field
+PASS Bounded particle count and frame delta prevent runaway work or fall jumps
+PASS Dispose removes Points and releases GPU resources exactly once
+PASS Repeated idle lifecycle calls do not inflate reset diagnostics
+6 world snow checks passed
+
+Running appearance.cjs
+PASS appearance: measured connector regions receive cloned atlas vertex tint; outside vertices and other metal stay identity; exposure/restoration; fixed96 particle budget. No visual/phone acceptance claim.
+PASS production connector selection: 157529 of 971975 vertices; actual Draco/node transform; GLTF multi-primitive parent identity; ten measured pipe chamber unions.
+
+Running connector-appearance.cjs
+PASS connector triangle appearance: same-envelope triangles only; shared boundary split removes interpolation smear; exact source position/UV order preserved; clone disposal; PBR/maps retained; emissive once; nonindexed input; idempotence.
+
+Running machine-interactions.cjs
+PASS localized lamp halos/independent soft blinking/toggle; sign edge interaction; metadata-only handle; idle calibrated gauge motion; reduced/loss/reset/disposal
+
+Running camera-reference-lighting.cjs
+PASS known-artwork camera fallback: dark pigments/native exposure do not darken3D without qualified correspondence; valid camera/reference gain/tint preserved; painted brightness gradients never claim light direction; unrelated camera sampling retained.
+
+Running wall-coverage.cjs
+node:fs:484
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/workspace/Models/coverage-wave-2026-10-25/tracking/centre/target-manifest.json'
+    at Object.readFileSync (node:fs:484:20)
+    at read (/workspace/steampunk-driveway-integration/tests/wall-coverage.cjs:7:29)
+    at target (/workspace/steampunk-driveway-integration/tests/wall-coverage.cjs:8:34)
+    at Object.<anonymous> (/workspace/steampunk-driveway-integration/tests/wall-coverage.cjs:9:14)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/Models/coverage-wave-2026-10-25/tracking/centre/target-manifest.json'
+}
+
+Node.js v24.19.0
+FAIL wall-coverage.cjs: exit 1
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

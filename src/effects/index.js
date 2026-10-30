@@ -55,7 +55,7 @@ function readOpacityPair(value, label) {
   return minimum <= maximum ? [minimum, maximum] : [maximum, minimum]
 }
 
-function createGearShape(THREE, radius, teeth) {
+function createGearShape(THREE, radius, teeth, holeSegments = 48) {
   const shape = new THREE.Shape()
   const pitch = (Math.PI * 2) / teeth
   const rootRadius = radius * ROOT_RADIUS_RATIO
@@ -86,8 +86,6 @@ function createGearShape(THREE, radius, teeth) {
 
   const holeRadius = radius * HOLE_RADIUS_RATIO
   const hole = new THREE.Path()
-  const holeSegments = 48
-
   for (let index = 0; index < holeSegments; index += 1) {
     const angle = -(index / holeSegments) * Math.PI * 2
     const x = Math.cos(angle) * holeRadius
@@ -132,6 +130,169 @@ function createGlowTexture(THREE) {
   texture.generateMipmaps = false
   texture.needsUpdate = true
   return texture
+}
+
+// Construction-only merger. Keep one injected THREE version and preserve normals
+// and UVs without adding a geometry utility bundle or material groups.
+function mergeGeometry(THREE, parts) {
+  const expanded = parts.map(part => {
+    const geometry = part.geometry.index ? part.geometry.toNonIndexed() : part.geometry.clone()
+    if (part.matrix) geometry.applyMatrix4(part.matrix)
+    return geometry
+  })
+  const merged = new THREE.BufferGeometry()
+  for (const name of ['position', 'normal', 'uv']) {
+    const size = name === 'uv' ? 2 : 3
+    let length = 0
+    expanded.forEach(geometry => { length += geometry.attributes[name].array.length })
+    const array = new Float32Array(length)
+    let offset = 0
+    expanded.forEach(geometry => {
+      array.set(geometry.attributes[name].array, offset)
+      offset += geometry.attributes[name].array.length
+    })
+    merged.setAttribute(name, new THREE.BufferAttribute(array, size))
+  }
+  expanded.forEach(geometry => geometry.dispose())
+  merged.computeBoundingSphere()
+  return merged
+}
+
+function collapseGear(THREE, gear) {
+  const parts = []
+  const originals = new Set()
+  gear.children.forEach(mesh => {
+    mesh.updateMatrix()
+    parts.push({geometry: mesh.geometry, matrix: mesh.matrix})
+    originals.add(mesh.geometry)
+  })
+  const material = gear.children[0].material
+  const geometry = mergeGeometry(THREE, parts)
+  originals.forEach(original => original.dispose())
+  while (gear.children.length) gear.remove(gear.children[0])
+  const mesh = new THREE.Mesh(geometry, material)
+  mesh.name = 'mergedBrassGear'
+  gear.add(mesh)
+}
+
+function performanceBudget(root, particles) {
+  const materials = new Set(), textures = new Set()
+  let drawCalls = 0, triangles = 0
+  root.traverse(node => {
+    if (!node.isMesh) return
+    const list = Array.isArray(node.material) ? node.material : [node.material]
+    list.forEach(material => {
+      materials.add(material)
+      if (material.map) textures.add(material.map)
+    })
+    drawCalls += node.geometry.groups.length && Array.isArray(node.material) ? node.geometry.groups.length : 1
+    const vertices = node.geometry.index ? node.geometry.index.count : node.geometry.attributes.position.count
+    triangles += vertices / 3 * (node.isInstancedMesh ? node.instanceMatrix.count : 1)
+  })
+  return {drawCalls, triangles, materials: materials.size, textures: textures.size, particles}
+}
+
+function createDrivewayExtension(THREE, root, panelHeight, config, brassMaterial, softTexture) {
+  const valvesConfig = config.valves || {}, steamConfig = config.steam || {}
+  const valveEnabled = !!config.valves && valvesConfig.enabled !== false
+  const steamConfigured = !!config.steam && steamConfig.enabled !== false
+  const dummy = new THREE.Object3D()
+  let valves = null, hubs = null, steam = null, steamEnabled = true, valveAngle = 0, steamTimeMs = 0
+  const anchors = (valvesConfig.anchorsUV || [[.102,.547],[.318,.361],[.658,.643],[.830,.128]])
+    .map((anchor, i) => readAnchor(anchor, `valves.anchorsUV[${i}]`))
+  const radii = (valvesConfig.radii || [.018,.019,.018,.020])
+    .map((radius, i) => readPositiveNumber(radius, `valves.radii[${i}]`))
+  const z = readFiniteNumber(valvesConfig.z === undefined ? .018 : valvesConfig.z, 'valves.z')
+  const amplitude = readFiniteNumber(valvesConfig.idleAmplitudeDeg === undefined ? 8 : valvesConfig.idleAmplitudeDeg, 'valves.idleAmplitudeDeg') * Math.PI / 180
+  const period = readPositiveNumber(valvesConfig.idlePeriodMs || 4000, 'valves.idlePeriodMs')
+  const speed = readFiniteNumber(valvesConfig.overdriveDegreesPerSecond === undefined ? 120 : valvesConfig.overdriveDegreesPerSecond, 'valves.overdriveDegreesPerSecond') * Math.PI / 180
+  if (valveEnabled) {
+    if (anchors.length !== 4 || radii.length !== 4) throw new Error('Driveway requires four valve anchors and radii')
+    // Smooth curved silhouettes without extra draws or texture downloads.
+    const ring = new THREE.TorusGeometry(1, .12, 10, 48)
+    const spoke = new THREE.BoxGeometry(.14, 1.82, .20)
+    const parts = [{geometry: ring}]
+    for (let i = 0; i < 3; i++) parts.push({geometry: spoke, matrix: new THREE.Matrix4().makeRotationZ(i * Math.PI / 3)})
+    const wheel = mergeGeometry(THREE, parts)
+    ring.dispose(); spoke.dispose()
+    const iron = new THREE.MeshStandardMaterial({color: valvesConfig.colorHex || '#71332B', metalness:.18, roughness:.38})
+    valves = new THREE.InstancedMesh(wheel, iron, 4)
+    valves.name = 'drivewayValveWheels'; valves.frustumCulled = false
+    const hub = new THREE.CylinderGeometry(.19, .19, .25, 48)
+    hub.rotateX(Math.PI / 2)
+    hubs = new THREE.InstancedMesh(hub, brassMaterial, 4)
+    hubs.name = 'drivewayValveHubs'; hubs.frustumCulled = false
+    if (valves.instanceMatrix.setUsage && THREE.DynamicDrawUsage) valves.instanceMatrix.setUsage(THREE.DynamicDrawUsage)
+    root.add(valves); root.add(hubs)
+  }
+  const emitters = (steamConfig.emittersUV || [[.740,.290],[.516,.670]])
+    .map((anchor, i) => readAnchor(anchor, `steam.emittersUV[${i}]`))
+  const capacity = steamConfigured ? Math.min(24, readPositiveInteger(steamConfig.maxParticles || 24, 'steam.maxParticles')) : 0
+  const idleCount = Math.min(capacity, readPositiveInteger(steamConfig.idleParticles || 8, 'steam.idleParticles'))
+  const boostCount = Math.min(capacity, readPositiveInteger(steamConfig.overdriveParticles || 24, 'steam.overdriveParticles'))
+  const rise = Math.min(.065, readPositiveNumber(steamConfig.rise || .065, 'steam.rise'))
+  const steamZ = readFiniteNumber(steamConfig.z === undefined ? .03 : steamConfig.z, 'steam.z')
+  const idleLife = readPositiveNumber(steamConfig.idleLifetimeMs || 1400, 'steam.idleLifetimeMs')
+  const boostLife = readPositiveNumber(steamConfig.overdriveLifetimeMs || 900, 'steam.overdriveLifetimeMs')
+  const seeds = new Float32Array(capacity * 3)
+  let seed = 7271
+  for (let i = 0; i < seeds.length; i++) {
+    seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0
+    seeds[i] = seed / 4294967296
+  }
+  if (steamConfigured) {
+    if (emitters.length !== 2) throw new Error('Driveway requires two steam emitters')
+    const material = new THREE.MeshBasicMaterial({map:softTexture,color:'#E7DDD0',transparent:true,opacity:.20,depthWrite:false})
+    steam = new THREE.InstancedMesh(new THREE.PlaneGeometry(1, 1), material, capacity)
+    steam.name = 'drivewaySteam'; steam.renderOrder = 2; steam.frustumCulled = false
+    if (steam.instanceMatrix.setUsage && THREE.DynamicDrawUsage) steam.instanceMatrix.setUsage(THREE.DynamicDrawUsage)
+    root.add(steam)
+  }
+  function updateValves(deltaMs, nowMs, overdrive, reduced) {
+    if (!valves || reduced) return
+    if (overdrive) valveAngle = (valveAngle + speed * deltaMs / 1000) % (Math.PI * 2)
+    for (let i = 0; i < anchors.length; i++) {
+      const anchor = anchors[i], radius = radii[i]
+      dummy.position.set(anchor[0]-.5, (.5-anchor[1])*panelHeight, z)
+      dummy.rotation.set(0,0,overdrive ? valveAngle : amplitude*Math.sin(nowMs/period*Math.PI*2+i*.8))
+      dummy.scale.set(radius,radius,radius); dummy.updateMatrix()
+      valves.setMatrixAt(i,dummy.matrix); hubs.setMatrixAt(i,dummy.matrix)
+    }
+    valves.instanceMatrix.needsUpdate = true; hubs.instanceMatrix.needsUpdate = true
+  }
+  function syncSteam(overdrive, reduced) {
+    if (!steam) return
+    steam.visible = steamEnabled && !reduced
+    steam.count = overdrive ? boostCount : idleCount
+    steam.material.opacity = overdrive ? .28 : .20
+    root.userData.activeParticles = root.visible && steam.visible ? steam.count : 0
+  }
+  function update(deltaMs, nowMs, overdrive, reduced) {
+    updateValves(deltaMs, nowMs, overdrive, reduced)
+    syncSteam(overdrive, reduced)
+    if (!steam || !steam.visible) return
+    steamTimeMs += deltaMs
+    const life = overdrive ? boostLife : idleLife
+    for (let i = 0; i < steam.count; i++) {
+      const emitter = emitters[i % emitters.length]
+      const phase = (steamTimeMs / life + seeds[i*3]) % 1
+      const envelope = Math.sin(phase * Math.PI)
+      const radius = (.014 + phase*.020) * envelope
+      const drift = (seeds[i*3+1]-.5)*.018*phase
+      dummy.position.set(emitter[0]-.5+drift, (.5-emitter[1])*panelHeight+rise*phase, steamZ+seeds[i*3+2]*.004)
+      dummy.rotation.set(0,0,seeds[i*3+2]*Math.PI)
+      dummy.scale.set(radius,radius*1.25,1); dummy.updateMatrix()
+      steam.setMatrixAt(i,dummy.matrix)
+    }
+    steam.instanceMatrix.needsUpdate = true
+  }
+  update(0,0,false,false)
+  return {
+    update,
+    sync(overdrive,reduced) { syncSteam(overdrive,reduced) },
+    setSteamEnabled(value,overdrive,reduced) { steamEnabled=Boolean(value); syncSteam(overdrive,reduced) },
+    capacity,
+  }
 }
 
 export function createEffects({ THREE, config } = {}) {
@@ -204,10 +365,16 @@ export function createEffects({ THREE, config } = {}) {
     panelHeight,
   }
 
+  const enhancedDriveway = panel.wallId === 3 && (
+    (config.valves && config.valves.enabled !== false) ||
+    (config.steam && config.steam.enabled !== false)
+  )
   const brassMaterial = new THREE.MeshStandardMaterial({
     color: brassHex,
-    metalness: 0.35,
-    roughness: 0.45,
+    // Moderate metalness retains readable diffuse brass without an environment
+    // map; the finer bevels supply directional highlights under existing lights.
+    metalness: enhancedDriveway ? .28 : .35,
+    roughness: enhancedDriveway ? .32 : .45,
   })
 
   const gear = new THREE.Group()
@@ -215,9 +382,12 @@ export function createEffects({ THREE, config } = {}) {
   gear.position.set(gearAnchor[0] - 0.5, (0.5 - gearAnchor[1]) * panelHeight, gearZ)
   object3D.add(gear)
 
-  const ringGeometry = new THREE.ExtrudeGeometry(createGearShape(THREE, gearRadius, teeth), {
+  const ringGeometry = new THREE.ExtrudeGeometry(createGearShape(THREE, gearRadius, teeth, enhancedDriveway ? 96 : 48), {
     depth: gearThickness,
-    bevelEnabled: false,
+    bevelEnabled: enhancedDriveway,
+    bevelThickness: Math.min(gearThickness*.12, gearRadius*.02),
+    bevelSize: Math.min(gearThickness*.06, gearRadius*.012),
+    bevelSegments: 3,
     steps: 1,
     curveSegments: 1,
   })
@@ -247,11 +417,13 @@ export function createEffects({ THREE, config } = {}) {
     gear.add(spoke)
   }
 
-  const hubGeometry = new THREE.CylinderGeometry(hubRadius, hubRadius, gearThickness, 24)
+  const hubGeometry = new THREE.CylinderGeometry(hubRadius, hubRadius, gearThickness, enhancedDriveway ? 48 : 24)
   const hub = new THREE.Mesh(hubGeometry, brassMaterial)
   hub.name = 'gearHub'
   hub.rotation.x = Math.PI / 2
   gear.add(hub)
+
+  if (enhancedDriveway) collapseGear(THREE, gear)
 
   const glowTexture = createGlowTexture(THREE)
   const glowMaterial = new THREE.MeshBasicMaterial({
@@ -264,13 +436,32 @@ export function createEffects({ THREE, config } = {}) {
   })
   const glowGeometry = new THREE.PlaneGeometry(glowRadius * 2, glowRadius * 2)
 
-  glowAnchors.forEach((anchor, index) => {
-    const glow = new THREE.Mesh(glowGeometry, glowMaterial)
-    glow.name = `amberGlow${index}`
-    glow.position.set(anchor[0] - 0.5, (0.5 - anchor[1]) * panelHeight, gearZ)
-    glow.renderOrder = 1
-    object3D.add(glow)
-  })
+  if (enhancedDriveway) {
+    const lamps = new THREE.InstancedMesh(glowGeometry, glowMaterial, glowAnchors.length)
+    lamps.name = 'amberGlowInstances'; lamps.renderOrder = 1; lamps.frustumCulled = false
+    const lampTransform = new THREE.Object3D()
+    glowAnchors.forEach((anchor, index) => {
+      lampTransform.position.set(anchor[0] - .5, (.5 - anchor[1]) * panelHeight, gearZ)
+      lampTransform.updateMatrix(); lamps.setMatrixAt(index, lampTransform.matrix)
+    })
+    lamps.instanceMatrix.needsUpdate = true
+    object3D.add(lamps)
+  } else {
+    glowAnchors.forEach((anchor, index) => {
+      const glow = new THREE.Mesh(glowGeometry, glowMaterial)
+      glow.name = `amberGlow${index}`
+      glow.position.set(anchor[0] - 0.5, (0.5 - anchor[1]) * panelHeight, gearZ)
+      glow.renderOrder = 1
+      object3D.add(glow)
+    })
+  }
+  const extension = enhancedDriveway
+    ? createDrivewayExtension(THREE, object3D, panelHeight, config, brassMaterial, glowTexture)
+    : null
+  const budget = performanceBudget(object3D, extension ? extension.capacity : 0)
+  object3D.userData.performance = Object.freeze(budget)
+  Object.assign(object3D.userData, budget)
+  object3D.traverse(node => { if (node.isMesh) { node.castShadow = false; node.receiveShadow = false } })
 
   let tracked = false
   let overdrive = false
@@ -304,6 +495,7 @@ export function createEffects({ THREE, config } = {}) {
     if (!tracked) {
       overdrive = false
     }
+    if (extension) extension.sync(overdrive, reducedMotion)
     applyGlowOpacity(lastNowMs)
   }
 
@@ -312,6 +504,7 @@ export function createEffects({ THREE, config } = {}) {
       return
     }
     overdrive = Boolean(value)
+    if (extension) extension.sync(overdrive, reducedMotion)
     applyGlowOpacity(lastNowMs)
   }
 
@@ -320,7 +513,12 @@ export function createEffects({ THREE, config } = {}) {
       return
     }
     reducedMotion = Boolean(value)
+    if (extension) extension.sync(overdrive, reducedMotion)
     applyGlowOpacity(lastNowMs)
+  }
+
+  function setSteamEnabled(value) {
+    if (!disposed && extension) extension.setSteamEnabled(value, overdrive, reducedMotion)
   }
 
   function update(frame) {
@@ -344,6 +542,7 @@ export function createEffects({ THREE, config } = {}) {
     }
 
     applyGlowOpacity(lastNowMs)
+    if (extension) extension.update(clampedDeltaMs, lastNowMs, overdrive, reducedMotion)
   }
 
   function dispose() {
@@ -352,6 +551,7 @@ export function createEffects({ THREE, config } = {}) {
     }
     disposed = true
     object3D.visible = false
+    object3D.userData.activeParticles = 0
 
     if (object3D.parent) {
       object3D.parent.remove(object3D)
@@ -359,8 +559,10 @@ export function createEffects({ THREE, config } = {}) {
 
     const geometries = new Set()
     const materials = new Set()
+    const textures = new Set()
 
     object3D.traverse((node) => {
+      if (node.isInstancedMesh && typeof node.dispose === 'function') node.dispose()
       if (node.geometry) {
         geometries.add(node.geometry)
       }
@@ -373,8 +575,11 @@ export function createEffects({ THREE, config } = {}) {
     })
 
     geometries.forEach((geometry) => geometry.dispose())
-    materials.forEach((material) => material.dispose())
-    glowTexture.dispose()
+    materials.forEach((material) => {
+      if (material.map) textures.add(material.map)
+      material.dispose()
+    })
+    textures.forEach(texture => texture.dispose())
 
     tracked = false
     overdrive = false
@@ -387,6 +592,7 @@ export function createEffects({ THREE, config } = {}) {
     setTracked,
     setOverdrive,
     setReducedMotion,
+    setSteamEnabled,
     update,
     dispose,
   }

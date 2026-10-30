@@ -1,0 +1,1 @@
+PASS environment lighting: header/body timeout and disposal; real HDR parse; bounded cached source; repeated GPU replacement without refetch; renderer-listener ordering; intensity/version identity; ownership takeover; queued restore cancellation; mid-build loss; download/context races; initial/restore GPU failure fallback; all temporary/owned GPU resources released.

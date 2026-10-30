@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "scripts": {
     "build": "webpack --config config/webpack.config.js",
-    "serve": "webpack-dev-server --mode=development --config config/webpack.config.js"
+    "serve": "webpack-dev-server --mode=development --config config/webpack.config.js",
+    "test": "npm test --prefix tools/verification",
+    "test:full-wall": "node tools/verification/run-full-wall.cjs",
+    "build:pages": "node tools/build-pages.cjs",
+    "verify:static": "node tools/verification/check-static.cjs"
   },
   "devDependencies": {
     "@babel/parser": "^7.23.9",
@@ -28,7 +32,7 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.2"
   },
-  "description": "This example uses image targets to display information about jellyfish on a flyer. It uses the xrextras-named-image-target component to connect an <a-entity> to an image target by name while the xrextras-play-video component enables video playback.",
+  "description": "Steampunk wall image-tracked experiences: Driveway steam, valve overload and Garage Left.",
   "main": "index.js",
   "keywords": [],
   "author": "",

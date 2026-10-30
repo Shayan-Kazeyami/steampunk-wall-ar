@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
@@ -83,11 +84,16 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(srcPath, 'index.html'),
+      templateContent: ({compilation}) => fs.readFileSync(path.join(srcPath, 'index.html'), 'utf8').replace('__APP_VERSION__', compilation.hash),
       filename: 'index.html',
       inject: false,
     }),
     new CopyWebpackPlugin({
       patterns: [
+        {
+          from: path.join(srcPath, 'assets/full-wall'),
+          to: path.join(distPath, 'assets/full-wall'),
+        },
         {
           from: path.join(rootPath, 'external'),
           to: path.join(distPath, 'external'),
@@ -95,13 +101,13 @@ const config = {
         },
         {
           from: path.join(srcPath, 'assets'),
-          filter: resource => /(?:garage-left\.jpg|target-sample\.html|NOTICES\.txt|XR_ENGINE_LICENSE\.txt|MIT_NOTICES\.txt)$/.test(resource),
+          filter: resource => /(?:garage-left\.jpg|driveway\.jpg|driveway-(?:qr|target)\.png|driveway-sample\.html|target-sample\.html|NOTICES\.txt|XR_ENGINE_LICENSE\.txt|MIT_NOTICES\.txt)$/.test(resource),
           to: path.join(distPath, 'assets'),
           noErrorOnMissing: true,
         },
         {
           from: path.join(rootPath, 'image-targets'),
-          filter: resource => /steampunk-garage-wide(?:_luminance\.png|\.json)$/.test(resource),
+          filter: resource => /steampunk-(?:garage-wide|driveway-sign)(?:_luminance\.png|\.json)$/.test(resource),
           to: path.join(distPath, 'image-targets'),
           noErrorOnMissing: true,
         },

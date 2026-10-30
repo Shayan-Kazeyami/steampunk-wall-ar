@@ -1,0 +1,1 @@
+PASS bounded frame-loop aggregates/ring, pauses/gaps, marks, observed heap, snapshot isolation, stop/restart and honest physical gates

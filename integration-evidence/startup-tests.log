@@ -1,0 +1,14 @@
+✔ no WebGL leaves honest accessible error without mounting A-Frame (3.088563ms)
+✔ throwing WebGL probe also preserves fallback (0.619943ms)
+✔ missing A-Frame yields reload recovery rather than exception (0.622167ms)
+✔ supported graphics starts real coordinator and disposes temporary UI (4.061338ms)
+✔ scene that never becomes ready times out to usable fallback (1.042891ms)
+✔ coordinator setup exceptions leave fallback visible (0.705493ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 111.251495

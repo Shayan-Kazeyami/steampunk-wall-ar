@@ -1,0 +1,10 @@
+PASS Known total and decode phases share one fetch
+PASS Unknown/compressed/inconsistent total {}
+PASS Unknown/compressed/inconsistent total {"content-length":"bad"}
+PASS Unknown/compressed/inconsistent total {"content-length":"999"}
+PASS Unknown/compressed/inconsistent total {"content-length":"2"}
+PASS Unknown/compressed/inconsistent total {"content-length":"4","content-encoding":"gzip"}
+PASS Presentation exception cannot fail loading
+PASS Abort cancels unresponsive stream and stops progress
+PASS Deadline cancels reader without waiting for its promise
+PASS loader progress: 9 cases; no GPU/phone claim

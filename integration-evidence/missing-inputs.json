@@ -1,0 +1,38 @@
+{
+  "exact_missing_paths": [
+    {
+      "path": "/workspace/Models/coverage-wave-2026-10-25/tracking/centre/target-manifest.json",
+      "status": "absent",
+      "expected_sha256": null
+    },
+    {
+      "path": "/workspace/Models/coverage-wave-2026-10-25/tracking/left/target-manifest.json",
+      "status": "absent",
+      "expected_sha256": null
+    },
+    {
+      "path": "/workspace/Models/coverage-wave-2026-10-25/tracking/right/target-manifest.json",
+      "status": "absent",
+      "expected_sha256": null
+    },
+    {
+      "path": "/workspace/Models/coverage-wave-2026-10-25/tracking/coverage-manifest.json",
+      "status": "absent",
+      "expected_sha256": null
+    }
+  ],
+  "dependent_unresolved_paths": [
+    "For each region: path.join(region_directory, manifest.compiledJsonPath)",
+    "For each region: path.join(dirname(compiled_json), compiledTarget.resources.luminanceImage)"
+  ],
+  "reason_hashes_unknown": "The omitted manifests and their hash records are not present in the inspected Git trees. No fixture names or hashes were invented.",
+  "source_search": {
+    "git": "No coverage-wave-2026-10-25 fixture tree in main ff3f906 or PR b0f72c3",
+    "drive_queries": [
+      "coverage-wave-2026-10-25",
+      "coverage-manifest",
+      "target-manifest"
+    ],
+    "drive_results": "All three searches returned no results; opaque archives were not exhaustively inspected."
+  }
+}

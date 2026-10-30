@@ -1,0 +1,22 @@
+node:fs:484
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/workspace/Models/coverage-wave-2026-10-25/tracking/centre/target-manifest.json'
+    at Object.readFileSync (node:fs:484:20)
+    at read (/workspace/steampunk-driveway-integration/tests/wall-coverage.cjs:7:29)
+    at target (/workspace/steampunk-driveway-integration/tests/wall-coverage.cjs:8:34)
+    at Object.<anonymous> (/workspace/steampunk-driveway-integration/tests/wall-coverage.cjs:9:14)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/Models/coverage-wave-2026-10-25/tracking/centre/target-manifest.json'
+}
+
+Node.js v24.19.0
