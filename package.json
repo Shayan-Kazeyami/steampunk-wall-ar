@@ -2,12 +2,13 @@
   "name": "aframe-image-targets-example",
   "version": "0.1.0",
   "scripts": {
-    "build": "webpack --config config/webpack.config.js",
+    "build": "node tools/build-experiences.cjs",
     "serve": "webpack-dev-server --mode=development --config config/webpack.config.js",
     "test": "npm test --prefix tools/verification",
     "test:full-wall": "node tools/verification/run-full-wall.cjs",
     "build:pages": "node tools/build-pages.cjs",
-    "verify:static": "node tools/verification/check-static.cjs"
+    "verify:static": "node tools/verification/check-static.cjs",
+    "test:garage": "node --test experiences/garage/tests/*.test.cjs"
   },
   "devDependencies": {
     "@babel/parser": "^7.23.9",

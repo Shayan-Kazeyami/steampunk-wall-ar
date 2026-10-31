@@ -36,13 +36,17 @@ jobs:
         run: npm ci --prefix tools/verification --ignore-scripts --no-audit --no-fund
       - name: Offline module regressions
         if: matrix.lane == 'offline'
-        run: npm test --prefix tools/verification
+        run: |
+          npm test --prefix tools/verification
+          npm run test:garage
       - name: Full-wall and adaptive runtime regressions
         if: matrix.lane == 'full-wall'
         run: npm run test:full-wall
       - name: Build production assets
         if: matrix.lane == 'build-static'
-        run: npm run build
+        run: |
+          npm run build
+          node tests/built-experiences.cjs
       - name: Verify built paths, notices and pinned inputs in an isolated staging directory
         if: matrix.lane == 'build-static'
         shell: bash

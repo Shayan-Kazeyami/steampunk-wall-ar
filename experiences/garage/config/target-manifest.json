@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "1.0.0",
+  "candidateId": "garage-wide",
+  "wallId": 5,
+  "panelImagePx": [
+    1425,
+    1350
+  ],
+  "sourceCropPx": [
+    0,
+    140,
+    1424,
+    1068
+  ],
+  "compiledTargetName": "steampunk-garage-wide",
+  "compiledJsonPath": "image-targets/steampunk-garage-wide.json",
+  "trackingImagePath": "image-targets/steampunk-garage-wide_luminance.png",
+  "compiledCropInSourcePx": [
+    0,
+    140,
+    1424,
+    1068
+  ],
+  "compiledMetadata": {
+    "type": "PLANAR",
+    "properties": {
+      "left": 0,
+      "top": 0,
+      "width": 1068,
+      "height": 1424,
+      "isRotated": true,
+      "originalWidth": 1068,
+      "originalHeight": 1424
+    }
+  },
+  "targetPoseCalibration": {
+    "verified": false,
+    "axes": "identity_provisional",
+    "rotationDeg": null,
+    "mirrorX": null,
+    "offsetPanel": null,
+    "notes": "Provisional identity axes from source inspection; phone corner calibration has not been run."
+  },
+  "physicalSampleArtworkMm": [
+    180,
+    170.52631578947367
+  ],
+  "verification": {
+    "status": "provisional",
+    "calibrationVerified": false,
+    "compiledTargetPresent": true,
+    "selectedByPhoneGate": false,
+    "phoneTracking": "not_tested",
+    "physicalPrint": "not_tested",
+    "https": "not_tested"
+  }
+}

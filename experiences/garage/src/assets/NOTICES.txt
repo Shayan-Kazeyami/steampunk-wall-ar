@@ -1,0 +1,1 @@
+Niantic Spatial XR Engine: see XR_ENGINE_LICENSE.txt and https://www.8thwall.com/terms . Supplied AS IS under its included agreement. A-Frame, xrextras and landing-page retain their upstream notices in external/. See MIT_NOTICES.txt. Original artwork preserved.
