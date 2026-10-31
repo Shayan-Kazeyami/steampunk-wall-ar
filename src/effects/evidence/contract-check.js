@@ -62,20 +62,36 @@ export function runEffectsContractChecks({ THREE, spec, logger = console } = {})
       assert(root && root.isGroup, 'object3D must be a THREE.Group')
       assert(root.visible === false, 'effects root must start hidden')
       assert(gear, 'brassGear is missing')
-      assert(root.getObjectByName('gearRing'), 'gearRing is missing')
-      assert(root.getObjectByName('gearHub'), 'gearHub is missing')
-
-      for (let index = 0; index < config.spokes; index += 1) {
-        assert(root.getObjectByName(`gearSpoke${index}`), `gearSpoke${index} is missing`)
+      const merged = root.getObjectByName('mergedBrassGear')
+      const lamps = root.getObjectByName('amberGlowInstances')
+      if (merged) {
+        assert(merged.isMesh && merged.geometry.attributes.position.count > 0, 'merged gear must contain geometry')
+        assert(gear.children.length === 1, 'optimized gear must render in one draw')
+        assert(lamps && lamps.isInstancedMesh && lamps.count === panel.glowAnchorsUV.length, 'lamps must be one instanced mesh')
+        const budget = root.userData.performance
+        assert(budget.drawCalls <= 12 && budget.triangles <= 12000, 'optimized geometry exceeds budget')
+        assert(budget.materials <= 6 && budget.textures <= 2 && budget.particles <= 24, 'optimized resources exceed budget')
+      } else {
+        assert(root.getObjectByName('gearRing'), 'gearRing is missing')
+        assert(root.getObjectByName('gearHub'), 'gearHub is missing')
+        for (let index = 0; index < config.spokes; index += 1) {
+          assert(root.getObjectByName(`gearSpoke${index}`), `gearSpoke${index} is missing`)
+        }
       }
 
       panel.glowAnchorsUV.forEach((anchor, index) => {
-        const glow = root.getObjectByName(`amberGlow${index}`)
+        const glow = lamps || root.getObjectByName(`amberGlow${index}`)
         assert(glow, `amberGlow${index} is missing`)
+        const position = new THREE.Vector3()
+        if (lamps) {
+          const matrix = new THREE.Matrix4()
+          lamps.getMatrixAt(index, matrix)
+          position.setFromMatrixPosition(matrix)
+        } else position.copy(glow.position)
         const expected = pointFor(panel, anchor)
-        assert(approximately(glow.position.x, expected.x), `amberGlow${index} x is wrong`)
-        assert(approximately(glow.position.y, expected.y), `amberGlow${index} y is wrong`)
-        assert(approximately(glow.position.z, config.gearZ), `amberGlow${index} z is wrong`)
+        assert(approximately(position.x, expected.x), `amberGlow${index} x is wrong`)
+        assert(approximately(position.y, expected.y), `amberGlow${index} y is wrong`)
+        assert(approximately(position.z, config.gearZ), `amberGlow${index} z is wrong`)
       })
 
       const gearAnchor = pointFor(panel, panel.gearAnchorUV)
@@ -83,14 +99,14 @@ export function runEffectsContractChecks({ THREE, spec, logger = console } = {})
       assert(approximately(gear.position.y, gearAnchor.y), 'gear y is wrong')
       assert(approximately(gear.position.z, config.gearZ), 'gear z is wrong')
 
-      const ring = root.getObjectByName('gearRing')
+      const ring = merged || root.getObjectByName('gearRing')
       const hub = root.getObjectByName('gearHub')
       const spoke = root.getObjectByName('gearSpoke0')
-      const glow0 = root.getObjectByName('amberGlow0')
-      const glow1 = root.getObjectByName('amberGlow1')
+      const glow0 = lamps || root.getObjectByName('amberGlow0')
+      const glow1 = lamps || root.getObjectByName('amberGlow1')
 
       assert(ring.material.isMeshStandardMaterial, 'gear must use MeshStandardMaterial')
-      assert(ring.material === hub.material && ring.material === spoke.material, 'brass material must be shared')
+      if (!merged) assert(ring.material === hub.material && ring.material === spoke.material, 'brass material must be shared')
       assert(glow0.material === glow1.material, 'glow material must be shared')
       assert(glow0.geometry === glow1.geometry, 'glow geometry must be shared')
       assert(glow0.material.map === glow1.material.map, 'glow texture must be shared')
@@ -151,7 +167,7 @@ export function runEffectsContractChecks({ THREE, spec, logger = console } = {})
 
     check(`pulse:${panelKey}`, () => {
       const effects = createEffects({ THREE, config })
-      const glow = effects.object3D.getObjectByName('amberGlow0')
+      const glow = effects.object3D.getObjectByName('amberGlowInstances') || effects.object3D.getObjectByName('amberGlow0')
       effects.setTracked(true)
 
       effects.update({ deltaMs: 0, nowMs: 0 })
@@ -180,7 +196,7 @@ export function runEffectsContractChecks({ THREE, spec, logger = console } = {})
     check(`reduced-motion:${panelKey}`, () => {
       const effects = createEffects({ THREE, config })
       const gear = effects.object3D.getObjectByName('brassGear')
-      const glow = effects.object3D.getObjectByName('amberGlow0')
+      const glow = effects.object3D.getObjectByName('amberGlowInstances') || effects.object3D.getObjectByName('amberGlow0')
       effects.setTracked(true)
       effects.setReducedMotion(true)
 

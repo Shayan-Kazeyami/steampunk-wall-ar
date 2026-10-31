@@ -1,0 +1,465 @@
+{
+  "source_commit": "b0f72c3c4087f784f732749615a9d6365d420f5f",
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "f3216de7e81191c78e73b32e542c0972a9071809089c9f119f246fd26c56384a",
+      "bytes": 1659
+    },
+    {
+      "path": "FULL_WALL_AR.md",
+      "sha256": "3aabdb5a11456fc2997ca0951a9ff232f22a31ce72da83513211358915673cf4",
+      "bytes": 8342
+    },
+    {
+      "path": "assets/targets/driveway-sign.png",
+      "sha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88",
+      "bytes": 1908164
+    },
+    {
+      "path": "assets/targets/driveway-sign.provenance.json",
+      "sha256": "2411be9e0d0ee491dc0073944409ff286c653ed47826eef8428d2b6eed901476",
+      "bytes": 4596
+    },
+    {
+      "path": "config/targets/driveway.json",
+      "sha256": "240e882da9d00df9597b0db70f77acda1db41ebfb7c336c4be37bb8f7c3f5ab4",
+      "bytes": 1446
+    },
+    {
+      "path": "config/wall-color-reference.json",
+      "sha256": "e02adacab9b17fae557619db044b904f4e252728b4a3d89c987d16ed9a18f17f",
+      "bytes": 2692
+    },
+    {
+      "path": "config/webpack.config.js",
+      "sha256": "a66dd73124b163b50ec82506086ff09d602857251027d56d2be65ec93d1cae24",
+      "bytes": 3938
+    },
+    {
+      "path": "image-targets/steampunk-driveway-sign.json",
+      "sha256": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917",
+      "bytes": 639
+    },
+    {
+      "path": "image-targets/steampunk-driveway-sign_luminance.png",
+      "sha256": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb",
+      "bytes": 397877
+    },
+    {
+      "path": "image-targets/steampunk-driveway-sign_thumbnail.png",
+      "sha256": "199793099d144a3f128fadb9d84bf5952590367e9a2ce9616a30c042ff6a7767",
+      "bytes": 220877
+    },
+    {
+      "path": "package.json",
+      "sha256": "955b1d878eb619e50cce19bbf47569d40d731bbf3e762fafb1c79f7318c50e80",
+      "bytes": 1404
+    },
+    {
+      "path": "src/assets/driveway-qr.png",
+      "sha256": "37711ccd8b3bf8aa8435ac9467da4fe661387f921944f6cddc2d3cc21bf8949c",
+      "bytes": 903
+    },
+    {
+      "path": "src/assets/driveway-sample.html",
+      "sha256": "cddee19d98a5816f5b7f59617e048062548ca505b641ae45cbc75dcc8f52f882",
+      "bytes": 1565
+    },
+    {
+      "path": "src/assets/driveway-target.png",
+      "sha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88",
+      "bytes": 1908164
+    },
+    {
+      "path": "src/assets/driveway.jpg",
+      "sha256": "fa0ede95427d79a89b036ab2684306ee4f74e27a39d5abc1c569358f49d037c2",
+      "bytes": 419241
+    },
+    {
+      "path": "src/assets/full-wall/HDRI-PROVENANCE.json",
+      "sha256": "e308302dfa2f8c02334d5cf676da76a991ae37ef4f78bed988537abec0c21367",
+      "bytes": 756
+    },
+    {
+      "path": "src/assets/full-wall/THREE-LICENSE.txt",
+      "sha256": "dfbcc6bc161ba4d2f56cbdf0ad8b85b3879fb2534980f2acb0465350be3a7511",
+      "bytes": 1104
+    },
+    {
+      "path": "src/assets/full-wall/studio_small_09_1k.hdr",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45",
+      "bytes": 1615248
+    },
+    {
+      "path": "src/catalog/index.js",
+      "sha256": "8469ee8c2cf26c6f88c46a07c09bebdc4cd78f352f1c962710db0b25b3591f02",
+      "bytes": 810
+    },
+    {
+      "path": "src/effects/evidence/contract-check.js",
+      "sha256": "6d082d844a08115e1a73924e6eb393007a796d31c4e2bf9a4f261129178f6a05",
+      "bytes": 11303
+    },
+    {
+      "path": "src/effects/index.js",
+      "sha256": "26440653a48ef581811abe66df8291c01775f7d6c50e8f37e13baed7bc3f59c4",
+      "bytes": 23233
+    },
+    {
+      "path": "src/full-wall/index.js",
+      "sha256": "6e6dbb64bca73d472803d0253c275e5d0901d24134a7f0f8c323c69150b14b82",
+      "bytes": 21097
+    },
+    {
+      "path": "src/full-wall/runtime/animation-runtime.js",
+      "sha256": "56645d75b63290d25281d21cfec6532032e98ba0bc195eff5d2be8d9082ac9e0",
+      "bytes": 13417
+    },
+    {
+      "path": "src/full-wall/runtime/asset-instancing.js",
+      "sha256": "728ae5b010ebcab3c6e689e4770c33ebae3e3d385c3c919fefd3c0208603b1b7",
+      "bytes": 19177
+    },
+    {
+      "path": "src/full-wall/runtime/border-extension.js",
+      "sha256": "60ea7eff68ffec51e9e37a128fbe059cccdbffe7bbe0716846b50cf124e3b32e",
+      "bytes": 4807
+    },
+    {
+      "path": "src/full-wall/runtime/connector-appearance.js",
+      "sha256": "4e24db9082d408a1b93e0881d28bd5843826d252713af8f32e59cab0df472764",
+      "bytes": 7321
+    },
+    {
+      "path": "src/full-wall/runtime/environment-lighting.js",
+      "sha256": "e899be30dbc87986d7a2130fd9cc35ee20aa8c138b1d69f9e5ce326bf23d10e3",
+      "bytes": 20196
+    },
+    {
+      "path": "src/full-wall/runtime/experience-polish.js",
+      "sha256": "cf30e7f1502d050069d274dad9bd65654f63cf2b007b5c7b3ffc0bff8c08fb91",
+      "bytes": 10659
+    },
+    {
+      "path": "src/full-wall/runtime/machine-effects.js",
+      "sha256": "d9e8dc05522198c694402c293d62f29b0c3a3f55eb477cca564b0e9feb0d066b",
+      "bytes": 21520
+    },
+    {
+      "path": "src/index.html",
+      "sha256": "1068c37b3f4be3639e2e50665b3d03fdf20b91c6620b9a72da6b5d74838a9b21",
+      "bytes": 1822
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "63ad467065581bd8b50803b9025b8241bd7067fbb1e0e635d06c4c84e6ded4cc",
+      "bytes": 30686
+    },
+    {
+      "path": "src/shared/field-session.js",
+      "sha256": "aacdf39a536e6cd4be4eacc589d18e1af0362495554ed20dbd26fdd48752ce77",
+      "bytes": 5532
+    },
+    {
+      "path": "src/shared/load-preview.js",
+      "sha256": "7fcf3258cb1e7a03b96ef1521134e5d6809527e67a562d72a9b56f9936c0eb3c",
+      "bytes": 1349
+    },
+    {
+      "path": "src/shared/load-wall.js",
+      "sha256": "a12c447ad7876badd672a2d01c3df2e1335b3b79c405f364aaae2119c0630cf2",
+      "bytes": 5804
+    },
+    {
+      "path": "src/shared/render-benchmark.js",
+      "sha256": "b660b17456b9cdca56c7459db25bf3699816530b754fb90ae4da23b9244c9df2",
+      "bytes": 7592
+    },
+    {
+      "path": "src/shared/spec.json",
+      "sha256": "f91722263e1beb516762a7be0b71aa5b2d5fab3e7a197aee626ff2195db06ab5",
+      "bytes": 10322
+    },
+    {
+      "path": "src/shared/tracking-events.js",
+      "sha256": "e5c377c37fc7e2420cc7b82ec67c4d875eb66a844dee0682c6d336b12e9b7d89",
+      "bytes": 11561
+    },
+    {
+      "path": "src/shared/world-snow.js",
+      "sha256": "b567e41d2948396459ce18aff57a28d4d428ad6f0c8c0f71ce5042ab6b91f923",
+      "bytes": 4858
+    },
+    {
+      "path": "src/tracking/camera-lighting.js",
+      "sha256": "47aac893d58a319301e4340fc6ce0847bbdc62a29419c8d20c7a37eee72717f9",
+      "bytes": 8566
+    },
+    {
+      "path": "src/tracking/index.js",
+      "sha256": "49405e2c10037bde885df003dd878b638784aa72d5e346e72660fa7290a65728",
+      "bytes": 56081
+    },
+    {
+      "path": "src/tracking/wall-color-match.js",
+      "sha256": "96f79535170f85511163e6795fcb0b1645b7bec44ccbe7896c23847dc6139993",
+      "bytes": 8692
+    },
+    {
+      "path": "src/tracking/wall-coverage.js",
+      "sha256": "f4de46fd3d3efbad8f744998ec82d04b846f51a5356fc4565b6a892f297f5bdb",
+      "bytes": 2962
+    },
+    {
+      "path": "src/ui/controller.js",
+      "sha256": "4eee8934b7bb10032d89bb420004e8793c7568bc4269f5ff7a0f17c4bc7c1160",
+      "bytes": 40902
+    },
+    {
+      "path": "src/ui/ui.css",
+      "sha256": "3a5db16e1f86cf775bf43af730d18bc4c5d19ecec39ce23864ad152e3c741c72",
+      "bytes": 41698
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "f756e38de3a312afda7303e4103cdf031e0054b3c10295718be8cd1fff2a9ce5",
+      "bytes": 6704
+    },
+    {
+      "path": "tests/adaptive-runtime.cjs",
+      "sha256": "8b312c52eff986fe910b6b7c1ec33dce6d207d1ccfad898fadc60e9f20bbf0eb",
+      "bytes": 5286
+    },
+    {
+      "path": "tests/appearance.cjs",
+      "sha256": "317e15a322e940af85cc69b4bc62c1ba4a2e56b4f08ff5ebab5485d57c3040e5",
+      "bytes": 6286
+    },
+    {
+      "path": "tests/asset-instancing-integration.cjs",
+      "sha256": "12c26cc7f96bdeda128c9bfea082b2f8da2858e637059bbf6bf5a16e85e10d66",
+      "bytes": 9132
+    },
+    {
+      "path": "tests/asset-instancing.cjs",
+      "sha256": "840a7d917661ac14216aad03e49c43434c8e2975bd872f3b4e0514bb5c0fafed",
+      "bytes": 17359
+    },
+    {
+      "path": "tests/border-extension.cjs",
+      "sha256": "13202c55ee2394196d2d5255ed7e4c45e9e8174155b22fe262a2732f8ca2dd8e",
+      "bytes": 3638
+    },
+    {
+      "path": "tests/camera-reference-lighting.cjs",
+      "sha256": "000e8dfdbca8953e900d0d6348d320902b31fc766d340bc26487ae5a9e9865cf",
+      "bytes": 2673
+    },
+    {
+      "path": "tests/camera-wall-correspondence.cjs",
+      "sha256": "c962be457e810ae9684f00e90563c0c1047d174743ef4fba40ebf9cbffbc1fe7",
+      "bytes": 6265
+    },
+    {
+      "path": "tests/connector-appearance.cjs",
+      "sha256": "42a70d7d87af4077816949c0493b36e82dc848c835db021c71cd431b92288442",
+      "bytes": 3669
+    },
+    {
+      "path": "tests/coordinator-lifecycle.cjs",
+      "sha256": "b9b2604644565faaeb55a169eda818f8d31f700e9a2c7fdb2a5f869b238530e7",
+      "bytes": 7811
+    },
+    {
+      "path": "tests/coordinator-observations.cjs",
+      "sha256": "7d8cc3f3618fda86620dea8923b7eb25278bccad7717db2d75f6f4fe4d6c5256",
+      "bytes": 3427
+    },
+    {
+      "path": "tests/driveway-effects.cjs",
+      "sha256": "f6ea154a5e58a029a36d405b226f3fb2a9377de6aa3570e18b473b717038c5a9",
+      "bytes": 4875
+    },
+    {
+      "path": "tests/driveway-enhancements.cjs",
+      "sha256": "863ddf371ef97cd72134ad4c9b90f5e039894fa45087c13e68fe54d98dcebc07",
+      "bytes": 8539
+    },
+    {
+      "path": "tests/environment-lighting.cjs",
+      "sha256": "76aeeef0b800506f42d7a638377ada02ba4e03f52704b3e192be760e35e34287",
+      "bytes": 14907
+    },
+    {
+      "path": "tests/environment-recovery-integration.cjs",
+      "sha256": "37cda4d0b0a62687574f94271480a8033e739f00740b499184efbec05a17a8a0",
+      "bytes": 9814
+    },
+    {
+      "path": "tests/field-session.cjs",
+      "sha256": "22a2e168b09a47a71270d42a055f0c812ae485f012dbb6716975dbbe8a1d9f2c",
+      "bytes": 3536
+    },
+    {
+      "path": "tests/fixtures/wall-color-artwork.json",
+      "sha256": "4b04040c9f8217dc4b4910afac87fd4b3cf8292c0a59d564a67602672cd1dfde",
+      "bytes": 4442
+    },
+    {
+      "path": "tests/full-wall-coordinator.cjs",
+      "sha256": "4ac008343c6f797c79ab84065723258ce543f6a838f9f2895d53335825db5451",
+      "bytes": 11078
+    },
+    {
+      "path": "tests/full-wall-effects.cjs",
+      "sha256": "d09354fb98f2e93ce9bfe6405b3673fc99cc50d20c8ab7d05a081ff292c1bed5",
+      "bytes": 11147
+    },
+    {
+      "path": "tests/full-wall-loader.cjs",
+      "sha256": "af2304186711086d60100537ab9629d11b90873dae064fc1b8e7c0a4e2041d10",
+      "bytes": 5969
+    },
+    {
+      "path": "tests/full-wall-tracking.cjs",
+      "sha256": "e11478d3358584999c5536686e0b1815600c20eae39286c296e57b9350d11c09",
+      "bytes": 8952
+    },
+    {
+      "path": "tests/full-wall-ui.cjs",
+      "sha256": "59f38e1aef72c6f30b51d107e609377d2d3d147fa4106f011ddf9e7ec2088680",
+      "bytes": 6890
+    },
+    {
+      "path": "tests/loading-progress-loader.cjs",
+      "sha256": "6b72286565cc079c5ac1c2b1870c6167ddb55fe503171a7ca7edaa906965f0ba",
+      "bytes": 3449
+    },
+    {
+      "path": "tests/loading-progress-ui.cjs",
+      "sha256": "6751b74cdf877022452f78c95f5ad08dbe0948b9d34c5539ece064067faf830e",
+      "bytes": 7219
+    },
+    {
+      "path": "tests/machine-interactions.cjs",
+      "sha256": "f1ed69b6ffae20afff004502d1615858afeaea5a479730f6df24f8de1d6e55a6",
+      "bytes": 4375
+    },
+    {
+      "path": "tests/mobile-options-ui.cjs",
+      "sha256": "235bfa8e628d224a024f40264769db97d5de87366c1ab14d7428b2408a85dfd1",
+      "bytes": 3431
+    },
+    {
+      "path": "tests/offline-checks.cjs",
+      "sha256": "f6c2f2e9c0cfc2f2a9633ba369aeed62aeb94d51822a7a19f1ca2f0a498dcedb",
+      "bytes": 10949
+    },
+    {
+      "path": "tests/preview-loader.cjs",
+      "sha256": "4bcc2987352803efd12bcded362a9f6a37683cd7eea33c40c04eb325b1e52116",
+      "bytes": 1964
+    },
+    {
+      "path": "tests/render-benchmark.cjs",
+      "sha256": "c31313b74e02a486097771eb8aa70bd9276c1a880996d8db7ef54921119c9229",
+      "bytes": 5953
+    },
+    {
+      "path": "tests/runtime-regressions.cjs",
+      "sha256": "123662f81099de145f94336f780f97d87e95ed2ea1dceb8b484b67a489f857e7",
+      "bytes": 5994
+    },
+    {
+      "path": "tests/steam-variation.cjs",
+      "sha256": "322f157591b79a77c41ded9eb65bd446f8dbacca9c6f2756ef3f91d53f237bf3",
+      "bytes": 13052
+    },
+    {
+      "path": "tests/tracked-wall-lighting.cjs",
+      "sha256": "ad52f201625cbfe115321be8b347e69aad8cc475f30069a50634367635397a3b",
+      "bytes": 6161
+    },
+    {
+      "path": "tests/tracking-events.cjs",
+      "sha256": "d3e306612b8d7b4f2175f3be89050c671ab6def0c8a1944641266f9ca1ebc78e",
+      "bytes": 12042
+    },
+    {
+      "path": "tests/tracking-observations.cjs",
+      "sha256": "9e365e2f8d0aac025df0409bc761d842b93f7cfbc30758a69427e15a7a7b3b84",
+      "bytes": 14952
+    },
+    {
+      "path": "tests/tracking-stabilization.cjs",
+      "sha256": "f84f1361ae68a1ac18b34dfe6cc3f745e6844448af128be8084df4ce8b11d53f",
+      "bytes": 4824
+    },
+    {
+      "path": "tests/two-wall-coordinator.cjs",
+      "sha256": "1c18105253f65a2db8a204487a8a2d58169a9bda887ec9be2bf459a6546556dc",
+      "bytes": 18948
+    },
+    {
+      "path": "tests/two-wall-tracking.cjs",
+      "sha256": "c1bb5016b728118a2837ae22a748c42a1166109bc2f428cf6767895510f5e507",
+      "bytes": 17915
+    },
+    {
+      "path": "tests/two-wall-ui.cjs",
+      "sha256": "0240fda05a6240cc9575222cc98b810f3a6cc70721bff36faa056846cd939520",
+      "bytes": 6216
+    },
+    {
+      "path": "tests/wall-color-match.cjs",
+      "sha256": "71d105ae1883c8ffab74eb9ac3572c2155b928aa78c4fe5d100fe7cbb580d8f7",
+      "bytes": 8517
+    },
+    {
+      "path": "tests/wall-coverage-coordinator.cjs",
+      "sha256": "7d9e6e4e1e223cd8462e3b11d8740df5c20290660f00b02b845ecd2897910e27",
+      "bytes": 4712
+    },
+    {
+      "path": "tests/wall-coverage.cjs",
+      "sha256": "d12e55262330a376b651d4968b35f300711d7ea76307a7ebf8c5316e0a0f332c",
+      "bytes": 8639
+    },
+    {
+      "path": "tests/world-snow.cjs",
+      "sha256": "273acdd5909ff7894537787b929b26c67d3c2371b5278c5f61f37ce265bb48fd",
+      "bytes": 4511
+    },
+    {
+      "path": "tools/build-pages.cjs",
+      "sha256": "b4554662953ae669b8a76afcf0a2e613813adac675a619155b7d1a66006dfd2a",
+      "bytes": 3706
+    },
+    {
+      "path": "tools/verification/.gitignore",
+      "sha256": "5900e4bf44f0fc3a6bf86845e7c22a917d0c0fbc092f00e8340684842a6b5f0d",
+      "bytes": 25
+    },
+    {
+      "path": "tools/verification/check-static.cjs",
+      "sha256": "d7664e131778ac82a6c24d88de1be607fa7991bbf0d4a5bdc3dbee7be475bdf0",
+      "bytes": 2592
+    },
+    {
+      "path": "tools/verification/package-lock.json",
+      "sha256": "98e236b41001ec6c3b09aef8290dcfe092ef9b120cd8cf90a4c8741a88c88cb7",
+      "bytes": 18789
+    },
+    {
+      "path": "tools/verification/package.json",
+      "sha256": "a728913ac3a0ef3fddbe4fa9e016b2f5251dffdb446e1bb1c5dba3b49d350f82",
+      "bytes": 383
+    },
+    {
+      "path": "tools/verification/run-full-wall.cjs",
+      "sha256": "6df93831f044af0bb0fd8707b2b1b898cf2cf1cf8b9bd4f5605db419b8d9c3bb",
+      "bytes": 2080
+    }
+  ]
+}

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "contractVersion": "1.0.0",
   "decisionsLocked": true,
-  "implementationStarted": false,
-  "workingDirectory": "AR_DEMO",
+  "implementationStarted": true,
+  "workingDirectory": "AR_GITHUB",
   "coordinatorEntry": "src/main.js",
   "starterEntry": "src/app.js",
   "toolchainLock": "toolchain_lock.json",
@@ -11,9 +11,9 @@
   "framework": "Pinned official A-Frame image-target starter",
   "trackingMode": "image_only_disable_world_tracking",
   "host": {
-    "provider": "Cloudflare Pages",
-    "method": "Direct Upload",
-    "accessMissingAction": "ready_to_deploy_no_host_switch"
+    "provider": "GitHub Pages",
+    "method": "main:/docs",
+    "accessMissingAction": "package_progress_without_invented_publication"
   },
   "workers": {
     "A": {
@@ -43,13 +43,12 @@
   },
   "excluded": [
     "sound",
-    "particles",
     "full_scene_export",
     "source_mesh_extraction",
     "blank_wall_placement",
-    "seven_wall_rollout",
     "multiple_simultaneous_targets",
-    "second_renderer"
+    "second_renderer",
+    "unbounded_particles"
   ],
   "targetPolicy": {
     "candidateOrder": [
@@ -238,16 +237,70 @@
     "amberHex": "#FFB547",
     "maxDeltaMs": 50,
     "timerOwner": "coordinator",
-    "texture": "code_generated_shared_radial_gradient"
+    "texture": "code_generated_shared_radial_gradient",
+    "steam": {
+      "enabled": true,
+      "emittersUV": [
+        [
+          0.74,
+          0.29
+        ],
+        [
+          0.516,
+          0.67
+        ]
+      ],
+      "maxParticles": 24,
+      "idleParticles": 8,
+      "overdriveParticles": 24,
+      "rise": 0.065,
+      "idleLifetimeMs": 1400,
+      "overdriveLifetimeMs": 900,
+      "z": 0.03
+    },
+    "valves": {
+      "enabled": true,
+      "anchorsUV": [
+        [
+          0.102,
+          0.547
+        ],
+        [
+          0.318,
+          0.361
+        ],
+        [
+          0.658,
+          0.643
+        ],
+        [
+          0.83,
+          0.128
+        ]
+      ],
+      "radii": [
+        0.018,
+        0.019,
+        0.018,
+        0.02
+      ],
+      "z": 0.018,
+      "colorHex": "#71332B",
+      "idleAmplitudeDeg": 8,
+      "idlePeriodMs": 4000,
+      "overdriveDegreesPerSecond": 120
+    }
   },
   "rendering": {
     "threeSource": "AFRAME.THREE_injected",
-    "initialMaxDpr": 1.5,
+    "initialMaxDpr": 2.0,
     "fallbackDpr": 1.0,
     "lowFpsThreshold": 25,
     "lowFpsWindowMs": 10000,
     "fallbackOrder": [
-      "lower_dpr",
+      "dpr_1_5",
+      "dpr_1",
+      "disable_steam",
       "disable_glows",
       "record_failure"
     ],
@@ -260,21 +313,24 @@
     "textureMaxEdgePx": 2048,
     "ambientIntensity": 0.8,
     "directionalIntensity": 1.0,
-    "previewMode": "same_AFrame_scene_XR_stopped_fixed_preview_camera_no_second_renderer"
+    "previewMode": "same_AFrame_scene_XR_stopped_fixed_preview_camera_no_second_renderer",
+    "antialias": true
   },
   "ui": {
     "backgroundHex": "#15120F",
     "textHex": "#F5EADB",
     "minButtonPx": 44,
-    "previewLabel": "Animation preview — not live AR.",
+    "previewLabel": "Animation preview \u2014 not live AR.",
     "controls": [
       "Start",
-      "Overdrive",
+      "Overload",
       "Retry",
       "Preview animation",
       "Exit preview",
       "Reset",
-      "Reduce motion"
+      "Reduce motion",
+      "Cancel",
+      "Stop camera"
     ],
     "trackingStates": [
       "loading",
@@ -290,13 +346,13 @@
     ],
     "stateMessages": {
       "landing": "Bring the steampunk wall to life.",
-      "loading": "Starting camera…",
+      "loading": "Starting camera\u2026",
       "searching": "Point at the {targetLabel} artwork.",
-      "tracked": "Artwork found. Tap Overdrive.",
+      "tracked": "Artwork found. Tap Overload.",
       "lost": "Move back toward the artwork.",
       "paused": "Camera paused. Tap Retry to resume.",
       "error": "Unable to start AR.",
-      "preview": "Animation preview — not live AR."
+      "preview": "Animation preview \u2014 not live AR."
     },
     "errorMessages": {
       "CAMERA_DENIED": "Camera access is off. Allow it in browser site settings, then tap Retry.",
@@ -312,24 +368,29 @@
         "Reduce motion"
       ],
       "loading": [
+        "Cancel",
         "Reduce motion"
       ],
       "searching": [
         "Preview animation",
+        "Stop camera",
         "Reduce motion"
       ],
       "tracked": [
         "Overdrive",
         "Reset",
+        "Stop camera",
         "Reduce motion"
       ],
       "lost": [
         "Preview animation",
+        "Stop camera",
         "Reduce motion"
       ],
       "paused": [
         "Retry",
         "Preview animation",
+        "Stop camera",
         "Reduce motion"
       ],
       "error": [
@@ -368,7 +429,7 @@
     "secondPlatformRequiredForCrossPlatformClaim": true,
     "phoneUnavailableAction": "finish_build_record_not_run",
     "printUnavailableAction": "screen_test_provisional_record_physical_not_run",
-    "runtimeStatus": "not_tested"
+    "runtimeStatus": "per_wall_evidence_recorded_separately"
   },
   "precedence": [
     "user_instructions",
@@ -377,5 +438,6 @@
     "12_PARALLEL_EXECUTION.md",
     "13_WORKER_PROMPTS.md",
     "other_planning_documents"
-  ]
+  ],
+  "planVersion": "4.0"
 }

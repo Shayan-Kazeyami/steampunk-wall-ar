@@ -1,0 +1,1 @@
+PASS tracking observations: 7 groups; default/image+world configure-before-pipeline/run, restart/retry/Stop/cancellation, raw duplicates, no synthetic acquisition, camera/search boundary, native status qualification, observer isolation and hidden lifecycle. Supported-phone checks remain NOT RUN.

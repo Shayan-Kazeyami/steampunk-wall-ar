@@ -1,0 +1,70 @@
+
+> aframe-image-targets-example@0.1.0 build
+> webpack --config config/webpack.config.js
+
+assets by path external/ 32.6 MiB 50 assets
+assets by path assets/ 30.3 MiB
+  assets by status 30.2 MiB [big] 5 assets
+  assets by path assets/*.txt 16.9 KiB 3 assets
+  assets by path assets/*.html 1.9 KiB 2 assets
+  + 3 assets
+assets by path image-targets/ 781 KiB
+  assets by status 780 KiB [big] 2 assets
+  assets by path image-targets/*.json 1.24 KiB 2 assets
+asset bundle.js 302 KiB [emitted] [minimized] [big] (name: main) 1 related asset
+asset index.html 1.71 KiB [emitted]
+orphan modules 532 KiB [orphan] 55 modules
+runtime modules 698 bytes 4 modules
+cacheable modules 592 KiB
+  modules by path ../node_modules/ 18.9 KiB
+    modules by path ../node_modules/@babel/runtime/ 10.8 KiB 11 modules
+    modules by path ../node_modules/style-loader/dist/runtime/*.js 5.84 KiB
+      ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js 2.42 KiB [built] [code generated]
+      + 5 modules
+    modules by path ../node_modules/css-loader/dist/runtime/*.js 2.31 KiB
+      ../node_modules/css-loader/dist/runtime/noSourceMaps.js 64 bytes [built] [code generated]
+      ../node_modules/css-loader/dist/runtime/api.js 2.25 KiB [built] [code generated]
+  modules by path ./ 573 KiB
+    ./app.js + 55 modules 532 KiB [built] [code generated]
+    ../node_modules/css-loader/dist/cjs.js!./ui/ui.css 41.1 KiB [built] [code generated]
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  bundle.js (302 KiB)
+  assets/full-wall/driveway-adaptive.glb (25.9 MiB)
+  assets/full-wall/studio_small_09_1k.hdr (1.54 MiB)
+  external/scripts/8frame-1.5.0.min.js (1.32 MiB)
+  external/xr/xr-face.js (7.31 MiB)
+  external/xr/xr-slam.js (5.26 MiB)
+  external/xr/xr.js (994 KiB)
+  external/xr/resources/face-ear-model.tflite (1.12 MiB)
+  external/xr/resources/face-mesh-model.tflite (2.38 MiB)
+  external/xr/resources/face-model.tflite (413 KiB)
+  external/xr/resources/media-worker.js (4.76 MiB)
+  external/xr/resources/semantics-model.tflite (2.41 MiB)
+  external/xr/resources/semantics-worker.js (4.77 MiB)
+  external/landing-page/resources/envmap/field.jpg (264 KiB)
+  external/landing-page/resources/envmap/hill.jpg (251 KiB)
+  external/landing-page/resources/envmap/space.jpg (519 KiB)
+  assets/driveway-target.png (1.82 MiB)
+  assets/driveway.jpg (409 KiB)
+  assets/garage-left.jpg (601 KiB)
+  image-targets/steampunk-driveway-sign_luminance.png (389 KiB)
+  image-targets/steampunk-garage-wide_luminance.png (392 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (302 KiB)
+      bundle.js
+
+WARNING in webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+
+webpack 5.105.3 compiled with 3 warnings in 13101 ms
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

@@ -1,0 +1,60 @@
+name: Verify source and production build
+on:
+  push:
+    branches: [main, 'development/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: ${{ matrix.lane }}
+    strategy:
+      fail-fast: false
+      matrix:
+        lane: [offline, full-wall, build-static]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.23.4'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            tools/verification/package-lock.json
+      - name: Verify locked toolchain
+        run: |
+          test "$(node --version)" = "v22.23.4"
+          test "$(npm --version)" = "10.9.9"
+      - name: Install locked application build dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Install isolated verification dependencies
+        run: npm ci --prefix tools/verification --ignore-scripts --no-audit --no-fund
+      - name: Offline module regressions
+        if: matrix.lane == 'offline'
+        run: |
+          npm test --prefix tools/verification
+          npm run test:garage
+      - name: Full-wall and adaptive runtime regressions
+        if: matrix.lane == 'full-wall'
+        run: npm run test:full-wall
+      - name: Build production assets
+        if: matrix.lane == 'build-static'
+        run: |
+          npm run build
+          node tests/built-experiences.cjs
+      - name: Verify built paths, notices and pinned inputs in an isolated staging directory
+        if: matrix.lane == 'build-static'
+        shell: bash
+        run: |
+          stage="$(mktemp -d)"
+          mkdir -p "$stage/tools/verification"
+          cp -a dist "$stage/docs"
+          cp -a config external package-lock.json "$stage/"
+          cp tools/verification/check-static.cjs "$stage/tools/verification/"
+          touch "$stage/docs/.nojekyll"
+          node "$stage/tools/verification/check-static.cjs"

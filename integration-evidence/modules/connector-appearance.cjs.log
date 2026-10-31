@@ -1,0 +1,1 @@
+PASS connector triangle appearance: same-envelope triangles only; shared boundary split removes interpolation smear; exact source position/UV order preserved; clone disposal; PBR/maps retained; emissive once; nonindexed input; idempotence.

@@ -1,0 +1,1 @@
+PASS border extension: four closed source-contour returns; real backing depth under parent transforms; front geometry/material preserved; shared texture retained; idempotent disposal; unsupported assets fail closed. Browser visual gate separate.

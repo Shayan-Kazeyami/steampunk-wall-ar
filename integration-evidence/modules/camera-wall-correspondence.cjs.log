@@ -1,0 +1,2 @@
+PASS wall-camera integration: previous-FBO/raw-pose pairing, exact viewport, first-frame/motion/loss/handoff/resize rejection and local wall identity. No camera pixels stored or uploaded.
+PASS actual adapter camera-fit wiring: engine viewport API, unfiltered native panel history and loss reset.

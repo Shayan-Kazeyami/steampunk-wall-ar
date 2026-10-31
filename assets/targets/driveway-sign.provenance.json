@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "driveway-sign",
+  "wallId": 3,
+  "createdAt": "2026-10-22T17:15:18.958489+00:00",
+  "sourceImage": "output/previews/03_DRIVEWAY_WALL_preview.png",
+  "sourceImagePx": [
+    2763,
+    1222
+  ],
+  "sourceSha256": "a5ba3b9265aee5a48db0fe27bba1bef9d2771607346b8b03f53680e2e08e1b77",
+  "cropImage": "assets/targets/driveway-sign.png",
+  "cropImagePx": [
+    1280,
+    960
+  ],
+  "sourceCropPx": [
+    741,
+    131,
+    1280,
+    960
+  ],
+  "cropSha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88",
+  "operation": "Pillow.Image.crop; exact pixel rectangle; lossless PNG; no resizing, art edits, or source modification",
+  "pillowVersion": "12.1.1",
+  "cropPixelEqualityVerified": true,
+  "trackingVerification": "NOT MEASURED",
+  "calibrationVerification": "NOT MEASURED",
+  "compiler": {
+    "package": "@8thwall/image-target-cli",
+    "version": "1.0.0",
+    "nodeVersion": "22.23.4",
+    "sharpVersion": "0.34.5",
+    "isolatedInstall": "output/tools/driveway-target-cli",
+    "toolLockSha256": "9acb74b42d0474e890111916ee14538f5688997c4173e3ffc9d7c1c573bb7008",
+    "packageIntegrity": "sha512-ugAUhyiPUH9ppJom9y/ehlUVcIVA08e4i+MhJvSKcMjhZEUxw9putfcjRU/fUb4bgIr9jrC6AJYfnh1ATj+AQA==",
+    "cliEntrySha256": "6ddcc32dc444396f0eaf39114ffb4fc4fa55438815a8791f5f64461fe2823637",
+    "promptAnswers": [
+      "assets/targets/driveway-sign.png",
+      "flat",
+      "yes",
+      "image-targets",
+      "steampunk-driveway-sign"
+    ],
+    "attempts": 1,
+    "exitCode": 0
+  },
+  "compiledMetadata": {
+    "type": "PLANAR",
+    "properties": {
+      "left": 0,
+      "top": 0,
+      "width": 960,
+      "height": 1280,
+      "isRotated": true,
+      "originalWidth": 960,
+      "originalHeight": 1280
+    }
+  },
+  "compiledJsonSha256": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917",
+  "resources": {
+    "steampunk-driveway-sign_original.png": {
+      "sha256": "251f9f2c913d5fbbab14f7ab9e46a1efc55ab5621a845b93af3dbea1c2a49fc0",
+      "bytes": 2710681,
+      "imagePx": [
+        960,
+        1280
+      ],
+      "mode": "RGB"
+    },
+    "steampunk-driveway-sign_cropped.png": {
+      "sha256": "251f9f2c913d5fbbab14f7ab9e46a1efc55ab5621a845b93af3dbea1c2a49fc0",
+      "bytes": 2710681,
+      "imagePx": [
+        960,
+        1280
+      ],
+      "mode": "RGB"
+    },
+    "steampunk-driveway-sign_thumbnail.png": {
+      "sha256": "199793099d144a3f128fadb9d84bf5952590367e9a2ce9616a30c042ff6a7767",
+      "bytes": 220877,
+      "imagePx": [
+        263,
+        350
+      ],
+      "mode": "RGB"
+    },
+    "steampunk-driveway-sign_luminance.png": {
+      "sha256": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb",
+      "bytes": 397877,
+      "imagePx": [
+        480,
+        640
+      ],
+      "mode": "RGB"
+    }
+  },
+  "checks": {
+    "sourceHashUnchanged": true,
+    "cropPixelEqualityVerified": true,
+    "compiledCropPixelRotationEqualityVerified": true,
+    "allResourcesDecoded": true,
+    "luminanceDimensionsVerified": true,
+    "sourceCropWithinPanel": true,
+    "phoneTracking": "NOT MEASURED",
+    "physicalAlignment": "NOT MEASURED",
+    "axisCalibration": "NOT MEASURED"
+  },
+  "fullPanelWebPreview": {
+    "path": "src/assets/driveway.jpg",
+    "sourceImage": "output/previews/03_DRIVEWAY_WALL_preview.png",
+    "sourceSha256": "a5ba3b9265aee5a48db0fe27bba1bef9d2771607346b8b03f53680e2e08e1b77",
+    "imagePx": [
+      2048,
+      906
+    ],
+    "sha256": "fa0ede95427d79a89b036ab2684306ee4f74e27a39d5abc1c569358f49d037c2",
+    "bytes": 419241,
+    "encoding": "progressive JPEG, RGB, quality 85, embedded sRGB ICC",
+    "operation": "Full source rectangle resized with Lanczos to max edge 2048; no crop, no padding, no art edits. Raster dimensions rounded to whole pixels; sample CSS uses exact source aspect.",
+    "sourceImagePx": [
+      2763,
+      1222
+    ],
+    "fullSourceExtentPreserved": true,
+    "sourceHashUnchanged": true
+  },
+  "printSample": {
+    "path": "src/assets/driveway-sample.html",
+    "sha256": "cddee19d98a5816f5b7f59617e048062548ca505b641ae45cbc75dcc8f52f882",
+    "paper": "A4 landscape",
+    "artworkMm": [
+      180,
+      79.60912052117264
+    ],
+    "relativeImageReferenceVerified": true,
+    "utf8Verified": true,
+    "calibration": "provisional, NOT MEASURED",
+    "renderVerification": "not_run",
+    "note": "HTML and image decoded/inspected; printed physical size requires ruler measurement."
+  }
+}

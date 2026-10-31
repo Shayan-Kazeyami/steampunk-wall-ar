@@ -1,0 +1,1 @@
+PASS tracking stabilization: separate real world parents, untouched raw poses, adaptive/bounded follow, discontinuity/handoff reset, immediate hidden genuine loss, opt-in150ms resume/commit and timer cancellation. Phone stability not measured.

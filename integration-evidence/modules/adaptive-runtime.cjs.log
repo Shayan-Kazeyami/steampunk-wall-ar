@@ -1,0 +1,1 @@
+PASS camera RGB/exposure fallback/throttle; separate dial readings; all seven printed tick angles/clamping/pause; offscreen GPU warm-up state restoration and lost-context exclusion (mock renderer).

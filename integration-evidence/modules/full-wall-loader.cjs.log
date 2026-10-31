@@ -1,0 +1,1 @@
+PASS fullwall loader: owned GLB delivery; shared decoder; base URL; fetch/byte/parse cancellation; timeout abort and late cleanup; HTTP/decode failures; geometry/material/texture dedup disposal. No real Draco/GPU claim.

@@ -1,0 +1,14 @@
+PASS Explicit session start, metadata defaults and first acquisition use search clock
+PASS Repeated loss/reacquisition trials and duplicate raw callbacks stay distinct
+PASS Render continuity and world validity never create raw tracking or acquisition success
+PASS Pause censors initial search; paused callbacks cannot complete it; paused time excluded
+PASS Pause after acquisition labels resumed window separately from actual loss reacquisition
+PASS Stopped or cancelled search is censored, never a success; stop is idempotent
+PASS New session cancels old pending trial and resets all current measurements
+PASS Overflow retains chronological bounded rings and unbiased whole-session aggregates
+PASS Invalid, nonfinite and late timestamps never mutate tracking trials
+PASS Throwing clock and invalid initial clock fail safely
+PASS Metadata, event detail, trials, summaries and prior-session snapshots are isolated
+PASS Foreign targets, unspecified searches and unknown event types do not invent timings
+PASS Capacity default, minimum and hard maximum remain bounded
+PASS tracking event recorder: 13 cases; offline instrumentation only, not integrated or physical acceptance

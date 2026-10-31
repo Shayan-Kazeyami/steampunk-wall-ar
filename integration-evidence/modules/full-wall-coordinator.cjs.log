@@ -1,0 +1,1 @@
+PASS fullwall coordinator: actual UI/coordinator/loader; model-only preview; prepare-before-camera; startup preload, fetch/parse Cancel retains shared preload; Stop/restart reuse; loss/visibility audio release; Reset delegation; bfcache reuse; one-time model disposal; unchanged one-canvas DOM fixture (not GPU verification).

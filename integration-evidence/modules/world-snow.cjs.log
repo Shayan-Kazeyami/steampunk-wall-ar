@@ -1,0 +1,7 @@
+PASS Explicit world pose gate and active gate default to hidden
+PASS Native world coordinates preserve flakes across ordinary camera motion
+PASS Stop, invalid pose and reduced motion clear the old field
+PASS Bounded particle count and frame delta prevent runaway work or fall jumps
+PASS Dispose removes Points and releases GPU resources exactly once
+PASS Repeated idle lifecycle calls do not inflate reset diagnostics
+6 world snow checks passed

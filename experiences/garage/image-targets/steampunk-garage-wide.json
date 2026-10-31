@@ -1,0 +1,23 @@
+{
+  "imagePath": "image-targets/steampunk-garage-wide_luminance.png",
+  "metadata": null,
+  "name": "steampunk-garage-wide",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 1068,
+    "height": 1424,
+    "isRotated": true,
+    "originalWidth": 1068,
+    "originalHeight": 1424
+  },
+  "resources": {
+    "originalImage": "steampunk-garage-wide_original.png",
+    "croppedImage": "steampunk-garage-wide_cropped.png",
+    "thumbnailImage": "steampunk-garage-wide_thumbnail.png",
+    "luminanceImage": "steampunk-garage-wide_luminance.png"
+  },
+  "created": 1792676518309,
+  "updated": 1792676518309
+}

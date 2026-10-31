@@ -1,0 +1,177 @@
+[
+  {
+    "module": "full-wall-effects.cjs",
+    "exit": 0,
+    "seconds": 0.11
+  },
+  {
+    "module": "full-wall-ui.cjs",
+    "exit": 0,
+    "seconds": 0.43
+  },
+  {
+    "module": "full-wall-tracking.cjs",
+    "exit": 0,
+    "seconds": 0.44
+  },
+  {
+    "module": "full-wall-loader.cjs",
+    "exit": 0,
+    "seconds": 0.47
+  },
+  {
+    "module": "full-wall-coordinator.cjs",
+    "exit": 0,
+    "seconds": 0.58
+  },
+  {
+    "module": "adaptive-runtime.cjs",
+    "exit": 0,
+    "seconds": 0.14
+  },
+  {
+    "module": "environment-lighting.cjs",
+    "exit": 0,
+    "seconds": 0.06
+  },
+  {
+    "module": "field-session.cjs",
+    "exit": 0,
+    "seconds": 0.03
+  },
+  {
+    "module": "steam-variation.cjs",
+    "exit": 0,
+    "seconds": 0.44
+  },
+  {
+    "module": "driveway-enhancements.cjs",
+    "exit": 0,
+    "seconds": 0.48
+  },
+  {
+    "module": "two-wall-tracking.cjs",
+    "exit": 0,
+    "seconds": 0.55
+  },
+  {
+    "module": "two-wall-coordinator.cjs",
+    "exit": 0,
+    "seconds": 0.67
+  },
+  {
+    "module": "two-wall-ui.cjs",
+    "exit": 0,
+    "seconds": 0.49
+  },
+  {
+    "module": "wall-color-match.cjs",
+    "exit": 0,
+    "seconds": 0.38
+  },
+  {
+    "module": "tracked-wall-lighting.cjs",
+    "exit": 0,
+    "seconds": 0.14
+  },
+  {
+    "module": "tracking-stabilization.cjs",
+    "exit": 0,
+    "seconds": 0.65
+  },
+  {
+    "module": "camera-wall-correspondence.cjs",
+    "exit": 0,
+    "seconds": 0.63
+  },
+  {
+    "module": "tracking-events.cjs",
+    "exit": 0,
+    "seconds": 0.11
+  },
+  {
+    "module": "tracking-observations.cjs",
+    "exit": 0,
+    "seconds": 0.97
+  },
+  {
+    "module": "loading-progress-ui.cjs",
+    "exit": 0,
+    "seconds": 1.45
+  },
+  {
+    "module": "loading-progress-loader.cjs",
+    "exit": 0,
+    "seconds": 0.14
+  },
+  {
+    "module": "coordinator-observations.cjs",
+    "exit": 0,
+    "seconds": 0.86
+  },
+  {
+    "module": "mobile-options-ui.cjs",
+    "exit": 0,
+    "seconds": 0.66
+  },
+  {
+    "module": "world-snow.cjs",
+    "exit": 0,
+    "seconds": 0.07
+  },
+  {
+    "module": "appearance.cjs",
+    "exit": 0,
+    "seconds": 3.35
+  },
+  {
+    "module": "connector-appearance.cjs",
+    "exit": 0,
+    "seconds": 0.07
+  },
+  {
+    "module": "machine-interactions.cjs",
+    "exit": 0,
+    "seconds": 0.11
+  },
+  {
+    "module": "camera-reference-lighting.cjs",
+    "exit": 0,
+    "seconds": 0.09
+  },
+  {
+    "module": "wall-coverage.cjs",
+    "exit": 1,
+    "seconds": 0.32
+  },
+  {
+    "module": "wall-coverage-coordinator.cjs",
+    "exit": 1,
+    "seconds": 0.29
+  },
+  {
+    "module": "border-extension.cjs",
+    "exit": 0,
+    "seconds": 0.07
+  },
+  {
+    "module": "render-benchmark.cjs",
+    "exit": 0,
+    "seconds": 0.03
+  },
+  {
+    "module": "asset-instancing.cjs",
+    "exit": 0,
+    "seconds": 0.12
+  },
+  {
+    "module": "asset-instancing-integration.cjs",
+    "exit": 0,
+    "seconds": 0.13
+  },
+  {
+    "module": "environment-recovery-integration.cjs",
+    "exit": 0,
+    "seconds": 0.08
+  }
+]

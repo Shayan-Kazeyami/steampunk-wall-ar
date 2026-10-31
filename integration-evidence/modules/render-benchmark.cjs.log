@@ -1,0 +1,1 @@
+PASS render benchmark: delegation, exact percentiles, retained stalls, hidden/inactive reset, render error, rAF scheduling/reset, stop, bounded capacity and disposal ownership

@@ -1,0 +1,31 @@
+
+> aframe-image-targets-example@0.1.0 test
+> npm test --prefix tools/verification
+
+
+> steampunk-wall-ar-verification@1.0.0 test
+> node ../../tests/offline-checks.cjs
+
+[pass] geometry:garageLeft: 16 meshes, 8 glows, teeth 24
+[pass] motion:garageLeft: idle 0.7500 deg, overdrive 4.5000 deg, reset 0.7500 deg at clamped delta
+[pass] pulse:garageLeft: pulse 0.25-0.45, overdrive 0.65
+[pass] reduced-motion:garageLeft: static gear, opacity 0.35/0.5
+[pass] tracking-lifecycle:garageLeft: hidden on loss, overdrive cleared, idle resumed on reacquisition
+[pass] dispose:garageLeft: double dispose safe, detach and post-dispose update verified
+[pass] geometry:driveway: 5 meshes, 4 glows, teeth 24
+[pass] motion:driveway: idle 0.7500 deg, overdrive 4.5000 deg, reset 0.7500 deg at clamped delta
+[pass] pulse:driveway: pulse 0.25-0.45, overdrive 0.65
+[pass] reduced-motion:driveway: static gear, opacity 0.35/0.5
+[pass] tracking-lifecycle:driveway: hidden on loss, overdrive cleared, idle resumed on reacquisition
+[pass] dispose:driveway: double dispose safe, detach and post-dispose update verified
+34 offline checks passed
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

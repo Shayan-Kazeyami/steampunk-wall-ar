@@ -1,0 +1,7 @@
+[
+  {
+    "id": "full-wall-source-model-effects-lifecycle",
+    "result": "pass",
+    "detail": "Real runtimes: tracking/reduced/boost/steam, unchanged front frame, baked tone mapping, existing renderer, gesture audio and cancellation, hidden cleanup, deduplicated source disposal."
+  }
+]

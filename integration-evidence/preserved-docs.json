@@ -1,0 +1,581 @@
+{
+  "base": "ff3f90646a7c888de9470d252b64ded47f3febc4",
+  "files": [
+    {
+      "path": "docs/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/candidates-2026-10-25/central/image-targets/steampunk-driveway-trial-central-20261025_luminance.png",
+      "sha256": "d8c37e2e8d3033bf47ee3699ba156ac400d434a817ea67ebb91607de50223243"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/candidates-2026-10-25/full-wall/image-targets/steampunk-driveway-trial-full-wall-20261025_luminance.png",
+      "sha256": "104451aa4ddbf30cfbe888543ea5127f2ed04053f2db7ba4128a35f6a5036cd1"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/candidates-2026-10-25/wider/image-targets/steampunk-driveway-trial-wider-20261025_luminance.png",
+      "sha256": "abf38b844f83694c02f0d5de18b66a038fe6b8a9c79610e9c699e16fc96357bf"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/bundle-2aac849dd7d694f70b4098b42210de51e78c1ac1f5cf81999afc3a0628887979.js",
+      "sha256": "2aac849dd7d694f70b4098b42210de51e78c1ac1f5cf81999afc3a0628887979"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/bundle-c08142d695746de2dce863a986b9f69062f5c7e4fc414aaa8019d7ef2b0f4cfc.js",
+      "sha256": "c08142d695746de2dce863a986b9f69062f5c7e4fc414aaa8019d7ef2b0f4cfc"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026-nosnow-v1/bundle-68b9cf57bc5725156fe478ae060a48721277b7bc3379ffeb5fc20a676c3f3696.js",
+      "sha256": "68b9cf57bc5725156fe478ae060a48721277b7bc3379ffeb5fc20a676c3f3696"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026-nosnow-v1/bundle.js.LICENSE.txt",
+      "sha256": "8c9946dfc859a2bfb26cc541125631cd96e7110fa20a702eb19275c9d1658805"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026-nosnow-v1/image.html",
+      "sha256": "0a422440bdeea2c9d9d142a3860f9ad34a01b17f46ed0d3cfe19de916e6c5540"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026-nosnow-v1/index.html",
+      "sha256": "ba73e22db7e91b8115ee6ef65e4187c6394486c3733822b3d93bd391a97d8c08"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026-nosnow-v1/manifest.json",
+      "sha256": "72243ebef991bfe72650172bb09d42591fc1dfe30013d52ff3db493b6e322b80"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026-nosnow-v1/world.html",
+      "sha256": "44de8db87a55c4762201b5f3ffba4c9f0d1b12730c2991eca11801c8f17edffd"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/MIT_NOTICES.txt",
+      "sha256": "16ad3f4b3959af130db6b1cf71721913445e3ea8ed68c4915357d0731077be33"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/NOTICES.txt",
+      "sha256": "1ac3ad12da0c0fff6e5f4e1696f2e42cd6121af113f8c5c58a3b141995c8a8ac"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/XR_ENGINE_LICENSE.txt",
+      "sha256": "910ef68267345289c25ad7f59f216e39a5bae49cb01c1678c55aab6aa2df4fe6"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/driveway-qr.png",
+      "sha256": "37711ccd8b3bf8aa8435ac9467da4fe661387f921944f6cddc2d3cc21bf8949c"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/driveway-sample.html",
+      "sha256": "cddee19d98a5816f5b7f59617e048062548ca505b641ae45cbc75dcc8f52f882"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/driveway-target.png",
+      "sha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/driveway.jpg",
+      "sha256": "fa0ede95427d79a89b036ab2684306ee4f74e27a39d5abc1c569358f49d037c2"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/HDRI-PROVENANCE.json",
+      "sha256": "e308302dfa2f8c02334d5cf676da76a991ae37ef4f78bed988537abec0c21367"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/THREE-LICENSE.txt",
+      "sha256": "dfbcc6bc161ba4d2f56cbdf0ad8b85b3879fb2534980f2acb0465350be3a7511"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/driveway-adaptive.glb",
+      "sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/assets/full-wall/studio_small_09_1k.hdr",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/bundle-71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf.js",
+      "sha256": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/bundle.js.LICENSE.txt",
+      "sha256": "8c9946dfc859a2bfb26cc541125631cd96e7110fa20a702eb19275c9d1658805"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/image-targets/steampunk-driveway-sign.json",
+      "sha256": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/image-targets/steampunk-driveway-sign_luminance.png",
+      "sha256": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/image.html",
+      "sha256": "b0951807dc94d29227bb3ac92f84c3baad745d668ef6ac124ea72e81d71b5b19"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/index.html",
+      "sha256": "5b4ae53fc1313f9c49efde41d2b4624e919f9ccd577fd92cd1f39eafd42b1d85"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/manifest.json",
+      "sha256": "a177b356222875eed438ed20059b0f4a2f895a568833c411aa450b714cbc34e6"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/reference-central.html",
+      "sha256": "53f79e728b0f7f2739cc361409f3bbc2386412d99ce1c89a91ab706bcf770121"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/reference-full-wall.html",
+      "sha256": "ec56a81f8c2592edc4240a1afa6be2cd1a5fb87f35c2105f728283547022cae7"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/reference-wider.html",
+      "sha256": "9c8d04ee591c75bdcef49bbe199df5448693fbb95b062a85af6b4efe3101059c"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/references/central/steampunk-driveway-trial-central-20261025_luminance.png",
+      "sha256": "d8c37e2e8d3033bf47ee3699ba156ac400d434a817ea67ebb91607de50223243"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/references/full-wall/steampunk-driveway-trial-full-wall-20261025_luminance.png",
+      "sha256": "104451aa4ddbf30cfbe888543ea5127f2ed04053f2db7ba4128a35f6a5036cd1"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/references/wider/steampunk-driveway-trial-wider-20261025_luminance.png",
+      "sha256": "abf38b844f83694c02f0d5de18b66a038fe6b8a9c79610e9c699e16fc96357bf"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/current-20261026/world.html",
+      "sha256": "992d231ec24a57d018054776afeeaac6e4eda4460087fd8f382a353e3e5a694f"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/image.html",
+      "sha256": "28c1c67dc5f5ba376ae03c2024eb319798de1313c0afe97478d14b0bead5ec58"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/index.html",
+      "sha256": "65f1f7ee44c10bb04b74ec6f5507a9e1a159f540cd1fa6974cc116c87970adca"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/manifest.json",
+      "sha256": "291e9d8cd9a5390b1593147ca6bdb84d9930fc549e954b0155c4c22353f8fe28"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/reference-central.html",
+      "sha256": "00557b12bb49f200b1ac0fdd6229a7023c2f7d115ee2f0e7dc92e315221ae56a"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/reference-full-wall.html",
+      "sha256": "513fb0e1ef7011f445fd8d5fedce296132f6d72da69c4bdf58f2972b7f127a9b"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/reference-wider.html",
+      "sha256": "63d711e1f70a50c5c6203dd4d05cb285a7e19f3b1608b253bc493034a3ca9115"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/renderer-ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f.js",
+      "sha256": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f"
+    },
+    {
+      "path": "docs/Models/driveway-target-trials/runtime/world.html",
+      "sha256": "387220bb37f8b90b389ff379ed0c06f45c05040db14d30bb9ba79085fcf7fd98"
+    },
+    {
+      "path": "docs/ar/assets/MIT_NOTICES.txt",
+      "sha256": "16ad3f4b3959af130db6b1cf71721913445e3ea8ed68c4915357d0731077be33"
+    },
+    {
+      "path": "docs/ar/assets/NOTICES.txt",
+      "sha256": "1ac3ad12da0c0fff6e5f4e1696f2e42cd6121af113f8c5c58a3b141995c8a8ac"
+    },
+    {
+      "path": "docs/ar/assets/XR_ENGINE_LICENSE.txt",
+      "sha256": "910ef68267345289c25ad7f59f216e39a5bae49cb01c1678c55aab6aa2df4fe6"
+    },
+    {
+      "path": "docs/ar/assets/driveway-qr.png",
+      "sha256": "37711ccd8b3bf8aa8435ac9467da4fe661387f921944f6cddc2d3cc21bf8949c"
+    },
+    {
+      "path": "docs/ar/assets/driveway-sample.html",
+      "sha256": "cddee19d98a5816f5b7f59617e048062548ca505b641ae45cbc75dcc8f52f882"
+    },
+    {
+      "path": "docs/ar/assets/driveway-target.png",
+      "sha256": "174b55361256084ec4d39ec4de778d47546138135279541c57e6977c312e5e88"
+    },
+    {
+      "path": "docs/ar/assets/driveway.jpg",
+      "sha256": "fa0ede95427d79a89b036ab2684306ee4f74e27a39d5abc1c569358f49d037c2"
+    },
+    {
+      "path": "docs/ar/assets/full-wall/HDRI-PROVENANCE.json",
+      "sha256": "e308302dfa2f8c02334d5cf676da76a991ae37ef4f78bed988537abec0c21367"
+    },
+    {
+      "path": "docs/ar/assets/full-wall/THREE-LICENSE.txt",
+      "sha256": "dfbcc6bc161ba4d2f56cbdf0ad8b85b3879fb2534980f2acb0465350be3a7511"
+    },
+    {
+      "path": "docs/ar/assets/full-wall/driveway-adaptive.glb",
+      "sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534"
+    },
+    {
+      "path": "docs/ar/assets/full-wall/driveway-polished.glb",
+      "sha256": "6df6335cfbe4922df30740e6ffced35fd740b239c10ba98210acf6b29069b4fb"
+    },
+    {
+      "path": "docs/ar/assets/full-wall/studio_small_09_1k.hdr",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "path": "docs/ar/assets/garage-left.jpg",
+      "sha256": "6eff2e40a0ad985300274716ce7d56253dfbca2a76259be60b497dc8d19ad5ee"
+    },
+    {
+      "path": "docs/ar/assets/target-sample.html",
+      "sha256": "d8d28f49cf3b054eccf461960b61a07e2d07dd490eefe31b4e94789f868ab729"
+    },
+    {
+      "path": "docs/ar/bundle.js",
+      "sha256": "71a25712f8a29307fe4dd22403916b3f09a7e268f0cd1f7ae0424accb0f51dbf"
+    },
+    {
+      "path": "docs/ar/bundle.js.LICENSE.txt",
+      "sha256": "8c9946dfc859a2bfb26cc541125631cd96e7110fa20a702eb19275c9d1658805"
+    },
+    {
+      "path": "docs/ar/image-targets/steampunk-driveway-sign.json",
+      "sha256": "15f6a2a2be9156a3e51f4445b0f51bc2dcc8d101931617db39f4d325ee9f4917"
+    },
+    {
+      "path": "docs/ar/image-targets/steampunk-driveway-sign_luminance.png",
+      "sha256": "9358d02b138307193dc6b8b30a54d4699070db25826655b561426c755aa0b4bb"
+    },
+    {
+      "path": "docs/ar/image-targets/steampunk-garage-wide.json",
+      "sha256": "759442ca453cdb5997d4b70bd9e687e473b2b65f87f75bbb9988ade728e4bbb4"
+    },
+    {
+      "path": "docs/ar/image-targets/steampunk-garage-wide_luminance.png",
+      "sha256": "5b5289852dd9d0f5584253776710f6868369d709d26d47ef21325446e44fadf8"
+    },
+    {
+      "path": "docs/ar/index.html",
+      "sha256": "2c7382d73ca5dd97a86f9e77964a7ae778564c52f54cee38abe5525347b0b52f"
+    },
+    {
+      "path": "docs/assets/MIT_NOTICES.txt",
+      "sha256": "16ad3f4b3959af130db6b1cf71721913445e3ea8ed68c4915357d0731077be33"
+    },
+    {
+      "path": "docs/assets/NOTICES.txt",
+      "sha256": "1ac3ad12da0c0fff6e5f4e1696f2e42cd6121af113f8c5c58a3b141995c8a8ac"
+    },
+    {
+      "path": "docs/assets/XR_ENGINE_LICENSE.txt",
+      "sha256": "910ef68267345289c25ad7f59f216e39a5bae49cb01c1678c55aab6aa2df4fe6"
+    },
+    {
+      "path": "docs/assets/garage-left.jpg",
+      "sha256": "6eff2e40a0ad985300274716ce7d56253dfbca2a76259be60b497dc8d19ad5ee"
+    },
+    {
+      "path": "docs/assets/target-sample.html",
+      "sha256": "d8d28f49cf3b054eccf461960b61a07e2d07dd490eefe31b4e94789f868ab729"
+    },
+    {
+      "path": "docs/bundle.js",
+      "sha256": "d604bef3312045c0e0f290fa1f8526f911cea231a5bd9f9fc7a4033a096b1c2a"
+    },
+    {
+      "path": "docs/bundle.js.LICENSE.txt",
+      "sha256": "8c9946dfc859a2bfb26cc541125631cd96e7110fa20a702eb19275c9d1658805"
+    },
+    {
+      "path": "docs/experience/animation-runtime.js",
+      "sha256": "3c9db720fb5d9012874964f049fc99ccc3b63df47bd8d985174236d9fc66a61f"
+    },
+    {
+      "path": "docs/experience/assets/HDRI-PROVENANCE.json",
+      "sha256": "e308302dfa2f8c02334d5cf676da76a991ae37ef4f78bed988537abec0c21367"
+    },
+    {
+      "path": "docs/experience/assets/THREE-LICENSE.txt",
+      "sha256": "dfbcc6bc161ba4d2f56cbdf0ad8b85b3879fb2534980f2acb0465350be3a7511"
+    },
+    {
+      "path": "docs/experience/assets/driveway-adaptive.glb",
+      "sha256": "4ed8086fd426cae2e5b57349367459b77a5b5ccfbc901b2514fef65d85f63534"
+    },
+    {
+      "path": "docs/experience/assets/driveway-android.glb",
+      "sha256": "a46b89e53ea7c66fbe4871ee63707469ea20a09df711a011a946281c10b3b831"
+    },
+    {
+      "path": "docs/experience/assets/driveway-polished.glb",
+      "sha256": "6df6335cfbe4922df30740e6ffced35fd740b239c10ba98210acf6b29069b4fb"
+    },
+    {
+      "path": "docs/experience/assets/driveway-reference-4k.glb",
+      "sha256": "bfe9aa6ad78335ab7f1a7e0c8710a93e949b817a5ec1e5a680ae9f1bfdbd9c32"
+    },
+    {
+      "path": "docs/experience/assets/driveway.jpg",
+      "sha256": "fa0ede95427d79a89b036ab2684306ee4f74e27a39d5abc1c569358f49d037c2"
+    },
+    {
+      "path": "docs/experience/assets/site-qr.png",
+      "sha256": "fcc0d521c1a860266626a6a6218d2c1c636bf503a44b8a91fc4c6fed0cc729ae"
+    },
+    {
+      "path": "docs/experience/assets/site-qr.svg",
+      "sha256": "77b1dac46451165bc56b2a9c8a4ed3a1b882df5f1322f64bd8f54c25073c97cd"
+    },
+    {
+      "path": "docs/experience/assets/studio_small_09_1k.hdr",
+      "sha256": "e7cfda5f4e98e623db12b8bfd0184e048488e4855d9c83e2751fb44a32e80c45"
+    },
+    {
+      "path": "docs/experience/environment-lighting.js",
+      "sha256": "46dc824c48edd28e12d03c8be4e16fa61286e68c6b93354d1cb7e5129a342188"
+    },
+    {
+      "path": "docs/experience/experience-polish.js",
+      "sha256": "8f3038f534a942b45df2048fed530aefbab04810864716b3eb70336cee4a38e2"
+    },
+    {
+      "path": "docs/experience/index.html",
+      "sha256": "012489c8b25fb39374a398cd9946e04bded71183616ace6f74e8c130e261fce4"
+    },
+    {
+      "path": "docs/experience/machine-effects.js",
+      "sha256": "bfe2fac96d9d00b5c5be3de986b1bc05676b0d6863478082fa5b122c10b9b52b"
+    },
+    {
+      "path": "docs/external/landing-page/LICENSE",
+      "sha256": "16ad3f4b3959af130db6b1cf71721913445e3ea8ed68c4915357d0731077be33"
+    },
+    {
+      "path": "docs/external/landing-page/landing-page.js",
+      "sha256": "4d3394f66634458035205cc199969b1fc9192683ee7c5fd811c5c11816b991eb"
+    },
+    {
+      "path": "docs/external/landing-page/landing-page.js.LICENSE.txt",
+      "sha256": "1b8f400a20ea930f4266355cbadaae9efe8a77a8d7fd41de768ee9f1a1f15621"
+    },
+    {
+      "path": "docs/external/landing-page/resources/envmap/city.jpg",
+      "sha256": "603d5089d8366f747e89171055be0355cbf7cce54214116925022abd229dcc8a"
+    },
+    {
+      "path": "docs/external/landing-page/resources/envmap/field.jpg",
+      "sha256": "a8d8187795f16d38eafefa4cc5406c84ef25d8e9efbee2beb1c890ae5587cb41"
+    },
+    {
+      "path": "docs/external/landing-page/resources/envmap/hill.jpg",
+      "sha256": "94a6123977fec6f8f991d52a6f6bfe20d4d2b5e1057195020f2f34b03b04f12d"
+    },
+    {
+      "path": "docs/external/landing-page/resources/envmap/pastel.png",
+      "sha256": "bb6d2c9cab0e44b087d921ecc724eb0526c3a49413d3095841fe59acdd0cbfdd"
+    },
+    {
+      "path": "docs/external/landing-page/resources/envmap/space.jpg",
+      "sha256": "b5b72dd65d31d76a898f9bed8204ae4bbaa095b64cb331bb98954110cfd1d798"
+    },
+    {
+      "path": "docs/external/landing-page/resources/img/mediarecorder/play-v1.svg",
+      "sha256": "9ae23df798aea0e57a322f02a404a49c069982dbf76fdd0d7e44f020625041dc"
+    },
+    {
+      "path": "docs/external/scripts/8frame-1.5.0.min.js",
+      "sha256": "ccd2e37ef3df31d5b1de675d6ac35f64be96b6b8b8f847b1df461b8416c5e05f"
+    },
+    {
+      "path": "docs/external/xr/LICENSE",
+      "sha256": "910ef68267345289c25ad7f59f216e39a5bae49cb01c1678c55aab6aa2df4fe6"
+    },
+    {
+      "path": "docs/external/xr/resources/dom-tablet-button.glb",
+      "sha256": "69bb197329b5382906360a58e8a00995dae958667dbe93b002cb51068bfefda6"
+    },
+    {
+      "path": "docs/external/xr/resources/dom-tablet-frame.glb",
+      "sha256": "ceb73d8655c544b8fe0c60fdf7de9a6c5e20ed9410e5c412f325b183360ed9ed"
+    },
+    {
+      "path": "docs/external/xr/resources/face-ear-model.tflite",
+      "sha256": "4cd07c3ecc4ac3a19097ad5d8e2920113e8786d29302e48064b5e21b9f828552"
+    },
+    {
+      "path": "docs/external/xr/resources/face-mesh-model.tflite",
+      "sha256": "97cd5b1d16d1d205445134d0d8882a619068c1a49277652c468049d0fc7f2756"
+    },
+    {
+      "path": "docs/external/xr/resources/face-model.tflite",
+      "sha256": "0d800dd37230bb0503e2bc84ce547a1328dc0e2d8c54a5a92df953710decc4ed"
+    },
+    {
+      "path": "docs/external/xr/resources/media-worker.js",
+      "sha256": "80cf637cf9e556c366e5e960d9097f02c4b965c2983d64e75f430def3ff267ca"
+    },
+    {
+      "path": "docs/external/xr/resources/powered-by.svg",
+      "sha256": "4c8bf13771807ac55c963fc08421f611e6e1ab37d5410dc0bbf049f94bea0797"
+    },
+    {
+      "path": "docs/external/xr/resources/semantics-model.tflite",
+      "sha256": "b25bebe3ec1b7390feec937d1e4eafb3d6f2104d584a738c0bdf6486030b70a0"
+    },
+    {
+      "path": "docs/external/xr/resources/semantics-worker.js",
+      "sha256": "2cd9026e28b01a2759cb35c58cb94d67e97dc0ec41a4c1bb5e1a410443b77881"
+    },
+    {
+      "path": "docs/external/xr/xr-face.js",
+      "sha256": "a6c2bb6301b92cde37402b104e752f93bcb7828086c355af5616263fcb40d2cb"
+    },
+    {
+      "path": "docs/external/xr/xr-slam.js",
+      "sha256": "d3c556f4fab54de26cfafae4aa028cd937d4fda93a12535b4ed24b6b8c01a111"
+    },
+    {
+      "path": "docs/external/xr/xr-slam.js.LICENSE.txt",
+      "sha256": "8485d9fc2ff7ee5b341c158e68ab1f06cc4026c461b93b129e1af9a10acc468c"
+    },
+    {
+      "path": "docs/external/xr/xr.js",
+      "sha256": "af42f3d79327b66443070244775517cd1858a57572402f6e49928df826d4d555"
+    },
+    {
+      "path": "docs/external/xr/xr.js.LICENSE.txt",
+      "sha256": "8485d9fc2ff7ee5b341c158e68ab1f06cc4026c461b93b129e1af9a10acc468c"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/LICENSE",
+      "sha256": "16ad3f4b3959af130db6b1cf71721913445e3ea8ed68c4915357d0731077be33"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/fonts/Nunito-LICENSE",
+      "sha256": "62db47b6ce2ae4c86c8718443a020806b1d171e5aaee1b2325124a039d9141ed"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/fonts/Nunito-Regular.ttf",
+      "sha256": "3a43894fe7325d24a680cf14831f6bc9e0ae24be7d902e85c66b02995f3323cc"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/fonts/Nunito-Regular.woff",
+      "sha256": "ffd2cb159789db573cdd7d640a5cb257b9bfcacd6a74ba4649a09c13e5a066c4"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/fonts/Nunito-SemiBold.ttf",
+      "sha256": "4bfe940da7acc909552e13ce7d1d42a310c2afbfbb83c93738a2761e48492829"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/fonts/Nunito-SemiBold.woff",
+      "sha256": "f84f2521be747ea29c43e14a189a288282602aa40665112b0c6a541656b47464"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/img/almostthere/v1/google-chrome.png",
+      "sha256": "c8ea003428d905327cb8b9bea5dfd9cc238272968b059be957337f9671cf0646"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/img/almostthere/v2/poweredby-horiz-white-4.svg",
+      "sha256": "8c3226e1746f6d8ea85615ece49bbfdda848b308de21ea34986bba85c90739fb"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/img/almostthere/v2/safari-fallback.png",
+      "sha256": "3c5b24d9ec10045d487b6c8639ea507b2a39a78c736e703ebd08b3ae3c45306f"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/img/almostthere/v2/xtra-arrow.svg",
+      "sha256": "64086de93936a4eef01125d4e894cb3c90b40a3c074461f1a201b4daad1f4e76"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/img/mediarecorder/sound-off-v1.svg",
+      "sha256": "4dce8c55a72b5dcd84b524b1e8e4568c7a5ab352698770c335fb8f334161db96"
+    },
+    {
+      "path": "docs/external/xrextras-shared-resources/img/mediarecorder/sound-on-v1.svg",
+      "sha256": "0a013458b4f3d5b35a61db69e8648a531b119801aa14f8543b7ed0d4df6114a9"
+    },
+    {
+      "path": "docs/external/xrextras/LICENSE",
+      "sha256": "16ad3f4b3959af130db6b1cf71721913445e3ea8ed68c4915357d0731077be33"
+    },
+    {
+      "path": "docs/external/xrextras/resources/aframe/stats.16.min.js",
+      "sha256": "f287d84f0a19e0ef1d8ac30d90674dfcc81b09d751ca2122be5e5e8e0d51a005"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/almostthere/v2/android-fallback.png",
+      "sha256": "a9de3e5c752b5b8510db57bd8948bedd14df76d70a4745d9cd313a0ca0c044a4"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/loading/v1/safari-icon.png",
+      "sha256": "d284a6bb30cdcfdf1d6ecc8760d1c4c580ea0dbe235471dffbcbb5d09d393894"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/loading/v1/settings-icon-ios.png",
+      "sha256": "c0e86aa59cef3cd9a53bfea1768f016a2532642ffa8eac290c52ce4f093c165f"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/loading/v2/camera.svg",
+      "sha256": "958b3eeb87840eb7429e9d3c24eaacf651563148d71e1efb54ca5c1fe2e7206a"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/loading/v2/dots.svg",
+      "sha256": "50688f420e20e5c5c546584ed598a3fc0d555feae13063137fa2e88642e91b84"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/loading/v2/load-grad.png",
+      "sha256": "b183cbc642150abb54528d7a5ca53a552b9f0a770f548bc7b2832162d86b0cce"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/loading/v2/microphone.svg",
+      "sha256": "da2d333c7adc4f84db3186e327eb4801c7285fe83df0f4b937bf0c0d04f63742"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/loading/v2/reload.svg",
+      "sha256": "c74875cc92d072dd875a239948229cbd406a4bc06a3b5e610c84e8aef25eaeef"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/mediarecorder/close-v2.svg",
+      "sha256": "9ef6df02f5c91b9f978878f9d1455d054557d0de9b73331906fbc669aea00730"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/mediarecorder/download-v1.svg",
+      "sha256": "e25ddd907117022301840369f2127aafe21d957eb7dbba0f4ce52ebc5a144185"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/mediarecorder/share-v1.svg",
+      "sha256": "66c4a2be7e0af13c985e0c51036ea0048d4d1fea8e252304b6402203fbab857b"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/mediarecorder/view-v1.svg",
+      "sha256": "155a3116e1e2da90257c2d2166241f4df1e759c53e3ba8e7f3e6c78c1e7cd949"
+    },
+    {
+      "path": "docs/external/xrextras/resources/img/runtimeerror/v1/computer-voxel.png",
+      "sha256": "81d9ad5a6d9d9d4511625edd3382b77423349e5ca383d68ef3090616fb1661f6"
+    },
+    {
+      "path": "docs/external/xrextras/xrextras.js",
+      "sha256": "75a12f9f6d0d258aacb84ee023cde2893e5c830478b4df567c77bd8854ef6d12"
+    },
+    {
+      "path": "docs/image-targets/steampunk-garage-wide.json",
+      "sha256": "759442ca453cdb5997d4b70bd9e687e473b2b65f87f75bbb9988ade728e4bbb4"
+    },
+    {
+      "path": "docs/image-targets/steampunk-garage-wide_luminance.png",
+      "sha256": "5b5289852dd9d0f5584253776710f6868369d709d26d47ef21325446e44fadf8"
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "daca9fccbc60b6daf81b4071efc65c07e908db96954c4d10b7e235b3b2742db1"
+    }
+  ]
+}

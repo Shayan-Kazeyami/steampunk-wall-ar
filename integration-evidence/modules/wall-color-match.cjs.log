@@ -1,0 +1,1 @@
+PASS wall reference match: linear RGB/exposure ratios, bounded output, asymmetric cover/letterbox/portrait/landscape projection and padded rows; contamination/outlier rejection; clipping, support, pose/frame/identity gates; deterministic source-backed reference grid.

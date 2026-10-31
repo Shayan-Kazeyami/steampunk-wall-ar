@@ -1,0 +1,56 @@
+PASS exact clones batch; source anchors stay visible with same geometry/material and independent matrices
+PASS nested/model transforms preserve authored vertex placement under batching
+PASS child/ancestor visibility compacts instances without changing source visibility or identities
+PASS static instance matrices do not request repeated GPU uploads; moving instances refresh aggregate culling bounds
+PASS dispose releases only instance resources once; shared geometry/material/texture remain owned by caller
+PASS reject different UVs
+PASS reject different normals
+PASS reject different indices
+PASS reject different cloned materials
+PASS reject transparent material
+PASS reject transmissive material
+PASS reject object-space normal map
+PASS reject mirrored transform
+PASS reject sheared transform
+PASS reject projective transform
+PASS reject non-affine homogeneous component
+PASS reject different layers
+PASS reject different render order
+PASS reject different shadows
+PASS reject custom rendering
+PASS reject morph geometry
+PASS reject ordered ancestor
+PASS restore source draws safely after per-source material clone
+PASS restore source draws safely after geometry update
+PASS restore source draws safely after attribute replacement
+PASS restore source draws safely after layer edit
+PASS restore source draws safely after mirrored motion
+PASS restore source draws safely after detach
+PASS restore source draws safely after transparency edit
+PASS restore source draws safely after object-space normal-map edit
+PASS real gear animation, reduced motion, tracking loss, reset and stop propagate to matrices
+PASS real sign decoration six repeated lamps batch while shared animated colour and sign action stay intact
+PASS disabled mode preserves every source draw
+PASS WebGL1 without ANGLE instancing retains original source draws
+PASS WebGL1 with ANGLE supports standard instances while gear palettes remain off
+PASS standard instance survives actual affine roundoff and moving rotated/nonuniformly scaled tracked parent
+PASS palette survives actual affine roundoff and moving rotated/nonuniformly scaled tracked parent
+PASS unique authored gear geometry uses an honest transform palette preserving ALL vertex/UV/normal/index values
+PASS palette resources have one owner and shared atlas survives disposal
+PASS palette fail closed: WebGL1
+PASS palette fail closed: insufficient vertex uniforms
+PASS palette fail closed: absent renderer capabilities
+PASS palette fail closed: explicitly disabled palette
+PASS palette fail closed: custom source shader
+PASS palette fail closed: displacement map
+PASS palette fail closed: object-space normal map
+PASS palette fail closed: shadow casting
+PASS palette fail closed: incompatible materials
+PASS palette restores original exact draws after material clone
+PASS palette restores original exact draws after source shader version
+PASS palette restores original exact draws after source transform mirror
+PASS palette restores original exact draws after geometry version
+PASS palette restores original exact draws after source shader edit
+PASS palette restores original exact draws after object-space normal-map edit
+PASS palette exact raycast returns the original gear and per-source visibility still applies
+PASS asset instancing 55 cases; CPU geometry/transform/resource/real-animation checks, no visual or native-phone acceptance claim.
