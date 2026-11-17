@@ -995,6 +995,13 @@ export function createTrackingAdapter({
       await ensureTarget(signal)
       await ensureExtraTargets(signal)
       if (canceled()) return
+      // Visibility may already be hidden before start, or change during awaits
+      // without a delivered visibilitychange event. Never activate the camera
+      // merely to stop it immediately afterward.
+      if (documentRef && documentRef.visibilityState === 'hidden') {
+        onVisibilityChange()
+        return
+      }
       ready = true
       configureEngine()
     } catch (error) {

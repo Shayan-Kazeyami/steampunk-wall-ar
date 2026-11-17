@@ -213,6 +213,21 @@ async function main(){
     hidden.scanning();hidden.video();assert.equal(types(hidden).at(-1),'search-started')
     await hidden.tracker.stop();assert.equal(types(hidden).at(-1),'tracking-stopped')
   }finally{await hidden.close()}
-  console.log('PASS tracking observations: 7 groups; default/image+world configure-before-pipeline/run, restart/retry/Stop/cancellation, raw duplicates, no synthetic acquisition, camera/search boundary, native status qualification, observer isolation and hidden lifecycle. Supported-phone checks remain NOT RUN.')
+  // 8. A start requested while already hidden must not briefly activate camera.
+  const alreadyHidden=fixture({worldTracking:true})
+  try{
+    Object.defineProperty(alreadyHidden.document,'visibilityState',{value:'hidden',configurable:true})
+    await alreadyHidden.tracker.start()
+    await new Promise(resolve=>setTimeout(resolve,0))
+    assert(!alreadyHidden.order.includes('run'),'Hidden start must never activate camera pipeline')
+    assert.equal(alreadyHidden.configs.length,0,'Hidden start must not configure pipeline')
+    assert.equal(alreadyHidden.modules.size,0)
+    assert(types(alreadyHidden).includes('tracking-paused'))
+    Object.defineProperty(alreadyHidden.document,'visibilityState',{value:'visible',configurable:true})
+    await alreadyHidden.tracker.start()
+    assert.equal(alreadyHidden.order.filter(item=>item==='run').length,1)
+    assert(types(alreadyHidden).includes('tracking-resumed'))
+  }finally{await alreadyHidden.close()}
+  console.log('PASS tracking observations: 8 groups; default/image+world configure-before-pipeline/run, restart/retry/Stop/cancellation, raw duplicates, no synthetic acquisition, camera/search boundary, native status qualification, observer isolation and hidden lifecycle. Supported-phone checks remain NOT RUN.')
 }
 main().catch(error=>{console.error(error);process.exitCode=1})
