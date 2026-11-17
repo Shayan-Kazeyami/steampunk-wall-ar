@@ -9,21 +9,35 @@ const tests = ['full-wall-effects.cjs', 'full-wall-ui.cjs', 'full-wall-tracking.
   'environment-lighting.cjs', 'field-session.cjs', 'steam-variation.cjs', 'driveway-enhancements.cjs','two-wall-tracking.cjs','two-wall-coordinator.cjs','two-wall-ui.cjs','wall-color-match.cjs','tracked-wall-lighting.cjs','tracking-stabilization.cjs','camera-wall-correspondence.cjs',
   'tracking-events.cjs','tracking-observations.cjs','loading-progress-ui.cjs','loading-progress-loader.cjs','coordinator-observations.cjs','mobile-options-ui.cjs','world-snow.cjs','appearance.cjs','connector-appearance.cjs','machine-interactions.cjs','camera-reference-lighting.cjs',
   'wall-coverage.cjs','wall-coverage-coordinator.cjs','border-extension.cjs','render-benchmark.cjs','asset-instancing.cjs','asset-instancing-integration.cjs','environment-recovery-integration.cjs']
-for (const test of tests) {
-  if (!fs.existsSync(path.join(repository, 'tests', test))) {
-    console.error(`Missing full-wall test: ${test}. No test is silently skipped.`)
-    process.exit(1)
+// Continue through independent modules so a missing authoritative coverage input
+// cannot hide a later regression. Every failure still makes the aggregate fail.
+function runModules({modules = tests, root = repository, exists = fs.existsSync,
+  spawn = spawnSync, log = console.log, error = console.error} = {}) {
+  const failures = []
+  let passed = 0
+  log(`Full-wall offline checks: ${process.version} (${process.execPath})`)
+  for (const test of modules) {
+    const file = path.join(root, 'tests', test)
+    if (!exists(file)) {
+      failures.push({test, reason:'missing test file'})
+      error(`FAIL ${test}: missing test file. No test is silently skipped.`)
+      continue
+    }
+    log(`\nRunning ${test}`)
+    let result
+    try {
+      result = spawn(process.execPath, [file], {cwd:root, stdio:'inherit', timeout:60000})
+    } catch (cause) { result = {error:cause} }
+    if (!result || result.error || result.signal || result.status !== 0) {
+      const reason = result?.error?.message || result?.signal || `exit ${result?.status ?? 'unknown'}`
+      failures.push({test, reason})
+      error(`FAIL ${test}: ${reason}`)
+    } else passed++
   }
+  const summary = `${passed}/${modules.length} full-wall modules passed; ${failures.length} failed. Browser/device validation remains separate.`
+  if (failures.length) error(`\nFAIL: ${summary}\n${failures.map(f => `- ${f.test}: ${f.reason}`).join('\n')}`)
+  else log(`\nPASS: ${summary}`)
+  return {passed, total:modules.length, failures, exitCode:failures.length ? 1 : 0}
 }
-console.log(`Full-wall offline checks: ${process.version} (${process.execPath})`)
-for (const test of tests) {
-  console.log(`\nRunning ${test}`)
-  const result = spawnSync(process.execPath, [path.join(repository, 'tests', test)], {
-    cwd:repository, stdio:'inherit', timeout:60000,
-  })
-  if (result.error || result.signal || result.status !== 0) {
-    console.error(`FAIL ${test}: ${result.error?.message || result.signal || `exit ${result.status}`}`)
-    process.exit(Number.isInteger(result.status) && result.status > 0 ? result.status : 1)
-  }
-}
-console.log(`\nPASS: ${tests.length} full-wall test modules; browser/device validation remains separate.`)
+if (require.main === module) process.exitCode = runModules().exitCode
+module.exports = {runModules, tests}
