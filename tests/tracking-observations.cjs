@@ -228,6 +228,23 @@ async function main(){
     assert.equal(alreadyHidden.order.filter(item=>item==='run').length,1)
     assert(types(alreadyHidden).includes('tracking-resumed'))
   }finally{await alreadyHidden.close()}
-  console.log('PASS tracking observations: 8 groups; default/image+world configure-before-pipeline/run, restart/retry/Stop/cancellation, raw duplicates, no synthetic acquisition, camera/search boundary, native status qualification, observer isolation and hidden lifecycle. Supported-phone checks remain NOT RUN.')
+  // 9. Repeated dispose callers must all await the same pending teardown.
+  const disposal=fixture({worldTracking:true})
+  let releaseStop
+  try{
+    await disposal.tracker.start()
+    const stopGate=new Promise(resolve=>{releaseStop=resolve})
+    disposal.window.XR8.stop=()=>stopGate
+    const first=disposal.tracker.dispose()
+    let secondFinished=false
+    const second=disposal.tracker.dispose().then(()=>{secondFinished=true})
+    await new Promise(resolve=>setTimeout(resolve,0))
+    assert.equal(secondFinished,false,'Repeated dispose must not report completion before pending teardown')
+    assert(disposal.target,'Target remains until camera stop settles')
+    releaseStop();await Promise.all([first,second])
+    assert.equal(disposal.target,null,'All dispose promises settle only after target cleanup')
+    await disposal.tracker.dispose()
+  }finally{releaseStop?.();await disposal.close()}
+  console.log('PASS tracking observations: 9 groups; default/image+world configure-before-pipeline/run, restart/retry/Stop/cancellation, raw duplicates, no synthetic acquisition, camera/search boundary, native status qualification, observer isolation and hidden lifecycle. Supported-phone checks remain NOT RUN.')
 }
 main().catch(error=>{console.error(error);process.exitCode=1})

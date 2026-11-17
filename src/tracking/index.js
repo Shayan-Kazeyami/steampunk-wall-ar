@@ -1178,8 +1178,9 @@ export function createTrackingAdapter({
     })
   }
 
+  let disposalPromise = null
   function dispose() {
-    if (disposed) return Promise.resolve()
+    if (disposalPromise) return disposalPromise
     if(active || starting || observationPaused)emitObservation('tracking-stopped',{reason:'dispose'})
     observationPaused=false
     epoch++
@@ -1189,7 +1190,8 @@ export function createTrackingAdapter({
     disposed = true
     if (root) root.visible = false
     hideTargets(true)
-    return enqueue(doDispose)
+    disposalPromise = enqueue(doDispose)
+    return disposalPromise
   }
 
   if (documentRef && typeof documentRef.addEventListener === 'function') {
